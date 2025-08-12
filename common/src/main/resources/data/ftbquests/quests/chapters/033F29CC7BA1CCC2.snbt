@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "033F29CC7BA1CCC2"
+	group: ""
+	id: "033F29CC7BA1CCC2"
+	order_index: 8
+	quest_links: [ ]
+	quests: [{
+		id: "4DDD33778BAA3EE6"
+		tasks: [{
+			entity: "alexsmobs:anteater"
+			id: "4767AFE9A9EC6129"
+			type: "kill"
+			value: 100L
+		}]
+		x: -6.5d
+		y: -1.5d
+	}]
+	title: "ошдошд"
+}

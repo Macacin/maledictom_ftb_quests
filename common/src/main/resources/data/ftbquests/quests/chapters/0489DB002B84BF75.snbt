@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "0489DB002B84BF75"
+	group: ""
+	id: "0489DB002B84BF75"
+	order_index: 4
+	quest_links: [ ]
+	quests: [{
+		id: "142F43D777CAC00D"
+		tasks: [{
+			entity: "minecraft:zombie"
+			id: "262AB3CAE662B365"
+			type: "kill"
+			value: 12L
+		}]
+		x: -6.5d
+		y: -2.5d
+	}]
+	title: "аереар"
+}

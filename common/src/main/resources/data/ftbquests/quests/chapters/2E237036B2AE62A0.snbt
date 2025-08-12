@@ -1,0 +1,20 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "2E237036B2AE62A0"
+	group: ""
+	id: "2E237036B2AE62A0"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "22563CB612D26C04"
+		tasks: [{
+			id: "06566BB215DCCE18"
+			structure: "dungeons_arise:aviary"
+			type: "structure"
+		}]
+		x: -6.0d
+		y: -4.5d
+	}]
+	title: "ыуау"
+}

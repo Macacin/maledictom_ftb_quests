@@ -1,0 +1,24 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6F54CED2221D09F0"
+	group: ""
+	id: "6F54CED2221D09F0"
+	order_index: 1
+	quest_links: [ ]
+	quests: [{
+		id: "29853B80E2B54FA0"
+		tasks: [{
+			id: "0F0C33C1FFBE5A09"
+			item: {
+				Count: 1
+				id: "minecraft:stripped_oak_log"
+				tag: { }
+			}
+			type: "item"
+		}]
+		x: -6.0d
+		y: -4.0d
+	}]
+	title: "фцв"
+}

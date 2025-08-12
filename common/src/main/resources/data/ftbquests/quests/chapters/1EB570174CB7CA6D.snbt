@@ -1,0 +1,21 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1EB570174CB7CA6D"
+	group: ""
+	id: "1EB570174CB7CA6D"
+	order_index: 11
+	quest_links: [ ]
+	quests: [{
+		id: "00E1A229D7CD0C6E"
+		tasks: [{
+			dimension: "minecraft:overworld"
+			id: "27A134B928CE3B85"
+			optional_task: true
+			type: "dimension"
+		}]
+		x: -6.0d
+		y: -1.5d
+	}]
+	title: "пно"
+}

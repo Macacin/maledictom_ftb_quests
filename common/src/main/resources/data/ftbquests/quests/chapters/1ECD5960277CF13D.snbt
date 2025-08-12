@@ -1,0 +1,30 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "1ECD5960277CF13D"
+	group: ""
+	id: "1ECD5960277CF13D"
+	order_index: 5
+	quest_links: [ ]
+	quests: [{
+		id: "6742058DAE3A8F6B"
+		rewards: [{
+			count: 2
+			id: "09FEE2492814BB24"
+			item: {
+				Count: 1
+				id: "minecraft:oak_wood"
+				tag: { }
+			}
+			type: "item"
+		}]
+		tasks: [{
+			biome: "minecraft:beach"
+			id: "3393F8BE4481B372"
+			type: "biome"
+		}]
+		x: -4.0d
+		y: -2.5d
+	}]
+	title: "аер"
+}

@@ -1,0 +1,25 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "05B5305DDDE03163"
+	group: ""
+	id: "05B5305DDDE03163"
+	order_index: 2
+	quest_links: [ ]
+	quests: [{
+		id: "4D5FFEE9E8B2468D"
+		rewards: [{
+			command: "/say Hi, @p!"
+			id: "266DA0A37D6A95A6"
+			type: "command"
+		}]
+		tasks: [{
+			dimension: "minecraft:the_end"
+			id: "4D67138F4641C817"
+			type: "dimension"
+		}]
+		x: -5.0d
+		y: -5.0d
+	}]
+	title: "ыуауыа"
+}

@@ -1,0 +1,25 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "4E019C588A7FFFBB"
+	group: ""
+	id: "4E019C588A7FFFBB"
+	order_index: 6
+	quest_links: [ ]
+	quests: [{
+		id: "44EA42DA19551F2A"
+		tasks: [{
+			count: 2L
+			id: "0D5B784B145E3569"
+			item: {
+				Count: 2
+				id: "minecraft:oak_button"
+				tag: { }
+			}
+			type: "item"
+		}]
+		x: -5.0d
+		y: -4.0d
+	}]
+	title: "раер"
+}
