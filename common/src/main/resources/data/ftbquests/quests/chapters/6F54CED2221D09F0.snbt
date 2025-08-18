@@ -1,24 +1,1901 @@
 {
-	default_hide_dependency_lines: false
+	autofocus_id: "55E45D6B6F5344BC"
+	default_hide_dependency_lines: true
 	default_quest_shape: ""
-	filename: "6F54CED2221D09F0"
-	group: ""
-	id: "6F54CED2221D09F0"
-	order_index: 1
-	quest_links: [ ]
-	quests: [{
-		id: "29853B80E2B54FA0"
-		tasks: [{
-			id: "0F0C33C1FFBE5A09"
-			item: {
-				Count: 1
-				id: "minecraft:stripped_oak_log"
-				tag: { }
+	filename: "07B207D8AB248A60"
+	group: "09EAD6D0307AE68F"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
 			}
-			type: "item"
-		}]
-		x: -6.0d
-		y: -4.0d
-	}]
-	title: "фцв"
+		}
+		id: "celestial_artifacts:catastrophe_scroll"
+	}
+	id: "07B207D8AB248A60"
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["4CA34AEF52CC90EF"]
+			description: [
+				"Это не артефакт, не инструмент и не знак могущества. Это вызов — себе, миру, и самой &l&9Пустоте.&r"
+				""
+				"Свиток однажды был создан безумным проклятым, что стал слишком сильным. Свиток возникает лишь тогда, когда кто-то достаточно безумен, чтобы добровольно вписать на нём своё имя. Это не проклятие в обычном смысле — это &l&cначало конца,&r который ты сам выбираешь пережить."
+				""
+				"Его невозможно снять. Он вплетается в кровь, оставляя за собой след &l&#DA70D6бедствий,&r обрушивающихся один за другим. Он не щадит — он проверяет, насколько далеко ты готов зайти."
+				""
+				"Сначала тебя ждут лишь страдания. &l&4Катастрофы.&r Обрушение всего, что ты знал. Но в самом сердце этого разрушения скрыта искра: если ты сможешь выстоять, если обуздаешь хаос, он станет твоей силой."
+				""
+				"Ты и так &l&cпроклят.&r Но теперь ты решил стать носителем нового проклятия — не от отчаяния, а от воли. Так действуют не герои… а те, кто больше не верят в спасение."
+				""
+				"&7&oТы действительно настолько сошел с ума, что проклянешь себя ещё сильнее?&r"
+			]
+			id: "55E45D6B6F5344BC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "329BDE44E0EF4E11"
+					table_id: 3877277445160693765L
+					type: "random"
+				}
+				{
+					id: "0FE467412476AB53"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "diamond"
+			size: 2.5d
+			tasks: [{
+				id: "2C27630C43B85702"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:catastrophe_scroll"
+				}
+				title: "Создать &l&#DA70D6Свиток Катастрофы"
+				type: "item"
+			}]
+			title: "&l&#DA70D6                   Свиток Катастрофы                   "
+			x: 0.0d
+			y: -1.25d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: [
+				"&l&#8c7cadПовелитель Катастроф&r спрятал &4&lгравюру Хаоса&r не вручную, а вложил её в форму самого анархичного творения — древнего архитектора разрушения. Он поведал об этом одному из &l&9Хранителей Пустоты,&r и тот создал Визера, рождённого не из плоти, а из хаоса, взрывающегося внутри его сущности."
+				""
+				"Гравюра заточена в ядре &l&7Визера:&r каждое его взрывное движение — отражение безграничной воли &l&#8c7cadПовелителя.&r Это предупреждение и соблазн одновременно — лишь тот, кто примет хаос как союзника, сможет разблокировать силу и превратить разрушение в собственное оружие."
+			]
+			hide_dependency_lines: true
+			id: "2C664FC3B20141C0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6292D91AADE1F567"
+					table_id: 7034532178906010421L
+					type: "random"
+				}
+				{
+					id: "26B50506389A200C"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "794BEA8A12686F27"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:chaotic_etching"
+				}
+				title: "&fЗаполучить &4&lГравюру Хаоса"
+				type: "item"
+			}]
+			title: "&l&4Гравюра Хаоса"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: [
+				"Ещё до того, как первые шаги нарушили тишину далёких земель Энда, &l&#8c7cadПовелитель Катастроф&r спрятал там частицу своей сущности. Он оставил её на краю беззвёздной пустоты, сокрыв от любых взглядов до поры, пока не найдётся тот, кому он сможет открыть тайну её местонахождения."
+				""
+				"Когда &l&9Эндер-хранитель&r явился служить Пустоте, Повелитель шёпотом направил его к скрытой реликвии. Хранитель, подчинившись воле &l&#8c7cadПовелителя,&r заковал гравюру в существе, которое не должно было появиться никогда — в &l&5дракона,&r парящего так высоко, что даже отчаянный счёл бы это безумием."
+			]
+			hide_dependency_lines: true
+			id: "29F1576F944A76BD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "62854C81BBF81B02"
+					table_id: 7034532178906010421L
+					type: "random"
+				}
+				{
+					id: "2E1A5EE2ECB92E52"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "750F750307D68C8F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:origin_etching"
+				}
+				title: "&fЗаполучить &#00BFFF&lГравюру Истоков"
+				type: "item"
+			}]
+			title: "&#00BFFF&lГравюра Истоков"
+			x: 0.0d
+			y: -3.75d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: [
+				"&l&#8c7cadПовелитель Катастроф&r лично вложил частицу &l&2гравюры Жизни&r во всех могущественных существ, наделённых силой Пустоты. Эту силу он наделил их бесконечным существованием — но лишь для того, чтобы зажечь в них свою волю и оставить &l&cвечный шрам внутри.&r"
+				""
+				"Гравюра заключена не в одном, а во множестве таких созданий, и лишь получит силу тот, кто сможет победить &l&9их.&r "
+			]
+			hide_dependency_lines: true
+			id: "64D3055CE493E709"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "008FF8397378D941"
+					table_id: 7034532178906010421L
+					type: "random"
+				}
+				{
+					id: "0E6E27F66974093E"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6A77806D503971F6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:life_etching"
+				}
+				title: "&fЗаполучить &2&lГравюру Жизни"
+				type: "item"
+			}]
+			title: "&2&lГравюра Жизни"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: [
+				"&l&#8c7cadПовелитель Катастроф&r вложил &6&lгравюру Истины&r в Визера, но не как прежде — сила заключена в том моменте, когда она отнимается. Легенда гласит: её можно извлечь только тогда, когда Визера убивают рейдеры, ибо именно в их нападении отражается &l&bсопротивление пустоте.&r"
+				""
+				"Это третья гравюра, пробуждаемая ценой свершённой расплаты. Убей &l&7Визера,&r но не ты — пусть это сделают рейдеры, и только тогда мрачная истина сможет явиться, вырвавшись из тела чудовища и открыв дверь к следующей катастрофе."
+			]
+			hide_dependency_lines: true
+			id: "7BF3E512243F1249"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2404230B95EBC5A0"
+					table_id: 7034532178906010421L
+					type: "random"
+				}
+				{
+					id: "0840F3C03C6BA2A7"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "170641949D52D83D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:truth_etching"
+				}
+				title: "&fЗаполучить &6&lГравюру Истины"
+				type: "item"
+			}]
+			title: "&6&lГравюра Истины"
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: [
+				"&l&#8c7cadПовелитель Катастроф&r скрывал &l&cгравюру Жажды&r глубоко под землёй, скованный своей волей и далёкий от смертных глаз. Это частичное отражение жаждущей безумия крови, заключённое в редком ритуале забвения, созданном чтобы никто не осмелился к ней прикоснуться."
+				""
+				"Только через многие эпохи Повелитель поведал её местонахождение &l&9Хранителям Пустоты.&r Один из них, воплотив ужас и жажду власти, вложил гравюру в создание древнего &l&7Визера&r — существо не из плоти живых, а вылепленное из желания и проклятия. Готовясь к пробуждению, Визер обрел свою силу из крови и тьмы, навеки связавшись с &l&cжадной&r сущностью, очутившейся в самом ядре его души."
+			]
+			hide_dependency_lines: true
+			id: "3B70A5F03AA39E6F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53075B4C0DBF403E"
+					table_id: 7034532178906010421L
+					type: "random"
+				}
+				{
+					id: "33ADF6E1603B1233"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "47747285E288DAD9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:desire_etching"
+				}
+				title: "&fЗаполучить &c&lГравюру Жажды"
+				type: "item"
+			}]
+			title: "&l&cГравюра Жажды"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: [
+				"&l&#8c7cadПовелитель Катастроф&r вложил гравюру Небытия не в одиночное существо, а в целую касту созданий — Варденов, порождённых в попытке создать новых &l&9Хранителей Пустоты.&r Они выросли в городе у портала в самую бездну, не ведая страха, но со временем лишились разума — остались лишь послушные воины, охраняющие то, к чему устремлён был их творец."
+				""
+				"Гравюра заключена в каждом из них, превращённом в сосуд &l&9чистой пустоты:&r их удары — не просто смерть, а затягивание в зыбкую тьму. Лишь тот, кто шагнёт сквозь город, проникнув в сердце портала, и устоит перед их безмолвным единством, сможет стать свидетелем истинной природы Небытия."
+				""
+				"&o&7Используй оружия и артефакты, что позволяют тебе использовать силу бездны."
+			]
+			hide_dependency_lines: true
+			id: "14C614B99FA52CE3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D5C3F1C6079ADF3"
+					table_id: 7034532178906010421L
+					type: "random"
+				}
+				{
+					id: "29F4308CEE71B216"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "7E2F01B1A53360CD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:nihility_etching"
+				}
+				title: "&fЗаполучить &#191970&lГравюру Небытия"
+				type: "item"
+			}]
+			title: "&#0000FF&lГравюра Небытия"
+			x: 0.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: [
+				"&l&#8c7cadПовелитель Катастроф&r заключил гравюру Конца в Вардерах, тех, кто охраняет запечатанный портал. Но она не активируется случайно: её сила пробуждается только тогда, когда носитель оказывается на грани полного внутреннего разрушения."
+				""
+				"Это испытание предельного самоуничтожения. Лишь когда Хранитель, носитель гравюры, оказывается физически и духовно сломлен, Катастрофа может проявиться в её чистейшем виде — и тогда портрет &#8B008B&lСамого Конца&r станет доступен только тому, кто осмелится встретить окончание, не обрубив саму нить своего существования."
+			]
+			hide_dependency_lines: true
+			id: "55FB56AA654B3100"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5BB49AC7A959C8F4"
+					table_id: 7034532178906010421L
+					type: "random"
+				}
+				{
+					id: "187DE25A2C643DB3"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0FADCC5F990AF6EE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:end_etching"
+				}
+				title: "&fЗаполучить &#8B008B&lГравюру Конца"
+				type: "item"
+			}]
+			title: "&#8B008B&lГравюра Конца"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64D3055CE493E709"]
+			description: ["Странный артефакт, источающий пустотную теплоту — его прикосновение искажает восприятие самих теней. Пока она с тобой, эндермены не видят в тебе врага… лишь того, кто уже принадлежит их миру."]
+			hide_dependency_lines: true
+			id: "239E395530B08F18"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D26DE3BA66154D6"
+				table_id: 9167724085993848904L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7D67295AB90F6EDD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "relics:enders_hand"
+					tag: {
+						abilities: {
+							swap: {
+								points: 0
+								stats: {
+									distance: 23.54273d
+								}
+							}
+						}
+					}
+				}
+				title: "Создать Руку Края"
+				type: "item"
+			}]
+			title: "Рука Энда"
+			x: -4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"64D3055CE493E709"
+				"55FB56AA654B3100"
+			]
+			description: ["Тотем впитал злобу и яд каждого смертельного ранения и скрывает её в себе, пробуждая дикий инстинкт выживания при ударе, что чуть не погубил. Он не просто спасает — он лишает покоя, превращая боль в жертвенный ресурс: собрав достаточную злобу, носитель переживёт то, что должно было стать концом, но расплата за это — вновь очнуться в ловушке проклятого круга."]
+			id: "75C9F530BD02AFED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2A05DA0DCBA0465E"
+				table_id: 9167724085993848904L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4C80542E59015FCD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:cursed_totem"
+				}
+				type: "item"
+			}]
+			x: 4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64D3055CE493E709"]
+			description: ["Не всякая сила приходит в облике меча — некоторые носят форму утки. С этой шапкой ты станешь частью воды, скользя по её поверхности, как будто родился для этого."]
+			hide_dependency_lines: true
+			id: "10D1252F7D5C8CC8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1995AB9F71D84C43"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "551C273E36A4BD72"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:yellow_duck"
+				}
+				title: "Создать Жёлтую Утку"
+				type: "item"
+			}]
+			title: "Жёлтая утка"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"64D3055CE493E709"
+				"14C614B99FA52CE3"
+			]
+			id: "52E877BBD651FF7A"
+			tasks: [{
+				id: "17C86BF698C78CA7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:soul_box"
+				}
+				title: "Создать Шкатулку Души"
+				type: "item"
+			}]
+			x: -1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"3B70A5F03AA39E6F"
+				"64D3055CE493E709"
+			]
+			description: ["Холодный, как сама смерть, этот амулет знает, когда удар будет последним. И один раз — он не даст тебе упасть."]
+			id: "088D5B766D00F51D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7BCD92DE9DB305F1"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4BBEF214A8B3A93C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:undead_charm"
+				}
+				title: "Создать Шарм Нежити"
+				type: "item"
+			}]
+			title: "Шарм нежити"
+			x: -2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"64D3055CE493E709"
+				"29F1576F944A76BD"
+			]
+			description: ["Свет этого амулета ослабляет зло вокруг и щадит тебя, когда всё рушится. Даже смерть теряет свою власть, если он лежит у тебя на груди."]
+			hide_dependency_lines: true
+			id: "62B6D304ABC9DDA3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1AD9E0EEAF3530F9"
+				table_id: 9167724085993848904L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7B648A6A1692FE0F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:holy_talisman"
+				}
+				title: "Создать Святой Талисман"
+				type: "item"
+			}]
+			title: "Святой талисман"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["64D3055CE493E709"]
+			description: ["Простой на вид амулет, в котором заключена живительная сила. Пока он с тобой — сама природа исцеляет твои раны, не прося ничего взамен."]
+			id: "434A58AF964BDA22"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "254A427D522EFEF1"
+				table_id: 9167724085993848904L
+				type: "random"
+			}]
+			tasks: [{
+				id: "60A18906ED773CBD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:bearing_stamen"
+				}
+				title: "Создать Несущую Тычинку"
+				type: "item"
+			}]
+			title: "Несущая тычинка"
+			x: -3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"55FB56AA654B3100"
+				"2C664FC3B20141C0"
+			]
+			description: ["Чем сильнее ты страдаешь, тем яростнее сражаешься — этот амулет питается твоими недугами, превращая отравление, неудачу и боль в топливо для разрушения."]
+			id: "697C43F7525DBB11"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17D9F4C21E5587DE"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1432A99BC733FC9A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:corrupt_badge"
+				}
+				title: "Создать Знак Порчи"
+				type: "item"
+			}]
+			title: "Знак порчи"
+			x: -1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"2C664FC3B20141C0"
+				"29F1576F944A76BD"
+			]
+			description: ["Каждое проклятие на твоей броне — это не клеймо слабости, а источник силы. Чем больше меток, тем точнее твои удары… и тем страшнее их последствия."]
+			id: "4B535E4AEA813E19"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "453B18D99C1ECCBC"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5B3924D4352F9DD6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:cursed_talisman"
+				}
+				title: "Создать Проклятый Талисман"
+				type: "item"
+			}]
+			title: "Проклятый талисман"
+			x: 1.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["7BF3E512243F1249"]
+			description: ["Тот, кто исчезает из глаз, возвращается с ударом. Этот браслет усиливает ближние атаки в тени, делая каждый выход из невидимости началом внезапной расплаты."]
+			id: "41351B040FC7BCE3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4852B220B1551B4C"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0E0228B77C95C030"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:hidden_bracelet"
+				}
+				title: "Создать Браслет Скрытности"
+				type: "item"
+			}]
+			title: "Браслет скрытности"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"7BF3E512243F1249"
+				"14C614B99FA52CE3"
+			]
+			id: "742CA81BD7A18EF2"
+			tasks: [{
+				id: "668E43B50E87C6CD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:scarlet_bracelet"
+				}
+				title: "Создать Алый Браслет"
+				type: "item"
+			}]
+			x: 1.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7BF3E512243F1249"]
+			description: ["Этот амулет создан для тех, кто не знает покоя — чем быстрее ты движешься, тем смертоноснее становишься. Он не усиливает удары, он делает сами движения оружием."]
+			id: "255A918EDB6FFC9A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "57ECCC1370F3472C"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "513EC161F9B5CC4F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:gallop_necklace"
+				}
+				title: "Создать Ожерелье Галопа"
+				type: "item"
+			}]
+			title: "Ожерелье галопа"
+			x: 4.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["7BF3E512243F1249"]
+			description: ["Закалённые в духе выживания, эти ножны дают силу тому, кто дерётся с превосходящим. Чем больше враг, тем яростнее твой удар — и тем быстрее срастаются твои раны."]
+			id: "467D883E6EA90A65"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2399EB5B8BB733C6"
+				table_id: 9167724085993848904L
+				type: "random"
+			}]
+			tasks: [{
+				id: "117E88E9F81D5299"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:titan_scabbard"
+				}
+				title: "Создать Титановые Ножны"
+				type: "item"
+			}]
+			title: "Титановые ножны"
+			x: 3.0d
+			y: 3.0d
+		}
+		{
+			dependencies: [
+				"7BF3E512243F1249"
+				"3B70A5F03AA39E6F"
+			]
+			description: ["Иногда последняя ошибка становится последним даром. Этот амулет превращает смерть в сделку: враги падают вместе с тобой, а золото остаётся на память."]
+			id: "41F8903CD3832772"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7E004FBA8D2C8AF1"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3C5620BA8408A5F0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:sacrificial_object"
+				}
+				title: "Создать Жертвенный предмет"
+				type: "item"
+			}]
+			title: "Жертвенный предмет"
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: [
+				"7BF3E512243F1249"
+				"2C664FC3B20141C0"
+			]
+			description: ["Этот амулет делает тебя стеной, которую не сокрушить. Он гасит удары в лоб, удерживает щит на руке и не даёт боли прорваться, даже если враг готовит смертельный выпад."]
+			id: "7E8A39D130124114"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4C95887E3B37961A"
+				table_id: 9167724085993848904L
+				type: "random"
+			}]
+			tasks: [{
+				id: "38306C7A3F10941C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:cursed_protector"
+				}
+				title: "Создать Проклятый Защитник"
+				type: "item"
+			}]
+			title: "Проклятый защитник"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["7BF3E512243F1249"]
+			description: ["Крошечный оберег, что даёт больше, чем кажется — мгновения неуязвимости после удара могут стать разницей между жизнью и смертью. Его не видно в бою, но он спасает тогда, когда всё уже должно было закончиться."]
+			id: "6555DC20B54C0552"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "23A35A9978E697F0"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "512AE05B2C1BABEB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "artifacts:cross_necklace"
+				}
+				title: "Создать Нательный Крестик"
+				type: "item"
+			}]
+			title: "Нательный крестик"
+			x: 4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: [
+				"14C614B99FA52CE3"
+				"55FB56AA654B3100"
+			]
+			description: ["Этот амулет — отражение самой сущности Пустоты, вмещённой в символ бессмертной воли. Он дарует силы призыва Бездны, удерживая её зов и взамен давая могущество, но только тем, кто готов принять раны от собственных амбиций."]
+			id: "65B4A5DF51FB169C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3A8FCE791628FB47"
+				table_id: 9167724085993848904L
+				type: "random"
+			}]
+			tasks: [{
+				id: "53B447915B9EC4CB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:abyss_will_badge"
+				}
+				title: "Создать Знак воли Бездны"
+				type: "item"
+			}]
+			title: "Знак воли Бездны"
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["55FB56AA654B3100"]
+			description: ["Этот амулет заключает в себе последнюю искру света, рассеянную в пучине Пустоты. Он даёт надежду тем, у кого сердце ещё стучит, лечит скрытые раны и очищает от разрушительных порывов тьмы."]
+			id: "079C218DF00AC690"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C6701B13B777C50"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "5A87F82D96861288"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:angel_heart"
+				}
+				title: "Создать Сердце Ангела"
+				type: "item"
+			}]
+			title: "Сердце ангела"
+			x: 3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["55FB56AA654B3100"]
+			description: ["Создать ножны, изогнутые, словно тёмная улыбка Пустоты, — значит приручить её обольстительную ветвь. В них заключён ритм безумия: с каждым вздохом оружие всё сильнее, но и цена его выше."]
+			id: "77035AFC3EC3375B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13E7FCBA0904423B"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "24E67C5ED2B1669C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:twisted_scabbard"
+				}
+				title: "Создать Изогнутые ножны"
+				type: "item"
+			}]
+			title: "Изогнутые ножны"
+			x: 2.0d
+			y: -4.0d
+		}
+		{
+			dependencies: [
+				"3B70A5F03AA39E6F"
+				"29F1576F944A76BD"
+			]
+			description: ["Чистое сияние этого амулета укрепляет не только тебя, но и всех рядом. Чем светлее твоя душа — тем крепче тела тех, кто сражается за спиной."]
+			id: "6B8CC4411104F7E3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "706019E075924DEB"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0993A5862D4371A6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:angel_pearl"
+				}
+				title: "Создать Жемчуг Ангела"
+				type: "item"
+			}]
+			title: "Жемчуг ангела"
+			x: -3.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3B70A5F03AA39E6F"]
+			description: ["Этот амулет превращает раны в возмездие, а боль — в исцеление. Чем ближе смерть, тем яростнее становится твой удар, особенно против тех, кто давно лишён жизни."]
+			id: "64027E5D91934955"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7C7302A3736375E4"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4E902D88B267C232"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:holy_sword"
+				}
+				title: "Создать Святой Меч"
+				type: "item"
+			}]
+			title: "Святой меч"
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["29F1576F944A76BD"]
+			description: ["Амулет, пробуждающий силу в щите — каждое поднятие блока становится источником исцеления. Пока ты стоишь на защите, урон отражается, а тело восстанавливает себя само."]
+			id: "6E456AA3C629D563"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "37920652C6DE0CD6"
+				table_id: 8411892281257690479L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6B3ACC698982DCCB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:knight_shelter"
+				}
+				title: "Создать Укрытие Рыцаря"
+				type: "item"
+			}]
+			title: "Укрытие рыцаря"
+			x: 0.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Старое кольцо, найденное в глубинах больших подводных руин, всё ещё несёт в себе отголосок небесного гнева. Оно поглощает удар молнии, будто призвано усмирять сам грохочущий воздух."]
+			id: "200814B6165B3A01"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6835E4C4A0D4C0E2"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2572F7D9DDD70FD2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:thunder_ring"
+				}
+				title: "Найти Кольцо Грома"
+				type: "item"
+			}]
+			title: "Кольцо грома"
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Рождается лишь в хаосе — с 10% шансом выпадает, когда Визер убивает рейдеров. Этот мозг не защищает разум, он искажает его, даруя силу в момент, когда всё должно было закончиться."]
+			id: "15BAFF1E7FAEEA45"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7620A869AC48EEA3"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3A82A5EB1F069F09"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:twisted_brain"
+				}
+				title: "Заполучить Извращённый Мозг"
+				type: "item"
+			}]
+			title: "Извращённый мозг"
+			x: 7.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["С низким шансом появляется при убийстве вредин, но только после того, как пал Визер. Этот амулет отнимает у тебя право на исцеление, взамен награждая силой и скоростью, пока тело горит в безостановочной гонке на грани смерти."]
+			id: "39B1BA0E8795337E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15F9740DEA20F0D9"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "02AF81546B815766"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:demon_curse"
+				}
+				title: "Заполучить Проклятие Демона"
+				type: "item"
+			}]
+			title: "Проклятие демона"
+			x: 6.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Скрытое в глубинах древних городов варденов, это сердце бьётся в унисон с проклятием. Оно не боится меток — оно питается ими, усиливая тело и дух по мере того, как проклятья множатся."]
+			id: "24A22E994A89BE2B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "45744980088B51F4"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "59C06BF33A85F90A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:demon_heart"
+				}
+				title: "Найти Демоническое Сердце"
+				type: "item"
+			}]
+			title: "Демоническое сердце"
+			x: 7.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["С 10% шансом выпадает, когда Визер убивает существ с 20 или более здоровья. Пока ты носишь его, оно ломает твою силу и броню… но если проклятие Небытия уже впилось в душу — оно меняет свою суть."]
+			id: "74D99BC5D36FF079"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0100FA5A264517BF"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7E91ACB7EAD5FABC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:twisted_heart"
+				}
+				title: "Заполучить Искалеченное Сердце"
+				type: "item"
+			}]
+			title: "Искалеченное сердце"
+			x: 6.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			id: "6059DF3375D07BB1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59A0765B9065B51E"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6D1DBD549EF237C4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:heart_of_revenge"
+				}
+				title: "Найти Сердце Возмездия"
+				type: "item"
+			}]
+			x: 8.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Редкая находка, которую можно выловить лишь на высоте выше облаков — с малым шансом при рыбалке на y>300. Эта подкова смягчает любое падение, словно земля сама поднимается тебе навстречу."]
+			id: "4B00A87346E439A3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7CF1BE711B8653F2"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "200B7CEBA496A47A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:magic_horseshoe"
+				}
+				title: "Заполучить Магическую Подкову"
+				type: "item"
+			}]
+			title: "Магическая подкова"
+			x: 7.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Это простое, но полезное кольцо усиливает владельца на 10% урона и дарует постоянное ночное зрение, позволяя видеть в темноте как днём — отличный спутник для шахтёров, охотников и исследователей, добывается оно обычно в аметистовых геодах."]
+			id: "69795B52F0014A65"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "201BF24CB5AD94D7"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1D3427BE17A94761"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:amethyst_ring"
+				}
+				title: "Создать Кольцо с аметистом"
+				type: "item"
+			}]
+			title: "Кольцо с Аметистом"
+			x: -6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Это кольцо можно найти глубоко в Незере, где лавовые реки текут как кровь земли. Оно полностью поглощает огонь и наказывает врагов пламенем, поджигая их на 5 секунд. Только тот, кто пройдёт через огненные бастионы и выстоит в жаре Ада, сможет заполучить этот артефакт."]
+			id: "4C9C5CEFA286CA04"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "16DBB36BAA6FE8D3"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3A4124C94A85CB31"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:nether_fire"
+				}
+				title: "Создать Огонь Ада"
+				type: "item"
+			}]
+			title: "Огонь Ада"
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Легенда гласит, что этот артефакт был выкован из самого солнца. Солнечный Магнит не просто притягивает предметы — днём он наполняет владельца силой света, увеличивая урон и позволяя воспламенять врагов. Найди его в сокровищницах, где солнечный свет никогда не меркнет."]
+			id: "6B323A8B56419A80"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E31BCCDB0B4A1BF"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3AFA6C62CD209696"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:solar_magnet"
+				}
+				title: "Создать Солнечный Магнит"
+				type: "item"
+			}]
+			title: "Солнечный Магнит"
+			x: -8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Старый амулет, найденный среди древних сокровищ пустынной пирамиды. Он наполняется силой солнца и песка, увеличивая ваш урон на 30% в жарких биомах. Найди его — и стань неумолимым в пустыне."]
+			id: "699199BA085273B6"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2FF5E25176F6E7E0"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7B49FCBD86CF5A17"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:sands_talisman"
+				}
+				title: "Найти Талисман Песков"
+				type: "item"
+			}]
+			title: "Талисман песков"
+			x: -9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Поговаривают, что древние торговцы спрятали Сердце Алчности в глубинах заброшенных хранилищ. Этот артефакт жаждет наживы — он принесёт тебе удачу, добычу и втрое больше опыта. Но будь осторожен — сокровища не достаются даром."]
+			id: "7E4FD775656BCF79"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "761A698830038840"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "055A05A3C9C5483A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:greedy_heart"
+				}
+				title: "Создать Сердце Алчности"
+				type: "item"
+			}]
+			title: "Сердце Алчности"
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Странный магический свиток, исписанный искажёнными рунами. Легенда утверждает, что его создатель стремился контролировать хаос... но лишь усилил его. При активации свитка, мобы, с которыми ты сталкиваешься, могут с 60% шансом раздвоиться, вызывая их копии."]
+			id: "6244F66F4B092A75"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6C7B8B828C1076F0"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0FDBC165511B989A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:twisted_scroll"
+				}
+				title: "Создать Свиток Изврата"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["14C614B99FA52CE3"]
+			id: "4B1A852532BB29B1"
+			tasks: [{
+				id: "65613E8BB238CED7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:shadow_pendant"
+				}
+				title: "Создать Призрачный Кулон"
+				type: "item"
+			}]
+			x: 0.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Ночью оно дарует стойкость, а в тени — силу удара в спину. Словно само небо защищает тебя, пока ты действуешь из мрака."]
+			id: "10FF56B53B011E1A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "118D0BA46D610AB2"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3BA0BD8715D0F165"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:star_necklace"
+				}
+				title: "Создать Звездное Ожерелье"
+				type: "item"
+			}]
+			title: "Звёздное ожерелье"
+			x: 8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Затаённая ярость хищника в каждом ударе — это ожерелье усиливает урон по бронированным целям и может отравить врага. Говорят, его носят те, кто охотится не ради мяса, а ради страха."]
+			id: "120C9FD1DA6A9A5C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0276A0C6C2B3D57C"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "71750DBBA87BF125"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:fang_necklace"
+				}
+				title: "Найти Ожерелье из Клыков"
+				type: "item"
+			}]
+			title: "Ожерелье из клыков"
+			x: 8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Символ удачи и власти, это ожерелье не просто украшение. Оно усиливает удары, открывает дополнительное место для амулетов — и будто ведёт тебя к находкам, которые другим не даются."]
+			id: "622B9368BC2FFF53"
+			rewards: [{
+				id: "6F189A00EF85ADE6"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "50494C7E9A670FA4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:precious_necklace"
+				}
+				title: "Создать Драгоценное Ожерелье"
+				type: "item"
+			}]
+			title: "Драгоценное ожерелье"
+			x: 7.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Это ожерелье связано с Эндом — оно позволяет щиту отражать не только урон, но и саму угрозу, телепортируя врага прочь. Даже взгляд на эндермена больше не вызывает ярости: ты носишь знак того, кого они признают."]
+			id: "0A760801C369E204"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5E01E1BB392E5960"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "6AF3C0C579388DA8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:ender_protector"
+				}
+				title: "Создать Эндер Защитник"
+				type: "item"
+			}]
+			title: "Эндер-защитник"
+			x: 8.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Простой амулет, наполненный тёплой силой — как напоминание о чём-то важном. Он не кричит о могуществе, но его пульс ощущается в каждом шаге."]
+			id: "14E322920B6383CE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "74D823E7D5C8FD7C"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "671E7E21BAAB71E2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:red_heart_necklace"
+				}
+				title: "Найти Ожерелье с Красным сердцем"
+				type: "item"
+			}]
+			title: "Ожерелье с красным сердцем"
+			x: 6.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Скрытое среди мха древнего джунглевого храма, это ожерелье наделяет владельца духом быстроты. При получении урона ты становишься быстрее — словно призрак, избегающий следующего удара."]
+			id: "42FCD924D37D7273"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49253B488C9BA61C"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "08894064DA4103D2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:spirit_necklace"
+				}
+				title: "Найти Ожерелье Духов"
+				type: "item"
+			}]
+			title: "Ожерелье духов"
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["С этим ожерельем рыбалка становится приключением — в определённых биомах можно выловить тайны самих структур. Только будь терпелив — удача возвращается раз в 6000 секунд."]
+			id: "0CC11F21DB17A07D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "251844864709BDDA"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "7316996E5CF01D5F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:treasure_hunter_necklace"
+				}
+				title: "Создать Treasure Hunter Necklace"
+				type: "item"
+			}]
+			title: "Ожерелье охотника за сокровищами"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: [
+				"Чарующий браслет можно получить, если игрок с репутацией 100 или выше убивает жителя — в этом случае есть 50% шанс его выпадения, иначе выпадет золотой слиток."
+				""
+				"&o&7Репутация повышается путём лечения зомбифицированных жителей."
+			]
+			id: "257C640E3EDFFC3D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "24D80C71C87A4A25"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "0DF3E13AFED39F3C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:charming_bracelet"
+				}
+				title: "Получить Чарующий браслет"
+				type: "item"
+			}]
+			x: -7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["В тайнике древнего храма джунглей спрятан Браслет духов — волшебный артефакт, усиливающий лучников. Найди его среди лоз и ловушек, чтобы стрелы не только летели быстрее, но и ускоряли тебя с каждым выстрелом."]
+			id: "2020CB919AC47B8C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "208F4A3ABB943E24"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "78F5792ADFCA74E6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:spirit_bracelet"
+				}
+				title: "Найти Браслет Духов"
+				type: "item"
+			}]
+			title: "Браслет духов"
+			x: -7.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Этот плащ, сотканный из листвы и теней, даёт владельцу шанс уклониться от снарядов. Говорят, его можно найти в сундуке у подножия гигантского дерева в чащобе."]
+			id: "6B3192553CAC773A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1FD0DFEDA4720E7D"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "64ADE3E2F072AF90"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:forest_cloak"
+				}
+				title: "Создать Лесной плащ"
+				type: "item"
+			}]
+			title: "Лесной плащ"
+			x: -9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Корона морского бога — редкий головной артефакт, который можно найти в затонувших храмах. Когда вы находитесь в воде или под дождём, дарует эффект Водного дыхания IV и Ночного зрения. Обладает активным умением с перезарядкой в 30 секунд, позволяющим изменить погоду на дождь."]
+			id: "37C1C3DC4FC257EC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2750A5ADC15A0732"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "368696AC8366999D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:sea_god_crown"
+				}
+				title: "Создать Корону Морского бога"
+				type: "item"
+			}]
+			title: "Корона морского бога"
+			x: -9.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Необычный головной артефакт, усиливающий скрытность. Пока вы крадётесь, он уменьшает входящий урон на 25%, а также с шансом 50% возвращает 25% полученного урона атакующему. Дополнительно увеличивает время неуязвимости после удара на 100%."]
+			id: "1591340DD37A13D3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0F7A5211EE56B816"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "2D499D2717AF679F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:prayer_crown"
+				}
+				title: "Создать Молитвенный венец"
+				type: "item"
+			}]
+			title: "Молитвенный венец"
+			x: -8.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Победив древнего стража в глубинах морского храма, ты с 50% шансом получаешь Глаз Стража — мощный артефакт, созданный из самой плоти древнего хранителя. Этот глаз наполняет тебя силой океана: ты становишься почти неуязвим под водой и дождём, накладываешь Утомление II на врагов и дышишь под водой бесконечно. Отличный выбор для тех, кто живёт под волнами."]
+			id: "56035BD8602B4234"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "05F7B4FB5B916AA8"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "4CFDCEA955359F5A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:guardian_eye"
+				}
+				title: "Получить Глаз Стража"
+				type: "item"
+			}]
+			title: "Глаз Стража"
+			x: -9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Легенды гласят, что Глаз Зла можно получить, погрузившись в самые тёмные уголки мира, где господствует мрак и слепота. Этот редкий и таинственный артефакт наделяет своего владельца иммунитетом к эффектам Тьмы и Слепоты, позволяя видеть даже там, где не видно света. Идеальный спутник для тех, кто осмеливается ходить по краю бездны."]
+			id: "3B7B0DA49F945C3C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "46A45B6DB0BEC61C"
+				table_id: 7227569141271115588L
+				type: "random"
+			}]
+			tasks: [{
+				id: "486424F56A32688B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:evil_eye"
+				}
+				title: "Создать Глаз Зла"
+				type: "item"
+			}]
+			title: "Глаз Зла"
+			x: -8.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Древний венец, впитавший силу тихих лесов. Когда рядом мало врагов, он усиливает урон ваших снарядов, особенно если те пролетают сквозь воздух. Найдите корону среди заброшенных лесных построек и раскройте её истинную мощь."]
+			id: "30448A6406524179"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "27CD030C82D03871"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "583DAC6E4FB91A60"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:spirit_crown"
+				}
+				title: "Найти Корону Духов"
+				type: "item"
+			}]
+			title: "Корона духов"
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Скрытое в простых домах на равнинах, это ожерелье когда-то служило оберегом. Теперь оно дарует драгоценные мгновения неуязвимости, когда удар уже нанесён."]
+			id: "0DBF619BB44FB76E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E3BB8294ACA6EC8"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			size: 1.0d
+			tasks: [{
+				id: "689AE92046AC47B3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:cross_necklace"
+				}
+				title: "Найти Ожерелье с крестом"
+				type: "item"
+			}]
+			title: "Ожерелье с крестом"
+			x: 7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Старый храм, укрытый джунглями, хранит тайну древних охотников. В одном из его алтарей можно найти Колчан духов — реликвию, усиливающую стрелковое оружие. Только тот, кто отважится пройти ловушки и загадки, сможет унести его."]
+			id: "100B8CF87597AE14"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "74EC799BD874F7C8"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "1C53DE98200DBF23"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:spirit_arrow_bag"
+				}
+				title: "Найти Колчан Духов"
+				type: "item"
+			}]
+			title: "Колчан духов"
+			x: -8.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["55E45D6B6F5344BC"]
+			description: ["Изысканная и редкая находка, эта заколка не только придаёт элегантности, но и усиливает шанс критического удара за каждую единицу удачи. Поговаривают, что её можно найти в древнем цветущем саду, затерянном среди гор, где сакуры цветут вечно."]
+			id: "16906BF2C02D2E2F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15A8F8290F7160F3"
+				table_id: 7139122849756773121L
+				type: "random"
+			}]
+			tasks: [{
+				id: "3FBA1D62A9B4F7D0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:sakura_hairpin"
+				}
+				title: "Создать Заколку Сакуры"
+				type: "item"
+			}]
+			title: "Заколка Сакуры"
+			x: -7.0d
+			y: -2.5d
+		}
+	]
+	title: "Цель — могущество"
 }

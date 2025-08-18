@@ -149,7 +149,7 @@ public class FTBQuestsClientEventHandler {
 			Minecraft.getInstance().setScreen(null); // закрыть текущий экран
 
 			// Открываем именно твой кастомный экран
-			Minecraft.getInstance().setScreen(new MyCustomScreen(Component.literal("Мой экран")));
+			Minecraft.getInstance().setScreen(new MyCustomScreen(Component.literal("")));
 
 			InputConstants.grabOrReleaseMouse(Minecraft.getInstance().getWindow().getWindow(), GLFW.GLFW_CURSOR_NORMAL, mx, my);
 

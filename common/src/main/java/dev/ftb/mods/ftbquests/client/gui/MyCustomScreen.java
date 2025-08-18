@@ -5,257 +5,207 @@ import dev.ftb.mods.ftbquests.client.ClientQuestFile;
 import dev.ftb.mods.ftbquests.quest.Chapter;
 import dev.ftb.mods.ftbquests.quest.Quest;
 import dev.ftb.mods.ftbquests.quest.TeamData;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
 import net.minecraft.client.gui.screens.Screen;
 import net.minecraft.network.chat.Component;
+import net.minecraft.network.chat.MutableComponent;
+import net.minecraft.network.chat.Style;
 import net.minecraft.resources.ResourceLocation;
 
 import java.util.*;
 import java.util.function.BooleanSupplier;
 
-/**
- * Экран с группами кнопок и прогресс-барами для квестов.
- * Логика разбита на группы и подкнопки с возможностью блокировки.
- * Всё управление визуалом и положением внутри этого класса.
- */
 public class MyCustomScreen extends Screen {
 
-    // --------------------- Настройки ресурсов (текстур) ---------------------
+    // Ресурсы текстур
     private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/my_background.png");
     private static final ResourceLocation BUTTON_CLOSED = new ResourceLocation("ftbquests", "textures/gui/button_closed.png");
     private static final ResourceLocation BUTTON_OPEN = new ResourceLocation("ftbquests", "textures/gui/button_open.png");
     private static final ResourceLocation BUTTON_ICON = new ResourceLocation("ftbquests", "textures/gui/button_execute.png");
     private static final ResourceLocation BUTTON_LOCKED = new ResourceLocation("ftbquests", "textures/gui/button_locked.png");
 
-    // Прогресс-бары для разных процентов
-    private static final Map<Integer, ResourceLocation> PROGRESS_TEXTURES = Map.ofEntries(
-            Map.entry(0, new ResourceLocation("ftbquests", "textures/gui/progress_0.png")),
-            Map.entry(5, new ResourceLocation("ftbquests", "textures/gui/progress_5.png")),
-            Map.entry(10, new ResourceLocation("ftbquests", "textures/gui/progress_10.png")),
-            Map.entry(15, new ResourceLocation("ftbquests", "textures/gui/progress_15.png")),
-            Map.entry(20, new ResourceLocation("ftbquests", "textures/gui/progress_20.png")),
-            Map.entry(25, new ResourceLocation("ftbquests", "textures/gui/progress_25.png")),
-            Map.entry(30, new ResourceLocation("ftbquests", "textures/gui/progress_30.png")),
-            Map.entry(35, new ResourceLocation("ftbquests", "textures/gui/progress_35.png")),
-            Map.entry(40, new ResourceLocation("ftbquests", "textures/gui/progress_40.png")),
-            Map.entry(45, new ResourceLocation("ftbquests", "textures/gui/progress_45.png")),
-            Map.entry(50, new ResourceLocation("ftbquests", "textures/gui/progress_50.png")),
-            Map.entry(55, new ResourceLocation("ftbquests", "textures/gui/progress_55.png")),
-            Map.entry(60, new ResourceLocation("ftbquests", "textures/gui/progress_60.png")),
-            Map.entry(65, new ResourceLocation("ftbquests", "textures/gui/progress_65.png")),
-            Map.entry(70, new ResourceLocation("ftbquests", "textures/gui/progress_70.png")),
-            Map.entry(75, new ResourceLocation("ftbquests", "textures/gui/progress_75.png")),
-            Map.entry(80, new ResourceLocation("ftbquests", "textures/gui/progress_80.png")),
-            Map.entry(85, new ResourceLocation("ftbquests", "textures/gui/progress_85.png")),
-            Map.entry(90, new ResourceLocation("ftbquests", "textures/gui/progress_90.png")),
-            Map.entry(95, new ResourceLocation("ftbquests", "textures/gui/progress_95.png")),
-            Map.entry(100, new ResourceLocation("ftbquests", "textures/gui/progress_100.png"))
-    );
+    private static final String[] GROUP_NAMES = {
+            "&lСкитания",   // Измените на ваше название 1
+            "&k&lПроклятый",    // Название 2
+            "&lЧародейство",   // Название 3
+            "&lПромышленная революция",  // Название 4
+            "&lИспытание на прочность"  // Название 5
+    };
 
-    // --------------------- Управляющие параметры — тут можно менять ---------------------
-    private static final int START_X = 320; // Начальная позиция X для групп кнопок
-    private static final int START_Y = 60;  // Начальная позиция Y для первой группы
-    private static final int BUTTON_WIDTH = 100; // Ширина кнопок
-    private static final int BUTTON_HEIGHT = 20; // Высота кнопок
-    private static final int SUBBUTTON_VERTICAL_SPACING = 39; // Вертикальный отступ между подкнопками
-    private static final int GROUP_VERTICAL_SPACING = 4; // Отступ между группами по вертикали
+    private enum Phase { ANIM1, ANIM2, ANIM3, MAIN }
+    private Phase phase = Phase.ANIM1;
+    private long animStartTime;
+    private static final ResourceLocation ANIM1_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation1.png"); // 512x24576, 24 кадра
+    private static final ResourceLocation ANIM2_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation2.png"); // 512x13312, 13 кадров
+    private static final ResourceLocation ANIM3_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation3.png"); // 512x12288, 24 кадра по 512x512
+    private static final int ANIM1_FRAMES = 24;
+    private static final int ANIM1_DURATION_MS = 1000; // 1 секунда
+    private static final int ANIM1_FRAME_HEIGHT = 1024; // 24576 / 24
+    private static final int ANIM2_FRAMES = 24;
+    private static final int ANIM2_DURATION_MS = 1000; // 0.54 секунды
+    private static final int ANIM2_FRAME_HEIGHT = 1024; // 13312 / 13 ≈ 1024
+    private static final int ANIM3_FRAMES = 24;
+    private static final int ANIM3_DURATION_MS = 1000; // Предполагаем 1 секунду, измени если нужно
+    private static final int ANIM3_FRAME_HEIGHT = 512; // Каждый кадр 512x512
 
-    // Максимальное число подкнопок в каждой группе (по индексу группы)
-    private static final int[] GROUP_LIMITS = {5, 2, 1, 3, 2};
+    // Настройки групп и кнопок
+    public static final int[] GROUP_LIMITS = {5, 2, 1, 3, 2}; // сколько подкнопок в каждой группе
+    private static final int START_X = 380; // начальная позиция X для первой группы
+    private static final int START_Y = 100; // начальная позиция Y для первой группы
+    private static final int BUTTON_WIDTH = 200; // ширина кнопки
+    private static final int BUTTON_HEIGHT = 40; // высота кнопки
+    private static final int SUBBUTTON_VERTICAL_SPACING = 39; // вертикальный отступ между подкнопками
+    private static final int GROUP_VERTICAL_SPACING = 10; // отступ между группами
 
-    // --------------------- Поля класса ---------------------
-    private final Component title; // Заголовок экрана
+    private final Component title; // заголовок экрана
+    private final List<ButtonGroup> groups = new ArrayList<>(); // список всех групп
+    private final List<Integer> progressPercentPerButton = new ArrayList<>(); // прогресс для каждой подкнопки
+    private final List<Integer> progressPercentPerGroup = new ArrayList<>(); // прогресс для каждой группы
+    private final List<Boolean> groupOpenStates = new ArrayList<>(); // состояния открытости групп
 
-    // Список всех групп кнопок на экране
-    private final List<ButtonGroup> groups = new ArrayList<>();
-
-    // Списки для хранения прогресса каждой подкнопки и группы
-    private final List<Integer> progressPercentPerButton = new ArrayList<>();
-    private final List<Integer> progressPercentPerGroup = new ArrayList<>();
-
-    // Состояния открытости групп для запоминания между вызовами
-    private final List<Boolean> groupOpenStates = new ArrayList<>();
-
-    // --------------------- Конструктор ---------------------
     public MyCustomScreen(Component title) {
         super(title);
         this.title = title;
+        this.animStartTime = System.currentTimeMillis();
     }
 
-    // --------------------- Инициализация — создаём группы и кнопки ---------------------
     @Override
     protected void init() {
         groups.clear();
         progressPercentPerButton.clear();
         progressPercentPerGroup.clear();
+        phase = Phase.ANIM1;
+        animStartTime = System.currentTimeMillis();
+    }
 
-        if (!ClientQuestFile.exists()) {
-            return; // Если файл с квестами не загружен — ничего не создаём
-        }
+    private void initMainContent() {
+        if (!ClientQuestFile.exists()) return; // если нет файла с квестами — выходим
 
         ClientQuestFile file = ClientQuestFile.INSTANCE;
-        List<Chapter> allChapters = file.getAllChapters();
+        List<Chapter> allChapters = file.getAllChapters(); // получаем все главы
 
         int chapterIndex = 0;
         int currentY = START_Y;
 
-        // Создаём группы кнопок и подкнопки в каждой группе с названиями глав
+        // Создание групп и их подкнопок
         for (int groupNum = 0; groupNum < GROUP_LIMITS.length; groupNum++) {
             int limit = GROUP_LIMITS[groupNum];
             int remainingChapters = allChapters.size() - chapterIndex;
-            int subCount = Math.min(limit, remainingChapters);
+            int subCount = Math.min(limit, remainingChapters); // сколько подкнопок реально будет
 
-            createGroup(START_X, currentY, subCount, () -> true);
+            createGroup(START_X, currentY, subCount, groupNum); // создаем группу
             ButtonGroup group = groups.get(groups.size() - 1);
 
-            // Заполняем названия подкнопок названиями глав
+            // Подписываем подкнопки названиями глав
             for (int i = 0; i < subCount; i++) {
                 Chapter chapter = allChapters.get(chapterIndex);
                 group.subButtons.get(i).setMessage(Component.literal(chapter.getTitle().getString()));
                 chapterIndex++;
             }
 
-            progressPercentPerGroup.add(0); // Изначальный прогресс группы 0
-
-            currentY += 120; // Смещаем позицию для следующей группы
+            progressPercentPerGroup.add(0); // изначальный прогресс группы = 0
+            currentY += 120; // сдвигаем координату Y для следующей группы
         }
 
-        // Устанавливаем состояние открытия для групп по сохранённым значениям
+        // Установка состояния открытия групп
         for (int i = 0; i < groups.size(); i++) {
             boolean openState = i < groupOpenStates.size() ? groupOpenStates.get(i) : false;
             groups.get(i).setOpen(openState);
         }
 
-        recalcPositions();
+        recalcPositions(); // пересчитываем позиции всех кнопок
+
+        // Создание кнопки "Назад"
+        int backBtnWidth = 130;
+        int backBtnHeight = 18;
+        int backBtnX = (this.width - backBtnWidth) / 2 - 1;
+        int backBtnY = this.height - backBtnHeight - 66; // на 20 пикселей выше, чем было
+
+        Button backBtn = Button.builder(Component.literal("Назад"),
+                        b -> {
+                            Minecraft mc = Minecraft.getInstance();
+                            if (mc.player != null) {
+                                // открываем стандартный инвентарь игрока
+                                mc.setScreen(new net.minecraft.client.gui.screens.inventory.InventoryScreen(mc.player));
+                            }
+                        })
+                .pos(backBtnX, backBtnY)
+                .size(backBtnWidth, backBtnHeight)
+                .build();
+        this.addRenderableWidget(backBtn);
     }
 
-    // --------------------- Создаём группу кнопок ---------------------
-    private void createGroup(int x, int y, int subCount, BooleanSupplier visibleCondition) {
-        ButtonGroup group = new ButtonGroup(x, y, subCount, visibleCondition);
+    // Создание группы и её подкнопок
+    private void createGroup(int x, int y, int subCount, int groupIndex) {
+        ButtonGroup group = new ButtonGroup(x, y, subCount, () -> true, groupIndex);
         groups.add(group);
         group.addToScreen(this);
 
-        // Регистрируем прогресс каждой подкнопки как 0 по умолчанию
         for (int i = 0; i < subCount; i++) {
-            progressPercentPerButton.add(0);
+            progressPercentPerButton.add(0); // начальный прогресс каждой подкнопки
         }
     }
 
-    // --------------------- Пересчёт позиции Y для всех групп и подкнопок ---------------------
+    // Пересчет Y-позиций всех кнопок
     private void recalcPositions() {
         int y = START_Y;
-
         for (ButtonGroup g : groups) {
             g.setPositionY(y);
-
             int totalHeight = g.mainButton.getHeight();
-
             if (g.isOpen()) {
-                int subCount = g.getVisibleSubButtonsCount();
-                totalHeight += subCount * SUBBUTTON_VERTICAL_SPACING;
+                totalHeight += g.getVisibleSubButtonsCount() * SUBBUTTON_VERTICAL_SPACING;
             }
-
             y += totalHeight + GROUP_VERTICAL_SPACING;
         }
     }
 
-    // --------------------- Отрисовка экрана ---------------------
     @Override
     public void render(GuiGraphics graphics, int mouseX, int mouseY, float partialTicks) {
-        graphics.fill(0, 0, this.width, this.height, 0x80000000);
+        long currentTime = System.currentTimeMillis();
+        long elapsed = currentTime - animStartTime;
+        if (phase == Phase.ANIM1) {
+            this.renderBackground(graphics);
+            renderAnimation(graphics, ANIM1_TEXTURE, ANIM1_FRAMES, ANIM1_DURATION_MS, ANIM1_FRAME_HEIGHT);
+            if (elapsed >= ANIM1_DURATION_MS) {
+                phase = Phase.ANIM2;
+                animStartTime = currentTime;
+            }
+            return; // не рендерить дальше
+        } else if (phase == Phase.ANIM2) {
+            this.renderBackground(graphics);
+            renderAnimation(graphics, ANIM2_TEXTURE, ANIM2_FRAMES, ANIM2_DURATION_MS, ANIM2_FRAME_HEIGHT);
+            if (elapsed >= ANIM2_DURATION_MS) {
+                phase = Phase.ANIM3;
+                animStartTime = currentTime;
+            }
+            return;
+        } else if (phase == Phase.ANIM3) {
+            this.renderBackground(graphics);
+            renderAnimation(graphics, ANIM3_TEXTURE, ANIM3_FRAMES, ANIM3_DURATION_MS, ANIM3_FRAME_HEIGHT);
+            if (elapsed >= ANIM3_DURATION_MS) {
+                phase = Phase.MAIN;
+                initMainContent(); // инициализируем кнопки только после анимаций
+                animStartTime = currentTime;
+            }
+            return;
+        }
+        this.renderBackground(graphics); // фон экрана
         RenderSystem.setShaderTexture(0, BACKGROUND_TEXTURE);
 
-        int texWidth = 399;
-        int texHeight = 510;
-        float scale = 0.8f;
-        int scaledWidth = (int) (texWidth * scale);
-        int scaledHeight = (int) (texHeight * scale);
-        int baseX = (this.width - scaledWidth) / 2;
-        int baseY = (this.height - scaledHeight) / 2;
+        int texWidth = 512;
+        int texHeight = 512;
+        int baseX = (this.width - texWidth) / 2 + 40;
+        int baseY = (this.height - texHeight) / 2;
+        graphics.blit(BACKGROUND_TEXTURE, baseX, baseY, 0, 0, texWidth, texHeight, texWidth, texHeight); // отрисовка фона
 
-        graphics.pose().pushPose();
-        graphics.pose().translate(baseX, baseY, 0);
-        graphics.pose().scale(scale, scale, 1f);
-        graphics.blit(BACKGROUND_TEXTURE, 0, 0, 0, 0, texWidth, texHeight, texWidth, texHeight);
-        graphics.pose().popPose();
-
-        // Обновляем прогресс по квестам
-        updatePinnedQuestProgress();
-
-        int progressIndex = 0;
-
-        // Для каждой группы рисуем прогресс-бар и прогресс подкнопок
-        for (int groupIndex = 0; groupIndex < groups.size(); groupIndex++) {
-            ButtonGroup group = groups.get(groupIndex);
-
-            int groupProgress = progressPercentPerGroup.size() > groupIndex ? progressPercentPerGroup.get(groupIndex) : -1;
-            if (groupProgress >= 0) {
-                int key = findClosestProgressKey(groupProgress);
-                ResourceLocation texture = PROGRESS_TEXTURES.get(key);
-
-                if (texture != null) {
-                    RenderSystem.setShaderTexture(0, texture);
-
-                    int texX = group.mainButton.getX() + group.mainButton.getWidth() + 5;
-                    int texY = group.mainButton.getY() + (group.mainButton.getHeight() - 16) / 2;
-
-                    int width = 185;
-                    int height = 16;
-
-                    graphics.blit(texture, texX, texY, 0, 0, width, height, width, height);
-                }
-            }
-
-            for (TexturedButton subBtn : group.subButtons) {
-                if (progressIndex >= progressPercentPerButton.size()) break;
-
-                int percent = progressPercentPerButton.get(progressIndex);
-
-                if (percent >= 0) {
-                    int key = findClosestProgressKey(percent);
-                    ResourceLocation texture = PROGRESS_TEXTURES.get(key);
-
-                    if (texture != null) {
-                        RenderSystem.setShaderTexture(0, texture);
-
-                        int texX = subBtn.getX();
-                        int texY = subBtn.getY() - 17;
-
-                        int width = 185;
-                        int height = 16;
-
-                        graphics.blit(texture, texX, texY, 0, 0, width, height, width, height);
-                    }
-                }
-                progressIndex++;
-            }
-        }
-
-        // Отрисовываем все кнопки (super.render)
-        super.render(graphics, mouseX, mouseY, partialTicks);
+        updatePinnedQuestProgress(); // обновляем прогресс квестов
+        super.render(graphics, mouseX, mouseY, partialTicks); // рендер кнопок
     }
 
-    // --------------------- Поиск ближайшего ключа прогресса для отрисовки ---------------------
-    private int findClosestProgressKey(int percent) {
-        List<Integer> keys = new ArrayList<>(PROGRESS_TEXTURES.keySet());
-        Collections.sort(keys);
-
-        int result = 0;
-
-        for (int key : keys) {
-            if (key <= percent) {
-                result = key;
-            } else {
-                break;
-            }
-        }
-
-        return result;
-    }
-
-    // --------------------- Обновление прогресса по квестам (для отображения на кнопках) ---------------------
+    // Обновление прогресса всех подкнопок и групп
     private void updatePinnedQuestProgress() {
         if (!ClientQuestFile.exists()) {
             progressPercentPerButton.clear();
@@ -273,42 +223,23 @@ public class MyCustomScreen extends Screen {
         for (int groupIndex = 0; groupIndex < groups.size(); groupIndex++) {
             ButtonGroup group = groups.get(groupIndex);
 
-            // Если группа закрыта — ставим прогресс -1 (не отображать)
-            if (!group.isOpen()) {
-                for (int i = 0; i < group.subButtons.size(); i++) {
-                    setProgress(progressIndex, -1);
-                    progressIndex++;
-                    globalChapterIndex++;
-                }
-                setGroupProgress(groupIndex, -1);
-                continue;
-            }
-
             int groupSum = 0;
             int groupCount = 0;
 
-            for (int i = 0; i < group.subButtons.size(); i++) {
-                if (globalChapterIndex >= allChapters.size()) {
-                    setProgress(progressIndex, -1);
-                    progressIndex++;
-                    globalChapterIndex++;
-                    continue;
-                }
-
+            for (TexturedButton subBtn : group.subButtons) {
+                if (globalChapterIndex >= allChapters.size()) break;
                 Chapter chapter = allChapters.get(globalChapterIndex);
                 globalChapterIndex++;
 
                 int sum = 0, count = 0;
                 for (Quest quest : chapter.getQuests()) {
                     if (!data.canStartTasks(quest)) continue;
-
                     int prog = data.getRelativeProgress(quest);
-                    sum += prog >= 100 ? 100 : prog;
+                    sum += Math.min(prog, 100);
                     count++;
                 }
-
                 int progress = count > 0 ? sum / count : 0;
-                setProgress(progressIndex, progress);
+                setProgress(progressIndex, progress); // обновляем прогресс подкнопки
                 progressIndex++;
 
                 groupSum += progress;
@@ -316,223 +247,91 @@ public class MyCustomScreen extends Screen {
             }
 
             int groupProgress = groupCount > 0 ? groupSum / groupCount : 0;
-            setGroupProgress(groupIndex, groupProgress);
+            setGroupProgress(groupIndex, groupProgress); // обновляем прогресс группы
         }
     }
 
-    // --------------------- Установка прогресса подкнопки ---------------------
+    // Сеттер прогресса отдельной подкнопки
     private void setProgress(int index, int value) {
-        if (index >= progressPercentPerButton.size()) {
-            progressPercentPerButton.add(value);
-        } else {
-            progressPercentPerButton.set(index, value);
-        }
+        if (index >= progressPercentPerButton.size()) progressPercentPerButton.add(value);
+        else progressPercentPerButton.set(index, value);
     }
 
-    // --------------------- Установка прогресса группы ---------------------
+    // Сеттер прогресса группы
     private void setGroupProgress(int groupIndex, int value) {
-        while (progressPercentPerGroup.size() <= groupIndex) {
-            progressPercentPerGroup.add(0);
-        }
+        while (progressPercentPerGroup.size() <= groupIndex) progressPercentPerGroup.add(0);
         progressPercentPerGroup.set(groupIndex, value);
     }
 
     @Override
-    public boolean isPauseScreen() {
-        return false;
-    }
+    public boolean isPauseScreen() { return false; } // экран не ставит игру на паузу
 
-    // --------------------- Запоминание и установка состояния открытия группы ---------------------
-    private void setGroupOpenState(int index, boolean open) {
-        while (groupOpenStates.size() <= index) {
-            groupOpenStates.add(false);
-        }
-        groupOpenStates.set(index, open);
-    }
-
-    // --------------------- Вложенный класс для группы кнопок ---------------------
+    // Класс группы с основной кнопкой и подкнопками
     private class ButtonGroup {
-        private final TexturedButton mainButton;
-        private final List<TexturedButton> subButtons = new ArrayList<>();
-        private final BooleanSupplier visibleCondition;
-        private boolean open = false;
+        private final TexturedButton mainButton; // основная кнопка группы
+        private final List<TexturedButton> subButtons = new ArrayList<>(); // подкнопки
+        private final BooleanSupplier visibleCondition; // условие видимости подкнопок
+        private boolean open = false; // открыта ли группа
+        private final int groupIndex; // индекс группы
 
-        /**
-         * Создаёт группу с главной кнопкой и подкнопками.
-         * @param x позиция X
-         * @param y позиция Y
-         * @param subCount количество подкнопок
-         * @param visibleCondition условие видимости группы
-         */
-        ButtonGroup(int x, int y, int subCount, BooleanSupplier visibleCondition) {
+        ButtonGroup(int x, int y, int subCount, BooleanSupplier visibleCondition, int groupIndex) {
             this.visibleCondition = visibleCondition;
+            this.groupIndex = groupIndex;
 
-            // Главная кнопка, при нажатии переключает открытость группы
+            MutableComponent groupTitle = parseLegacyFormatting(GROUP_NAMES[groupIndex]);
             this.mainButton = new TexturedButton(
                     x, y, BUTTON_WIDTH, BUTTON_HEIGHT,
-                    Component.literal("Главная кнопка"),
-                    b -> {
-                        open = !open;
-                        ((TexturedButton) b).setOpen(open);
-                        updateVisibility();
-                        recalcPositions();
-
-                        int idx = groups.indexOf(this);
-                        if (idx >= 0) {
-                            setGroupOpenState(idx, open);
-                        }
-                    },
+                    groupTitle,
+                    b -> Minecraft.getInstance().setScreen(new GroupDetailScreen(
+                            parseLegacyFormatting(GROUP_NAMES[groupIndex]),  // Также парсим для заголовка экрана
+                            groupIndex
+                    )),
                     BUTTON_CLOSED,
                     BUTTON_OPEN,
                     BUTTON_LOCKED,
-                    0, 0, BUTTON_WIDTH, BUTTON_HEIGHT,
                     false
             );
 
-            // Создаём подкнопки с возможностью блокировки в зависимости от прогресса квестов
+            // Создаем подкнопки группы
             for (int i = 0; i < subCount; i++) {
-                boolean locked = false;
-
-                int thisGroupIndex = groups.size(); // индекс создаваемой группы после добавления
-                // Индекс группы кнопок (считается с 0)
-                boolean isFifthGroup = (thisGroupIndex == 4);  // 5-я группа (индекс 4)
-                boolean isFirstGroup = (thisGroupIndex == 0);  // 1-я группа (индекс 0)
-
-// Индексы подкнопок внутри группы
-                boolean isSecondSubButton = (i == 1); // вторая подкнопка (индекс 1)
-                boolean isThirdSubButton = (i == 2);  // третья подкнопка (индекс 2)
-
-                if (ClientQuestFile.exists()) {
-                    ClientQuestFile fil = ClientQuestFile.INSTANCE;
-                    TeamData data = fil.selfTeamData;
-                    List<Chapter> allChapter = fil.getAllChapters();
-
-                    // Пример 1: Блокировка второй кнопки 5-й группы, если не выполнен первый квест второй главы
-                    if (isFifthGroup && isSecondSubButton) {  // <-- тут проверяем группу и кнопку
-                        if (allChapter.size() > 1) {           // <-- 1 — индекс главы (вторая глава, т.к. с 0)
-                            Chapter secondChapter = allChapter.get(1);
-                            List<Quest> quests = secondChapter.getQuests();
-
-                            if (!quests.isEmpty()) {
-                                Quest firstQuest = quests.get(0);  // <-- 0 — первый квест в главе
-                                int firstQuestProgress = data.getRelativeProgress(firstQuest);
-
-                                if (firstQuestProgress < 100) {
-                                    locked = true;
-                                }
-                            }
-                        }
-                    }
-
-                    // Пример 2: Блокировка третьей кнопки 1-й группы, если не выполнены все квесты 4-й главы
-                    if (isFirstGroup && isThirdSubButton) {   // <-- группа 1, кнопка 3
-                        if (allChapter.size() > 3) {            // <-- 3 — индекс главы (4-я глава)
-                            Chapter fourthChapter = allChapter.get(3);
-                            List<Quest> quests = fourthChapter.getQuests();
-
-                            boolean allCompleted = true;
-                            for (Quest quest : quests) {
-                                if (data.getRelativeProgress(quest) < 100) {
-                                    allCompleted = false;
-                                    break;
-                                }
-                            }
-
-                            if (!allCompleted) {
-                                locked = true;
-                            }
-                        }
-                    }
-
-                    // Пример 3: Блокировка первой подкнопки 5-й группы, если не выполнен первый квест 3-й главы
-                    if (isFifthGroup && i == 0) {             // <-- группа 5, кнопка 1
-                        if (allChapter.size() > 2) {            // <-- 2 — индекс главы (3-я глава)
-                            Chapter thirdChapter = allChapter.get(2);
-                            List<Quest> quests = thirdChapter.getQuests();
-
-                            if (!quests.isEmpty()) {
-                                Quest firstQuest = quests.get(0);  // <-- 0 — первый квест в главе
-                                int firstQuestProgress = data.getRelativeProgress(firstQuest);
-
-                                if (firstQuestProgress < 100) {
-                                    locked = true;
-                                }
-                            }
-                        }
-                    }
-
-                }
-
-                final boolean lockedFinal = locked;
-
-                TexturedButton sub = new TexturedButton(
-                        x, y, BUTTON_WIDTH, BUTTON_HEIGHT,
+                TexturedButton sub = new TexturedButton(x, y, BUTTON_WIDTH, BUTTON_HEIGHT,
                         Component.literal("Подкнопка " + (i + 1)),
-                        btn -> {
-                            if (!lockedFinal) {
-                                if (ClientQuestFile.exists()) {
-                                    ClientQuestFile.openGui();
-                                }
-                            } else {
-                                Minecraft.getInstance().player.displayClientMessage(
-                                        Component.literal("Сначала нужно завершить необходимые квесты!"), true);
-                            }
-                        },
+                        btn -> {},
                         BUTTON_ICON,
                         BUTTON_ICON,
                         BUTTON_LOCKED,
-                        0, 0, BUTTON_WIDTH, BUTTON_HEIGHT,
-                        lockedFinal
+                        false
                 );
-                sub.visible = false;
+                sub.visible = false; // изначально скрываем
                 subButtons.add(sub);
             }
         }
 
         void addToScreen(MyCustomScreen screen) {
             screen.addRenderableWidget(mainButton);
-            subButtons.forEach(screen::addRenderableWidget);
+            subButtons.forEach(screen::addRenderableWidget); // добавляем все подкнопки на экран
         }
 
+        // Перемещает все кнопки группы по Y
         void setPositionY(int y) {
             mainButton.setY(y);
-
             int currentY = y + mainButton.getHeight() + 19;
-
             for (TexturedButton sub : subButtons) {
                 sub.setY(currentY);
                 currentY += SUBBUTTON_VERTICAL_SPACING;
             }
         }
 
-        void updateVisibility() {
-            if (!visibleCondition.getAsBoolean()) {
-                mainButton.visible = false;
-                subButtons.forEach(btn -> btn.visible = false);
-                return;
-            }
-
-            mainButton.visible = true;
-            for (TexturedButton sub : subButtons) {
-                sub.visible = open && visibleCondition.getAsBoolean();
-            }
-        }
-
+        // Сколько подкнопок видно
         int getVisibleSubButtonsCount() {
             return visibleCondition.getAsBoolean() && open ? subButtons.size() : 0;
         }
 
-        boolean isOpen() {
-            return open;
-        }
-
-        void setOpen(boolean open) {
-            this.open = open;
-            updateVisibility();
-        }
+        boolean isOpen() { return open; }
+        void setOpen(boolean open) { this.open = open; }
     }
 
-    // --------------------- Вложенный класс для кнопок с текстурами ---------------------
+    // Класс текстурированной кнопки
     private class TexturedButton extends Button {
         private final ResourceLocation textureClosed;
         private final ResourceLocation textureOpen;
@@ -543,45 +342,29 @@ public class MyCustomScreen extends Screen {
 
         public TexturedButton(int x, int y, int width, int height, Component title, OnPress onPress,
                               ResourceLocation textureClosed, ResourceLocation textureOpen, ResourceLocation textureLocked,
-                              int texX, int texY, int texWidth, int texHeight,
                               boolean locked) {
             super(x, y, width, height, title, onPress, DEFAULT_NARRATION);
             this.textureClosed = textureClosed;
             this.textureOpen = textureOpen;
             this.textureLocked = textureLocked;
             this.locked = locked;
-            this.active = !locked;
-        }
-
-        public void setOpen(boolean open) {
-            this.open = open;
-        }
-
-        public void setLocked(boolean locked) {
-            this.locked = locked;
-            this.active = !locked;
+            this.active = !locked; // кнопка активна, если не заблокирована
         }
 
         @Override
         public void renderWidget(GuiGraphics guiGraphics, int mouseX, int mouseY, float partialTicks) {
-            boolean hovered = this.isHoveredOrFocused();
-            float targetScale = hovered ? 1.05f : 1.0f;
-            scale += (targetScale - scale) * 0.2f;
+            boolean hovered = isHoveredOrFocused();
+            float targetScale = hovered ? 1.1f : 1f; // масштаб при наведении
+            scale += (targetScale - scale) * 0.2f; // плавное изменение масштаба
 
             guiGraphics.pose().pushPose();
             guiGraphics.pose().translate(this.getX() + this.width / 2f, this.getY() + this.height / 2f, 0);
             guiGraphics.pose().scale(scale, scale, 1f);
             guiGraphics.pose().translate(-this.width / 2f, -this.height / 2f, 0);
 
-            ResourceLocation tex;
-            if (locked) {
-                tex = textureLocked;
-            } else {
-                tex = open ? textureOpen : textureClosed;
-            }
-
+            ResourceLocation tex = locked ? textureLocked : (open ? textureOpen : textureClosed);
             RenderSystem.setShaderTexture(0, tex);
-            guiGraphics.blit(tex, 0, 0, 0, 0, this.width, this.height, this.width, this.height);
+            guiGraphics.blit(tex, 0, 0, 0, 0, this.width, this.height, this.width, this.height); // рисуем текстуру кнопки
 
             int textColor = this.active ? 0xFFFFFF : 0xA0A0A0;
             int textX = (this.width - Minecraft.getInstance().font.width(this.getMessage())) / 2;
@@ -590,5 +373,50 @@ public class MyCustomScreen extends Screen {
 
             guiGraphics.pose().popPose();
         }
+    }
+
+    private void renderAnimation(GuiGraphics graphics, ResourceLocation texture, int frames, int durationMs, int frameHeight) {
+        long elapsed = System.currentTimeMillis() - animStartTime;
+        int frame = (int) ((elapsed * frames) / durationMs);
+        frame = Math.min(frame, frames - 1);
+        int texWidth = 512;
+        int texHeight = frameHeight * frames;
+        int posX = Math.floorDiv(this.width - texWidth, 2) + 40;
+        int posY = Math.floorDiv(this.height - frameHeight, 2);
+
+        RenderSystem.setShaderTexture(0, texture);
+        graphics.blit(texture, posX, posY, 0, frame * frameHeight, texWidth, frameHeight, texWidth, texHeight);
+    }
+    private MutableComponent parseLegacyFormatting(String text) {
+        MutableComponent component = Component.literal("");
+        StringBuilder currentText = new StringBuilder();
+        Style currentStyle = Style.EMPTY;
+
+        for (int i = 0; i < text.length(); i++) {
+            char c = text.charAt(i);
+            if (c == '&' && i + 1 < text.length()) {
+                char code = text.charAt(i + 1);
+                ChatFormatting formatting = ChatFormatting.getByCode(code);
+                if (formatting != null) {
+                    if (!currentText.isEmpty()) {
+                        component.append(Component.literal(currentText.toString()).withStyle(currentStyle));
+                        currentText.setLength(0);
+                    }
+                    if (formatting == ChatFormatting.RESET) {
+                        currentStyle = Style.EMPTY;
+                    } else {
+                        currentStyle = currentStyle.applyFormat(formatting);
+                    }
+                    i++; // Пропустить код
+                    continue;
+                }
+            }
+            currentText.append(c);
+        }
+
+        if (!currentText.isEmpty()) {
+            component.append(Component.literal(currentText.toString()).withStyle(currentStyle));
+        }
+        return component;
     }
 }

@@ -1,25 +1,1708 @@
 {
+	autofocus_id: "0665FA417BEE2FCA"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "4E019C588A7FFFBB"
-	group: ""
-	id: "4E019C588A7FFFBB"
-	order_index: 6
-	quest_links: [ ]
-	quests: [{
-		id: "44EA42DA19551F2A"
-		tasks: [{
-			count: 2L
-			id: "0D5B784B145E3569"
-			item: {
-				Count: 2
-				id: "minecraft:oak_button"
-				tag: { }
+	filename: "796DBB5E0DAF13E2"
+	group: "18231DA5423D37EC"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
 			}
-			type: "item"
-		}]
-		x: -5.0d
-		y: -4.0d
-	}]
-	title: "раер"
+		}
+		id: "traveloptics:darkness_upgrade_smithing_template"
+	}
+	id: "796DBB5E0DAF13E2"
+	order_index: 3
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Ходят слухи, что &l&cМонарх Хаоса&r — эксперимент &lХранителя Пустоты&r, &4&lНезеритового Чудовища&r. "
+				""
+				"Об этом свидетельствуют его сходства с &l&7Визерами&r — тот же незеритовый металл, те же искривлённые чёрные кости."
+				""
+				"Но в нём есть то, чего нет у &l&7визеров&r — разум."
+				""
+				"Никто не знает, служит ли он &lХранителям Пустоты&r, или лишь использует их для чего-то &4&lбольшего&r. "
+				""
+				"Те, кто пережили встречу с ним, утверждают: он появляется у разных &9&lАпостолов,&r не как враг — как собеседник."
+				"О чём они разговаривают, или что пытается внушить Апостолам &l&cмонарх&r, никто не знает."
+			]
+			id: "3D38AAAC57B03905"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "297D93620962E4CA"
+				table_id: 3775554893811327201L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Разум — худшая форма искажения"
+			tasks: [{
+				entity: "soulsweapons:chaos_monarch"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:lord_soul_void"
+				}
+				id: "77E8F365EB21FD57"
+				title: "Убить &lМонарха Хаоса"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lЛицо Под Короной"
+			x: -6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["3D38AAAC57B03905"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "1725CC796766AD46"
+			rewards: [
+				{
+					id: "6DEAEEB2883F3765"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "417138C72AA9222B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "03A5C72AD3518319"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "30CB837F38295BBD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:corrupted_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lПовреждённое Око"
+				type: "item"
+			}]
+			title: "&#696969&lПовреждённое Око"
+			x: -5.5d
+			y: -4.0d
+		}
+		{
+			description: [
+				"Его знали как &l&6Ридара&r, Чемпиона Лунного Света. Сам &l&cИгнис&r даровал ему часть своей силы. "
+				""
+				"Он сражался за Преисподнюю, плечом к плечу с Железным Кованым — до того дня, когда всё изменилось."
+				""
+				"На великом &l&cбалу безумия&r в замке &l&cИгниса&r, &l&9Хранители Пустоты&r сломали Кованого. Ридар это видел. Он видел правду."
+				""
+				"Озверевший, искажённый, старый товарищ набросился на &l&6Ридара.&r"
+				""
+				"Ридар не стал сражаться. Он знал, что сражается не с врагом. Он просто принял участь."
+				""
+				"Но вместо смерти его ждала &l&9Пустота.&r Когда он вернулся — чемпиона больше не было."
+				""
+				"Остался лишь &l&6Падший Идол&r. Тот, кто не выбирал &l&9Тьму,&r но не смог её отвергнуть."
+			]
+			id: "1689BBA630D3D811"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0BBB7686AE7A1CCF"
+				table_id: 3775554893811327201L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Слава, не выдержавшая Пустоты"
+			tasks: [{
+				entity: "soulsweapons:moonknight"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:essence_of_eventide"
+				}
+				id: "74DC47BFF6A9AC3E"
+				title: "Убить &lПадшего Идола"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lПадший Чемпион"
+			x: -3.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["26CDE4514375F460"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "4D185C7B927FFAAF"
+			rewards: [
+				{
+					id: "46AA20E76A9E1E46"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "657DD73AB205601F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "75678D3D6D3A186F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "587E9F5F31577444"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:undead_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lОко Нежети"
+				type: "item"
+			}]
+			title: "&#F0FFF0&lОко Нежети"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			description: [
+				"&l&8Железный Кованный&r — древний солдат, выкованный по воле Хранителя Пустоты - &l&cкороля Игниса&r. "
+				""
+				"Когда-то он охранял Преисподнюю, но, &c&lкак говорят,&r утратил разум и стал угрозой самому миру."
+				""
+				"При изгнании он осмелился напасть на Игниса — и получил свою первую рану. &l&7Меч, вонзённый в спину, навсегда ослабил его броню в этом месте.&r"
+				""
+				"Теперь он спит среди пепла и ржавчины. Разбуди его — и либо добей, либо стань ещё одним в списке тех, &c&lкто пытался&r."
+			]
+			id: "26CDE4514375F460"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7F59824CB56090F0"
+				table_id: 8654339982230674867L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Он был создан, чтобы служить. Теперь он живёт, чтобы уничтожать."
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mowziesmobs:wrought_helmet"
+				}
+				id: "63026155F5F97668"
+				title: "Убить &lЖелезного кованого"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lКованый Забвением"
+			x: -5.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["1689BBA630D3D811"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "14AD88C880A01126"
+			rewards: [
+				{
+					id: "2F639CC9EF242BD9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "7036F06C9E207837"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "2A8BB0B06316559E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "16FFF0EF63F6C432"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:evil_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lЗловещее Око"
+				type: "item"
+			}]
+			title: "&#4169E1&lЗловещее Око"
+			x: -3.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0567BB5F5ED901CD"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "0D9216A391D9B5B5"
+			rewards: [
+				{
+					id: "3E22361B7C820261"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "03F35689073049C8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "5E52F6269E46BFC4"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "15D4A79089834CE6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:nether_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lОко Ада"
+				type: "item"
+			}]
+			title: "&#FF4500&lОко Ада"
+			x: -2.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["33D4CE8D6360EDB2"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "10988E410A4B04BB"
+			rewards: [
+				{
+					id: "550642804F6F502D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "7D1CFF50E62335E9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "6C147EA1B93910B3"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "1F0A25B47ECC3CDE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:old_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lСтаринное Око"
+				type: "item"
+			}]
+			title: "&#FFA500&lСтаринное Око"
+			x: -1.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["009D49E1812C91D4"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "688125FFBFDE099E"
+			rewards: [
+				{
+					id: "2CD9B12C89D31A33"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "22FEE0BA38AC2D3D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "6C313C45DB83A45A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "4BEACC5B53CADF48"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:rogue_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lОко Изгоя"
+				type: "item"
+			}]
+			title: "&l&2Око Изгоя"
+			x: -6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["2B5BC9B37F41BB4B"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "6480597424675696"
+			rewards: [
+				{
+					id: "5DE062392173C59A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "7DF080CD8B79E9C6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "0650B20EC4ACFDE5"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "3E12A1DDE844F3B3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:cryptic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lЗагадочное Око"
+				type: "item"
+			}]
+			title: "&#ADFF2F&lЗагадочное Око"
+			x: -5.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["71D4E121F37EDD49"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "05DF645B8CFEDDBA"
+			rewards: [
+				{
+					id: "10F2054A6238C0F1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "16C87D7DF60BB12C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "554532466BF24480"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "6ACCB469D426834E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:cursed_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lПроклятое Око"
+				type: "item"
+			}]
+			title: "&#8B008B&lПроклятое Око"
+			x: -4.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["2AA5779AB91A2A81"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "2B36A7407C3F0368"
+			rewards: [
+				{
+					id: "549AE125EBA9B2A8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "45524CEEB58FACF8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "73B1502C14C46592"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "13D4B02F42D07C87"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:guardian_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lОко Стража"
+				type: "item"
+			}]
+			title: "&#DB7093&lОко Стража"
+			x: -2.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["30B4FDBD72B78DC7"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "0BFE5A976A1A85E9"
+			rewards: [
+				{
+					id: "1B1A55BB39809E72"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "0411E622453E1E4B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "7A6C185FD48D3836"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "44F44C5B7F6AE6C4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:black_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lЧёрное Око"
+				type: "item"
+			}]
+			title: "&#000033&lЧёрное Око"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["13FEEBB12B84941E"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "01F22A3591FC8627"
+			rewards: [
+				{
+					id: "3C00FDC6D0ACFF95"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "216C5851AFEC08DC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "5046BAD8C6BF2BB9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "3E65AA89A3868C45"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:cold_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lЛедяное Око"
+				type: "item"
+			}]
+			title: "&#00FFFF&lЛедяное Око"
+			x: -1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0D0165A0E515775F"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "6D4A1307152E2098"
+			rewards: [
+				{
+					id: "1762826D46F5A643"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "400138AC1128AA0E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "690569D70C6D7B64"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "4A05311C55EDF703"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:magical_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lМагическое Око"
+				type: "item"
+			}]
+			title: "&#00CED1&lМагическое Око"
+			x: -1.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1F25014A24152641"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "15322BD3E540B123"
+			rewards: [
+				{
+					id: "3A0FFAFA4B6FDAE2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "787F5C542D071DE0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "35F35E62DE20F047"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "7A72B6731ECC682B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:lost_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lПотерянное Око"
+				type: "item"
+			}]
+			title: "&#FF0000&lПотерянное Око"
+			x: -6.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["64E424FB83532BC9"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "4CE14B840E00A5C7"
+			rewards: [
+				{
+					id: "50CD4EBB4630C897"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "27D0EF5D6B18C3F3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "23925306E35B830A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "589A12C0CA7379F0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:witch_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lОко Ведьмы"
+				type: "item"
+			}]
+			title: "&#FF00FF&lОко Ведьмы"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["19DE47D98FDAD177"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "19342AD4C7266BF6"
+			rewards: [
+				{
+					id: "3AF2FD56FA7FA59C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "2AFF450715DC0CE4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "414E5C5E85FE2E49"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "31243096F37F5583"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:exotic_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lЭкзотическое Око"
+				type: "item"
+			}]
+			title: "&l&#1E90FFЭкзотическо око"
+			x: -0.5d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&4&lAnni&r — один из Апостолов Тьмы, некогда равный по силе самому &3&lDevourer of Gods&r, великому пожирателю измерений. Жажда доказать своё превосходство толкнула его на безумный шаг — он попытался разорвать границу между &a&lВерхним миром&r и &4&lПреисподней&r."
+				""
+				"Ему &oпочти&r удалось. На координатах &l195, -60, -1330&r всё ещё пульсирует нестабильный портал — след его &4&lярости.&r Но Anni застрял посередине. Он не здесь и не там, погружён в сон и лишён былой мощи."
+				""
+				"Он не пробудится без &l&aжертвы&r. Какой — известно лишь тем, кто осмелится войти в его берлогу. Но знай: если ты разбудишь его — дороги назад не будет."
+			]
+			id: "71D4E121F37EDD49"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5AE41805721C6851"
+				table_id: 3775554893811327201L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Застрявший между мирами"
+			tasks: [{
+				advancement: "annihilation:nether/kill_annihilation"
+				criterion: ""
+				id: "7936B0E3AF8E01A0"
+				title: "Убить &lAnnihilation"
+				type: "advancement"
+			}]
+			title: "&lAnnihilation"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"&l&cПустынный Червь&r когда-то был стражем забытых руин, ползающим под барханами в поисках заблудших путников. Его челюсти перемалывали кости, а тело, покрытое чешуёй цвета песка, сливалось с бесконечными дюнами, где он подстерегал добычу в тишине раскалённого солнца. Но однажды его путь пересёкся с &l&6Древним Ревенантом,&r в той встрече Червь узрел видение &l&9Пустоты,&r её холодный зов и обещание вечной мощи, что пробудило в нём фанатичную преданность."
+				""
+				"Отныне &l&cПустынный Червь&r стал слугой Ревенанта, сея смерть среди тех, кто осмеливался ступить в священные пески без поклонения. Он рыщет по пустыне, поглощая неверных и их души, чтобы напитать &l&9Пустоту,&r которая шепчет ему о грядущем триумфе."
+			]
+			id: "33D4CE8D6360EDB2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1C21B44BF7E580EF"
+				table_id: 8654339982230674867L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Некоторые чудовища не сражаются. Они бегут."
+			tasks: [{
+				entity: "block_factorys_bosses:sandworm"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "block_factorys_bosses:sandworm_dart"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "34DE85835E525716"
+				title: "Убить &lПустынного червя"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lСтраж Песков"
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			description: [
+				"Когда &6&lДневной Сталкер&r и &9&lНочной Бродяга&r были запечатаны, &3&lКлауд&r был среди тех, кто создал гримуар. По приказу магического альянса — без причины, без суда. Лишь за кровь, которую они не выбирали."
+				""
+				"Чтобы удержать их, был заключён &l&4пакт:&r с каждым днём, проведенном в заточении, их силы будут расти. Но никто не верил, что они когда-либо вырвутся."
+				""
+				"Наблюдая с небес по своему обычаю за миром, он заметил как &l&dмолодая колдунья&r держит в руках артефакт,  напоминающий&l &4волшебную книгу.&r"
+				""
+				"Он увидел их лица. Он увидел их гнев. И тогда &l&3Клауд&r сбежал — поднялся в облака, надеясь исчезнуть с их глаз."
+				""
+				"Но там его ждал другой хранитель пустоты, одна из сильнейших - &l&bСцилла&r. Он был настолько напуган увиденным ранее, что не понял кто перед ним. &l&3Клауд&r пал перед ней на колени, моля о спасении от гнева братьев. Она прохохотала на всё небо, после чего превратила его в небесное &4&lчудовище&r."
+				""
+				"Теперь он — &l&3небесный голем&r, забывший, кем был. И чему стал причиной."
+			]
+			id: "0D0165A0E515775F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "76C092E80E421969"
+				table_id: 666194120002059103L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Выше, но не чище"
+			tasks: [{
+				entity: "legendary_monsters:dark_cloud_golem"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:soul_heart"
+				}
+				id: "3C7401A718EFA7DB"
+				title: "Убить &lCloud Golem"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lСтрах Высоты"
+			x: 0.5d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"6480597424675696"
+				"14AD88C880A01126"
+				"01F22A3591FC8627"
+				"6D4A1307152E2098"
+				"0D9216A391D9B5B5"
+				"4CE14B840E00A5C7"
+				"688125FFBFDE099E"
+				"4D185C7B927FFAAF"
+				"2B36A7407C3F0368"
+				"1725CC796766AD46"
+				"15322BD3E540B123"
+				"05DF645B8CFEDDBA"
+				"10988E410A4B04BB"
+				"0BFE5A976A1A85E9"
+				"19342AD4C7266BF6"
+				"1C140221243A7496"
+			]
+			description: [
+				"&l&#00FF7FЭнд&r — это не просто измерение. Это чистилище &l&9Пустоты&r, место, где покоится её первозданная сила. "
+				""
+				"Здесь Эндермены не просто странники — они напитаны &l&9Тьмой&r, становясь яростными, почти разумными."
+				""
+				"У самого входа стоит страж. Эндер Дракон, созданный не природой, а волей &l&9тех&r, кто хотел закрыть этот путь навсегда."
+				""
+				"Смертные &lне должны&r здесь находиться."
+				""
+				"Но если ты решишь войти — &#00FF7F&lназад дороги не будет.&r"
+			]
+			id: "0665FA417BEE2FCA"
+			min_required_dependencies: 12
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1DC59214EEB3A4A8"
+				table_id: 5881821770749687377L
+				type: "random"
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Последний день всей оставшейся жизни"
+			tasks: [{
+				dimension: "minecraft:the_end"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:end_portal_frame"
+				}
+				id: "21819CF4B825A9A6"
+				title: "Попасть в Энд"
+				type: "dimension"
+			}]
+			title: "&lКонец Начала"
+			x: -3.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["1A736D09ECFFB5D4"]
+			description: [
+				"Око Апостола, что хранит частичку силы &9&lпустоты.&r "
+				""
+				"Необходимо, чтобы открыть врата в &lкрай.&r"
+			]
+			id: "1C140221243A7496"
+			rewards: [
+				{
+					id: "611B15384F27D863"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:ancient_debris"
+					}
+					type: "item"
+				}
+				{
+					id: "783B5D97B83BC65B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond_block"
+					}
+					type: "item"
+				}
+				{
+					id: "1D338036D039EDB8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "4B4E514C142A9CE2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endrem:wither_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Получить &lОко Иссушителя"
+				type: "item"
+			}]
+			title: "&#D3D3D3&lОко Иссушителя"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"&d&lСапфира&r была не просто волшебницей — она понимала то, что другим казалось бессмыслицей. Когда она нашла &l&cгримуар,&r покрытый непереводимыми символами, она не отвернулась. Она прочла его."
+				""
+				"Там было имя - &l&kМаледиктус&r. Когда оно было произнесено, в этот мир вернулись &6&lДневной Сталкер&r и &9&lНочной Бродяга&r — существа, которых магия старается не вспоминать."
+				""
+				"&d&lСапфира&r не сломалась сразу. Она ещё долго держалась, пока разум медленно гнил изнутри. В последний момент, не желая полностью исчезнуть, она использовала &l&cгримуар&r вновь, запечатав свою душу."
+				""
+				"Теперь она — &lIvory Devil&r. Не остаток, не дух — &d&lискажённая&r версия самой себя, связанная с теми, кого не стоило возвращать."
+				""
+				"В её глазах больше нет воли. Только след от того, кто однажды знал &l&cслишком много&r."
+			]
+			id: "64E424FB83532BC9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1E29D2C2883A8E18"
+				table_id: 666194120002059103L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Слово, что было забыто, забрало её с собой."
+			tasks: [{
+				entity: "mokels_bossfight_saphyra:mothboss"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mokels_bossfight_saphyra:puppet_of_yiva_remembrance"
+				}
+				id: "4E11CE9308490B1A"
+				title: "Убить &lIvory Devil"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lОсколки Имени"
+			x: -7.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"&7&lВизер&r — продукт. Орудие. Рабочий материал."
+				""
+				"Их собирает &4&lНезеритовое Чудовище&r — Хранитель Пустоты, выковавший себе трон из черепов и незерита, живущий по соседству с &l&cИгнисом,&r но не по его воле. Собирает он их по чертежам &l&7Предвестника&r - хранитель, что является стратегическим центром пустоты."
+				""
+				"У Чудища своя задача: поставлять Визеров в другие измерения, чтобы они несли пустоту везде."
+				""
+				"У &l&7Визера&r нет имени, нет воли, нет страха. Только цель — сражаться, разрушать, опустошать."
+				""
+				"&l&7Визера&r нельзя встретить. Его нужно собрать, также как это делает само &l&4Чудище.&r"
+				""
+				"Тот, кто решится это сделать, открывает дверь &l&cПустоте&r — и становится частью её воли."
+				""
+				"Будь осторожен. Они гораздо сильнее, чем когда-то."
+			]
+			id: "1A736D09ECFFB5D4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "522A2FC2D5F99E29"
+				table_id: 8654339982230674867L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Созданный пустотой"
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:nether_star"
+				}
+				id: "70814A55DF92CACC"
+				title: "Убить &lВизера"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lПыль и Пустота"
+			x: -3.5d
+			y: 2.5d
+		}
+		{
+			description: [
+				"&5&lКорнелия&r — капитан ледяного сопротивления, некогда осмелившаяся бросить вызов Носителям Пустоты. В битве с &l&#00FA9AСигнусом&r её предал союзник — &b&lЛедочрев."
+				""
+				"Сигнус не пощадил её. Корнелия была заточена в &5&lпризрачной форме&r, её народ ушел под воду, а сама она осталась — скованная между смертью и долгом."
+				""
+				"Но дух её спит не вечно. Ходят легенды, что в остатках её королевства можно найти &l&5горн,&r что остался на месте падения. Тогда она придёт. Без слов, без жалости — только с &l&#00FA9Aхолодом,&r что не отпускает."
+			]
+			id: "30B4FDBD72B78DC7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20E0D0127BFB807F"
+				table_id: 3775554893811327201L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Преданная в жизни. Закована в смерти."
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aquamirae:shell_horn"
+				}
+				id: "085679DECD3DCA37"
+				title: "Убить &lПризрака капитана Корнелии"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lПоследняя Зима Корнелии"
+			x: 0.5d
+			y: -3.5d
+		}
+		{
+			description: [
+				"В &l&0бездне,&r где свет не проходит сквозь толщу воды, живёт &l&#00FFFFАпостол&r, когда-то носивший имя, от которого дрожали моря. "
+				""
+				"Сейчас о нём &l&5забыли&r. Осталась только кличка, данная выжившими — &l&#00FFFFХаллбрейкер&r."
+				""
+				"Он заключил сделку с &l&5Левиафаном,&r Носителем Пустоты и повелителем морей. В чем заключалась сделка, никто не знает, но ходят слухи, что она выгодна им обоим."
+				""
+				"Сотни кораблей лежат в его логове, погребённые в глубине. И если ты осмелишься нырнуть туда — лучше молись, чтобы он &0&lне заметил тебя первым&r."
+			]
+			id: "19DE47D98FDAD177"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41B39186263CA396"
+				table_id: 666194120002059103L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Где вода не двигается."
+			tasks: [{
+				entity: "alexscaves:hullbreaker"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:immortal_embryo"
+				}
+				id: "31BFF96C18F14802"
+				title: "Убить &lКораблекрушителя"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lДолг Перед Бездной"
+			x: 1.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"В решающей битве сопротивление давило &l&#00FA9AСигнуса&r и его холодные тюрьмы. Победа казалась близкой — но не для всех."
+				""
+				"&b&lЛедочрев&r выбрал другой путь. Он тайно заключил сделку: предать &d&lКорнелию&r — в обмен на жизнь и частицу силы Пустоты, обещанную духом."
+				""
+				"&l&#00FA9AСигнус&r принял предательство… и высмеял его. Он просто выкинул его."
+				""
+				"&b&lЛедочрев&r не выдержал. Вина разъела его разум, и искажённая Тьмой энергия разрушила его плоть. Он утратил облик человека и стал чудовищем, сбежав из преданных руин."
+				""
+				"На тех, кто осмелится приблизиться, он обрушивается &l&bморозным криком,&r полным боли, предательства и того, что осталось от его рассудка."
+			]
+			id: "13FEEBB12B84941E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0A3C7B10AB0621D8"
+				table_id: 8654339982230674867L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Последний, кто ушёл"
+			tasks: [{
+				entity: "mowziesmobs:frostmaw"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mowziesmobs:ice_crystal"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "6B058F031FFE1413"
+				title: "Убить &lЛедочрева"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lИзлом Льда"
+			x: -0.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Когда &9&lХранители Пустоты&r начали свою экспансию, владыка преисподней &l&cИгнис&r протянул руку &l&4Люкстрактозавру,&r чья сила была и остается близкой к их собственной."
+				""
+				"Он предложил ему власть, вечную жизнь, господство в измерении, которое полностью &l&4принадлежит&r им."
+				""
+				"&l&4Люкстрактозавр&r выслушал — и отказался."
+				""
+				"Никто не понимает истинной причины, из-за которой &4&lКолосс&r отказался. Выглядело так, будто это была &lне его воля.&r"
+				""
+				"Игнис попытался сломать его силой. Оставил рану, но не победил. Теперь Люкстрактозавр скрыт в &l&4жерле древнего вулкана&r, в самом сердце &l&6первородных пещер&r."
+				""
+				"Он дремлет. Но дыхание его до сих пор раскалывает скалы."
+				"И если ты осмелишься его разбудить — помни: он отказал даже &l&9Пустоте.&r"
+			]
+			id: "0567BB5F5ED901CD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6127B7FD8970FF16"
+				table_id: 3775554893811327201L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Он слышал зов — и отвернулся"
+			tasks: [{
+				entity: "alexscaves:luxtructosaurus"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:tectonic_shard"
+				}
+				id: "4F949E4A93A586DC"
+				title: "Убить &lЛюкстрактозавра"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lОдинокий Колосс"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			description: [
+				"Во времена, когда &l&9Пустота&r ещё молчала, &c&lВарен'Таал&r уверенно правил &l&aВерхним миром&r. "
+				""
+				"Но однажды родились &lбратья &6дня&r и &l&9ночи,&r и он узнал о крови, способной изменить само понимание силы."
+				""
+				"Он приказал запечатать их. Но сам — не удержался. До заточения он сохранил &l&cфлакон с их кровью&r. Из желания стать чем-то большим."
+				""
+				"Спустя время, когда пришло время передать трон, он попробовал её. Его тело не выдержало. Его душа — растворилась."
+				""
+				"Теперь он &c&lМёртвый король&r. Погасший Апостол, живущий в катакомбах под землями, которыми однажды он правил. "
+				""
+				"Лишь оболочка, хранящая &l&cошибку,&r которую он совершил последним своим приказом."
+			]
+			id: "2B5BC9B37F41BB4B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6FA9746434D50775"
+				table_id: 666194120002059103L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Сила не прощает любопытства"
+			tasks: [{
+				entity: "irons_spellbooks:dead_king"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "born_in_chaos_v1:death_totem"
+				}
+				id: "2E6234AEEB43DDB0"
+				title: "Убить &lМёртвого короля"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lКровь Без Власти"
+			x: -6.5d
+			y: 1.0d
+		}
+		{
+			description: [
+				"Бывший &e&lстраж&r &d&lСапфиры,&r её друг и спутник с юности. Он защищал её, даже когда она в том не нуждалась."
+				""
+				"Когда были пробуждены&l братья &6дня&r и &9&lночи&r, он, по привычке, встал между ней и угрозой. Но в её взгляде не было страха — только &l&dпонимание.&r Она не собиралась бороться."
+				""
+				"Сдавшись, он был готов &l&9умереть.&r"
+				""
+				"Но вместо смерти его ждало заточение."
+				"Теперь его душа скована в церкви, где когда-то начиналась их история. Он стал &l&eстражем,&r вечно стоящим на пути тех, кто осмелится приблизиться &d&lк ней&r."
+			]
+			id: "1F25014A24152641"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "282F767E8BCDD713"
+				table_id: 666194120002059103L
+				type: "random"
+			}]
+			shape: "hexagon"
+			subtitle: "Верность сильнее воли"
+			tasks: [{
+				entity: "mokels_bossfight_saphyra:nameless"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mokels_bossfight_saphyra:nameless_gatekeeper_remembrance"
+				}
+				id: "37E01FEB00F62882"
+				title: "Убить &lNameless Gatekeeper"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lПеред Нею"
+			x: -8.0d
+			y: -2.0d
+		}
+		{
+			description: [
+				"&l&4Рыцарь Преисподней&r когда-то был элитным воином в свите Варен'Таала, служа ему правдой и верностью. Однажды к королевству пришёл дерзкий &l&cпарень,&r который решил сразиться с великими воинами королевства. Увидев в нем невероятный потенциал, он хотел лично с ним сразиться, однако, его сила была слишком далека по сравнению с тем, кто будто сиял в битве."
+				""
+				"Когда парень ушел, он решил проследить за ним. В одной из таких тайных вылозок, он стал свидетелем ужасного. Услышав слова &l&9\"Жертвую\",&r последнее что увидел рыцарь - пламенный взрыв, что выжег гектары вокруг. &l&cИгнис,&r увидев его, предложил ему жизнь в обмен на вечное служение."
+				""
+				"Теперь &l&cРыцарь Преисподней&r бродит по раскалённым подземным коридорам, его доспехи, пропитанные инфернальным огнем, сияют адским блеском. Он истребляет всех, кто осмеливается вторгнуться в домен &l&cИгниса,&r разя врагов пылающим мечом, который оставляет шрамы из чистого пламени. "
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestial_artifacts:evil_eye"
+			}
+			id: "2AA5779AB91A2A81"
+			subtitle: "Не в том месте, не в то время"
+			tasks: [{
+				entity: "block_factorys_bosses:underworld_knight"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:evil_eye"
+				}
+				id: "26908AA8AA376DD9"
+				title: "Убить Рыцаря Преисподнии"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lВерный Клинок Огненного Короля"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			description: [
+				"&l&cИнфернальный Дракон&r — потомок великих драконов огня, что правили миром в эпоху трёх стихий, сжигая города в неукротимом гневе. Когда люди под предводительством короля Варен’Таала свергли их, &l&9Хранители Пустоты&r пощадили немногих выживших, затаившихся в глубинах преисподней, где их чешуя напиталась лавой и яростью. Там дракон столкнулся с &l&cНезеритовым чудовищем,&r которое шептало о возвращении былой силы драконов, о возрождении их величия, обещая союз с &l&9Пустотой&r как ключ к мести."
+				""
+				"Но обещание было обманом: чудовище проглотило дракона, исказив его сущность осколком пустоты и сделав приспешником Пустоты. Теперь &l&cИнфернальный Дракон&r парит над вулканическими разломами, извергая потоки огня, смешанного с тенями Пустоты, что испепеляют всё живое."
+			]
+			id: "009D49E1812C91D4"
+			tasks: [{
+				entity: "block_factorys_bosses:infernal_dragon"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:dragonscale_green"
+				}
+				id: "61BF161FB9900E3A"
+				title: "Убить Инфернального Дракона"
+				type: "kill"
+				value: 1L
+			}]
+			title: "Пламенный Вестник Преисподней"
+			x: -7.5d
+			y: -0.5d
+		}
+	]
+	title: "Блюстители врат"
 }

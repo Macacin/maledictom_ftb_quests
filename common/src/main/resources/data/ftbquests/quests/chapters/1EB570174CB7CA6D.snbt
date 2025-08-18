@@ -1,21 +1,7611 @@
 {
+	autofocus_id: "16BBA7F38AD3276F"
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "1EB570174CB7CA6D"
-	group: ""
-	id: "1EB570174CB7CA6D"
-	order_index: 11
+	filename: "371340844CE1C4B4"
+	group: "18231DA5423D37EC"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "artifacts:running_shoes"
+	}
+	id: "371340844CE1C4B4"
+	order_index: 0
+	progression_mode: "flexible"
 	quest_links: [ ]
-	quests: [{
-		id: "00E1A229D7CD0C6E"
-		tasks: [{
-			dimension: "minecraft:overworld"
-			id: "27A134B928CE3B85"
-			optional_task: true
-			type: "dimension"
-		}]
-		x: -6.0d
-		y: -1.5d
-	}]
-	title: "пно"
+	quests: [
+		{
+			description: [
+				"С чего начинается путь любого выжившего? С простого — верстака."
+				"Он станет основой всего: инструментов, брони, оружия и даже древних ритуалов."
+				""
+				"Собери немного дерева и сделай верстак. Это твоя первая ступень к выживанию."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:crafting_table"
+			}
+			id: "16BBA7F38AD3276F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E87A6736E8C9EDB"
+					table_id: 7649650945532266025L
+					type: "random"
+				}
+				{
+					id: "689942826F5B1EE5"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "diamond"
+			size: 2.5d
+			tasks: [{
+				id: "058785F9A12E3A13"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:crafting_table"
+				}
+				title: "&fСделать &lВерстак"
+				type: "item"
+			}]
+			title: "&6&lПервый шаг"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0B88D6BE9666CA4E"]
+			description: [
+				"&l&bЗачарование&r — один из самых простых способов усилить снаряжение. "
+				""
+				"Поставь &l&bчародейский стол&r и обложи его книжными полками."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:enchanting_table"
+			}
+			id: "2B4ECB393AEC327D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7AD08E6101A2DF48"
+					table_id: 7649650945532266025L
+					type: "random"
+				}
+				{
+					id: "0AAA831155E9B321"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					id: "72DA49013D2515BF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:enchanting_table"
+					}
+					title: "&fСоздать &b&lЧародейский Стол"
+					type: "item"
+				}
+				{
+					count: 15L
+					id: "4EACB34E4891A2F4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(minecraft:bookshelf)item(quark:spruce_bookshelf)item(quark:birch_bookshelf)item(quark:jungle_bookshelf)item(quark:acacia_bookshelf)item(quark:dark_oak_bookshelf)item(quark:crimson_bookshelf)item(quark:warped_bookshelf)item(quark:mangrove_bookshelf)item(quark:bamboo_bookshelf)item(quark:cherry_bookshelf)item(quark:blossom_bookshelf)item(quark:azalea_bookshelf)item(quark:ancient_bookshelf)item(biomeswevegone:aspen_bookshelf)item(biomeswevegone:zelkova_bookshelf)item(biomeswevegone:witch_hazel_bookshelf)item(biomeswevegone:willow_bookshelf)item(biomeswevegone:white_mangrove_bookshelf)item(biomeswevegone:skyris_bookshelf)item(biomeswevegone:sakura_bookshelf)item(biomeswevegone:redwood_bookshelf)item(biomeswevegone:rainbow_eucalyptus_bookshelf))"
+						}
+					}
+					title: "&fСделать &l15х Книжных Полок"
+					type: "item"
+				}
+			]
+			title: "Магия под рукой"
+			x: 1.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"Тот, кто ступает в глубины &l&#2E8B57Древнего Города,&r быстро понимает — здесь нельзя шуметь. Каждый шаг, каждый вздох — может быть последним."
+				""
+				"Ты уже почувствовал это. Первый раз замер. Первый раз услышал, как земля отвечает эхом."
+				""
+				"Это только начало."
+				""
+				"Впереди — &l&#2E8B57тот, кто слушает.&r"
+			]
+			id: "5D8D38C14F3FEBC8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "74FCE879F9DBBE5D"
+					table_id: 7649650945532266025L
+					type: "random"
+				}
+				{
+					id: "23E17FCF8A0BB0CA"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				advancement: "minecraft:adventure/avoid_vibration"
+				criterion: ""
+				id: "1DE1807AF4337A19"
+				title: "Активировать &l&#2E8B57Скалковый Сенсор&r"
+				type: "advancement"
+			}]
+			title: "&l&#2E8B57Первый звук"
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			hide_dependency_lines: true
+			id: "533739922C990872"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5ACA063C64599B75"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "realmrpg_skeletons:basic_skeleton"
+				}
+				id: "3EFA65EB37150BE4"
+				stat: "minecraft:deaths"
+				title: "Умереть 99 раз"
+				type: "stat"
+				value: 99
+			}]
+			title: "Mini Sasa"
+			x: 7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["533739922C990872"]
+			id: "20D6452A9BE5761E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55307BA762304BEA"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "realmrpg_skeletons:cactus_skeleton"
+				}
+				id: "6A495CC8232274F0"
+				stat: "minecraft:deaths"
+				title: "Умереть 499 раз"
+				type: "stat"
+				value: 499
+			}]
+			title: "Базовый фидак"
+			x: 8.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["20D6452A9BE5761E"]
+			id: "06DC80FD7D143998"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1468D97733C4864B"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "realmrpg_skeletons:acrobat_skeleton"
+				}
+				id: "7E06DB70BD2A24B8"
+				stat: "minecraft:deaths"
+				title: "Умереть 999 раз"
+				type: "stat"
+				value: 999
+			}]
+			title: "P O Я K A"
+			x: 10.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			hide_dependency_lines: true
+			id: "4D738C15EC411014"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3E04274A145E6383"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:blood_vial"
+				}
+				id: "6F43205534A3D4D1"
+				stat: "minecraft:player_kills"
+				title: "Убить 99 игроков"
+				type: "stat"
+				value: 99
+			}]
+			title: "Багдон Вялов"
+			x: -7.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4D738C15EC411014"]
+			id: "38E11BF316D99092"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5F4DEC99A535F4A2"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:demon_heart"
+				}
+				id: "227D571BB876D2D5"
+				stat: "minecraft:player_kills"
+				title: "Убить 499 игроков"
+				type: "stat"
+				value: 499
+			}]
+			title: "Папич"
+			x: -8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["38E11BF316D99092"]
+			id: "3987E3CBC521B55B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "472C3982330FAE67"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:skeleton_skull"
+				}
+				id: "06D402DBF5ECF01A"
+				stat: "minecraft:player_kills"
+				title: "Убить 999 игроков"
+				type: "stat"
+				value: 999
+			}]
+			title: "anti poЯka"
+			x: -10.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"В холодных океанах можно наткнуться на &l&bогромный ледяной биом&r — настоящий лабиринт из льдин, айсбергов и замёрзших руин."
+				""
+				"Главное, что ты должен найти — &lshelter.&r С виду он похож на замёрзший &l&o&bколодец,&r но под ним скрывается большое подземное убежище."
+				""
+				"Осмотрись внимательно. В этих местах легко заблудиться, а еще проще встретить смерть. Однако сокровища, что скрываются внутри, &lневероятно &6ценные&r&r."
+			]
+			id: "414EB49236E175F9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7529BB1AD6747571"
+					table_id: 817657101621025590L
+					type: "random"
+				}
+				{
+					id: "27941EBED406A225"
+					type: "xp"
+					xp: 50
+				}
+			]
+			size: 1.15d
+			tasks: [{
+				advancement: "aquamirae:adventure/find_ice_maze"
+				criterion: ""
+				id: "387E5235A980C800"
+				title: "Найти &b&lЛедяной лабиринт"
+				type: "advancement"
+			}]
+			title: "&l&bЛабиринт Льда"
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["414EB49236E175F9"]
+			description: [
+				"Среди обломков замёрзших кораблей иногда можно найти странные осколки —&b&l&o эхо прошлого&r."
+				""
+				"Эхо хранит в себе память &l&6прошлого&r с частиками &l&9бездны,&r в которую погрузилось сопротивление."
+				""
+				"Собери 8 таких эхо в ледяном лабиринте. Обычно они прячутся в сундуках на борту разбитых судов и построек, охраняемые некогда жителями великого сопротивления."
+				""
+				"Будь осторожен — не все корабли безжизненны.&f"
+			]
+			id: "53844313C0625B37"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A08CF7568AC09D7"
+					table_id: 817657101621025590L
+					type: "random"
+				}
+				{
+					id: "1629D42ECB32D156"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "2BAB1274935EB942"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aquamirae:ship_graveyard_echo"
+				}
+				title: "&fЗаполучить &l&b8х Эхо кладбища кораблей"
+				type: "item"
+			}]
+			title: "&l&bЭхо Льда"
+			x: 4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53844313C0625B37"]
+			description: [
+				"&l&bЭхо кораблей&r — не просто трофеи. Из них можно создать редкий ресурс — &l&dаметист бездны.&r"
+				""
+				"Эти кристаллы используются во множестве продвинутых рецептов: от &oзачарованных предметов&r до &oтаинственных механизмов&r."
+				""
+				"Поверь понадобится тебе их много, а &l&bэхо&r -&l не бесконечно&r."
+			]
+			id: "577B0BE554C8251B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E666DC8A2390782"
+					table_id: 817657101621025590L
+					type: "random"
+				}
+				{
+					id: "6748F7089239AB39"
+					type: "xp"
+					xp: 70
+				}
+			]
+			shape: "diamond"
+			size: 1.3d
+			tasks: [{
+				count: 4L
+				id: "67BACEDDEF9DD242"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aquamirae:abyssal_amethyst"
+				}
+				title: "&fСоздать &l&d4х Аметист Бездны"
+				type: "item"
+			}]
+			title: "&l&dАметист глубин"
+			x: 6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["09BFB24D4EBD7839"]
+			description: [
+				"&l&dАметисты глубин&r — не только редкий ресурс. Из них можно создать особое оружие."
+				""
+				"Каждое по-своему &l&4опасно.&r Каждое несёт в себе след &lглубин.&r"
+				""
+				"Скуй их всех — и услышь, как &l&9Бездна&r говорит с тобой."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "aquamirae:divider"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4943F0A37A3E5610"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "521F1B3E82AD9D1C"
+					table_id: 5677960401788075893L
+					type: "random"
+				}
+				{
+					id: "6DB1AE1969C97093"
+					type: "xp"
+					xp: 300
+				}
+			]
+			subtitle: "Они не просто режут — они шепчут."
+			tasks: [
+				{
+					id: "781A5F7A5BE3173A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "aquamirae:divider"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "67FCF9138F05A469"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "aquamirae:whisper_of_the_abyss"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0845AF8E26301C07"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "aquamirae:coral_lance"
+						tag: {
+							Damage: 0
+							Enchantments: [{
+								id: "minecraft:unbreaking"
+								lvl: 4s
+							}]
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&l&#BA55D3Оружие из бездны"
+			x: 9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["577B0BE554C8251B"]
+			description: [
+				"На кораблях в ледяном лабиринте можно найти необычный предмет — &9&lГорн-Ракушку&r. Он выпадает с главарей разбойников, что обитают на борту."
+				""
+				"Это не просто мародёры. Когда-то они были частью &lдревнего сопротивления&r. Теперь — обезумевшие пленники &l&bльда и безумия&r."
+				""
+				"Горн нужен, чтобы призвать &l&dКорнелию&r — их бывшую лидершу. Призыв работает только в этом биоме."
+				""
+				"Если ничего не происходит — попробуй побегать по биому, она появляется не везде."
+			]
+			id: "09BFB24D4EBD7839"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59FE422D1149163E"
+					table_id: 817657101621025590L
+					type: "random"
+				}
+				{
+					id: "198A820358C71202"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "77FC1F27A0B85757"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aquamirae:shell_horn"
+				}
+				title: "&fНайти &lГорн-Ракушку"
+				type: "item"
+			}]
+			title: "Горн Прошлого"
+			x: 7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4E9B6FD9DAF59517"]
+			description: [
+				"Говорят, когда-то этим угощали &l&5Левиафана.&r Или тех, кто осмеливался говорить с ним."
+				""
+				"Эта еда стоит дорого. Но даёт &l&oбольше,&r чем просто сытость."
+				""
+				"Собери редкие ингредиенты и создай &l&5Завтрак Посейдона.&r"
+			]
+			id: "6E6BCBF99CC29140"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E11F40582E30460"
+					table_id: 5677960401788075893L
+					type: "random"
+				}
+				{
+					id: "63FADA0A2D4E76B5"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "611C8F6158A886CE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aquamirae:poseidons_breakfast"
+				}
+				title: "&fСделать &#DA70D6&lЗавтрак Посейдона"
+				type: "item"
+			}]
+			title: "&#DA70D6&lЗавтрак Чемпиона"
+			x: 10.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4E9B6FD9DAF59517"]
+			description: [
+				"Эта броня создаётся из &l&5редких ресурсов глубин&r и даёт сильные эффекты."
+				""
+				"Носи её, чтобы получить уникальные усиления."
+				""
+				"Создай полный комплект брони Ослепляющей Бездны. Может показаться, что она стоит дорого - но чинить ее еще дороже..."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "aquamirae:abyssal_brigantine"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "623B86F016682FE6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3C013290BC9DF18D"
+					table_id: 5677960401788075893L
+					type: "random"
+				}
+				{
+					id: "261DEB21DE017E5A"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "003226249F02CE4F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "aquamirae:abyssal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4AB910D53CC24FE2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "aquamirae:abyssal_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2188163B5CDDC518"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "aquamirae:abyssal_brigantine"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5B8C7F942F66FBBC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "aquamirae:abyssal_heaume"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&#DA70D6&lОслепляя Бездной"
+			x: 10.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4DB86F396D32CEE5"]
+			description: [
+				"&l&#BA55D3Небесное ядро&r — это высокоуровневый компонент, созданный из редчайших ресурсов."
+				"Его крафт не из простых, но и вещи, к которым оно ведёт — далеко не обычные."
+				""
+				"&l&#BA55D3Ядро&r используется в создании небесного незерита, продвинутой экипировки и артефактов."
+				"Без него ты не поднимешься выше."
+				""
+				"Приготовься, тебе понадобится много ядер."
+			]
+			id: "0A13EB77432A4769"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4B9907265D7212A2"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "75A8A10ED87601F5"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "1AF6A33FBB37B29F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestisynth:celestial_core"
+				}
+				title: "&fСоздать &l&#BA55D3Небесное Ядро"
+				type: "item"
+			}]
+			title: "&l&#BA55D3Небесное Ядро"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["199FF0A9B5B27B78"]
+			description: [
+				"Когда-то&3&l Devourer of Gods &rсковал свою кузню не в огне — а в &l&bзвёздной пыли.&r"
+				"Она впитала в себя отголоски погибших миров и теперь позволяет создавать &b&lвоистину невозможное.&r"
+				""
+				"Создать её — значит получить доступ к кузне, что когда-то принадлежала самому &l&3пожирателю богов.&r"
+			]
+			id: "5F57D8A2819A6EA1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "51BCBEFC67173ADB"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "60EE17A08EE6092B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "473AE6AA86B83CFA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestisynth:starlit_factory"
+				}
+				title: "&fСоздать &l&#00BFFFЗвездную Фабрику"
+				type: "item"
+			}]
+			title: "&#00BFFF&lЗвёздная кузня"
+			x: 13.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4DCA11C7AD7C81A2"]
+			description: [
+				"Некоторые ресурсы требуют не просто удачи, а наблюдательности и терпения."
+				""
+				"— &l&3Лунные камни&r прячутся под землёй, в сияющих озёрах."
+				"— &l&2Зефирные шпили&r можно найти высоко в горах."
+				"— &l&bОсколки винтерейся&r затаились на подземных иглах."
+				"— А &l&cсолнечные кристаллы&r рассыпаны в глубинах Незера."
+				""
+				"Найти всё — значит открыть путь к мощным крафтам."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestisynth:zephyr_deposit"
+			}
+			id: "5E0CF27635EF4A03"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "13B4E21C173E5377"
+					table_id: 6342827431347558402L
+					type: "random"
+				}
+				{
+					id: "4B80428AFBFC4FF7"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "0411D19B85EC2B88"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "celestisynth:lunar_stone"
+					}
+					title: "&fДобыть &3&l8х Лунных Камня"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "71D0E71E4DC6E54D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "celestisynth:zephyr_deposit"
+					}
+					title: "&fДобыть &2&lЗефирных Месторождения"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3994AF36B07F1CEE"
+					item: {
+						Count: 8
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "celestisynth:wintereis_shard"
+					}
+					title: "&fДобыть &b&l8х Осколков Винтерейса"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6824323B12667EFB"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "celestisynth:solar_crystal"
+					}
+					title: "&fДобыть &l&c4х Солнечных Кристаллов"
+					type: "item"
+				}
+			]
+			title: "Собрание редкостей"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["199FF0A9B5B27B78"]
+			description: [
+				"Во времена расцвета королевства &l&cВарен’Таала&r древние маги, ведомые жаждой понимания небес, создали&l &9арканум&r, способный вместить искры изначального света."
+				""
+				"Так родилось &l&9«Небесное происхождение»&r — магический том, переживший даже смерть своего мира."
+				""
+				"Создание его потребует колоссальных усилий и ресурсов… но сила, что заключена в этих страницах, по сей день шепчет в умы тех, кто &l&cжаждет большего.&r"
+			]
+			id: "50235FD0810A2BE8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "75C514A7B9EE7CE1"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "260357E90EFAF7F1"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "3A94FB3B732C7EFF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestisynth:celestial_spell_book"
+					tag: {
+						ISB_Spells: {
+							data: [ ]
+							maxSpells: 14
+							mustEquip: 1b
+							spellWheel: 1b
+						}
+					}
+				}
+				title: "&fСоздать &9&lНебесное Происхождение"
+				type: "item"
+			}]
+			title: "&l&9Прах звёзд"
+			x: 13.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["682440942B78F66B"]
+			description: ["Эти ресурсы — основа большинства рецептов, модулей и артефактов."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:diamond"
+			}
+			id: "0B88D6BE9666CA4E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1419DB8E39CB41FC"
+					table_id: 4942177764372789437L
+					type: "random"
+				}
+				{
+					id: "7B3F5D884FF5D8A1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 16L
+					id: "6A83733EEAECCC10"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:diamond"
+					}
+					title: "&fПолучить &l&b16х Алмазов"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "6378495C078669DD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:raw_iron"
+					}
+					title: "&fПолучить &7&l32х Рудного железа"
+					type: "item"
+				}
+				{
+					count: 24L
+					id: "3406B9B102E5D1BC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:raw_gold"
+					}
+					title: "&fПолучить &l&6Рудного Золота"
+					type: "item"
+				}
+				{
+					count: 64L
+					id: "57769EE5A9333AC2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:lapis_lazuli"
+					}
+					title: "&fПолучить &l&#1E90FFЛазурита"
+					type: "item"
+				}
+			]
+			title: "Первый улов"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"0B88D6BE9666CA4E"
+				"61AA7AD1BE97EC8F"
+			]
+			description: [
+				"&l&4Незеритовый лом&r — крайне ценный материал."
+				""
+				"Найти его можно либо в бастионах, либо глубоко под землёй в &l&cНезере.&r"
+				""
+				"Редкость его — не шутка. Но он нужен, и тебе придётся спуститься за ним."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:netherite_scrap"
+			}
+			id: "4DCA11C7AD7C81A2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "13AE8D3E629FD828"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "3DBF0245CAFBAB30"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				count: 8L
+				id: "29B56154BAF29269"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:netherite_scrap"
+				}
+				title: "&fДобыть &4&l8х Незеритовых Ломов"
+				type: "item"
+			}]
+			title: "&4&lРедкий сплав"
+			x: 4.550000000000001d
+			y: 4.550000000000001d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"&c&lSigil of the Red Sun&r — загадочный артефакт, некогда принадлежащий разрушенной богини. Его создание требует как мастерства, так и определённой смелости — ведь за ним тянется древний след забытого культа."
+				""
+				"Печать наполняется теплом... но не греет."
+				""
+				"С неё начинается всё."
+				""
+				"&7&oНачало важной сюжетной линии разрушенной богини.&r"
+			]
+			id: "65EA4A4DEFFC392F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "263E74B763B1EB39"
+					table_id: 2007959204469799317L
+					type: "random"
+				}
+				{
+					id: "4E7A21F2ABEDF24F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.15d
+			tasks: [{
+				id: "063C2A9B67B4B2BC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mokels_bossfight_saphyra:sigil_of_the_red_sun"
+				}
+				title: "&fСоздать &c&lSigil of the Red Sun"
+				type: "item"
+			}]
+			title: "&c&lПечать первого света"
+			x: 1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["65EA4A4DEFFC392F"]
+			description: [
+				"Следующий шаг на пути — отыскать &7&lFractured Clocktower.&r Эта башня встречается в верхнем мире: старая, покрытая мхом и листвой. Зайди в нее и поднимайся выше. Ещё выше. Пока не доберёшься до вершины, где под самым потолком тебя ждёт нечто странное."
+				""
+				"Ищи органический блок, напоминающий &lруку с восемью пальцами и телом, вросшим в неё&r. Если его нет — башню уже обыскали, и придётся искать другую."
+				""
+				"Возьми в руку &l&cSigil of the Red Sun&r и нажми ПКМ по этому блоку. Начнётся диалог. И не выкидывай сломанный &l&csigil,&r он понадобится позже."
+				"Проснётся &l&3Линара&r — проводница между мирами. Она расскажет немного больше… и даст два важных предмета: &lключ&r и &lприглашение.&r"
+				""
+				"Если после разговора предметов нет — осмотрись. Иногда они падают вниз по башне. Потерять их нельзя."
+				"Они &lнужны,&r чтобы продолжить путь."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mokels_bossfight_saphyra:broken_sigil_of_the_red_sun"
+			}
+			id: "7ADF8D65010A8827"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "64E680636F3E7FB0"
+					table_id: 2007959204469799317L
+					type: "random"
+				}
+				{
+					id: "31074D9D3345FAF9"
+					type: "xp"
+					xp: 70
+				}
+			]
+			size: 1.0d
+			tasks: [
+				{
+					id: "21D94CCAE9B01E45"
+					structure: "mokels_bossfight_saphyra:fractured_clock_tower"
+					title: "Найти структуру &lFractured Clock Tower"
+					type: "structure"
+				}
+				{
+					id: "496CF1C0F8E4A519"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:hallowed_key_1"
+					}
+					title: "&fПолучить &lHallowed Sigil Key (Worship)"
+					type: "item"
+				}
+				{
+					id: "04D6013E71E3AAEC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:invitation_to_the_hallowed_tower"
+					}
+					title: "&fПолучить &lПриглашение"
+					type: "item"
+				}
+				{
+					id: "613F8E7FEB7004FD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:broken_sigil_of_the_red_sun"
+					}
+					title: "&fПолучить &lBroken Sigil of the Red Sun"
+					type: "item"
+				}
+			]
+			title: "Пробуждение проводницы"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7ADF8D65010A8827"]
+			description: [
+				"Следующая цель — &l&3Three Hallowed Towers.&r Эта структура из трёх высоких башен окружена мощными магическими барьерами. Каждая из башен хранит свои тайны, и попасть внутрь можно не сразу."
+				""
+				"Используй ключ, полученный от &lЛинары,&r чтобы снять один из барьеров на входе. За ним тебя ждёт &l&dСапфира&r — легендарная чародейка, признанная многими как сильнейшая маг современности."
+				""
+				"Поговори с ней. Протяни приглашение, полученное ранее, и выслушай её. Если проявишь терпение, &l&dСапфира&r передаст тебе новый ключ —&l&c Pus Sigil Key (Hatred)&r. Он пригодится для следующего этапа."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mokels_bossfight_saphyra:key_4"
+			}
+			id: "046BD412BAB96A4F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "23BE0B42C683BBEB"
+					table_id: 2007959204469799317L
+					type: "random"
+				}
+				{
+					id: "63516D8093C497F1"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					id: "2FA153702DF5F664"
+					structure: "mokels_bossfight_saphyra:the_three_hallowed_towers"
+					title: "&fНайти &lТри Святых Башни"
+					type: "structure"
+				}
+				{
+					id: "5F6C023E788661D3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:key_4"
+					}
+					title: "&fПолучить &lPus Sigil Key (Hatred)"
+					type: "item"
+				}
+			]
+			title: "За печатью"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			can_repeat: true
+			dependencies: ["046BD412BAB96A4F"]
+			description: [
+				"Отправляйся в &l&cChurch of the Oath Pus&r — зловещую красную структуру, сокрытую среди руин верхнего мира."
+				""
+				"Войди через центральный вход, за которым ты найдёшь большую закрытую дверь и небольшую &lстатуэтку&r в центре помещения. Возьми в руку сломанный &l&cSigil of the Red Sun&r и нажми ПКМ по статуэтке. Печать восстановится… но станет другой. Вместе с этим ты получишь &lновый ключ&r."
+				""
+				"Используй его, чтобы открыть дверь у правого входа в церковь. Внутри тебе предстоит расчистить территорию и найти ещё один важный предмет — &l&cключ Knife.&r Он откроет путь к следующей ступени."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mokels_bossfight_saphyra:sigil_of_the_red_sun_stage_2"
+			}
+			id: "0073E55EB086FB28"
+			progression_mode: "flexible"
+			rewards: [{
+				id: "03E94657B49FBF6D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mokels_bossfight_saphyra:key_1"
+				}
+				type: "item"
+			}]
+			tasks: [
+				{
+					id: "1165DC2230D409B6"
+					structure: "mokels_bossfight_saphyra:church_of_the_oath_pus"
+					title: "&fНайти &lChurch of the Oath Pus"
+					type: "structure"
+				}
+				{
+					id: "7DD177085B37C204"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:sigil_of_the_red_sun_stage_2"
+					}
+					title: "&fВосстановить &c&lSigil of the Red Sun"
+					type: "item"
+				}
+			]
+			title: "Церковь Клятвы"
+			x: 5.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0073E55EB086FB28"]
+			description: [
+				"В последнем проходе Церкви расчисти путь и поднимись на самый верх. Лестница скрыта в одной из &7&lстен балкона&r — отыщи её."
+				"Наверху откроется последняя завеса, за которой лежит &7&lключ от древней двери.&r"
+				""
+				"Сама дверь — не преграда. Преграда — &l&4он.&r"
+				"&l&4Страж,&r что не отступил даже тогда, когда долг утратил смысл."
+				""
+				"&l&4Он&r знал &l&dСапфиру&r с детства."
+				"Смотрел, как она растёт — умна, красива, сияющая словно звезда среди пепла. Он любил её. Глупо. Безнадёжно."
+				""
+				"&l&4Он&r был рядом, когда &l&dона&r творила чудеса. И рядом, когда &l&dей&r нужны были решения, в которых нет света — кровь, шепот, исчезновение имён."
+				"Он делал всё, что она не хотела марать. Старательно. Тихо. Без слов."
+				"{@pagebreak}"
+				"Страж видел, как &l&dона&r отдалялась. Видел, как её взгляд смотрит сквозь него. Видел, как её путь ведёт к тем, кого он не мог принять."
+				"&l&4Безликий&r начал ненавидеть &l&dеё.&r Всей душой. Жаждал её падения. И всё равно стоял рядом. Служил. Не потому что хотел — потому что не умел иначе."
+				""
+				"Когда всё закончилось, и от &l&dнеё&r осталась лишь тень за вратами, &l&4он&r не ушёл."
+				"Остался."
+				"Чтобы нести свой бессмысленный долг. До конца."
+				""
+				"&l&4Он&r не спит."
+				"&l&4Он&r слышит каждый шаг, приближающийся к его посту."
+				"И каждый раз надеется, что это не &l&9они.&r"
+				""
+				"Но шаги всё ближе."
+				"И выбора уже нет."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mokels_bossfight_saphyra:nameless_gatekeeper_remembrance"
+			}
+			id: "76058511CCC42D71"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0D379EEDFE406850"
+					table_id: 1796735103491411842L
+					type: "random"
+				}
+				{
+					id: "0EA8717777C8EDA1"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.15d
+			tasks: [
+				{
+					id: "5AC7A8ABAC275047"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:warrior_key"
+					}
+					title: "&fНайти &7&lSinister Gate Key"
+					type: "item"
+				}
+				{
+					id: "1D8A5120AADABE77"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:nameless_gatekeeper_remembrance"
+					}
+					title: "&fСразить &4&lБезликого Стража&r и получить его воспоминание"
+					type: "item"
+				}
+			]
+			title: "&4&lВоин, исполнивший последний приказ"
+			x: 5.749999999999999d
+			y: -6.324999999999999d
+		}
+		{
+			dependencies: ["76058511CCC42D71"]
+			description: [
+				"Ты возвращаешься к Сапфире с воспоминанием стража. Но она не говорит о нём ни слова — лишь отдаёт два ключа и направляет к своей ученице, &l&bМарлине.&r"
+				""
+				"Используй один из ключей, чтобы снять барьер в другой башне. Не торопись идти к &l&bМарлине,&r она не захочет с тобой говорить &o&lпока.&r Сначала зайди в левую башню и поднимись на самый верх. Там ты вновь увидишь знакомый артефакт — &7&lс восемью пальцами и телом, вырастающим из камня.&r"
+				""
+				"Возьми восстановленный &l&cсигил&r в руку и нажми по нему. &l&3Линара &rвернётся."
+			]
+			id: "4643BEAB02835AAD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3FCE9A7EC71E1A84"
+					table_id: 2007959204469799317L
+					type: "random"
+				}
+				{
+					id: "34C95C489FE4FA5F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "33029CFAF632DB67"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mokels_bossfight_saphyra:hallowed_key_2"
+				}
+				title: "&fПолучить &l2х Hallowed Sigil Key (Chain)"
+				type: "item"
+			}]
+			title: "Молчаливый ответ"
+			x: 4.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4643BEAB02835AAD"]
+			description: [
+				"&l&3Линара&r вручает тебе последний ключ от завесы в церкви и просит принести древний артефакт —&l&6 глаз маньяка.&r"
+				""
+				"Вернись в &l&cChurch of the Oath Pus&r, открой последнюю дверь и забери глаз. Не забудь и &7&lкнижку&r — сказку о лживом боге, спрятанную рядом."
+				""
+				"Отдай глаз &l&3Линаре,&r сказку — &l&bМарлине.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mokels_bossfight_saphyra:manic_eye"
+			}
+			id: "5F431020AB3A237D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5E7D8204784EF92F"
+					type: "random"
+				}
+				{
+					id: "2B09F79D5CCABD18"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "4910FE47A8C5F049"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:key_3"
+					}
+					title: "&fПолучить &lключ Pus Sigil (lovers)"
+					type: "item"
+				}
+				{
+					id: "43482DEFCB9AF750"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:manic_eye"
+					}
+					title: "&fЗабрать &6&lManic Eye"
+					type: "item"
+				}
+				{
+					id: "675074EC800AE0ED"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:the_first_god"
+					}
+					title: "&fЗабрать &7&lTale of the Artificial God"
+					type: "item"
+				}
+			]
+			title: "Ложь в оболочке глаза"
+			x: 3.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["5F431020AB3A237D"]
+			description: [
+				"&3&lМарлина&r принимает воспоминания &l&4безликого стража&r без лишних слов. Взамен она вручает тебе мешок с его былыми реликвиями — давно забытые вещи воина, что служил до конца."
+				""
+				"Но главное — &7&lключ от врат обсерватории.&r"
+				"Дорога туда будет долгой, но ты уже сделал выбор."
+				""
+				"Ступай. За дверью — испытание, понять которое не смог никто."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mokels_bossfight_saphyra:saphyra_key"
+			}
+			id: "7D3A594DF21D5896"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "42118FB24705F417"
+					table_id: 2007959204469799317L
+					type: "random"
+				}
+				{
+					id: "22D84B377E3C0D9C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "6D1C4F2A374A9B41"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mokels_bossfight_saphyra:saphyra_key"
+					}
+					title: "&fПолучить &lSword Gate Key"
+					type: "item"
+				}
+				{
+					id: "4852EC684A356041"
+					structure: "mokels_bossfight_saphyra:observatory"
+					title: "Найти &lОбсерваторию"
+					type: "structure"
+				}
+			]
+			title: "Дар от тех, кто пал"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["7D3A594DF21D5896"]
+			description: [
+				"Шёпот в голове. Не имя, не приказ — воспоминание."
+				"И тогда она появилась."
+				"&l&dСапфира.&r"
+				""
+				"Она не объяснила ничего. Она сразу начала бой."
+				""
+				"И ты понял: она &lне&r была &l&9искажена.&r"
+				"Она — одна из &l&9Хранителей Пустоты.&r"
+				""
+				"Много лет назад, запечатав себя в &l&4проклятый гримуар&r, она не заточила, а высвободила."
+				"Свою подлинную сущность."
+				"Сущность, что была заперта вместе с &l&6Братьями&r &9&lПустоты.&r"
+				""
+				"&l&dСапфира&r — их двоюродная сестра. Может, не такая сильная. Но одна из них."
+				"И всё, что ты прошёл, все ключи, жертвы, воспоминания — вели именно сюда."
+				""
+				"Ты — &l&nне избранный.&r"
+				"Ты — &l&nпоследнее испытание.&r"
+				""
+				"Встань. Сражайся."
+				"Против самой могущественной волшебницы, чья кровь течёт от &l&9Тьмы.&r"
+			]
+			id: "7F158B53810F88B0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "68D8CBFA9E338303"
+					table_id: 1796735103491411842L
+					type: "random"
+				}
+				{
+					id: "1DE15F2DA8DF16CF"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			subtitle: "Ты переступил порог — и время замерло."
+			tasks: [{
+				id: "76CB3CFC3336737E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mokels_bossfight_saphyra:bottomless_bag"
+				}
+				type: "item"
+			}]
+			title: "&l&dЛицо, скрытое за маской и звёздами"
+			x: 4.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["09BFB24D4EBD7839"]
+			description: [
+				"Когда сопротивление было сокрушено, и ледяное королевство ушло под воду, &l&#00FA9AСигнус&r знал: страх должен остаться &4&lнавечно.&r"
+				"Он обратился к &l&5Левиафану&r — и тот соткал существо из глубин, безгласное, ненасытное. Так родилась &#BA55D3&lМать Лабиринта.&r"
+				""
+				"Она не знала пощады. Она не различала имён."
+				"Каждый, кто пытался уплыть, исчезал — в &l&#BA55D3пасти&r, в темноте, без следа."
+				""
+				"Сейчас она всё ещё там, под толщей льда. "
+				"Ты идёшь за ней — но помни: она была рождена не для битвы. Она была рождена для &l&4казни.&r"
+			]
+			id: "57B56E42FD6B7CC9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6D08CA0D66C0A746"
+					table_id: 5677960401788075893L
+					type: "random"
+				}
+				{
+					id: "3072072A4F9E56E5"
+					type: "xp"
+					xp: 300
+				}
+			]
+			subtitle: "Рождённая не по воле, но по приговору"
+			tasks: [{
+				entity: "aquamirae:maze_mother"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aquamirae:maze_mother_spawn_egg"
+				}
+				id: "70C5A0FD0B1B71EF"
+				title: "&fУбить &l&#BA55D3Матерь Лабиринта"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&l&#BA55D3Мать Лабиринта"
+			x: 9.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["4DA9EACDE18EA06D"]
+			description: [
+				"&d&lКорнелия&r собрала сопротивление из тех, кто был сломлен. Она вдохновляла — но не спасала. Вела — но часто вела на &l&4смерть.&r"
+				""
+				"Она знала, что отправляет своих людей на бой, из которого они &lне вернутся&r. Знала, что шансов почти нет."
+				""
+				"И, может быть, если бы не она — эти люди жили бы спокойно, в забвении. Но она сделала свой выбор. И за него &lвсе&r заплатили."
+				""
+				"Она сражалась не за правду. А за &l&4месть&r. За упрямство. За &d&lсебя.&r"
+				""
+				"И всё же — благодаря ей другие не сдавались. Верили в то, что всё можно изменить."
+				""
+				"И когда &l&#00FA9AСигнус&r сокрушил её... "
+				"она впервые почувствовала &l&d&oоблегчение.&r"
+				"Больше не нужно было командовать. Больше не нужно было нести ношу."
+				"Её война закончилась — &l&bхолодом, тишиной… и покоем.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "obscure_api:astral_dust"
+			}
+			id: "4E9B6FD9DAF59517"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "614006A3A7CC617A"
+					table_id: 5677960401788075893L
+					type: "random"
+				}
+				{
+					id: "5C2D171DF3509BAB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.3d
+			subtitle: "Цена чужих надежд и веры"
+			tasks: [
+				{
+					id: "7333A2344A6A29E6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "aquamirae:rune_of_the_storm"
+					}
+					type: "item"
+				}
+				{
+					id: "116E47FA7389B12B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "obscure_api:astral_dust"
+					}
+					type: "item"
+				}
+			]
+			title: "&l&dПоследняя печать"
+			x: 9.75d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4F7FB1227EA522F7"]
+			description: [
+				"&l&7Черные слитки&r и &l&6древний металл&r — не просто ресурсы, а отпечатки воли их повелителей."
+				""
+				"&l&7Первые&r добываются в призрачной тюрьме, где &l&#00FA9AСигнус&r сковал своих врагов. Слитки нужны в огромном количестве — без них невозможен ни прогресс, ни доступ к важнейшим крафтам."
+				""
+				"&l&6Вторые&r — в проклятой пирамиде, где до сих пор бродят создания &l&6Древнего Ревенанта.&r"
+				""
+				"Тюрьму можно найти при помощи ока проклятия, а пирамиду при помощи ока пустыни."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "cataclysm:black_steel_ingot"
+			}
+			id: "035ACA013BF3F0E5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "72C978C659000EAD"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "7776872AA528904D"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [
+				{
+					count: 9L
+					id: "59199C32A168A2C6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:black_steel_ingot"
+					}
+					title: "&fДобыть &l&79х Слитков Чёрной Стали"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "3FBCD808AE0871C6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:ancient_metal_ingot"
+					}
+					title: "&fДобыть &6&l9х Слитков из Древнего металла"
+					type: "item"
+				}
+			]
+			title: "&7&lМеталл, пропитанный страхом"
+			x: 7.5d
+			y: 7.15d
+		}
+		{
+			dependencies: ["3CD45A4C5ECA55C5"]
+			description: [
+				"Он указывает на тех, кого давно не должно быть."
+				""
+				"Если использовать его в Верхнем мире, он приведёт к логову &#AFEEEE&lОстатков Старого Чемпиона.&r"
+				""
+				"Если в аду — покажет путь к &c&lРазлагающемуся Королю.&r"
+			]
+			id: "390A123ADCF99C28"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4E72ECB6D75740CA"
+					table_id: 1282274860054614714L
+					type: "random"
+				}
+				{
+					id: "24E51A83EEECCB74"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "7FA0A1A23FBB9DD7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:boss_compass"
+				}
+				type: "item"
+			}]
+			title: "Путь к падшим"
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["390A123ADCF99C28"]
+			description: [
+				"Когда-то он был рыцарем — живым, горящим верой."
+				"Служил в рядах армии &2&lБезымянного Паладина&r и прошёл множество походов… пока один из них не привёл в &l&9Пустоту.&r"
+				""
+				"Там нечто вырвалось. Бешенная тень, искажённая и злая. Она завладела его разумом, вытеснила волю, вытравила остатки памяти."
+				""
+				"Теперь от него остались лишь осколки. Остатки. Но он всё ещё держит меч."
+				""
+				"И всё ещё не склоняет голову."
+				""
+				"Найди его логово и &l&cпокончи с этим.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "soulsweapons:essence_of_eventide"
+			}
+			id: "29175125C6257565"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "63120A3CC529F492"
+					table_id: 6827061460215455878L
+					type: "random"
+				}
+				{
+					id: "39C42BA2E75FF101"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "330E92DC5A1C1386"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:essence_of_eventide"
+					}
+					title: "&fПолучить &#1E90FF&lЭссенцию Вечера"
+					type: "item"
+				}
+				{
+					entity: "soulsweapons:draugr_boss"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:draugr_boss_spawn_egg"
+					}
+					id: "4E9FC161E18AAD66"
+					title: "&fУбить &lОстатки Старого Чемпиона"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&#4682B4&lПоследний марш"
+			x: -4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"29175125C6257565"
+				"390A123ADCF99C28"
+			]
+			description: [
+				"Чтобы призвать того, кто ушёл не до конца, потребуется:"
+				"— &lСтарый лунный алтарь&r"
+				"— &lДраугр&r (выпадает с Остатков Старого Чемпиона)"
+				""
+				"Создай алтарь, используй на нём драугра — и ты вызовешь Вернувшегося Рыцаря."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "soulsweapons:altar_block"
+			}
+			id: "3D3B957233CBC15B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7C95ADA92E004064"
+					table_id: 1282274860054614714L
+					type: "random"
+				}
+				{
+					id: "30E95714F41EA92F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "466D9E397717E342"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:altar_block"
+					}
+					title: "&fСоздать &lСтарый Лунный Алтарь"
+					type: "item"
+				}
+				{
+					id: "24754B2B2F826010"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:draugr"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fПолучить &lДраугр"
+					type: "item"
+				}
+			]
+			title: "Алтарь возврата"
+			x: -4.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["79DF1CFA0E0C9348"]
+			description: [
+				"Чтобы вызвать нечто большее, страшное, потребуется два компонента:"
+				"— &lПьедестал из чёрного камня&r"
+				"— &lОсколок неопределённости&r (выпадает с визера)"
+				""
+				"Установи пьедестал, используй осколок — и начнётся призыв одного из апостолов - &l&4Монарха хаоса.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "soulsweapons:shard_of_uncertainty"
+			}
+			id: "0CB18EED34BAF784"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2C2DA9F721B03426"
+					table_id: 1282274860054614714L
+					type: "random"
+				}
+				{
+					id: "75081FE0C99376E1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.15d
+			tasks: [
+				{
+					id: "4D18B43F1C650C76"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:blackstone_pedestal"
+					}
+					type: "item"
+				}
+				{
+					id: "68107734B6B3F9D4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:shard_of_uncertainty"
+					}
+					type: "item"
+				}
+			]
+			title: "&4&lЗапрещенный Ритуал"
+			x: -2.8749999999999996d
+			y: 6.324999999999999d
+		}
+		{
+			dependencies: ["3D3B957233CBC15B"]
+			description: [
+				"&#7FFFD4&lВернувшийся Рыцарь&r — это не просто призванный враг."
+				"Это осколок воли &l&6Ридара,&r бывшего Чемпиона Лунного Света. "
+				""
+				"Теперь он не тратит время на тех, кто не готов. Он посылает вперёд свою тень."
+				""
+				"Отголосок. Проверку. Испытание."
+				""
+				"Победи &#7FFFD4&lВернувшегося Рыцаря&r — и, возможно, ты станешь достойным встретить самого &l&6Падшего Идола.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "soulsweapons:arkenstone"
+			}
+			id: "50D0B425CC1159A0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E19DA61E1DCBA0D"
+					table_id: 6827061460215455878L
+					type: "random"
+				}
+				{
+					id: "1026759D06F92F25"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "335C30DFD630661C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:arkenstone"
+					}
+					type: "item"
+				}
+				{
+					entity: "soulsweapons:returning_knight"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:returning_knight_spawn_egg"
+					}
+					id: "153A2726470824FB"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "&#7FFFD4&lПосланник Идола"
+			x: -5.3999999999999995d
+			y: 4.8d
+		}
+		{
+			dependencies: [
+				"29175125C6257565"
+				"390A123ADCF99C28"
+			]
+			description: [
+				"Он жил в эпоху &l&6драконов&r — в то время, когда не было ни спасения, ни выбора."
+				"Первый, кто открыл портал в &l&cНезер.&r Не в поисках силы, а в попытке сбежать."
+				""
+				"Но в аду он не погиб. Он построил. Подчинил чудовищ. Возвёл крепости. Становился сильнее."
+				"И возомнил себя &l&cкоролём.&r"
+				""
+				"Когда &9&lХранители Пустоты&r начали экспансию, он не отступил. Он встал перед &l&4Игнисом&r — и предложил присягнуть себе."
+				"&4&lИгнис&r рассмеялся. И в один миг разрушил всё, что тот строил."
+				""
+				"С тех пор &l&cкороль&r больше не поднимается. Он гниёт. В собственном тронном зале, в тишине."
+				"Но его сила всё ещё опасна."
+				""
+				"Убей его. Прежде чем он вспомнит, что был жив."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "soulsweapons:withered_demon_heart"
+			}
+			id: "79DF1CFA0E0C9348"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7DC4D455439451FA"
+					table_id: 6827061460215455878L
+					type: "random"
+				}
+				{
+					id: "3D2D40002D487658"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "42C57A54E67BAE23"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:withered_demon_heart"
+					}
+					title: "&fПолучить &lИссохшее Сердце Демона"
+					type: "item"
+				}
+				{
+					entity: "soulsweapons:accursed_lord_boss"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:accursed_lord_boss_spawn_egg"
+					}
+					id: "1438ECA8EE901A9B"
+					title: "&fУбить &4&lРазлагающегося Короля"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Трон из пепла"
+			x: -2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5E0CF27635EF4A03"]
+			description: [
+				"&l&#DDA0DDЛунные кристаллы&r — ключ к созданию мощной брони средней стадии на кузнечном столе."
+				""
+				"Разные элементы дают разные бонусы: скорость, здоровье, урон и другие."
+				""
+				"Собери материалы и начни путь к настоящему усилению."
+			]
+			id: "51E02978F2E576A0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "42981C82AA20CC9D"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "0B7DD256BCE730BC"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				count: 4L
+				id: "0623FF90C76A0058"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "fantasy_armor:moon_crystal"
+				}
+				title: "&fСоздать &l&#DDA0DD4х Лунных Кристаллов"
+				type: "item"
+			}]
+			title: "&l&#DDA0DDСвет Луны"
+			x: 5.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1A9842D3A80B8218"]
+			description: ["&7&oДанный аксесуар более невозможно найти в сундуках, разбросанных по миру. Чтобы удостоиться его силы, придется пожертвовать большим количеством ресурсов.&r&r"]
+			id: "286982798E59515D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "562B36F41F5E1143"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "405EFA95D528ED50"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "35954B9D089CECFD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "artifacts:running_shoes"
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1A9842D3A80B8218"]
+			description: ["&7&oДанный аксесуар более невозможно найти в сундуках, разбросанных по миру. Чтобы удостоиться его силы, придется пожертвовать большим количеством ресурсов.&r&r"]
+			id: "267F92D8B3571264"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A698ABF536813D6"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "6255D01650AA9F7C"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "56E4E66CD06BA401"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "artifacts:power_glove"
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1A9842D3A80B8218"]
+			description: ["&7&oДанный аксесуар более невозможно найти в сундуках, разбросанных по миру. Чтобы удостоиться его силы, придется пожертвовать большим количеством ресурсов.&r&r"]
+			id: "1CEB0C053ED64315"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "12E392C213670351"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "51F78ED9A6FF30B1"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "1DB5D51B300DA99F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "artifacts:feral_claws"
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1A9842D3A80B8218"]
+			description: ["&7&oДанный аксесуар более невозможно найти в сундуках, разбросанных по миру. Чтобы удостоиться его силы, придется пожертвовать большим количеством ресурсов.&r&r"]
+			hide_dependency_lines: true
+			id: "22EEFE78ADC007F3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1F0C83CD196E779F"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "1A36FAFD0E7A25BD"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "19BA4A94D136AF3A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "artifacts:cloud_in_a_bottle"
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["1A9842D3A80B8218"]
+			description: ["&7&oДанный аксесуар более невозможно найти в сундуках, разбросанных по миру. Чтобы удостоиться его силы, придется пожертвовать большим количеством ресурсов.&r&r"]
+			hide_dependency_lines: true
+			id: "540EC70A5FE692C5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "373AFABDB86E2EE1"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "71622ABF2A875457"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "7664E1A36565178C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "artifacts:superstitious_hat"
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1A9842D3A80B8218"]
+			description: ["&7&oДанный аксесуар более невозможно найти в сундуках, разбросанных по миру. Чтобы удостоиться его силы, придется пожертвовать большим количеством ресурсов.&r&r"]
+			hide_dependency_lines: true
+			id: "353737DD7FAB3C4A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "689B7E72EFBD89AE"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "4405D25930CEF7AB"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "368BBCFBF5F3A25F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "artifacts:everlasting_beef"
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1A9842D3A80B8218"]
+			description: ["&7&oДанный аксесуар более невозможно найти в сундуках, разбросанных по миру. Чтобы удостоиться его силы, придется пожертвовать большим количеством ресурсов.&r&r"]
+			id: "7B7E769BC91AEEBE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2F06189304B0C68F"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "4359AA3954854B72"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "37C95F971E723945"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "relics:roller_skates"
+					tag: {
+						abilities: {
+							skating: {
+								points: 0
+								stats: {
+									duration: 22.99653d
+									speed: 0.00139d
+								}
+							}
+						}
+					}
+				}
+				type: "item"
+			}]
+			x: -6.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: [
+				"Собери Костяной Глаз и найди Гнездо &l&6Скелетросауруса&r в аду."
+				"Осторожно — не всё мёртвое неподвижно."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:eye_of_bones"
+			}
+			id: "5D6D3FCE9F4498DF"
+			rewards: [{
+				id: "70D4A9FE69CE6EF7"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "0A47DFAFEFFAEA11"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:eye_of_bones"
+					}
+					title: "&fСоздать &6&lКостяной Глаз"
+					type: "item"
+				}
+				{
+					id: "697CE3FB140A48E9"
+					structure: "legendary_monsters:skeletosaurus_nest"
+					title: "Найти &6&lГнездо Скелетросауруса"
+					type: "structure"
+				}
+			]
+			title: "&6&lХозяин костей"
+			x: -4.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Скрафти Призрачный Глаз и найди Заброшенный Склеп, чтобы бросить вызов &l&aОдержимому Паладину.&r"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:eye_of_ghost"
+			}
+			id: "6CC0AC935B207525"
+			rewards: [{
+				id: "639DB3996BA25F83"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "2DAF16A165DC1CCD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:eye_of_ghost"
+					}
+					title: "&fСоздать &3&lПризрачный Глаз"
+					type: "item"
+				}
+				{
+					id: "7E1E087691BA91D2"
+					structure: "legendary_monsters:abandoned_crypt"
+					title: "&fНайти &l&aЗаброшенный Склеп"
+					type: "structure"
+				}
+			]
+			title: "&3&lСледы за гранью"
+			x: -3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Скрафти Глаз Холода и найди &l&#00FFFFобмороженный храм&r с ледянным стражем."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:eye_of_frost"
+			}
+			id: "53FA2F3034B37E3B"
+			rewards: [{
+				id: "7913979A18569AD8"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "089389D746B9A303"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:eye_of_frost"
+					}
+					title: "&fСоздать &l&#00FFFFГлаз Холода"
+					type: "item"
+				}
+				{
+					id: "16F2E3E79F50947A"
+					structure: "legendary_monsters:frostbitten_temple"
+					title: "&fНайти &l&#00FFFFОбмороженный Храм"
+					type: "structure"
+				}
+			]
+			title: "&l&#00FFFFСтеклянное дыхание"
+			x: -5.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["53FA2F3034B37E3B"]
+			description: [
+				"&l&bЛедяной Голем&r был создан, чтобы не пускать никого."
+				"Но никто не помнит — куда. Или зачем. Даже он сам."
+				""
+				"Он стоит. Он ждёт. Он убивает."
+				"И каждый, кто его тревожит, становится частью вечной стужи."
+				""
+				"Убей его. Или &l&bзамёрзни&r вместе с остальными."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:frozen_rune"
+			}
+			id: "7112E5C416206A19"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E005DF87FB362D7"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "7EDF1588E17FEAE1"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:frostbitten_golem"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:frostbitten_golem_spawn_egg"
+					}
+					id: "306541A4078A6C35"
+					title: "Убить &l&#00BFFFЛедяного Голема"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "43BBCA96AD52C913"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:frozen_rune"
+					}
+					title: "&fПолучить &l&#00BFFFЗамороженную Руну"
+					type: "item"
+				}
+			]
+			title: "&l&#00BFFFЗамёрзшая ярость"
+			x: -6.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Создай Глаз Неба и найди Храм Облаков, чтобы сразиться с &l&3Клаудом.&r"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:eye_of_air"
+			}
+			id: "0C0B6209B789FA3D"
+			rewards: [{
+				id: "305E89B915A2BB3C"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "60FA28E0462B561F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:eye_of_air"
+					}
+					title: "&fСоздать &lГлаз Неба"
+					type: "item"
+				}
+				{
+					id: "128C862724D9C58F"
+					structure: "legendary_monsters:cloudy_temple"
+					title: "&fНайти &l&3Храм Облаков"
+					type: "structure"
+				}
+			]
+			title: "&lТропы над землёй"
+			x: -2.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Собери Глаз из Мха и найди &#228B22&lхрам мха&r чтобы сразиться с древним заросшим колоссом."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:eye_of_moss"
+			}
+			id: "267B17280F47AD6F"
+			rewards: [{
+				id: "6F30F4525E18DFCA"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "42E6188B866E10A4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:eye_of_moss"
+					}
+					title: "&fСоздать &l&#228B22Глаз из Мха"
+					type: "item"
+				}
+				{
+					id: "18608F6240088E4A"
+					structure: "legendary_monsters:mossy_temple"
+					title: "&fНайти &l&#228B22Храм Мха"
+					type: "structure"
+				}
+			]
+			title: "&l&#228B22Зелёная дрожь"
+			x: -5.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["267B17280F47AD6F"]
+			description: [
+				"&l&2Заросший Колосс&r не создан — он вырос."
+				"Он не движется по воле. Он движется, когда нарушают порядок."
+				""
+				"Он не терпит шагов, не знает слов и не делает различий."
+				""
+				"&l&2Убей его,&r если хочешь, чтобы джунгли снова стали тихими."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:nature_crystal"
+			}
+			id: "7AB6E11D23D8C999"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5BBCDD9AD8E7510E"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "483B5856BE2A5130"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:overgrown_colossus"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:overgrown_colossus_spawn_egg"
+					}
+					id: "008C8278FAD78324"
+					title: "Убить &l&2Заросшего Колосса"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "27A04CB29496E385"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:nature_crystal"
+					}
+					title: "&fПолучить &l&2Nature Crystal"
+					type: "item"
+				}
+			]
+			title: "&l&2Сломай корни"
+			x: -6.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Создай Глаз из Рёбер и найди &#D3D3D3&lдревнюю крепость&r и сразись с древним обглоданным стражем."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:eye_of_many_ribs"
+			}
+			id: "01181258965B2B96"
+			rewards: [{
+				id: "5F5C899244082CA3"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "270CC189935BAFF0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:eye_of_many_ribs"
+					}
+					title: "&fСоздать &#D3D3D3&lГлаз Многих Рёбер"
+					type: "item"
+				}
+				{
+					id: "721D33897F0FCACA"
+					structure: "legendary_monsters:ancient_stronghold"
+					title: "&fНайти &l&#D3D3D3Древнюю Крепость"
+					type: "structure"
+				}
+			]
+			title: "&#D3D3D3&lСквозь кость"
+			x: -4.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["01181258965B2B96"]
+			description: [
+				"&l&#A0522DОбглоданный Страж&r когда-то охранял проход в &l&aЭнд.&r"
+				"Он стоял у врат древней крепости — пока Хранители Пустоты не построили новую: совершеннее, выше, страшнее."
+				""
+				"Крепость бросили. А он остался. &l&#A0522DТеперь он один.&r В пустых залах. В памяти, которую никто не требует."
+				""
+				"Убей его. &lЭто всё, что для него осталось.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:anchor_handle"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "6516A9F1A913127F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0EDF45000EEB6BCF"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "344E27472CBC7AA8"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:ancient_guardian"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:ancient_guardian_spawn_egg"
+					}
+					id: "469D9A96DEBB6D28"
+					title: "Убить &l&#A0522DОбглоданного Стража"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "3379CF0938EE5706"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:anchor_handle"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fПолучить &l&#A0522DAnchor Handle"
+					type: "item"
+				}
+			]
+			title: "&l&#A0522DСтеречь Нечего"
+			x: -5.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Создай Глаз Песчаной Бури и найди &l&#FFDEADразрушенную пирамиду.&r Брось вызов древнему дюнному стражу."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:eye_of_sandstorm"
+			}
+			id: "4E8B9F701E6FBC62"
+			rewards: [{
+				id: "618692A38D44BC3B"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "5F11C86945F1FCC7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:eye_of_sandstorm"
+					}
+					title: "&fСоздать &#FFDEAD&lГлаз Песчаной Бури"
+					type: "item"
+				}
+				{
+					id: "55FFEDB0AD22D1B6"
+					structure: "legendary_monsters:ruined_pyramid"
+					title: "&fНайти &l&#FFDEADРазрушенную Пирамиду"
+					type: "structure"
+				}
+			]
+			title: "&l&#FFDEADПесок и злоба"
+			x: -2.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4E8B9F701E6FBC62"]
+			description: [
+				"&l&#FFFACDДюнный Страж&r появился в результате странных стечений обстоятельств. Когда шторм нагрянул в логово древнего ремнанта, тот решил покорить его себе."
+				""
+				"Он приказал своим подданным остроить новую пирамиду, и посадил туда &#FFFACD&lстража.&r Безумного, безжалостного."
+				""
+				"Найди его в руинах песков и уничтожь. Если успеешь раньше, чем он."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:crystal_of_sandstorm"
+			}
+			id: "03D5D9868C61FBFB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5EE9AB3BEE4EAFB0"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "6C86F2B93D02C4E6"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:dune_sentinel"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:dune_sentinel_spawn_egg"
+					}
+					id: "3FFBAE321BD960A5"
+					title: "Убить &l&#FFDEADДюнного Стража"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "37B8F1AE3E9E3A8B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:crystal_of_sandstorm"
+					}
+					title: "&fПолучить &l&#FFDEADКристалл Песчанной Бури"
+					type: "item"
+				}
+			]
+			title: "&l&#FFFACDПесчаное правосудие"
+			x: -1.0d
+			y: -10.0d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Собери Глаз Магмы и найди &l&cгнездо Пожирателя Лавы &rи попробуй его сразить."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:eye_of_magma"
+			}
+			id: "51A1FF19D0296C6B"
+			rewards: [{
+				id: "001FA672A8C24623"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "37CC76DE82FB21E9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:eye_of_magma"
+					}
+					title: "&fСоздать&c&l Глаз Магмы"
+					type: "item"
+				}
+				{
+					id: "2E09376C4F09FF17"
+					structure: "legendary_monsters:lava_eater_spawn"
+					title: "&fНайти &c&lГнездо Пожирателя Лавы"
+					type: "structure"
+				}
+			]
+			title: "&c&lОгненное чрево"
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["51A1FF19D0296C6B"]
+			description: [
+				"&l&cПожиратель Лавы&r не появляется просто так. Его порождает перегрев, выбросы, вспышки гнева самого мира."
+				""
+				"Он не живёт — он кипит."
+				""
+				"Убей&l &cПожирателя Лавы&r, пока он не сжёг всё вокруг."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:lava_eaters_skin"
+			}
+			id: "1D06C240F6C7CAF0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0F13F609F3AC5728"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "53110284A7C16291"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:lava_eater"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:lava_eater_spawn_egg"
+					}
+					id: "50F6BAEE9F7CB29D"
+					title: "Убить &c&lПожирателя Лавы"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "292ED1766B748409"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:lava_eaters_skin"
+					}
+					title: "&fПолучить &l&cLava Eater's Skin"
+					type: "item"
+				}
+			]
+			title: "&l&cПасть пылает"
+			x: 0.0d
+			y: -8.5d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Создай Глаз Души и найди &l&#6495EDОстатки Крепости Души.&r Брось вызов засохшей мерзости."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:eye_of_soul"
+			}
+			id: "2F7BE68E84B58B57"
+			rewards: [{
+				id: "15E0DEBB9F65558D"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "5E665E1D53B60DBB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:eye_of_soul"
+					}
+					title: "&fСоздать &l&#6495EDГлаз Души"
+					type: "item"
+				}
+				{
+					id: "15E4D32DB8BCC175"
+					structure: "legendary_monsters:soul_fortress_remains"
+					title: "&fНайти &l&#6495EDОстатки Крепости Души"
+					type: "structure"
+				}
+			]
+			title: "&l&#6495EDГниющее сплетение"
+			x: -0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["2F7BE68E84B58B57"]
+			description: [
+				"&l&#A9A9A9Засохшая Мерзость&r когда-то была стражем крепости ада."
+				""
+				"Сначала она вросла в стены. Потом вросли стены в неё."
+				""
+				"Теперь она не служит — она просто остаётся."
+				""
+				"Влажная, гниющая, злая."
+				""
+				"Убей &l&#A9A9A9Засохшую Мерзость.&r Пока она снова не проросла."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "legendary_monsters:withered_horn"
+			}
+			id: "22CD8AFAE94E9BB2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2F3AE9A97A3407A2"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "6AF72CDED5540881"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "legendary_monsters:withered_abomination"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:withered_abomination_spawn_egg"
+					}
+					id: "5F02F28EDCF88D2D"
+					title: "&fУбить &l&#A9A9A9Засохшую Мерзость"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "18F58500555DF294"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "legendary_monsters:withered_horn"
+					}
+					title: "&fПолучить &l&#A9A9A9Withered Horn"
+					type: "item"
+				}
+			]
+			title: "&l&#A9A9A9Очищение гнили"
+			x: 0.5d
+			y: -7.5d
+		}
+		{
+			dependencies: ["5D8D38C14F3FEBC8"]
+			description: [
+				"В сундуках &#00FA9A&lДревнего Города&r можно найти редкие &#00FA9A&lосколки эха.&r Их немного, и добыть их — не так просто."
+				""
+				"Собери 8 таких осколков. Но будь осторожен."
+				"Здесь слышат всё. И &#00FA9A&lХранитель&r не прощает тех, кто берёт то, что было оставлено."
+				""
+				"Если решишь украсть — будь готов расплачиваться."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:echo_shard"
+			}
+			id: "2D57C929BA8D53DB"
+			rewards: [
+				{
+					id: "3A39D9DD4B5171AA"
+					table_id: 4942177764372789437L
+					type: "random"
+				}
+				{
+					id: "411E303A84C47EB6"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.15d
+			tasks: [
+				{
+					count: 8L
+					id: "617DF791742A43D5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:echo_shard"
+					}
+					title: "&fНайти &#00FA9A&l8х Осколков Эха"
+					type: "item"
+				}
+				{
+					id: "4AFAEB4680A6B9DF"
+					structure: "minecraft:ancient_city"
+					title: "&fНайти &l&#00FA9AДревний Город"
+					type: "structure"
+				}
+			]
+			title: "&#00FA9A&lШорох под камнем"
+			x: 0.0d
+			y: -4.6d
+		}
+		{
+			dependencies: ["2D57C929BA8D53DB"]
+			description: [
+				"В древнем городе можно найти &lотрывки текстов&r, которые никто не должен был читать."
+				""
+				"Некоторые называют их &lфрагментами познания&r. Другие — предупреждением."
+				""
+				"Собери &#00FA9A&l8 отрывков.&r Из них можно создать манускрипт, способный открыть путь к древней магии — потусторонней, разрушительной, забытой."
+				""
+				"Но знай: такие знания редко приходят без &lпоследствий.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "irons_spellbooks:eldritch_manuscript"
+			}
+			id: "778806A03AA95A38"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2BFC8173E663F68C"
+					table_id: 6342827431347558402L
+					type: "random"
+				}
+				{
+					id: "7C1EB94534F98CD2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "440D7F2E119ADC2F"
+					item: {
+						Count: 8
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "irons_spellbooks:ancient_knowledge_fragment"
+					}
+					type: "item"
+				}
+				{
+					id: "3915642EF8EB1087"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "irons_spellbooks:eldritch_manuscript"
+					}
+					type: "item"
+				}
+			]
+			title: "&lРазрозненное знание"
+			x: 0.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["778806A03AA95A38"]
+			description: [
+				"Глубоко в заброшенных землях стоит город &#00BFFF&lВардена&r — результат амбициозного эксперимента Повелителя Пустоты. "
+				""
+				"Разрушенные души тех, кто когда-то стремился стать&9&l Хранителями Пустоты, &rобрели форму в этих существ, теперь беспечного послушания и оголённых мыслей, стертых временем."
+				""
+				"В центре города возвышается гигантский портал — свидетель исчезнувшей связи с &l&9Пустотой.&r "
+				""
+				"Когда-то он был окном к силе, но теперь служит тюрьмой и щитом: &#00BFFF&lвардены&r стоят на страже, сохраняя секреты прошлого. Легенды гласят, что тот, кто сможет приблизиться к порталу и услышать его шёпот, обретёт ключ к тайне зарождения силы — но сможет ли он удержать разум от полусмертельной тишины?"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:warden_spawn_egg"
+			}
+			id: "3581CE390105351E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "50B6C3CCD3F2E387"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "2E767F1376EAEDC4"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					entity: "minecraft:warden"
+					id: "549CE484DA58B154"
+					title: "Убить &#00BFFF&lХранителя"
+					type: "kill"
+					value: 1L
+				}
+				{
+					count: 3L
+					id: "78B32DE3352920E2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "celestial_core:warden_sclerite"
+					}
+					title: "&fПолучить &#00BFFF&l3х Склерита Хранителя"
+					type: "item"
+				}
+			]
+			title: "&#00BFFF&lТот, кто ждёт"
+			x: 1.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["0B88D6BE9666CA4E"]
+			description: [
+				"Снаряжение ломается, и улучшать его — необходимость."
+				""
+				"&lНаковальня&r и &lстол кузнеца&r помогут не только починить, но и &lусилить&r твою броню и оружие."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:anvil"
+			}
+			id: "3983A76AC3EC381A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3BF93F34049AE3F7"
+					table_id: 7649650945532266025L
+					type: "random"
+				}
+				{
+					id: "7626F625188208A6"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					id: "178FFE2521F4662C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:anvil"
+					}
+					type: "item"
+				}
+				{
+					id: "7648C34249896950"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:smithing_table"
+					}
+					type: "item"
+				}
+			]
+			title: "Крепкая основа"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["0A13EB77432A4769"]
+			description: [
+				"&l&bНебесный незерит&r — один из самых прочных и редких материалов, созданный из чистой силы преисподней и света небес."
+				""
+				"Если хочешь выжить среди богов — начни с металла, достойного богов."
+			]
+			id: "199FF0A9B5B27B78"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "67726D6367253D86"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "5C7F1BD1AA302C48"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				count: 2L
+				id: "48D113DD355E3F14"
+				item: {
+					Count: 2
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestisynth:celestial_netherite_ingot"
+				}
+				type: "item"
+			}]
+			title: "&b&lСплав звёзд"
+			x: 11.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"Разнообразная и сытная еда — &lключ к стабильному выживанию.&r"
+				"Если питаться одним и тем же, со временем наступит &#A0522D&o&lпресыщение,&r и пища начнёт восстанавливать всё меньше."
+				""
+				"Чтобы готовить по-настоящему хорошие блюда, нужны &lподходящие инструменты.&r"
+				"Собери их, обустрой место — и начни есть с умом."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "farmersdelight:stove"
+			}
+			id: "5F1DC10FD85E8DA3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "58AC9805277B3EDE"
+					table_id: 4942177764372789437L
+					type: "random"
+				}
+				{
+					id: "6AF06F91ACC0AFE2"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					id: "38562A95B0D19FEE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "farmersdelight:stove"
+					}
+					title: "Создать Кухонную Плиту"
+					type: "item"
+				}
+				{
+					id: "6CE3703ADA6C1F68"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "farmersdelight:cooking_pot"
+					}
+					title: "Создать Кухонный Котёл"
+					type: "item"
+				}
+				{
+					id: "3CD8241FDF123527"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "farmersdelight:skillet"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Сковороду"
+					type: "item"
+				}
+			]
+			title: "&#A0522D&lКухня"
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4BE1718CA29194F8"]
+			description: [
+				"Обычная кухня не справляется с жаром, который требуется для некоторых рецептов из &l&4Незера.&r"
+				""
+				"Если хочешь готовить адские блюда — тебе потребуется особая плита."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mynethersdelight:nether_bricks_stove"
+			}
+			id: "0DE61CB310FAB43B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "111392FF60363CB0"
+					table_id: 3682298446534072072L
+					type: "random"
+				}
+				{
+					id: "7D002F2EF83B3B07"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					id: "37FF03076A559330"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mynethersdelight:nether_bricks_stove"
+					}
+					title: "&fСоздать &lНезерскую Кухонную Плиту"
+					type: "item"
+				}
+				{
+					id: "7C39807F9CCE6A99"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mynethersdelight:nether_bricks_cabinet"
+					}
+					title: "&fСоздать &lКладовую из Незерских Кирпичей"
+					type: "item"
+				}
+			]
+			title: "Готовка по-адски"
+			x: -0.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["0DE61CB310FAB43B"]
+			description: [
+				"Некоторые ингредиенты не существуют вне &l&#F0E68CЭндер-мира.&r Чтобы работать с ними, требуется особая плита — настроенная на искажение, пустоту и нестабильность."
+				""
+				"Создай &l&#F0E68Cплиту из Эндер-мира. &rЭто ключ к новому уровню готовки — странному, но весьма полезному."
+			]
+			id: "7B8B3C3C43AA45CA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1AA88955B71068B7"
+					table_id: 650140816303418706L
+					type: "random"
+				}
+				{
+					id: "3E3A4093E57D76B2"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "circle"
+			size: 1.0d
+			tasks: [{
+				id: "5CBAAB5FFABBD6FD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "endersdelight:endstone_stove"
+				}
+				title: "&fСделать &l&#F0E68CКухонную плиту из Эндер Мира"
+				type: "item"
+			}]
+			title: "&l&#F0E68CПлита из Пустоты"
+			x: -1.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5F1DC10FD85E8DA3"]
+			description: [
+				"Не вся сложная еда требует редких ингредиентов."
+				"Есть блюда, которые готовятся просто, но при этом отлично восстанавливают насыщение и не надоедают так быстро."
+				""
+				"Собери запас:"
+				"— Сытно, вкусно, без лишней заморочки. Такие блюда стоит держать под рукой в любой вылазке."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "farmersdelight:ratatouille"
+			}
+			id: "4BE1718CA29194F8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2C8CCB3B85C6ACE7"
+					table_id: 4942177764372789437L
+					type: "random"
+				}
+				{
+					id: "34B14FD860466CE2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.15d
+			tasks: [
+				{
+					count: 2L
+					id: "7FB0EB556C13C0C3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "farmersdelight:fried_rice"
+					}
+					title: "Сделать 2х Жареных Риса"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "12282F1E1D9766B9"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "farmersdelight:ratatouille"
+					}
+					title: "Сделать 4х Рататуев"
+					type: "item"
+				}
+			]
+			title: "Настоящая еда"
+			x: 0.0d
+			y: 4.6d
+		}
+		{
+			dependencies: ["7B8B3C3C43AA45CA"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "endersdelight:pearl_pasta"
+			}
+			id: "53DDCFE4DE5D7EB1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "13F89636563835E2"
+					table_id: 1796735103491411842L
+					type: "random"
+				}
+				{
+					id: "606413EFFE396343"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.3d
+			tasks: [
+				{
+					id: "1B9D8A0ED910CAF5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "endersdelight:pearl_pasta"
+					}
+					title: "&fПриготовить &#BA55D3&lПасту из Жемчужин"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "78EBAA66D20B8CA1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "endersdelight:ender_paella"
+					}
+					title: "&fПриготовить &#BA55D3&l4х Эндер Паэлья"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "4C38F1345BFD9837"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "endersdelight:crispy_skewer"
+					}
+					title: "&fПриготовить &#BA55D3&l2х Хрустящих Шампуров"
+					type: "item"
+				}
+			]
+			title: "&#BA55D3&lБлюда из Искажения"
+			x: -3.2500000000000004d
+			y: 7.800000000000001d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"&l&2Эссенции&r — это ключевой ресурс для большинства продвинутых крафтов."
+				""
+				"Разделяются на обычные и необычные, редкие, эпические. Получить их можно, &o&lраздробив&r артефакты разной редкости."
+				""
+				"Создай обе разновидности. Они тебе ещё не раз пригодятся."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enicreo:essense_1"
+			}
+			id: "0B3A082589EBFFF4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "56208BEE6481EA58"
+					table_id: 7224117543582156975L
+					type: "random"
+				}
+				{
+					id: "703672B36AD3CD06"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.15d
+			tasks: [
+				{
+					count: 6L
+					id: "1B3E8C2878E12092"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:essense"
+					}
+					title: "&fПолучить &l&#0080006х Эссенций"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5770D4A8E8E8DBEE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:essense_1"
+					}
+					title: "&fПолучить &l&#9ACD324х Необычных Эссенций"
+					type: "item"
+				}
+			]
+			title: "&l&#9ACD32Основа синтеза"
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["331AAC60B60820FC"]
+			description: [
+				"Есть эссенции, что не лежат на поверхности."
+				""
+				"&l&cЭссенция зла&r выпадает с небольшим шансом при убийстве могущественных врагов. Получить её — дело удачи и силы."
+				""
+				"Собери хотя бы по одной. Это не обычные компоненты — это риск, преобразованный в ресурс."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enicreo:essense_4"
+			}
+			id: "72B241A02AD13AC8"
+			rewards: [
+				{
+					id: "42E854E8639C032E"
+					table_id: 1124744564418460410L
+					type: "random"
+				}
+				{
+					id: "12D3286F55EBD5BC"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.2d
+			tasks: [
+				{
+					id: "749A743E3540250A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:strangeessense"
+					}
+					title: "&fСоздать &5&lСтранную Эссенцию"
+					type: "item"
+				}
+				{
+					id: "0FEBAB3D0B3E4165"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:essense_4"
+					}
+					title: "&fПолучить &c&lЭссенцию Зла"
+					type: "item"
+				}
+			]
+			title: "&c&lНестабильные субстанции"
+			x: -6.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4705C08CF3166FEB"]
+			description: [
+				"Оба этих предмета нужны для создания&6&l Сломанного меча&r — артефакта, с которого начнётся путь к абсолютной силе."
+				""
+				"Основание можно изредка найти в сундуках, разбросанных по структурам в мире. "
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enicreo:basesword"
+			}
+			id: "2B77FE50F756EF47"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0BEA367AD33AF7C3"
+					table_id: 371092526130258187L
+					type: "random"
+				}
+				{
+					id: "256801AE846FC298"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "2947B2B97BB42387"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:basesword"
+					}
+					title: "&fНайти &6&lОснование меча"
+					type: "item"
+				}
+				{
+					id: "54B9F6B617EAFACF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "simplyswords:netherfused_gem"
+						tag: { }
+					}
+					title: "&fСоздать &#FF4500&lНезеритоплавленную Руну"
+					type: "item"
+				}
+			]
+			title: "Основа для великого"
+			x: -6.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["72B241A02AD13AC8"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enicreo:holyingot"
+			}
+			id: "4AA2FF5B92233869"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0F035B9C226F9490"
+					table_id: 8517176721080188286L
+					type: "random"
+				}
+				{
+					id: "4BBC2349DFE52E78"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "5131377116A968A3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:holyingot"
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "73AE5AF7D0C5ABA2"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:lightingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Искажённый свет"
+			x: -7.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["72B241A02AD13AC8"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enicreo:poilage_ingot"
+			}
+			id: "779D30FE5880271B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "54D8E38DAC29DD26"
+					table_id: 8517176721080188286L
+					type: "random"
+				}
+				{
+					id: "1716DECAE8134E56"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "09DB8FB9B367F4DA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:poilage_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "0B0069805D55C44E"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:nightingot"
+					}
+					type: "item"
+				}
+			]
+			title: "Тьма и разложение"
+			x: -7.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["72B241A02AD13AC8"]
+			id: "3549026B5795F4CA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "24CCD0D92267BA1B"
+					table_id: 8517176721080188286L
+					type: "random"
+				}
+				{
+					id: "165796CE317F0DB7"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "7AF316E2B257138F"
+				item: {
+					Count: 2
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enicreo:flameingot"
+				}
+				type: "item"
+			}]
+			title: "Ярость первородного"
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: [
+				"779D30FE5880271B"
+				"3549026B5795F4CA"
+				"4AA2FF5B92233869"
+			]
+			description: [
+				"&l&9Космический сплав&r — итог всех предыдущих. В его составе — части ночи, огня, света, порчи и других сил."
+				"Впервые этот сплав был создан &l&3Devourer of Gods&r — не как оружие, а как основа разрушения."
+				""
+				"Создай &l&93 космических сплава.&r"
+				""
+				"Они необходимы для создания самых мощных артефактов в мире. Это не просто материал. Это итог всей твоей силы — и всей твоей дерзости."
+			]
+			id: "2587389AB1025EA1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1D1236F038C3FF79"
+					table_id: 8074965830024196680L
+					type: "random"
+				}
+				{
+					id: "3B82BBD3CEE3B422"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "2881F22EE0F81D51"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enicreo:spaceingot"
+				}
+				type: "item"
+			}]
+			title: "&9&lСинтез Космоса"
+			x: -9.100000000000001d
+			y: 0.0d
+		}
+		{
+			dependencies: ["37EFCFCD7522CE6C"]
+			description: [
+				"Мечи из &6&lSimply Swords&r — отличное мид-гейм оружие. У каждого есть уникальная способность, которая дают преимущество в бою."
+				""
+				"Рекомендуется открыть JEI, ввести @simply и изучить доступные клинки. Выбери тот, что подходит твоему стилю."
+				""
+				"Начни со &l&6Смотрителя&r — это сбалансированный меч с простым рецептом и хорошими свойствами."
+				""
+				"Хороший первый шаг на пути к действительно мощному арсеналу."
+			]
+			id: "4705C08CF3166FEB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7F0A567DAD038614"
+					table_id: 176380322557282230L
+					type: "random"
+				}
+				{
+					id: "673C98FABFAA0336"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "6545689CD92F1510"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "simplyswords:watcher_claymore"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "&fСкрафтить &6&lСмотритель"
+				type: "item"
+			}]
+			title: "Первый клинок"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"035ACA013BF3F0E5"
+				"0A13EB77432A4769"
+			]
+			description: [
+				"&lНезеритовая катана&r — лишь заготовка. В текущем виде она уступает многим клинкам, но если вложить усилия, она способна превратиться в одно из самых эффективных оружий."
+				""
+				"Начни с малого — создай её."
+			]
+			id: "557F58C7A6D010B1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0C33D99074137D3A"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "7C2B76148F173640"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "04C61FF678413C91"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "samurai_dynasty:katana_netherite"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Квартира с Потенциалом"
+			x: 9.049999999999999d
+			y: 5.5d
+		}
+		{
+			dependencies: ["557F58C7A6D010B1"]
+			description: [
+				"&lКатаны&r с вкраплениями Кицуне, Они, Ониби, Дзерогумо и Аканамэ — оружие, в которое вплетены черты древних существ. "
+				""
+				"У каждой — свои особенности: кто-то поджигает, кто-то отравляет, кто-то ослабляет врагов."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "samurai_dynasty:katana_akaname"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "45B19D7F259541FC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "39C4EEB1A1BE14F9"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "2BED107CFB5211F8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "716BE1CE6454AF27"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(samurai_dynasty:katana_oni)item(samurai_dynasty:katana_kitsune)item(samurai_dynasty:katana_kitsune_blue))"
+						}
+					}
+					title: "Скрафтить одну из следующих катан"
+					type: "item"
+				}
+				{
+					id: "3E3426BECB20A0F2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "samurai_dynasty:katana_jorogumo"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0EC7C47A145D18AE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "samurai_dynasty:katana_akaname"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Клинки силы"
+			x: 10.049999999999999d
+			y: 5.5d
+		}
+		{
+			dependencies: ["035ACA013BF3F0E5"]
+			description: ["Создание шаблона и блоков света — первый шаг к формированию особых доспехов и инструментов, питающихся чистой энергией."]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "epicpaladins:arclight_template"
+			}
+			id: "6583AD86DD251866"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "589D52B2F2698A0C"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "6FC6843092613CF7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "04B3451EFE7042C5"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:arclight_block"
+					}
+					type: "item"
+				}
+				{
+					id: "17218F4798E799C0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:arclight_template"
+					}
+					type: "item"
+				}
+			]
+			title: "Структура света"
+			x: 9.049999999999999d
+			y: 6.5d
+		}
+		{
+			dependencies: ["035ACA013BF3F0E5"]
+			description: ["Шаблон кровавого камня и его блоки открывают путь к созданию снаряжения, способного усиливаться за счёт битвы и боли."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "epicpaladins:bloodstone_template"
+			}
+			id: "13B5E39E0EE8AFBF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2186B4694CD87613"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "371C21C7F48D56F1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "7B199647862F8FC0"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:bloodstone_block"
+					}
+					type: "item"
+				}
+				{
+					id: "64450F3D45D62274"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:bloodstone_template"
+					}
+					type: "item"
+				}
+			]
+			title: "Формула крови"
+			x: 9.049999999999999d
+			y: 7.5d
+		}
+		{
+			dependencies: ["035ACA013BF3F0E5"]
+			description: ["Нефритовые блоки и шаблон позволят работать с этим устойчивым и сбалансированным материалом — надёжной основой для продвинутого снаряжения."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "epicpaladins:jade_template"
+			}
+			id: "6F6A37BCE78581F1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6B4B44E30AD75E87"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "377A5B2A5FEA941E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "3C17EC2FD3FA8982"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:jade_block"
+					}
+					type: "item"
+				}
+				{
+					id: "0AE94CD8CB5C8D96"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:jade_template"
+					}
+					type: "item"
+				}
+			]
+			title: "Рисунок нефрита"
+			x: 9.049999999999999d
+			y: 8.5d
+		}
+		{
+			dependencies: ["6583AD86DD251866"]
+			description: ["Броня, созданная из света, дарует не только защиту, но и баланс между скоростью и стойкостью. Является шагом на пути к силе ангелов."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "epicpaladins:arclight_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "02E2C88248435455"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "750CD018DAD24F17"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "6AFDEDCA6C04712B"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "414A73CA366F4AE2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:arclight_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7C7AC28C7BC1AE69"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:arclight_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6766362157B62DF2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:arclight_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36D88530128994CC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:arclight_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "21EAABCDD3EF8808"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:arclight_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Сияй"
+			x: 10.049999999999999d
+			y: 6.5d
+		}
+		{
+			dependencies: ["02E2C88248435455"]
+			description: ["Ангельский сет создаётся из брони света и символизирует следующую ступень развития. Он дает игроку возможность летать как на элитрах, не лишаясь устойчивости."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "epicpaladins:angel_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1290940B96CA919C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "03D365172B7F421A"
+					table_id: 3696026655157823979L
+					type: "random"
+				}
+				{
+					id: "42D275C3C1B3ABC1"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "740695B5004D34F7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:angel_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6C6260FB7C3BC280"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:angel_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "057E63779FDB8B90"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:angel_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6955ED87EA7724C4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:angel_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "516E05D9A3D696CF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:angel_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&lКрылья за спиной"
+			x: 11.049999999999999d
+			y: 6.5d
+		}
+		{
+			dependencies: ["6F6A37BCE78581F1"]
+			description: ["Нефритовая броня — надёжная, выносливая, сбалансированная. Первый шаг на пути к сету призрака, одному из сильнейших в игре."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "epicpaladins:jade_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "40A9B2AC93546C41"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "07D9332B7AC7B75B"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "61E99B8B0688E03B"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "65F7F52C26E5CA38"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:jade_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "54899CA09391A803"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:jade_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "237B2086C70331B0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:jade_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58521B1AE44A4A9B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:jade_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Щит природы"
+			x: 10.049999999999999d
+			y: 8.5d
+		}
+		{
+			dependencies: ["13B5E39E0EE8AFBF"]
+			description: ["Сет кровавого камня - первый шаг на пути к одному из мощнейших сетов в игре."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "epicpaladins:bloodstone_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "50DDF7094C7137EB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B1A4F450EDB4600"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "30EB43C8916375AF"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "059AC527E9AA8787"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:bloodstone_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5DC3D71B087D9059"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:bloodstone_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "71E537A2107709E1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:bloodstone_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "76EB32C78AD3DEF2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:bloodstone_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Оковы крови"
+			x: 10.049999999999999d
+			y: 7.5d
+		}
+		{
+			dependencies: ["40A9B2AC93546C41"]
+			description: ["Доспехи призрака — это броня для тех, кто движется сквозь Пустоту. Имеет крайне сильную способность увернуться от самой смерти."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "cataclysm:cursium_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0A7CBC668D33C0F2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "04388A58DE588F8F"
+					table_id: 3696026655157823979L
+					type: "random"
+				}
+				{
+					id: "69CC3B1930F05466"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "408454AF69E477F6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:cursium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E8318EF7959AF61"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:cursium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "32FA61BBE06F8CA0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:cursium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "02D705BEF648B305"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:cursium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&lТень, что не исчезает"
+			x: 11.049999999999999d
+			y: 8.5d
+		}
+		{
+			dependencies: ["50DDF7094C7137EB"]
+			description: ["Игнитовый доспех — это гнев, закованный в металл пустоты и огня. Дает невероятную стойкость и различные адские бонусы."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "cataclysm:ignitium_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4BC2C405FB0E7512"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4FF96430AD557B8B"
+					table_id: 3696026655157823979L
+					type: "random"
+				}
+				{
+					id: "3E12661C4FB378AD"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [
+				{
+					id: "6E6DAE0E393B774C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:ignitium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3474D6172470B0FC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:ignitium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5566F02B577F0A48"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:ignitium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1456FEA9E4E70C8D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "cataclysm:ignitium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&lПламя, что не угасает"
+			x: 11.049999999999999d
+			y: 7.5d
+		}
+		{
+			dependencies: ["3983A76AC3EC381A"]
+			description: [
+				"Обычные книги и наковальни — не предел."
+				""
+				"С помощью древнего тома можно поднять уровень зачарования выше стандартного лимита."
+				""
+				"Найди нужный том — и выжми из магии всё."
+			]
+			id: "774C5173A30A0A9C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5125B228021F1B34"
+					table_id: 6342827431347558402L
+					type: "random"
+				}
+				{
+					id: "4B09B69F3423378A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				advancement: "quark:overlevel_enchant"
+				criterion: ""
+				id: "31D1925351753D1A"
+				title: "Превысить лимит зачарования при помощи древнего тома"
+				type: "advancement"
+			}]
+			title: "Превышение лимита"
+			x: 2.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4F7FB1227EA522F7"]
+			description: [
+				"Ядра земли — не самый редкий ресурс, но их создание требует усилий."
+				""
+				"Используются в ряде ценных крафтов."
+			]
+			id: "0537C56DBAD64AB9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4237BB4727C2AC10"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "31EB12B547E8F347"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "28785B9410C87F09"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_core:earth_core"
+				}
+				title: "Создать 2х Ядер Земли"
+				type: "item"
+			}]
+			title: "Сердце Земли"
+			x: 7.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4DB86F396D32CEE5"]
+			description: [
+				"Когда ты добываешь силу через чистую звезду, открывается доступ к вещам, что лежат между светом и тьмой."
+				""
+				"Собери:"
+				"— &l&62 фрагмента света&r, что стали выпадать из кадавров."
+				"— &9&l2 фрагмента полуночи&r из зимогоров."
+				""
+				"Они используются в создании высокоуровневых артефактов и экипировки."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestial_core:light_fragment"
+			}
+			id: "011B86C903009000"
+			tasks: [
+				{
+					count: 2L
+					id: "774C639BF5DA5CBB"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "celestial_core:light_fragment"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "05B0D95513933C6D"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "celestial_core:midnight_fragment"
+					}
+					type: "item"
+				}
+			]
+			title: "Пределы сияния"
+			x: 8.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["6E301F7FF0E1A7BD"]
+			description: [
+				"Некоторые ресурсы не выпадают случайно. Их нужно вырвать. Через условия, страдание и &c&lточный расчёт.&r"
+				""
+				"— &7&lЧистые звёзды Незера&r появляются, только если ты убьёшь визера под действием 12 положительных эффектов."
+				"— &7&lЭссенции смерти&r выпадают с существ, у которых более 100 хп — и только если они погибли от иссушения."
+				""
+				"Да, это тяжело. Но без них не будет &c&lнастоящей силы.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "celestial_core:pure_nether_star"
+			}
+			id: "4DB86F396D32CEE5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B2779C0E9B12B26"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "7998EA2159F56651"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					count: 2L
+					id: "297D0110C44EA453"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "celestial_core:pure_nether_star"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4671A09ACEFCDED6"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "celestial_core:death_essence"
+					}
+					type: "item"
+				}
+			]
+			title: "&lЧистая смерть"
+			x: 8.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["035ACA013BF3F0E5"]
+			description: ["Темнометаллические шаблоны и бронепластины — прочнейшая основа для брони, способной выдержать чудовищное давление. Их производство потребует точности и немалых затрат."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "born_in_chaos_v1:dark_upgrade"
+			}
+			id: "09C5946E47A1524B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "467C88001A2A2D2E"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "04C9273464A0C5E0"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "0F14CFB9F417FB7F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "born_in_chaos_v1:dark_upgrade"
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5A512914E2DA8886"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "born_in_chaos_v1:armor_plate_from_dark_metal"
+					}
+					type: "item"
+				}
+			]
+			title: "Печать тьмы"
+			x: 9.049999999999999d
+			y: 9.5d
+		}
+		{
+			dependencies: ["09C5946E47A1524B"]
+			description: ["Доспех из тёмного металла создан для тяжёлых условий. При маленьком кол-ве здоровья нося эти доспехи, ты впадешь в ярость."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "born_in_chaos_v1:dark_metal_armor_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "41A0C09AD31B69C8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "248364BB50B9F1BE"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "240DD2CE64C21798"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "030F05E2D234186B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "born_in_chaos_v1:dark_metal_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2DE64C73268E3D09"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "born_in_chaos_v1:dark_metal_armor_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7D5CEB8D154AD4E5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "born_in_chaos_v1:dark_metal_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "770AA94FA032C8C1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "born_in_chaos_v1:dark_metal_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Оболочка давления"
+			x: 10.049999999999999d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6C80652CFEAE536D"]
+			description: [
+				"Ты собрал портал — теперь осталось сделать шаг."
+				"&c&lНезер&r ждёт. Жара, монстры, адский ландшафт и ресурсы, которых нет больше нигде."
+				""
+				"Войди в портал. Но будь готов - его обитатели &o&lненавидят&r&l &4проклятых,&r сбегаясь на них, как на жертву."
+			]
+			id: "61AA7AD1BE97EC8F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0FDC6169B5564481"
+					table_id: 7649650945532266025L
+					type: "random"
+				}
+				{
+					id: "3C361E519B323CF9"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				advancement: "minecraft:story/enter_the_nether"
+				criterion: ""
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:netherrack"
+				}
+				id: "5D6A2E3D3C1D80E8"
+				type: "advancement"
+			}]
+			title: "&l&cОгненные недры"
+			x: 4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["61AA7AD1BE97EC8F"]
+			description: [
+				"В Незере есть две основные структуры, которые стоит найти как можно раньше:"
+				"— В бастионе — сокровища, охраняемые агрессивными обитателями."
+				"— В крепости — редкие ресурсы и источник для продвижения вперёд."
+				""
+				"Обе опасны. Обе необходимы."
+				"Исследуй их. Уходи, если не готов. Возвращайся — когда будешь."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:blackstone"
+			}
+			id: "57EFCCEF18926260"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "36A0C75926214BC4"
+					table_id: 4942177764372789437L
+					type: "random"
+				}
+				{
+					id: "2D0DBECAA1292CA3"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:blackstone"
+					}
+					id: "2A91F4F2333A8EB2"
+					structure: "minecraft:bastion_remnant"
+					title: "Найти Бастион"
+					type: "structure"
+				}
+				{
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:nether_bricks"
+					}
+					id: "4FF2DCCF71C96AC8"
+					structure: "minecraft:fortress"
+					title: "Найти Кресоть Незера"
+					type: "structure"
+				}
+			]
+			title: "Сердце преисподней"
+			x: 5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["0A13EB77432A4769"]
+			description: [
+				"Когда инвентарь забит, а ресурсы сыплются из каждого сундука — приходит время для &l&6рюкзака.&r"
+				"Непростой в изготовлении, но невероятно удобный, он быстро станет твоим лучшим другом в любых вылазках."
+			]
+			id: "40BAE1C9E2B78DE0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "58440EA241D1042E"
+					table_id: 1796735103491411842L
+					type: "random"
+				}
+				{
+					id: "065362BFD2C3137C"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 1.15d
+			tasks: [{
+				id: "5EC715ED0CEB6C3F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "backpacked:backpack"
+				}
+				title: "&fСоздать &6&lРюкзак"
+				type: "item"
+			}]
+			title: "Больше места — меньше суеты"
+			x: 11.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"Хоть &l&4проклятые&r и лишены сна, кровать остаётся важнейшим инструментом выживания."
+				"Она позволяет задать точку возрождения — но &o&lне чаще одного раза за сутки.&r"
+				""
+				"Таков был замысел &l&9Хранителей Пустоты.&r"
+				"Не дать тебе передышки."
+				"Не дать тебе &l&cшанса.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:red_bed"
+			}
+			id: "682440942B78F66B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "57A9A23E59FF2B52"
+					table_id: 7649650945532266025L
+					type: "random"
+				}
+				{
+					id: "0751E420434EF663"
+					type: "xp"
+					xp: 30
+				}
+			]
+			size: 1.15d
+			tasks: [{
+				id: "1DDF9F11A75A8A3E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(minecraft:white_bed)item(minecraft:light_gray_bed)item(minecraft:gray_bed)item(minecraft:black_bed)item(minecraft:brown_bed)item(minecraft:red_bed)item(minecraft:orange_bed)item(minecraft:yellow_bed)item(minecraft:lime_bed)item(minecraft:green_bed)item(minecraft:cyan_bed)item(minecraft:light_blue_bed)item(minecraft:blue_bed)item(minecraft:purple_bed)item(minecraft:magenta_bed)item(minecraft:pink_bed))"
+					}
+				}
+				title: "Сделать кровать"
+				type: "item"
+			}]
+			title: "&l&#FA8072Сон, которого не будет"
+			x: 1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["61AA7AD1BE97EC8F"]
+			description: [
+				"&l&6Зельеварка&r — один из самых полезных инструментов."
+				""
+				"В этом мире взрывные зелья работают отлично от привычного - зелья летят гораздо быстрее и дальше, благодаря чему ты можешь помочь своему другу в любой передряге."
+				""
+				"Создай зельеварку и начни варить зелья. Это не магия. Это подготовка."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:brewing_stand"
+			}
+			id: "0CB2F0B9C1056D38"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5C019B2486C4E578"
+					table_id: 6342827431347558402L
+					type: "random"
+				}
+				{
+					id: "027990B2C4DFF9B2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "74BE02FC1AF05C62"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:brewing_stand"
+					}
+					title: "&fСоздать &6&lЗельеварку"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "287272765A6111A6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:long_swiftness"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "603F4EC8AA9BD115"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:long_fire_resistance"
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "3B864BC9AFA21A55"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:splash_potion"
+						tag: {
+							Potion: "minecraft:long_night_vision"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Пузырьки"
+			x: 5.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4DB86F396D32CEE5"]
+			description: [
+				"Маяк — это структура, которая даёт мощные бафы в большом радиусе."
+				""
+				"Для активации требуется пирамида из дорогих блоков, но эффект стоит того."
+			]
+			id: "1E3480B780A9C8F1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "41537A08A2801602"
+					table_id: 6342827431347558402L
+					type: "random"
+				}
+				{
+					id: "0F1B4697D5436B23"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "7B80327344D289D6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:beacon"
+				}
+				title: "&fСоздать &lМаяк"
+				type: "item"
+			}]
+			title: "Сигнал в пустоту"
+			x: 10.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1E3480B780A9C8F1"]
+			description: [
+				"Чтобы построить полноценный &lмаяк&r, потребуется &l&b164 алмазных блока.&r"
+				""
+				"Это не просто декорация — это вложение в постоянное усиление."
+			]
+			id: "04840AA05D6B5CF2"
+			progression_mode: "linear"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "008167EA173A95B7"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "4DABB5788E6EF035"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				count: 164L
+				id: "1AE69A5E7C8612B0"
+				item: {
+					Count: 164
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:diamond_block"
+				}
+				type: "item"
+			}]
+			title: "Цена сияния"
+			x: 11.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"Чтобы не захламлять базу десятками сундуков, используй улучшения."
+				"С их помощью ты сможешь хранить гораздо больше предметов в одном хранилище — удобно и без лишней путаницы."
+				""
+				"&7&oКстати, бойся сундуков! Иногда из них может вылезти что-то неожиданное.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "sophisticatedstorage:stack_upgrade_tier_3"
+			}
+			id: "59607EDA763A7847"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4AE8DC90B7EFAEBB"
+					table_id: 3893696373262060362L
+					type: "random"
+				}
+				{
+					id: "0015E5B0F0DC5C46"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					id: "3C8B3110BD0459F2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "sophisticatedstorage:crafting_upgrade"
+					}
+					type: "item"
+				}
+				{
+					id: "648D6473A5D36023"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "sophisticatedstorage:stack_upgrade_tier_3"
+					}
+					type: "item"
+				}
+				{
+					id: "6D2531AB18E66865"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "sophisticatedstorage:basic_tier_upgrade"
+					}
+					type: "item"
+				}
+			]
+			title: "&#FFA500&lБазовые улучшения"
+			x: 2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["59607EDA763A7847"]
+			description: [
+				"Чтобы вместить больше — нужно прокачать хранилище."
+				""
+				"Создай:"
+				"— Улучшение &l&b«Переполнение»&r ур. 4"
+				"— 4 улучшения «Расширение: &l&cБазовое&r → &l&bАлмазное&r»"
+				""
+				"Эти улучшения значительно увеличат вместимость сундука. Полезно для хранения большого кол-ва ресурсов."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "sophisticatedstorage:stack_upgrade_tier_4"
+			}
+			id: "4CB96E1B87F9178D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5486DCE4580D1E0A"
+					table_id: 4942177764372789437L
+					type: "random"
+				}
+				{
+					id: "54B711B132244FF7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "09622E0FA22C4789"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "sophisticatedstorage:stack_upgrade_tier_4"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "2E08ED4A8060291F"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "sophisticatedstorage:basic_to_diamond_tier_upgrade"
+					}
+					type: "item"
+				}
+			]
+			title: "Расширение возможностей"
+			x: 4.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4CB96E1B87F9178D"]
+			description: [
+				"Для самых тяжёлых задач — нужны максимальные улучшения."
+				""
+				"Создай:"
+				"— Улучшение &l&8«Переполнение»&r ур. 5"
+				"— 4 улучшения «Расширение: Базовое → &l&8Незеритовое&r»"
+				""
+				"Это — финальный этап прокачки объёма сундука. Подходит для хранилищ с тысячами предметов."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "sophisticatedstorage:stack_upgrade_tier_5"
+			}
+			id: "299FA9701C3CE360"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "762609CCA0893A6F"
+					table_id: 4196717357115144924L
+					type: "random"
+				}
+				{
+					id: "27741D0B440416BC"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "27E9F350900B5595"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "sophisticatedstorage:stack_upgrade_tier_5"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "14132AD9BB7C42B4"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "sophisticatedstorage:basic_to_netherite_tier_upgrade"
+					}
+					type: "item"
+				}
+			]
+			title: "Максимальный объём"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3581CE390105351E"]
+			description: [
+				"Потеряться можно везде. Но потеряться в &#00BFFF&lглубинах&r — значит исчезнуть навсегда."
+				""
+				"Возвратный компас — редкий инструмент, который указывает на место твоей смерти."
+				""
+				"Создать его можно только из осколков эха и склеритов, что выпадают с &#00BFFF&lХранителя.&r"
+				""
+				"Это не просто удобство. Это шанс вернуть то, что, казалось, уже не вернуть."
+			]
+			id: "1170BF1EAA0FBBBA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2EAC6BDEBB86F2C3"
+					table_id: 6342827431347558402L
+					type: "random"
+				}
+				{
+					id: "1979E179FAC7FCC8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.3d
+			tasks: [{
+				id: "3BC541FAD814FCF4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:recovery_compass"
+				}
+				title: "&fСоздать &#00BFFF&lВозвратный компас"
+				type: "item"
+			}]
+			title: "&lНазад через смерть"
+			x: 3.2500000000000004d
+			y: -7.800000000000001d
+		}
+		{
+			dependencies: ["299FA9701C3CE360"]
+			description: [
+				"&l&#C0C0C0Незеритовые шалкеры&r — один из лучших вариантов переносного хранилища."
+				"Их нельзя скрафтить. Получить их можно только за &l&6монеты рейда второго тира.&r"
+				""
+				"Добудь и обменяй монеты на &l&#C0C0C02 незеритовых шалкера.&r"
+				"Они стоят дорого — но служат долго."
+			]
+			id: "5CF0EF2D295FD6F3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6240330ECDC25A88"
+					table_id: 3696026655157823979L
+					type: "random"
+				}
+				{
+					id: "2C13F54924686BB2"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "3CD0D5EACC50D628"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "sophisticatedstorage:netherite_shulker_box"
+				}
+				title: "&fКупить &l&#C0C0C02х Незеритовых шалкеровых ящиков"
+				type: "item"
+			}]
+			title: "&lВеличайшее хранилище"
+			x: 9.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"Чтобы попасть в &l&4Незер,&r тебе понадобится портал."
+				"А для него — 10 блоков обсидиана и огниво."
+				""
+				"Это только начало, но уже шаг в сторону боли, жары и нестабильности."
+				""
+				"Собери материалы."
+				"Скоро ты увидишь, что хуже мира — только его &l&4отражение.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:obsidian"
+			}
+			id: "6C80652CFEAE536D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5A88DE7E71EEF8A3"
+					table_id: 4942177764372789437L
+					type: "random"
+				}
+				{
+					id: "33B251F3801258F0"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					count: 10L
+					id: "6A1F373D1C1B8E0D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:obsidian"
+					}
+					title: "&fСобрать &#A9A9A9&l10х Обсидиана"
+					type: "item"
+				}
+				{
+					id: "5AAE2AA5C9A15C21"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:flint_and_steel"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fСделать &#A9A9A9&lОгниво"
+					type: "item"
+				}
+			]
+			title: "&l&#A9A9A9Путь в преисподнюю"
+			x: 2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4DCA11C7AD7C81A2"]
+			description: [
+				"&l&cКровавые&r, &l&2нефритовые&r и кристаллы &l&6света&r — не самые редкие, но крайне полезные кристаллы что можно добыть в пещерах."
+				""
+				"Собери их с запасом — впереди крафты, где они понадобятся не один раз."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "epicpaladins:bloodstone_gem"
+			}
+			id: "4F7FB1227EA522F7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0411663C63F7376B"
+					table_id: 6342827431347558402L
+					type: "random"
+				}
+				{
+					id: "19DAE0504CB69B64"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 9L
+					id: "5CE37EDE40D13328"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:bloodstone_gem"
+					}
+					title: "&fДобыть &c&l9х Кровавых Кристаллов"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "7EAAF880BAA8783C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:jade_gem"
+					}
+					title: "&fДобыть &2&l9х Нефритовых Кристаллов"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "53F85B4DB40A801C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "epicpaladins:arclight_gem"
+					}
+					title: "&fДобыть &6&l9х Кристаллов Света"
+					type: "item"
+				}
+			]
+			title: "Три цвета прогресса"
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"Чтобы начать путь в оружии душ, тебе понадобятся особые материалы."
+				""
+				"Собери:"
+				"— &l9 лунных камней&r"
+				"— &l3 вергласа&r"
+				""
+				"Это базовые ресурсы, которые используются в множестве рецептов &l&3Souls Weaponry.&r Лучше сразу сделать небольшой запас."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "soulsweapons:moonstone"
+			}
+			id: "3CD45A4C5ECA55C5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0E6A2D0CF75E970D"
+					table_id: 1282274860054614714L
+					type: "random"
+				}
+				{
+					id: "3B958E4AC9698C33"
+					type: "xp"
+					xp: 50
+				}
+			]
+			size: 1.15d
+			tasks: [
+				{
+					count: 9L
+					id: "651C6699C7CF7410"
+					item: {
+						Count: 9
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:moonstone"
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "10740C34B70BDDFC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:verglas"
+					}
+					type: "item"
+				}
+			]
+			title: "&#B0E0E6&lКамни луны"
+			x: -1.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2B77FE50F756EF47"]
+			description: ["&l&6Сломанный меч&r — это не ошибка, а заготовка. Его нельзя использовать как обычное оружие, но именно с его помощью можно выбрать желаемое."]
+			id: "658CB98E062EF79A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "38AC95C84682F09E"
+					table_id: 4882868283796278649L
+					type: "random"
+				}
+				{
+					id: "74F838D1EBF40EEE"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "3673CFF7E69447FE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enicreo:ssword"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "&fСоздать &l&6Сломанный меч"
+				type: "item"
+			}]
+			title: "&6&lОсколок грядущего"
+			x: -8.4d
+			y: 3.0d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"&l&#DA70D6Руническая скрижаль&r — это основа любой рунической модификации."
+				""
+				"С её помощью ты можешь усиливать оружие рунической силой, а также использовать её в рецептах для создания продвинутых клинков."
+			]
+			id: "37EFCFCD7522CE6C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "67E0D96A2D8B1461"
+					table_id: 176380322557282230L
+					type: "random"
+				}
+				{
+					id: "5D3FA9EA75F940F9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "53D1EC822DF7B314"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "simplyswords:runic_tablet"
+				}
+				title: "&fСоздать &l&#DA70D6Руническую Скрижаль"
+				type: "item"
+			}]
+			title: "&l&#DA70D6Печать клинка"
+			x: -2.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["391A7287DB393EF1"]
+			description: [
+				"Некоторые артефакты не создаются — они даются."
+				""
+				"&l&4Око Апостола&r — один из таких."
+				""
+				"Каждое из них связано с существом, искажённым &l&9Пустотой.&r Тот, кто носит такое око, несёт в себе след их силы… и их &l&4проклятия.&r"
+				""
+				"Заполучи хотя бы одно. Это открывает путь к тому, чего нет у других."
+				""
+				"И к тому, что может изменить тебя."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "endrem:magical_eye"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "620975B23D3EFB16"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1F5C142C6717A768"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "164589FBD30120D7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.4d
+			tasks: [{
+				id: "22E604C021B60CBE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Оки\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(endrem:black_eye)item(endrem:cold_eye)item(endrem:corrupted_eye)item(endrem:lost_eye)item(endrem:nether_eye)item(endrem:old_eye)item(endrem:rogue_eye)item(endrem:cursed_eye)item(endrem:evil_eye)item(endrem:guardian_eye)item(endrem:magical_eye)item(endrem:wither_eye)item(endrem:witch_eye)item(endrem:undead_eye)item(endrem:exotic_eye)item(endrem:cryptic_eye))"
+					}
+				}
+				title: "Получить Око"
+				type: "item"
+			}]
+			title: "&b&lГлаз Апостола"
+			x: -3.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"Оно не сверкает, не пульсирует энергией и не излучает угрозу. И всё же ты чувствуешь: &l&9оно смотрит.&r Закрытое, тихое… будто ожидает."
+				""
+				"Никто не знает, кто создал его и зачем. Одни считают, что это просто древний амулет, другие — что это ключ. Или замок."
+				""
+				"Оно дремлет. И, возможно, будет дремать вечно. Но если когда-нибудь оно &l&cоткроется&r — ты уже не будешь прежним."
+			]
+			id: "391A7287DB393EF1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "490F7BABC1954F64"
+					table_id: 8857603386040532965L
+					type: "random"
+				}
+				{
+					id: "4D1AE881AA2A86B1"
+					type: "xp"
+					xp: 50
+				}
+			]
+			size: 1.2d
+			tasks: [{
+				id: "50EC2F147DA12B38"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:enigmatic_eye"
+					tag: { }
+				}
+				title: "&fНайти &9&lДремлющее око"
+				type: "item"
+			}]
+			title: "&l&9Дремлющее Око"
+			x: -1.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6F22B081FA0939ED"]
+			description: [
+				"Среди древних структур можно найти редкие артефакты — &l&aКамни Стихий.&r"
+				"Каждый из них связан с определённой силой: &l&cогнём,&r &l&bводой,&r &l&aземлёй&r и другими."
+				""
+				"У каждого камня — свои уникальные свойства."
+				"Найти их можно в подходящих структурах:"
+				"— &l&cРаскалённое ядро&r — в незере"
+				"—&l&b Воля океана&r — в разбитых кораблях"
+				"— И другие — по стихии."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enigmaticlegacy:blazing_core"
+			}
+			id: "1A9842D3A80B8218"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "61A2D0050660C6A2"
+					table_id: 8857603386040532965L
+					type: "random"
+				}
+				{
+					id: "7CC79B7AEC5CB5B3"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.25d
+			tasks: [{
+				id: "1C519860524B0250"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Аксы\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(enigmaticaddons:lost_engine)item(enigmaticlegacy:angel_blessing)item(enigmaticlegacy:golem_heart)item(enigmaticlegacy:ocean_stone)item(enigmaticlegacy:blazing_core)item(enigmaticaddons:forgotten_ice)item(enigmaticaddons:revival_leaf))"
+					}
+				}
+				title: "Найти один из камней стихий"
+				type: "item"
+			}]
+			title: "&c&lКамни силы"
+			x: -4.375d
+			y: -2.5d
+		}
+		{
+			dependencies: ["16BBA7F38AD3276F"]
+			description: [
+				"Иногда среди хлама и пыли можно найти нечто по-настоящему &l&6ценное.&r"
+				""
+				"&l&cАнтикварная книжная сумка&r — один из таких предметов. Её можно обнаружить в сундуках, спрятанных в разных &l&6структурах мира.&r"
+				""
+				"Она используется для хранения &l&cдревних томов&r — книг, содержащих фрагменты правды о &l&cпрошлом.&r"
+			]
+			id: "6F22B081FA0939ED"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "617B713F1FF7893E"
+					table_id: 8857603386040532965L
+					type: "random"
+				}
+				{
+					id: "31316F343406C73D"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "42DEDD9BE5A70307"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:antique_bag"
+				}
+				title: "Найти антикварную книжную сумку"
+				type: "item"
+			}]
+			title: "&lАнтикварная сумка"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Скрафти Глаз Скульптора и найди &#98FB98&lмонастырь&r, чтобы сразиться с древним скульптором."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mowzies_cataclysm:tongbi_eye"
+			}
+			id: "4A724DFDE71DEB68"
+			rewards: [{
+				id: "5EFCCFFD9DB4DD62"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "7617BC6446D346D5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mowzies_cataclysm:tongbi_eye"
+					}
+					title: "&fСоздать &#98FB98&lГлаз Скульптора"
+					type: "item"
+				}
+				{
+					id: "3DC36B9F1447DEB6"
+					structure: "mowziesmobs:monastery"
+					title: "&fНайти &l&#98FB98Монастырь"
+					type: "structure"
+				}
+			]
+			title: "&l&#98FB98След резца"
+			x: -3.0d
+			y: -9.0d
+		}
+		{
+			dependencies: ["4A724DFDE71DEB68"]
+			description: [
+				"&l&#F08080Тонгби Скульптор&r был подданным &c&lВарен’Таала&r — и первым, кто предсказал его падение."
+				"За это его изгнали. Он ушёл в горы, построил монастырь и посвятил себя форме. Камню. Лезвию. "
+				""
+				"Предсказание сбылось. Но возвращаться он не стал."
+				""
+				"Теперь &l&#F08080Тонгби&r режет не будущее, а плоть."
+				"Убей его. И, может быть, он наконец увидит последнюю форму."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mowziesmobs:geomancer_beads"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "090008E9ABD88DB3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6336B321996D6C6C"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "314B0500C755469C"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					entity: "mowziesmobs:sculptor"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mowziesmobs:sculptor_spawn_egg"
+					}
+					id: "452D84F044A3DD24"
+					title: "Убить &l&#F08080Тонгби, Скульптора"
+					type: "kill"
+					value: 1L
+				}
+				{
+					id: "097C5008A60361FB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mowziesmobs:geomancer_beads"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fПолучить &l&#F08080Бусы Геоманта"
+					type: "item"
+				}
+			]
+			title: "&l&#F08080Молчащий резчик"
+			x: -3.0d
+			y: -10.5d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: ["Создай Глаз Кузнеца и найди Камеру Пыток, в которой заточен &l&7Железный Кованный.&r"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mowzies_cataclysm:wrought_eye"
+			}
+			id: "02AC024A4A93AAF2"
+			rewards: [{
+				id: "146752DFD27368B5"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "1A6084402B213BAB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mowzies_cataclysm:wrought_eye"
+					}
+					title: "&fСоздать &l&7Глаз Кузнеца"
+					type: "item"
+				}
+				{
+					id: "411B6157578FF5C3"
+					structure: "mowziesmobs:wrought_chamber"
+					title: "&fНайти &l&7Камеру Пыток"
+					type: "structure"
+				}
+			]
+			title: "&7&lВоин Пустоты"
+			x: -4.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["620975B23D3EFB16"]
+			description: [
+				"Создай Глаз Мороза и найди Гнездо &l&bЛедочрева.&r"
+				"Холод — не главная угроза."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "mowzies_cataclysm:frostmaw_eye"
+			}
+			id: "13C120037F1DF062"
+			rewards: [{
+				id: "104917E27633E460"
+				type: "xp"
+				xp: 100
+			}]
+			tasks: [
+				{
+					id: "79EE002405A4E374"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "mowzies_cataclysm:frostmaw_eye"
+					}
+					title: "&fСоздать &b&lГлаз Мороза"
+					type: "item"
+				}
+				{
+					id: "4FFE3019B9F3CFA1"
+					structure: "mowziesmobs:frostmaw_spawn"
+					title: "&fНайти &b&lГнездо Ледочрева"
+					type: "structure"
+				}
+			]
+			title: "&b&lГлубины льда"
+			x: -1.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["09BFB24D4EBD7839"]
+			description: [
+				"После победы над &l&dпризраком Корнелии&r остаётся не только ледяной шрам на земле, но и ключ — к старому сундуку, скрытому в убежище."
+				""
+				"Внутри — не просто сокровища. Это остатки её прошлого. Её путь, &l&bсобранный по осколкам.&r"
+			]
+			id: "4DA9EACDE18EA06D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19A531321167D7C4"
+					table_id: 5677960401788075893L
+					type: "random"
+				}
+				{
+					id: "3BD7C78C48145CD0"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "652EA716FEE9E501"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aquamirae:frozen_key"
+				}
+				title: "&fПолучить &l&bЗамороженный Ключи"
+				type: "item"
+			}]
+			title: "&l&bЗамороженный ключ"
+			x: 8.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3983A76AC3EC381A"]
+			description: [
+				"&lКнига &6Починки&r — одна из самых ценных в мире."
+				""
+				"Теперь её нельзя получить у жителей — &l&9Хранители Пустоты&r положили этому конец."
+				""
+				"Остался только один способ: купить её за &2&lмонеты рейда.&r"
+				""
+				"Это зачарование стоит каждой потраченной капли крови."
+			]
+			id: "404CF6F607413F1A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "69720165A3F1AAAD"
+					table_id: 3696026655157823979L
+					type: "random"
+				}
+				{
+					id: "4F3E9568272E9D18"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "613852B311886DA1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:enchanted_book"
+					tag: {
+						StoredEnchantments: [{
+							id: "minecraft:mending"
+							lvl: 1s
+						}]
+					}
+				}
+				title: "Получить Книгу Починки"
+				type: "item"
+			}]
+			title: "Больше не торгуется"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["1A9842D3A80B8218"]
+			description: ["&7&oДанный аксесуар более невозможно найти в сундуках, разбросанных по миру. Чтобы удостоиться его силы, придется пожертвовать большим количеством ресурсов.&r&r"]
+			hide_dependency_lines: true
+			id: "41E3457470437EC3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2858F0AD5F741470"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "3FDD42714D11379D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "136EB3F39B1CE132"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "artifacts:vampiric_glove"
+				}
+				type: "item"
+			}]
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B3A082589EBFFF4"]
+			description: [
+				"&l&3Редкие&r и &l&5эпические&r эссенции нужны для более сложных чертежей и артефактов."
+				""
+				"Они получаются только из предметов соответствующей редкости — так что ресурсы придётся выбирать с умом."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enicreo:essense_3"
+			}
+			id: "331AAC60B60820FC"
+			rewards: [
+				{
+					id: "42411FBCA2DAC55D"
+					table_id: 7224117543582156975L
+					type: "random"
+				}
+				{
+					id: "37E539A8C913ED69"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "34403029D145D6F9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:essense_2"
+					}
+					title: "&fПолучить &3&l3х Редких Эссенций"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "795AF7CA83A0FC98"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enicreo:essense_3"
+					}
+					title: "&fПолучить &5&l2x Эпических Эссенций"
+					type: "item"
+				}
+			]
+			title: "Ценность в чистом виде"
+			x: -4.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["57EFCCEF18926260"]
+			description: [
+				"Собери всё необходимое, чтобы призвать &l&7визера,&r и найди &l&cкузнечный шаблон,&r спрятанный среди золота и ловушек."
+				""
+				"Это итог твоего погружения в&c&l адские структуры.&r"
+				""
+				"Самые ценные вещи — те, что достаются болью."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "minecraft:wither_skeleton_skull"
+			}
+			id: "6E301F7FF0E1A7BD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "289D7ED5C1AFAC55"
+					table_id: 6342827431347558402L
+					type: "random"
+				}
+				{
+					id: "761E1A49C3E2387F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "49D311BBEB7E71D7"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:soul_sand"
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "57B44F7DCEF4BCAC"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:wither_skeleton_skull"
+					}
+					type: "item"
+				}
+				{
+					id: "71838F2B2A532334"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:netherite_upgrade_smithing_template"
+					}
+					type: "item"
+				}
+			]
+			title: "Из праха"
+			x: 7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["4F7FB1227EA522F7"]
+			description: ["Кирки Силы - инструмент опытного шахтера. У каждой своя особенность, создай одну, которая тебе больше по душе."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "picks_of_power:ender_pickaxe"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4CB28F732142A17C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "251FD1FAF71A0DCD"
+					table_id: 7200449940289511558L
+					type: "random"
+				}
+				{
+					id: "7B3493AA1138CA65"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "6C079899FA9923BA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Picks\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(picks_of_power:ender_pickaxe)item(picks_of_power:seismic_pickaxe)item(picks_of_power:backpackaxe)item(picks_of_power:pickitooxe)item(picks_of_power:inferno_reaver_pickaxe)item(picks_of_power:divine_elytra_pickaxe))"
+					}
+				}
+				title: "Создать Одну из Кирок Силы"
+				type: "item"
+			}]
+			title: "Кирка Силы"
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4DB86F396D32CEE5"]
+			description: [
+				"В затопленных монументах, в самой их глубине, скрывается &l&3древний страж&r. Он не охраняет храм — он прячется в нём."
+				""
+				"Когда-то он встретился с &5&lЛевиафаном,&r чтобы заключить договор. Что произошло в тот день, никому неизвестно."
+				""
+				"Но с тех пор он живёт в &l&3страхе,&r слишком напуганный, чтобы уйти, слишком гордый, чтобы умереть."
+				""
+				"Он посылает своих детей — немых &l&3стражей,&r созданных для защиты. Они сражаются за него, пока он ждёт."
+				""
+				"Если ты найдёшь его — ты не услышишь объяснений. Только молчание. И взгляд того, кто знает: &l&5Левиафан не забыл&r."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "endrem:guardian_eye"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "068675E9E5AB6A3F"
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				id: "0E0837A100D6DE38"
+				title: "Убить &lДревнего стража"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lГлубже Страха"
+			x: 7.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6CC0AC935B207525"]
+			description: [
+				"Когда &9&lПустота&r ещё не имела лиц, он был первым, кто встал против неё. &2&lПаладин,&r чья вера в порядок вдохновляла армию, сражавшуюся за выживание мира."
+				""
+				"Но тогда Пустота обрела имена. Появились &9&lХранители.&r И они не сражались. Они искажали."
+				""
+				"&2&lПаладина&r не убили. Они сломали его волю и вплели в неё &9&lПустоту.&r"
+				""
+				"Теперь он одержим бездной. Полый воин в запятнанной броне. "
+				""
+				"Не свет, не тьма — а напоминание о том, что даже &2&lвера&r имеет предел."
+			]
+			id: "623B9A8834614C31"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "64C7FDEF4782EFCB"
+					table_id: 6182905549652268903L
+					type: "random"
+				}
+				{
+					id: "47A4C5C5BF086609"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				entity: "minecraft:zombie"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "legendary_monsters:corrupted_soul"
+				}
+				id: "16CBB1CD55030D0F"
+				title: "Убить &lОдержимого Паладина"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&lОбет"
+			x: -3.0d
+			y: -8.0d
+		}
+	]
+	title: "Основы"
 }

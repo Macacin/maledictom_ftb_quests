@@ -1,21 +1,3789 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "033F29CC7BA1CCC2"
-	group: ""
-	id: "033F29CC7BA1CCC2"
-	order_index: 8
+	filename: "6419E7905DC5B2F7"
+	group: "783F66CF7A4F7B72"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "create:andesite_alloy"
+	}
+	id: "6419E7905DC5B2F7"
+	order_index: 0
+	progression_mode: "flexible"
 	quest_links: [ ]
-	quests: [{
-		id: "4DDD33778BAA3EE6"
-		tasks: [{
-			entity: "alexsmobs:anteater"
-			id: "4767AFE9A9EC6129"
-			type: "kill"
-			value: 100L
-		}]
-		x: -6.5d
-		y: -1.5d
-	}]
-	title: "ошдошд"
+	quests: [
+		{
+			description: [
+				"В следующих квестах будет меньше описания. "
+				""
+				"Для того, чтобы понять как работает тот или иной механизм в Create и его аддонах нужно зажать клавишу W."
+			]
+			id: "169A7220F75C26A3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "54A8E1D6578C2E2F"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "1E7328F505D98810"
+					type: "xp"
+					xp: 25
+				}
+			]
+			size: 2.5d
+			tasks: [{
+				count: 16L
+				id: "4A8E73C2078985FD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:andesite_alloy"
+				}
+				title: "Создать 16х Андезитовых Сплавов"
+				type: "item"
+			}]
+			title: "&lНачальный сплав"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["169A7220F75C26A3"]
+			description: ["Изготовь базовые валы и шестерни — первые движущиеся частицы системы вращения."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:shaft"
+			}
+			id: "7E59B4310021899C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5FFD4EA42F54AA33"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "2DD31BA81BAFB49C"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "407D0385626227BE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:shaft"
+					}
+					title: "Создать 8х Валов"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "4AF5423C28F3BC95"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:cogwheel"
+					}
+					title: "Создать 4х Шестерни"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "47EE0C3E5C9B82D7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:large_cogwheel"
+					}
+					title: "Создать 4х Большие Шестерни"
+					type: "item"
+				}
+			]
+			title: "Шестерни валы"
+			x: -3.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["65D8D0D5382E01A7"]
+			description: ["Пресс превращает слитки в листы — первые плоскости для гильз и корпусов ."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:mechanical_press"
+			}
+			id: "106AA42CA26C6AB5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1708F35272CACC28"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "5E38D5E40C0B252D"
+					type: "xp"
+					xp: 50
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "6DC86CD535AF4A22"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:mechanical_press"
+					}
+					title: "Создать Механический пресс"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "44718631FFE11CC8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:iron_sheet"
+					}
+					title: "Создать 8х Железных Листов"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "086D754F0CF8970A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:golden_sheet"
+					}
+					title: "Создать 8х Золотых Листов"
+					type: "item"
+				}
+			]
+			title: "&lПресс штампов"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["13931495C17C5C54"]
+			description: ["Построй водяные колесо — простой источник вращения из потока."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:large_water_wheel"
+			}
+			id: "65D8D0D5382E01A7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "757CBB034302CF4A"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "58B877724737AF4D"
+					type: "xp"
+					xp: 40
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "1188A3BC15A51EA0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:water_wheel"
+					}
+					title: "Создать Водяное колесо"
+					type: "item"
+				}
+				{
+					id: "44723A3A0BFEE3DA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:large_water_wheel"
+					}
+					title: "Создать Большое Водяное Колесо"
+					type: "item"
+				}
+			]
+			title: "&l&#FF8C00Колеса"
+			x: 1.5d
+			y: -3.25d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["Вентилятор в корпусе и форсунка создают воздушный поток для охлаждения и подачи жидкости — поддерживая механизмы в оптимальной форме."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:encased_fan"
+			}
+			id: "30B5BAB8EB9B22DB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5369CF40DEA878D4"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "1DE85D23D7D0F40B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "7FA3DDB029F08B10"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:encased_fan"
+					}
+					title: "Создать Вентилятор в Корпусе"
+					type: "item"
+				}
+				{
+					id: "102424B8D742B677"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:nozzle"
+					}
+					title: "Создать Форсунку"
+					type: "item"
+				}
+			]
+			title: "Охлаждение системы"
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["169A7220F75C26A3"]
+			description: ["Создай андезитовые корпуса, чтобы объединить механизмы и придать им форму."]
+			id: "13931495C17C5C54"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "735FF6B8D65A1219"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "5FA649C1B4090AD5"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "3B77676A1A37ED6B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:andesite_casing"
+				}
+				title: "Создать 8х Андезитовых Корпусов"
+				type: "item"
+			}]
+			title: "Андезит корпуса"
+			x: -1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["Подшипник и паруса ветряной мельницы ловят поток ветра, чтобы обеспечить устойчивое вращение и энергию на всю ферму."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:windmill_bearing"
+			}
+			id: "6CA99D165932D1FD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "13E3B4C77FFC0CF7"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "60EE9DE53018B86C"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "58ACD8D270A2779A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:windmill_bearing"
+					}
+					title: "Создать Подшипник Ветряной Мельницы"
+					type: "item"
+				}
+				{
+					count: 16L
+					id: "4EB73294EC290A61"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:white_sail"
+					}
+					title: "Создать 16х Парусов Ветряной Мельницы"
+					type: "item"
+				}
+			]
+			title: "Ветряной механизм"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["Надёжная фиксация деталей — клеит шасси как ни один приручённый мотор ."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:super_glue"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1E87170751275A2E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0CED461D86572EBB"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "6BAE28CC1D260A6B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "63101F72C5182878"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:super_glue"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Суперклей"
+					type: "item"
+				}
+				{
+					id: "002B6690C9C248A1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:goggles"
+					}
+					title: "Создать Инженерные Очки"
+					type: "item"
+				}
+				{
+					id: "1732524836457698"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:wrench"
+					}
+					title: "Создать Гаечный Ключ"
+					type: "item"
+				}
+			]
+			title: "Супер клей"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["Четыре механические пилы и вращатель формируют единый блок для эффективной резки и обеспечения крутящего момента."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:mechanical_bearing"
+			}
+			id: "4CC4FF5193EFA049"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E6E86AA867D50D0"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "1DB6D7FDEFBFB610"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "1D739BB8C777C30D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:mechanical_saw"
+					}
+					title: "Создать 4х Механических Пил"
+					type: "item"
+				}
+				{
+					id: "4F8B3BDBCAC11746"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:mechanical_bearing"
+					}
+					title: "Создать Механический Вращатель"
+					type: "item"
+				}
+			]
+			title: "Резы в ряд"
+			x: 7.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["5F8985F82E5EFEBB"]
+			description: ["Различные вариации передачи момента."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:gearbox"
+			}
+			id: "0BFAC4BA864EA21F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "60F4814BE6D6E065"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "1F7E81DB8FD137CE"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "6A270C18544CDEDF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:gearbox"
+					}
+					type: "item"
+				}
+				{
+					id: "3A2FC91AEA4AD906"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:vertical_gearbox"
+					}
+					type: "item"
+				}
+				{
+					id: "35AEC7168029DA1F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:clutch"
+					}
+					type: "item"
+				}
+				{
+					id: "4E662E4068198046"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:gearshift"
+					}
+					type: "item"
+				}
+				{
+					id: "5D0950CDFE667B40"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:encased_chain_drive"
+					}
+					type: "item"
+				}
+				{
+					id: "087984625779DB1B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:adjustable_chain_gearshift"
+					}
+					type: "item"
+				}
+			]
+			title: "Передачи цепи"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["Весовая катапульта, вращающийся стол и часы‑кукушка — вместе создают движущуюся трибуну возможностей и отсчёт времени."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:weighted_ejector"
+			}
+			id: "5EA182DBE7BD94E7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "376283908549811C"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "3869206A1DFFDC91"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "4C3E05CB4D8A768E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:weighted_ejector"
+					}
+					title: "Создать Весовую Катапульту"
+					type: "item"
+				}
+				{
+					id: "0A4CCD191F1A444F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:turntable"
+					}
+					title: "Создать Вращающийся Стол"
+					type: "item"
+				}
+				{
+					id: "414B9CA2C170CAC8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:cuckoo_clock"
+					}
+					title: "Создать Часы с Кукушкой"
+					type: "item"
+				}
+			]
+			title: "Тайм‑механизмы"
+			x: 8.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["С помощью механического миксера и чаши можно формировать сложные смеси и напитки — основа для автоматизации рецептов."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:mechanical_mixer"
+			}
+			id: "6D2F3A7E9698AE9D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6B4BD4B4E678B6CC"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "6615F89D8E33F02D"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [
+				{
+					id: "22EFBDCC0283EFAD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:mechanical_mixer"
+					}
+					title: "Создать Механический Смешиватель"
+					type: "item"
+				}
+				{
+					id: "4E926A15EF46F82D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:basin"
+					}
+					title: "Создать Чашу"
+					type: "item"
+				}
+			]
+			title: "Мех-смешиватель"
+			x: 7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["65D8D0D5382E01A7"]
+			description: ["Проклади путь движению — изготовь ремни, туннели и шлюзы для передачи крутящего момента."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:andesite_funnel"
+			}
+			id: "5F8985F82E5EFEBB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4AFF09C55891021C"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "6F92227209039089"
+					type: "xp"
+					xp: 40
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "23D1F8FAF0EA103A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:belt_connector"
+					}
+					title: "Создать 4х Механических Ремня"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "56375CFA2AD989DA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:andesite_funnel"
+					}
+					title: "Создать 2х Андезитовых Шлюзов"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "234D1B1FB6B8D1F8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:andesite_tunnel"
+					}
+					title: "Создать 2х Андезитовых Туннелей"
+					type: "item"
+				}
+			]
+			title: "Мех ремни"
+			x: 1.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["Портативные интерфейсы, желоб и механические комбайны позволяют организовать мини‑склад и автоматическую сборку прямо на месте."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:chute"
+			}
+			id: "6B9351321C7699D2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0581D29CCAE980CC"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "3A37BE8F9CD04DC7"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "03DBEC7D6273C769"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:portable_storage_interface"
+					}
+					title: "Создать 2х Портативных Складских Интерфейсов"
+					type: "item"
+				}
+				{
+					id: "70213B01075A4A32"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:chute"
+					}
+					title: "Создать Жёлоб"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5EF93EE49EDBAB5F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:mechanical_harvester"
+					}
+					title: "Создать 4х Механических Комбайнов"
+					type: "item"
+				}
+			]
+			title: "Переносная фабрика"
+			x: 8.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["6D2F3A7E9698AE9D"]
+			description: ["Для создания латунных слитков нужно нагреть смешиватель, поставить горелку с всполохом под чашу."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:empty_blaze_burner"
+			}
+			id: "6B3A678C4DD56806"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43314B13E843F575"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "5677B6FB35E726DE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "655FE86D70B65606"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:empty_blaze_burner"
+					}
+					title: "Создать Пустую Горелку Всполоха"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "2DF56552A0E7C3FE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:brass_ingot"
+					}
+					title: "Создать 8х Латунных Слитков"
+					type: "item"
+				}
+			]
+			title: "Всполох-горелка"
+			x: 7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["Место, где ресурсы упорядочиваются и хранятся безопасно, освобождая руки для творчества."]
+			id: "043F336338AECE61"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3861A2760E7699F6"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "166748A03A0C9957"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "09ECDFC1049A4681"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:item_vault"
+				}
+				title: "Создать 8х Хранилищ Предметов"
+				type: "item"
+			}]
+			title: "Хранилище предметов"
+			x: 8.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["634CA8DE26FB940A"]
+			description: ["Из этих компонент можно сделать паровой двигатель. Для того, чтобы сделать полную структуру для работы парового двигателся, зажмите w у парового двигателя"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:fluid_tank"
+			}
+			id: "36A7A46F17B3E98D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33E0764C5867E785"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "1906661FE7B53CD2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 9L
+					id: "2F1B6504BE6F9C28"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:fluid_tank"
+					}
+					title: "Создать 9х Жидкостных Баков"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "31FA038F3510DA8C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:mechanical_pump"
+					}
+					title: "Создать 4х Механических Помп"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "0AB0A52F9CF27178"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:fluid_pipe"
+					}
+					title: "Создать 4х Жидкостных Труб"
+					type: "item"
+				}
+				{
+					id: "2CD0239821BE9396"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:steam_engine"
+					}
+					title: "Создать Паровой Двигатель"
+					type: "item"
+				}
+			]
+			title: "Паровой мотор"
+			x: 3.75d
+			y: -1.5d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["Медные корпуса создают проводящую и формуобразующую основу для машин, удерживая потоки жидкостей и энергии"]
+			id: "634CA8DE26FB940A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "335F15436161D8B8"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "59203CF803963322"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "54E6F0C9D6E63CB9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:copper_casing"
+				}
+				title: "Создать 8х Медных Корпусов"
+				type: "item"
+			}]
+			title: "Медь корпуса"
+			x: 5.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["634CA8DE26FB940A"]
+			description: ["Дозатор регулирует дозы жидкостей и порошков с высокой точностью, контролируя поток материалов."]
+			id: "1241E361D1AA7D03"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7E772ACFE0535C7F"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "3AFD998CE0E5228E"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [{
+				id: "4961BE2F472F5DDF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:spout"
+				}
+				title: "Создать Дозатор"
+				type: "item"
+			}]
+			title: "Точный дозатор"
+			x: 4.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["1241E361D1AA7D03"]
+			description: ["Так создаются торты всполоха — магическое топливо для усиления печей, запускающих горячие режимы."]
+			id: "13F39E209EC7F930"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0DF5AF4FE6906328"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "28A73F491FADB1BC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "4FECF18967328B82"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:blaze_cake"
+				}
+				title: "Создать 8х Тортов Всполохов"
+				type: "item"
+			}]
+			title: "Всполох‑торт"
+			x: 2.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6B3A678C4DD56806"]
+			description: ["Наждачная бумага и полированный розовый кварц дают сверхчистую поверхность — идеальную для сложной гравировки или написания рун."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:polished_rose_quartz"
+			}
+			id: "21C9BF9BDE1A11DC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "048E3CBCA951205F"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "122145BB89BC2921"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "59DBBE7327D4F034"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(create:sand_paper)item(create:red_sand_paper))"
+						}
+					}
+					title: "Создать Наждачную Бумагу"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "09440546534D9C6B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:polished_rose_quartz"
+					}
+					title: "Создать 2х Полированных Розовых Кварцев"
+					type: "item"
+				}
+			]
+			title: "Гладкий кварц"
+			x: 9.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["21C9BF9BDE1A11DC"]
+			description: ["Алмазная наждачная бумага открывает уровень точности, необходимый для создания механизмов высшего класса — прочных и безупречных."]
+			id: "09D163AFB50E323C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1484A5AFC27D00B1"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "4713B41B776412C8"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "681DB57FD6DBF14F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createaddition:diamond_grit_sandpaper"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Алмазную Наждачную Бумагу"
+				type: "item"
+			}]
+			title: "Алмазная шлифовка"
+			x: 11.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["6B3A678C4DD56806"]
+			id: "3CE2BD9C731FDE28"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5AF41FCAB78717DF"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "107E92D9C16012F0"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "55EE7CAE8B984C88"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:brass_casing"
+				}
+				title: "Создать 8х Латунных Корпусов"
+				type: "item"
+			}]
+			title: "Латунные корпуса"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B3A678C4DD56806"]
+			description: ["Латунные приколы (фрагменты) и фильтр предметов — шаг к точной сортировке и передаче мелких элементов внутри механизмов."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:brass_funnel"
+			}
+			id: "712F7807EAD5B212"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "57D7E31E38688EAC"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "6B0375907B7D49F7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "343C719BA521CF29"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:brass_funnel"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "231C54E8FE558F54"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:brass_tunnel"
+					}
+					type: "item"
+				}
+				{
+					id: "6CA4937EFF8DD269"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:smart_chute"
+					}
+					type: "item"
+				}
+				{
+					id: "0B69A0E003A141F2"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:filter"
+					}
+					type: "item"
+				}
+				{
+					id: "070227D05FD99D59"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:content_observer"
+					}
+					type: "item"
+				}
+				{
+					id: "7588BA13259C7362"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:stockpile_switch"
+					}
+					type: "item"
+				}
+				{
+					id: "2B50A1C45ED5935B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:attribute_filter"
+					}
+					type: "item"
+				}
+				{
+					id: "034B283D9562F60A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:smart_fluid_pipe"
+					}
+					type: "item"
+				}
+			]
+			title: "Латунные детали"
+			x: 11.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3CE2BD9C731FDE28"]
+			description: ["Механические сборщики открывают путь к рецептам выше стандартного верстака, соединяя детали в сложные предметы."]
+			id: "1662B5973D80D65F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "008D81E59F005064"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "6148745B4D8286DB"
+					type: "xp"
+					xp: 125
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 21L
+				id: "69DC095729E5DB32"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:mechanical_crafter"
+				}
+				title: "Создать 21х Механических Сборщиков"
+				type: "item"
+			}]
+			title: "Мех-сборщики"
+			x: 5.25d
+			y: 4.5d
+		}
+		{
+			dependencies: ["660CB3E19C246E65"]
+			description: [
+				"Из этих компонентов можно собрать буровую машину"
+				""
+				"Пример бура 3x3:"
+				""
+				"{image:quest_images:textures/bur.png width:200 height:100 align:center}"
+				"{@pagebreak}"
+				"Главное все склеить при помощи суперклея. "
+				""
+				"Можно увеличить бур, добавив механические буры для большей площади бурения. Можно также добавить сундуки. При модифицировании буры не забывайте все склеивать"
+				""
+				"В основании бура ставьте самоходную вагонетку. "
+				"Чтобы забрать бур, нажмите ПКМ при, держа в руке гаечный ключ"
+				""
+				"Чтобы поставить буровую машину, поставьте рельсы (желательно 2-3 рельсы в ту сторону, в которую собираетесь копать) и на них поставьте бур"
+				""
+				"Чтобы бур самостоятельно ехал, нужно в самоходную вагонетку подкладывать уголь (или любое другое топливо в виде предмета)."
+				""
+				"В каком-то из сундуков обязательно должны быть блоки, которые будут делать дорогу буру (Это могут быть любые блоки, для удобства используйте булыжник или глубинный сланец, в зависимости от высоты копания). Они также должны быть в фильтрах автономных активаторах. То же самое относится и к рельсам"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:mechanical_drill"
+			}
+			id: "06C62F78C210D580"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "305ECAE2B79150ED"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "36B4E2C8F6734835"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 9L
+					id: "6678359818BA394A"
+					item: {
+						Count: 9
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:mechanical_drill"
+					}
+					type: "item"
+				}
+				{
+					id: "2E9581B8CE923A7E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:mechanical_plough"
+					}
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "30B347C535F6FD28"
+					item: {
+						Count: 9
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:linear_chassis"
+					}
+					type: "item"
+				}
+				{
+					id: "43DA882E6B453F2E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:cart_assembler"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "6EF9CA3AB1FC3C22"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:deployer"
+					}
+					type: "item"
+				}
+				{
+					id: "30B34FCB93C7285C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:furnace_minecart"
+					}
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "426D9AD6125F115B"
+					item: {
+						Count: 10
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:rail"
+					}
+					type: "item"
+				}
+			]
+			x: 11.25d
+			y: 4.5d
+		}
+		{
+			dependencies: ["65D8D0D5382E01A7"]
+			description: [
+				"Чтобы накачать баллон сжатым воздухом, нужно поставить баллон, затем подвести крутящий момент сверху баллона"
+				""
+				"{image:quest_images:textures/medniy_ballon.png width:100 height:100 align:center}"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:copper_backtank"
+				tag: {
+					Air: 900
+				}
+			}
+			id: "1ED81F807CC8FCDF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "056D14C696062173"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "52D9FA7F4C8526C1"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [
+				{
+					id: "2540CC2E793ABAB0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:copper_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6646C72553E6B4A4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:copper_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5655F86084D79CCC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:copper_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Водолаз"
+			x: -0.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["1662B5973D80D65F"]
+			description: [
+				"Колёса должны вращаться друг на друга."
+				""
+				"Дробильные колёса — основа обработки сырья: от руды до дроблёного материала, готового к дальнейшим механизмам."
+			]
+			id: "7AA2B84822E7BFEE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2B1649B2EAFA81A9"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "479777641A9D4E16"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 2L
+				id: "4A0AC23F090433E8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:crushing_wheel"
+				}
+				title: "Создать 2х Дробильных Колёс"
+				type: "item"
+			}]
+			title: "Дробильные колёса"
+			x: 3.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["6B3A678C4DD56806"]
+			description: ["Механизм, что имитирует нажатие игрока — автоматизирует действия, требующие клика, освобождая руки для творчества"]
+			id: "660CB3E19C246E65"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2A605B3CF51E8225"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "652E2193DB06A307"
+					type: "xp"
+					xp: 75
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "729A9DF97FA6C2F0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:deployer"
+				}
+				title: "Создать Автономный Активатор"
+				type: "item"
+			}]
+			title: "Автономный активатор"
+			x: 9.0d
+			y: 3.75d
+		}
+		{
+			dependencies: ["660CB3E19C246E65"]
+			description: ["Устройство, что обеспечивает стабильность и равномерное движение деталей, сохраняя ровный ход системы под нагрузкой."]
+			id: "5B83BB8F4BB612A3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7DD95A00F282FB76"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "3F5F88597D5A2C37"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [{
+				id: "09C37DF4B52F7974"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:precision_mechanism"
+				}
+				title: "Создать Механизм Точности"
+				type: "item"
+			}]
+			title: "Точность механизм"
+			x: 8.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5B83BB8F4BB612A3"]
+			description: ["Регулятор скорости превращает хаос оборотов в контролируемый поток — идеальный для подстройки мощности механизмов под нужды системы."]
+			id: "1C6B15A7F09AAA1E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "183C6220318C582F"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "3E1F56C21E1744F0"
+					type: "xp"
+					xp: 70
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "16943ED8158E7B73"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:rotation_speed_controller"
+				}
+				title: "Создать Регулятор Скорости Вращения"
+				type: "item"
+			}]
+			title: "Ритм вращения"
+			x: 9.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5B83BB8F4BB612A3"]
+			description: ["Автоматическая рука для переноса предметов, с фильтрацией и выбором приоритетов — ключ к точной сортировке и манипуляциям в радиусе действия"]
+			id: "3C057360BCC9B661"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2E79258809D012F5"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "4916BACBE2F356FF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "6FB7B0AE158F39BC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:mechanical_arm"
+				}
+				title: "Создать Механическую Руку"
+				type: "item"
+			}]
+			title: "Механическая рука"
+			x: 7.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["1241E361D1AA7D03"]
+			description: ["Комбинация иссушителя и жидкостных интерфейсов отводит лишнюю влагу и очищает системы."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:item_drain"
+			}
+			id: "0C236649963393A6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "346EDB4B01FCF517"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "3412A477DF1F4FD3"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "4AE4FE5EC936C53E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:item_drain"
+					}
+					title: "Создать Осушитель Предметов"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "57E0823D3CF12511"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:portable_fluid_interface"
+					}
+					title: "Создать 2х Портативных Жидкостных Интерфейсов"
+					type: "item"
+				}
+				{
+					id: "1F7999330D3CB97B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:hose_pulley"
+					}
+					title: "Создать Шланговую Катушку"
+					type: "item"
+				}
+			]
+			title: "Осушитель сети"
+			x: 2.0d
+			y: -0.5d
+		}
+		{
+			dependencies: [
+				"1241E361D1AA7D03"
+				"7AA2B84822E7BFEE"
+			]
+			description: ["Железнодорожные корпуса создают прочную платформу для вагонов, формируя основу транспортной сети"]
+			id: "1FE22B00D9B8D542"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0E68C8AEA347B4F3"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "36F9DE770546E595"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "0F2E7F5C86B3874A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:railway_casing"
+				}
+				title: "Создать 8х Железнодорожных Корпусов"
+				type: "item"
+			}]
+			title: "Железная база"
+			x: 1.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1FE22B00D9B8D542"]
+			description: ["Строительство путей и контроллера соединяет автомобили в единую железнодорожную систему."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:track"
+			}
+			id: "0DC0046F6611F0C8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "162F958B2918DA51"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "282F18F3F63533F0"
+					type: "xp"
+					xp: 175
+				}
+			]
+			tasks: [
+				{
+					count: 32L
+					id: "1214F649A585999B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:track"
+					}
+					title: "Создать 32х Железнодорожных Путей"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "2E6F2F9534ED8A02"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:track_station"
+					}
+					title: "Создать 2х Железнодорожных Станций"
+					type: "item"
+				}
+				{
+					id: "0FA17B4E9F7B4AF0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:controls"
+					}
+					title: "Создать Контроллер Поезда"
+					type: "item"
+				}
+				{
+					id: "1D7DC7E004C148A7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(create:red_seat)item(create:white_seat)item(create:orange_seat)item(create:magenta_seat)item(create:light_blue_seat)item(create:yellow_seat)item(create:lime_seat)item(create:pink_seat)item(create:gray_seat)item(create:light_gray_seat)item(create:cyan_seat)item(create:purple_seat)item(create:blue_seat)item(create:brown_seat)item(create:green_seat)item(create:black_seat))"
+						}
+					}
+					title: "Создать Сиденье"
+					type: "item"
+				}
+			]
+			title: "Поезд линия"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0DC0046F6611F0C8"]
+			description: ["Механические катки, железнодорожный наблюдатель и светофоры образуют систему безопасности и контроля над движением поездов."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:mechanical_roller"
+			}
+			id: "05755FFB53A2A7CA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1AE4CEB65355EF66"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "3A8B0379D303BBA4"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "555BD19D6FD87753"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:schedule"
+					}
+					title: "Создать Расписание Поезда"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "54F62A048DDCBB50"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:mechanical_roller"
+					}
+					title: "Создать 3х Механических Катков"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7D045DC0A0E8E8D5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:track_signal"
+					}
+					title: "Создать 4х Железнодорожных Светофоров"
+					type: "item"
+				}
+				{
+					id: "61E07D2299F62E96"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:track_observer"
+					}
+					title: "Создать Железнодорожный Наблюдатель"
+					type: "item"
+				}
+			]
+			title: "Железная стража"
+			x: -2.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["106AA42CA26C6AB5"]
+			description: ["Контроллер связей, редстоуновый передатчик и верёвочная лебедка строят гибкую сеть управления и подъёма грузов."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:rope_pulley"
+			}
+			id: "5EF92B6A58F56F14"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3B4478B574B08C09"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "2AF4FFB4878BA551"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [
+				{
+					id: "32773DAA5DA0FDCC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:linked_controller"
+					}
+					title: "Создать Контроллер Связей"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6FA75D664DC5F31A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:redstone_link"
+					}
+					title: "Создать 2х Редстоуновый Передатчик Сигнала"
+					type: "item"
+				}
+				{
+					id: "2CAB05825BD8D8D3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:rope_pulley"
+					}
+					title: "Создать Верёвочную Лебёдку"
+					type: "item"
+				}
+			]
+			title: "Усиленная связь"
+			x: 8.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3CE2BD9C731FDE28"]
+			description: ["Редстоуновые контакты, лифтовая лебедка и контроллер связывают крупные узлы, создавая эмоционально-нагруженную систему подъёма и сигнализации."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:redstone_contact"
+			}
+			id: "1E5B13D2C4972209"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7DB5C345E2233CEE"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "6786551DEF664D5F"
+					type: "xp"
+					xp: 60
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "30A1562ABF84DCEE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:redstone_contact"
+					}
+					title: "Создать 2х Редстоуновых Контактов"
+					type: "item"
+				}
+				{
+					id: "4F359CAC53D2FB7E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:elevator_pulley"
+					}
+					title: "Создать Лифтовую Лебёдку"
+					type: "item"
+				}
+				{
+					id: "4E3BB084FF77A4A3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:contraption_controls"
+					}
+					title: "Создать Контроллер Штуковины"
+					type: "item"
+				}
+			]
+			title: "Редстоун связь"
+			x: 5.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["65D8D0D5382E01A7"]
+			description: [
+				"Для того, чтобы использовать пушку, нужно:"
+				"1. Схематикой и пером выбрать при помощи ПКМ две точки, чтобы выделить нужную вам структуру"
+				"2. Выделив структуру, нужно нажать схематикой и пером ПКМ, назвать ее и сохранить"
+				"3. Далее нужно получить окончательную схематику на схематичном столе"
+				"4. Готовой схематикой, нажав ПКМ, выбрать место где она будет построена"
+				"5. Положить схематику в строительную пушку"
+				"6. Загрузить порох в пушку, поставить 2 сундука с необходимыми ресурсами для структуры и запустить её"
+				"Для удобства можно в самой пушке загрузить в планшет необходимые для постройки ресурсы"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:schematicannon"
+			}
+			id: "7F4587658EB2C967"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "24F7983193014F67"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "6652CCA80EC1E0A8"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [
+				{
+					id: "43AACB00919F5882"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:schematicannon"
+					}
+					title: "Создать Строительную Пушку"
+					type: "item"
+				}
+				{
+					id: "467FE669CA1991A0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:schematic_table"
+					}
+					title: "Создать Схематичный Стол"
+					type: "item"
+				}
+				{
+					id: "7CACA3983BAA869B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:schematic_and_quill"
+					}
+					title: "Создать Схематику и Перо"
+					type: "item"
+				}
+				{
+					id: "7FB36D05344B2B28"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:clipboard"
+					}
+					title: "Создать Планшет"
+					type: "item"
+				}
+			]
+			title: "Пушкарианец"
+			x: 0.0d
+			y: -1.5d
+		}
+		{
+			dependencies: ["043F336338AECE61"]
+			description: ["Упаковщик, передатчик, контроллер и редстоун‑запрашиватель формируют систему, что выдаёт именно нужные материалы в момент запроса."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:redstone_requester"
+			}
+			id: "25233768CCD08B8F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "75B701B077A6B740"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "3CBDE8431C0DE9B6"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "03A11C59FD59AD63"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:packager"
+					}
+					title: "Создать Упаковщик"
+					type: "item"
+				}
+				{
+					id: "321A1AF38C6AD815"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:stock_link"
+					}
+					title: "Создать Складской Передатчик"
+					type: "item"
+				}
+				{
+					id: "64387A20C02F94A5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:stock_ticker"
+					}
+					title: "Создать Складской Контроллер"
+					type: "item"
+				}
+				{
+					id: "27350E0C541BF1FF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:redstone_requester"
+					}
+					title: "Создать Редстоуновый Запрашиватель"
+					type: "item"
+				}
+			]
+			title: "Автопакет"
+			x: 9.5d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"5B83BB8F4BB612A3"
+				"1662B5973D80D65F"
+			]
+			description: ["Эта пушечка стреляет продуктами — простой, но мощный пример, как механика Create превращает обычное в необычное."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:potato_cannon"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "4224274B58FE0DFA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "62F46BB050B54834"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "640ED667985B8BFF"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "280724C57AAD3E19"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:potato_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Картофельную Пушку"
+					type: "item"
+				}
+				{
+					id: "0F6A854E0F5478EE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:extendo_grip"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Длиннохват"
+					type: "item"
+				}
+			]
+			title: "Картофельная пушка"
+			x: 6.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["61F5E2D9823DE531"]
+			description: ["Классический паровой двигатель создаёт мощный напор — основа индустриальных связей и мощности."]
+			id: "5327024071A40649"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "575B308A259831DD"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "5375D132CF937F18"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "6855672C9AA73DDA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:steam_engine"
+				}
+				title: "Создать Паровой Двигатель"
+				type: "item"
+			}]
+			title: "Паровой мотор"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5327024071A40649"]
+			description: ["Компактный бур под рукой — помогает добывать ресурсы без постоянных перемещений."]
+			id: "3C9315C7BBA2E05C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "484BDF9B9ED7FA16"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "789C85ACDA75F26A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "08A1E184B2CE19C0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:portable_drill"
+					tag: { }
+				}
+				title: "Создать Портативную Дрель"
+				type: "item"
+			}]
+			title: "Портативная дрель"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5327024071A40649"]
+			description: ["Экзоскелет из латуни – гибрид брони и техники, увеличивающий силу и выносливость."]
+			id: "0B9E97AF217C8233"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "79246362598EF641"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "346F3652BF21A41B"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [{
+				id: "193F13FC954D22FB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:brass_exoskeleton_chestplate"
+					tag: { }
+				}
+				title: "Создать Латунный Экзоскелет"
+				type: "item"
+			}]
+			title: "Латунный экзо"
+			x: 0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["5327024071A40649"]
+			description: ["Реактивный ранец из латуни – воздушная мобильность с оттенком эстетики и стиля Create."]
+			id: "6B58E0555D2977C8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6074C9C9D6793C08"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "5D2CF17728D7DD83"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [{
+				id: "596505EC35CE9CB4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:brass_jetpack_chestplate"
+					tag: { }
+				}
+				title: "Создать Латунный Реактивный Ранец"
+				type: "item"
+			}]
+			title: "Латунный реактив"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["61F5E2D9823DE531"]
+			description: ["Паровой мотор превращает тепло в мощь, создавая равномерный поток вращения для любых механизмов"]
+			id: "4A6372FB4B94F6C1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7E30E7BD05B7FF17"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "08BA1DD1C65513E0"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "2D6723C81244D713"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:heat_engine"
+				}
+				title: "Создать Тепловой Двигатель"
+				type: "item"
+			}]
+			title: "Тепловой двигатель"
+			x: 3.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["61F5E2D9823DE531"]
+			description: ["Гидравлический двигатель использует жидкость для плавного и мощного вращения — ключ к крупным системам."]
+			id: "73D8ADFA9B764887"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7081A9503F6E8804"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "051F2AF435C2A011"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "78E73ED6D92F40B9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:hydraulic_engine"
+				}
+				title: "Создать Гидравлический Двигатель"
+				type: "item"
+			}]
+			title: "Гидро мотор"
+			x: 5.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["1662B5973D80D65F"]
+			description: ["Можно скрафтить большие по объёму версии"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					Parent: { }
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create_sa:small_fueling_tank"
+				tag: { }
+			}
+			id: "61F5E2D9823DE531"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "30900CBF2462EF42"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "019B885C1AA203F3"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [
+				{
+					id: "3293E0F2B8DA5A1B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create_sa:small_filling_tank"
+						tag: { }
+					}
+					title: "Создать Маленький Наполнительный Бак"
+					type: "item"
+				}
+				{
+					id: "562CFD2E1527E538"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							Parent: { }
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create_sa:small_fueling_tank"
+						tag: { }
+					}
+					title: "Создать Маленький Топливный Бак"
+					type: "item"
+				}
+			]
+			title: "Малый бак"
+			x: 4.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["4A6372FB4B94F6C1"]
+			description: ["Механизм, что одновременно захватывает и смешивает — для сложных рецептов с захватом и перемешиванием."]
+			id: "6BF784864A94D6C8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "068C7FDD390CB030"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "0B3CE496330E977D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "2998A4B6AE15D0CB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:grapplin_whisk"
+					tag: { }
+				}
+				title: "Создать Грапплин-Миксер"
+				type: "item"
+			}]
+			title: "Миксер‑грапплин"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["4A6372FB4B94F6C1"]
+			description: ["Экзоскелет из андезита — надёжная броня, обеспечивающая защиту и механическую силу без использования дорогих материалов."]
+			id: "4259659C06D30024"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E23E311BE28CB8E"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "3A6ACC19C5847040"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "6FE786188FF32654"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:andesite_exoskeleton_chestplate"
+					tag: { }
+				}
+				title: "Создать Экзоскелет из Андезита"
+				type: "item"
+			}]
+			title: "Андезит экзо"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4A6372FB4B94F6C1"]
+			description: ["Реактивный ранец из андезита — позволяет летать с балансом между прочностью и манёвренностью."]
+			id: "20826B8DC43B8925"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6155941B3FF08A9B"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "580B8F37980ED048"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "53477DDA416BE270"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:andesite_jetpack_chestplate"
+					tag: { }
+				}
+				title: "Создать Андезитовый Реактивный Ранец"
+				type: "item"
+			}]
+			title: "Андезит реактив"
+			x: 2.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["4A6372FB4B94F6C1"]
+			description: ["Трубка, пускающая всполохи — источник направленного огня, идеально подходящий для подогрева или отпугивания."]
+			id: "4CA1E0A5D3D8EC0F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "54A1A5DEF5B7285B"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "1ECFDE33E3A3E3A3"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "299B55DBA491E294"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:flamethrower"
+					tag: { }
+				}
+				title: "Создать Фламметрубку"
+				type: "item"
+			}]
+			title: "Фламметрубка"
+			x: 3.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["73D8ADFA9B764887"]
+			description: ["Медленный реактивный ранец — стабильный и безопасный летательный аппарат с умеренной скоростью."]
+			id: "20FAC8FE33F467F7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6A60D650941D6775"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "7EA8C1B6C0D3419A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "02E60A1F6673E66E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:copper_jetpack_chestplate"
+					tag: { }
+				}
+				title: "Создать Медленный Реактивный Ранец"
+				type: "item"
+			}]
+			title: "Медленный реактив"
+			x: 6.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["73D8ADFA9B764887"]
+			description: ["Экзоскелет с плавным усилением силы и выносливости, не требующий экстремальной скорости."]
+			id: "4E40DCC05893620A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7C791D3A5CEC61D1"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "6FF360C39780D214"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "35B9AA6525455630"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:copper_exoskeleton_chestplate"
+					tag: { }
+				}
+				title: "Создать Медленный Экзоскелет"
+				type: "item"
+			}]
+			title: "Медленный экзо"
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["73D8ADFA9B764887"]
+			description: ["Механизм «Выбор блока» позволяет автоматически переключать выход материалов — основа гибкой системы селекции."]
+			id: "6D6BDE604D7EEDE9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "50B90C3A4241FB9D"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "501810C6D8ED20A8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "4E0F73E86BC311D5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:block_picker"
+					tag: { }
+				}
+				title: "Создать Выбор Блока"
+				type: "item"
+			}]
+			title: "Блок выбор"
+			x: 4.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["1ED81F807CC8FCDF"]
+			description: ["Скройся в невидимке: создай баллон и лаволазный шлем с ботинками из незерита для защиты в аду."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:netherite_backtank"
+				tag: {
+					Air: 900
+				}
+			}
+			id: "2A7F42DFEF14A6C0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5726A9A24A349C1B"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "4E37EFA0BCBC6629"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "0B00FA30C608EA69"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:netherite_backtank"
+						tag: {
+							Air: 900
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6BFD557342F05E4F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:netherite_diving_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "4792993A60CD7082"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:netherite_diving_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Незеритовый водолаз"
+			x: -2.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["5B83BB8F4BB612A3"]
+			description: ["Инструмент для выравнивания сборок — добавляет баланса и эстетики, делая конструкции не только полезными, но и гармоничными."]
+			id: "3F053FE3ECB87266"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "485733CD606CB04A"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "179FBE07ABE064B4"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "73A5588F51F7E3B8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:wand_of_symmetry"
+				}
+				title: "Создать Жезл Симметрии"
+				type: "item"
+			}]
+			title: "Жезл симметрии"
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["5B83BB8F4BB612A3"]
+			description: [
+				"Дрон могут атаковать большинство мобов"
+				"Отдалять/приближать дрон можно при помощи контроллера, нажимая на стрелки на клавиатуре"
+				"Активировать модули дрона можно нажав ПКМ"
+				"Очень тяжело управляется"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create_sa:brass_drone_item"
+			}
+			id: "66D9E435CE00071E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "05A7ABB61FDACA51"
+					table_id: 5488254604462342634L
+					type: "random"
+				}
+				{
+					id: "6F75D05474A133EF"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					id: "1AC92CA6646B4795"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create_sa:brass_drone_item"
+					}
+					title: "Создать Латунного Дрона"
+					type: "item"
+				}
+				{
+					id: "7E3DFE0A80B11675"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create_sa:drone_controller"
+					}
+					title: "Создать Контроллер Дрона"
+					type: "item"
+				}
+			]
+			title: "Латунный дрон"
+			x: 8.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["66D9E435CE00071E"]
+			description: ["Использует силу притяжения меди — аккумулирует металлические объекты, направляя их к нужным местам."]
+			id: "31BE4F720DF05E8B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7D9A1154DD29D165"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "149A54299BAF0152"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [{
+				id: "67D989B6B2B09AE3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:copper_magnet"
+				}
+				title: "Создать Медный Магнит"
+				type: "item"
+			}]
+			title: "Медный магнит"
+			x: 7.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["66D9E435CE00071E"]
+			description: ["Головка из упакованной латуни добавляет мощь и устойчивость механической дрели — она способна долго бурить и не ломаться."]
+			id: "7EA8D8752A5F1090"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5B831D25D7259710"
+					table_id: 1823505410700104812L
+					type: "random"
+				}
+				{
+					id: "040064F9740EF145"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [{
+				id: "4B343306014A8F70"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:brass_drill_head"
+				}
+				title: "Создать Латунную Головку для Дрели"
+				type: "item"
+			}]
+			title: "Латунная дрель"
+			x: 8.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["66D9E435CE00071E"]
+			description: ["Блок, обеспечивающий аккуратный приём и выпуск предметов — основа для сортировочных и стоковых структур."]
+			id: "5B6EEA431DEAA4D7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0BA1B0ABC4C9CA69"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "770756E542B400BF"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [{
+				id: "2D4DBD734569AA67"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:vault_component"
+				}
+				title: "Создать Компонент Хранилища"
+				type: "item"
+			}]
+			title: "Хранилище компонент"
+			x: 9.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["66D9E435CE00071E"]
+			description: ["Блок, направляющий поток воздуха — охлаждает или перемещает предметы и сущности внутри машиностроительных цепочек ."]
+			id: "5772EE480B0973FD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "223DCB9C1BAEBEB9"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "4DFA3B3851FB2CC3"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "7A557F47D0446B14"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:fan_component"
+				}
+				title: "Создать Компонент Вентилятора"
+				type: "item"
+			}]
+			title: "Вентилятор компонент"
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["65D8D0D5382E01A7"]
+			description: ["Собери механический экструдер — устройство для создания блоков и предметов под давлением."]
+			id: "07E24C0A08786DA6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4F815A1496FC9927"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "2FEDBD864FE8996F"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [{
+				id: "7DA0DFAC0AF1F1A9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_mechanical_extruder:mechanical_extruder"
+				}
+				title: "Создать Механический Экструдер"
+				type: "item"
+			}]
+			title: "Мех экструдер"
+			x: 2.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["61F5E2D9823DE531"]
+			description: ["Устойчивый к магме двигатель из Незера — ядро для механизмов, способных работать в самые горячие условия."]
+			id: "1DC6C027F422E5A0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4F80670CBA1CFB3D"
+					table_id: 9123405462752057024L
+					type: "random"
+				}
+				{
+					id: "672E151C62E3BF7D"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [{
+				id: "4DDA8137B06F3DFC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_nj:nether_engine"
+				}
+				title: "Создать Nether Engine"
+				type: "item"
+			}]
+			title: "Незеровый мотор"
+			x: 3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["1DC6C027F422E5A0"]
+			description: ["Экзоскелет из незерита придаёт выносливость и защиту, превращая носителя в живую броню"]
+			id: "7E708CE292A4F2D9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33F3E3C31BE3BE7F"
+					table_id: 5579322744361039140L
+					type: "random"
+				}
+				{
+					id: "199110DF19EC15AD"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "31E5DEE270002E87"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_nj:netherite_exoskeleton_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Netherite Exoskeleton"
+				type: "item"
+			}]
+			title: "Незеровый экзо"
+			x: 2.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1DC6C027F422E5A0"]
+			description: ["Джетпак надёжно удерживает в воздухе, воссоздавая легендарную мобильность мистиков Варен’Таала."]
+			id: "69EA81272353399C"
+			rewards: [
+				{
+					id: "43A1F7CDF07EE85F"
+					table_id: 606690926608427042L
+					type: "random"
+				}
+				{
+					id: "7609D12A647434A6"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "09AF01BE7A6AB41E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_nj:netherite_jetpack_chestplate"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Netherite Jetpack"
+				type: "item"
+			}]
+			title: "Незеровый реактив"
+			x: 1.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["13931495C17C5C54"]
+			description: ["Собери прибор, измеряющий нагрузку на вал — предупреждая поломки."]
+			id: "212B2656F7D7D5BD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6591C532DD10B28D"
+					table_id: 5234925938824757364L
+					type: "random"
+				}
+				{
+					id: "6D90C52118E7A80B"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [{
+				id: "07B4473F08F02D0D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:stressometer"
+				}
+				title: "Создать Стрессометр"
+				type: "item"
+			}]
+			title: "Стрессометр"
+			x: -2.5d
+			y: -1.5d
+		}
+		{
+			description: [
+				"На следующих страницах можно увидеть полезные советы и фермы для более удобного прохождения Create"
+				""
+				"{@pagebreak}"
+				""
+				"Для разгона крутящего момента можно использовать \"правило шестерни\": передавая крутящий момент от большой шестерни к маленькой, момент будет ускоряться в 2 раза. Так можно повторить несколько раз"
+				""
+				"{image:quest_images:textures/pravilo_shesterni.png width:100 height:100 align:center}"
+				""
+				"{@pagebreak}"
+				""
+				"Паровой двигатель намного лучше водяных колёс, посокльку обладает большей мощностью (может поддерживать работу большего числа механизмов) и может работать с большей скоростью за счёт подогрева"
+				""
+				"{@pagebreak}"
+				""
+				"Для автоматической добычи различных выращиваемых ресурсов можно построить такую ферму:"
+				""
+				"{image:quest_images:textures/simple_farm.png width:200 height:100 align:center}"
+				"Под красной стрелочкой дожен стоять механический вращатель, которому подаётся крутящий момент "
+				""
+				"Всю остальную конструкцию (блоки с комбайнами, сундуки и портативный складской складской интерфейс - только ту часть, которая над землей с посевами) должны быть склеины."
+				""
+				"Аналогичную ферму можно сделать для тростника (конструкция дожна быть на один блок выше) и для деревьев (вместо комбайнов должны быть механические пилы)"
+				""
+				"{@pagebreak}"
+				""
+				"Старайтесь почаще смотреть рецепты из блоков, которые вы добываете. Много таких, которые можно преобразовать при помощи механизмов, чтобы получить полезные ресурсы. Например из булыжника путем дробления можно получить гравий, из которого при помощи промывки (вентилятор перед которым вода) можно получить кусочки железа. Итого из обычного булыжника мы получили полезный ресурс"
+				""
+				"{@pagebreak}"
+				"Для добычи лавы можжно построить такую ферму:"
+				""
+				"{image:quest_images:textures/lava_farm.png width:200 height:100 align:center}"
+				""
+				""
+				"Под лавой надо поставить капельники, из которых лава будет капать в котлы. Из них можно выкачивать лаву при помощи помпы в бак"
+			]
+			id: "4B51D1D4D3DECF8B"
+			rewards: [{
+				id: "11709EFFE45BB1E8"
+				type: "xp"
+				xp: 10
+			}]
+			size: 1.5d
+			tasks: [{
+				id: "61859D9547252DD9"
+				title: "ОК"
+				type: "checkmark"
+			}]
+			title: "&lПолезные советы!"
+			x: -6.0d
+			y: 0.0d
+		}
+	]
+	title: "Начинающий Изобретатель"
 }

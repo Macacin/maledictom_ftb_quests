@@ -1,30 +1,3264 @@
 {
+	autofocus_id: "4986F93212E7FD89"
+	consume_items: false
 	default_hide_dependency_lines: false
-	default_quest_shape: ""
-	filename: "1ECD5960277CF13D"
-	group: ""
-	id: "1ECD5960277CF13D"
-	order_index: 5
-	quest_links: [ ]
-	quests: [{
-		id: "6742058DAE3A8F6B"
-		rewards: [{
-			count: 2
-			id: "09FEE2492814BB24"
-			item: {
-				Count: 1
-				id: "minecraft:oak_wood"
-				tag: { }
+	default_quest_shape: "hexagon"
+	filename: "5A3E0A47D44AEFB1"
+	group: "18231DA5423D37EC"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
 			}
-			type: "item"
-		}]
-		tasks: [{
-			biome: "minecraft:beach"
-			id: "3393F8BE4481B372"
-			type: "biome"
-		}]
-		x: -4.0d
-		y: -2.5d
-	}]
-	title: "аер"
+		}
+		id: "iceandfire:dragon_skull_fire"
+	}
+	id: "5A3E0A47D44AEFB1"
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"&l&6Драконы&r были первыми повелителями мира. Пока люди строили стены, они уже &lжгли&r, &lзамораживали&r и &lиспепеляли&r города. &l&cОгненные, &bледяные &rи &l&9грозовые&r — каждый нёс свою &lсмерть.&r"
+				""
+				"Но всё изменилось, когда &l&cВарен'Таал&r повёл свою армию — и &lсверг&r древнее царствование &lстихии.&r"
+				""
+				"Теперь они прячутся. Кто-то &lрыщет по земле&r, нападая на уцелевшие деревни. Другие — старшие особи — &lспят глубоко под землёй&r, в пещерах, где время не движется, пока не появится жертва."
+				""
+				"Их время прошло. Но их &l&6сила&r осталась."
+				"Чтобы доказать, что ты готов к охоте, добудь голову дракона."
+				"Иногда их находят уже &o&lмёртвыми&r — и даже тогда они внушают &6&lстрах&r."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragon_skull_ice"
+				tag: {
+					DragonAge: 75
+					Stage: 4
+				}
+			}
+			id: "4986F93212E7FD89"
+			rewards: [{
+				id: "006FC88AD352D1AE"
+				type: "xp"
+				xp: 50
+			}]
+			shape: "diamond"
+			size: 2.0d
+			subtitle: "Но не уничтоженные"
+			tasks: [{
+				id: "31ADBCE03899CC60"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Dragon Heads\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(iceandfire:dragon_skull_fire)item(iceandfire:dragon_skull_ice)item(iceandfire:dragon_skull_lightning))"
+					}
+				}
+				title: "Получить любой череп дракона"
+				type: "item"
+			}]
+			title: "&6&lСвергнутые"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: [
+				"Этот артефакт когда-то подчинял &l&cст&r&3&lих&r&l&9ии&r — но теперь его жезл изъеден временем, а эхо древних команд &lедва&r шепчет сквозь трещины."
+				""
+				"Теперь он способен подчинить лишь &lуже &6подчинённых&r. "
+			]
+			id: "248F4E082B1043F3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3AA6814BC6FC1FD9"
+					table_id: 493850093826375995L
+					type: "random"
+				}
+				{
+					id: "676A0010877C69B5"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [{
+				id: "7232684B4915AFD3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:dragon_stick"
+				}
+				title: "&fСоздать&r &l&6Посох Управления Драконом"
+				type: "item"
+			}]
+			title: "Посох Древности"
+			x: -1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: [
+				"Века назад его рев бросал тень на небеса, бросая вызов самой &l&cст&r&3&lих&r&l&9ии&r. "
+				""
+				"Теперь звон рождает отклик лишь у тех, чей пыл &6&lсломлен&r узами хозяина. "
+				""
+				"Используется для переноса прирученных &l&6драконов.&r"
+			]
+			id: "0A0DC2D9FD1BB383"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D5D42EFCDFFF1B7"
+					table_id: 493850093826375995L
+					type: "random"
+				}
+				{
+					id: "7672753CA6B025A1"
+					type: "xp"
+					xp: 30
+				}
+			]
+			tasks: [{
+				id: "2BA55BA06937F53E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:dragon_horn"
+				}
+				title: "&fСоздать&r &l&6Рог Дракона"
+				type: "item"
+			}]
+			title: "Рок Драконов"
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: [
+				"Сделана из высохшей кости древнего &l&6дракона,&r чей последний взмах &lкрыльев&r содрогнул небеса. "
+				""
+				"Звук её отзовётся в душах покорённых созданий: драконов, амфитер и гиппогрифов — и одним лишь аккордом &lлишит их крылатой воли. &r"
+				""
+				"Но если ты не истинный владелец, мелодия обратится &6&lпротив тебя.&r"
+			]
+			id: "4F9140E8E93E15FD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3E94555AB7B9E931"
+					table_id: 493850093826375995L
+					type: "random"
+				}
+				{
+					id: "239EF848FAEE22F8"
+					type: "xp"
+					xp: 30
+				}
+			]
+			shape: "hexagon"
+			tasks: [{
+				id: "07AA032017CEA776"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:dragon_flute"
+				}
+				title: "&fСоздать&r &l&6Флейта из драконьей кости"
+				type: "item"
+			}]
+			title: "Флейта Падения"
+			x: 1.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Осколки костей тех, чья &lмощь&r когда-то вершила &lсудьбы миров&r."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragonbone_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "08E2BC513DBEAC64"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6D30191E85A3D677"
+					table_id: 493850093826375995L
+					type: "random"
+				}
+				{
+					id: "5E7B50A13513237A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "4024439837160028"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonbone_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fСоздать &l&7Меч из кости дракона"
+					type: "item"
+				}
+				{
+					id: "023B9FFD5AB07DBF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonbone_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fСоздать &l&7Кирку из кости дракона"
+					type: "item"
+				}
+				{
+					id: "59E97B0E247AE4A5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonbone_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fСоздать &l&7Топор из кости дракона"
+					type: "item"
+				}
+			]
+			title: "Инструменты &7&lДревних Костей"
+			x: 0.0d
+			y: 7.5d
+		}
+		{
+			dependencies: ["248F4E082B1043F3"]
+			description: [
+				"&c&lОгненные драконы&r — потомки великого &lЭмбергарда,&r его живое пламя рассекало земли и оставивляло пепельные руины. "
+				""
+				"Его дыхание плавит&r камень, а крылья сеют &c&lвечный пожар&r. "
+			]
+			id: "1243A79CDA86BF7A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3A940C0DDB776753"
+					table_id: 3736338934622304283L
+					type: "random"
+				}
+				{
+					id: "1D539B7DA96645DF"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "woodtier"
+			tasks: [{
+				entity: "iceandfire:fire_dragon"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:fire_dragon_heart"
+				}
+				id: "67FA2A842B6D0059"
+				title: "Убить &lОгненного Дракона"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&c&lDragon Slayer"
+			x: -2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["0A0DC2D9FD1BB383"]
+			description: [
+				"&l&bЛедяные драконы&r — потомки великого &lТальдрира,&r владыки бурь и метелей, чей взмах превращал воздух в смертоносные&b &lобломки льда&r. "
+				""
+				"Их холод не знает пощады, а каждый кристалл в их чешуе — осколок &l&bвечной стужи&r. "
+			]
+			id: "72E3A4706F29FD04"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "742D8B8EECCC543B"
+					table_id: 3736338934622304283L
+					type: "random"
+				}
+				{
+					id: "4F1C30CF2709A700"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "diamondtier"
+			tasks: [{
+				entity: "iceandfire:ice_dragon"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:ice_dragon_heart"
+				}
+				id: "5711E7A245DAF5BF"
+				title: "Убить &lЛедяного Дракона"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&b&lDragon Slayer"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4F9140E8E93E15FD"]
+			description: [
+				"&l&9Грозовые драконы&r - потомки великого &lТуйрона,&r живого шторма, кто когда-то прожигал небосвод молниями и &l&9раскатами грома&r. "
+				""
+				"Их рык сотрясает землю, а в груди пульсирует чистая энергия &l&9бури&r. "
+			]
+			id: "030715707B11D4FA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "55C95CC538C8AA1A"
+					table_id: 3736338934622304283L
+					type: "random"
+				}
+				{
+					id: "5D286781C82BCD40"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "netheritetier"
+			tasks: [{
+				entity: "iceandfire:lightning_dragon"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:lightning_dragon_heart"
+				}
+				id: "5D9D4E18ADFE2278"
+				title: "Убить &lГрозового Дракона"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&l&9Dragon Slayer"
+			x: 2.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1243A79CDA86BF7A"]
+			description: [
+				"Чтобы получить бутылку с кровью, нужно с пустой бутылкой нажать пкм по &l&cмертвому&r дракону (&lне скелету&r)."
+				""
+				"Ну а для чешуи, нужно нажать пкм пустой рукой по &c&lтрупу&r дракона (&lне скелету&r)."
+			]
+			hide_details_until_startable: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:fire_dragon_blood"
+			}
+			id: "5684C5D926C37F77"
+			progression_mode: "flexible"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "071067AE7883284D"
+					table_id: 3736338934622304283L
+					type: "random"
+				}
+				{
+					id: "3666D15193B06834"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "woodtier"
+			tasks: [
+				{
+					count: 3L
+					id: "3A3117646EF27BE1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:fire_dragon_blood"
+					}
+					title: "&fПолучить &c&l3 бутылки крови огненного дракона"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "526B548CD5E3D1C1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Fire Scales\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(iceandfire:dragonscales_red)item(iceandfire:dragonscales_green)item(iceandfire:dragonscales_bronze)item(iceandfire:dragonscales_gray))"
+						}
+					}
+					title: "&fПолучить &l&c32 чешуи огненного дракона"
+					type: "item"
+				}
+			]
+			title: "Кровь &l&cОгня"
+			x: -2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["72E3A4706F29FD04"]
+			description: [
+				"Чтобы получить бутылку с кровью, нужно с пустой бутылкой нажать пкм по &b&lмертвому&r дракону (&lне скелету&r)."
+				""
+				"Ну а для чешуи, нужно нажать пкм пустой рукой по &b&lтрупу&r дракона (&lне скелету&r)."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:ice_dragon_blood"
+			}
+			id: "2D7D0DC8B5423898"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E4557561501969A"
+					table_id: 3736338934622304283L
+					type: "random"
+				}
+				{
+					id: "1C943BD782277AF2"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "diamondtier"
+			tasks: [
+				{
+					count: 3L
+					id: "5C482C9A416314C4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:ice_dragon_blood"
+					}
+					title: "&fПолучить &b&l3 бутылки крови ледяного дракона"
+					type: "item"
+				}
+				{
+					count: 32L
+					id: "56EF470387BC5ED0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Ice Scales\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(iceandfire:dragonscales_blue)item(iceandfire:dragonscales_white)item(iceandfire:dragonscales_sapphire)item(iceandfire:dragonscales_silver))"
+						}
+					}
+					title: "&fПолучить &l&b32 чешуи ледяного дракона"
+					type: "item"
+				}
+			]
+			title: "Кровь &b&lЛьда"
+			x: 0.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["030715707B11D4FA"]
+			description: [
+				"Чтобы получить бутылку с кровью, нужно с пустой бутылкой нажать пкм по &l&9мертвому&r дракону (&lне скелету&r)."
+				""
+				"Ну а для чешуи, нужно нажать пкм пустой рукой по &9&lтрупу&r дракона (&lне скелету&r)."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:lightning_dragon_blood"
+			}
+			id: "442A8AF9A3BA4DCB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0C107768CA5E8F3E"
+					table_id: 3736338934622304283L
+					type: "random"
+				}
+				{
+					id: "47D7D4B2596FF309"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "netheritetier"
+			tasks: [
+				{
+					count: 3L
+					id: "46F5015275751F60"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:lightning_dragon_blood"
+					}
+					title: "&fПолучить &l&93 бутылки крови грозового дракона"
+					type: "item"
+				}
+				{
+					count: 32L
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonscales_amythest"
+					}
+					id: "606E69D4BC29EB25"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							display: {
+								Name: "{\"text\":\"Lightning Scales\"}"
+							}
+							"ftbfiltersystem:filter": "or(item(iceandfire:dragonscales_electric)item(iceandfire:dragonscales_amythest)item(iceandfire:dragonscales_copper)item(iceandfire:dragonscales_black))"
+						}
+					}
+					title: "&fПолучить &l&932 чешуи грозового дракона"
+					type: "item"
+				}
+			]
+			title: "Кровь &l&9Грозы"
+			x: 2.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"5684C5D926C37F77"
+				"08E2BC513DBEAC64"
+			]
+			description: [
+				"Античный меч, выкованный в бездне &l&cлавовых озёр&r, пропитан кровью &c&lдраконов пламени&r. "
+				""
+				"Его клинок раскалён до белого жару и наносит смертельные раны &l&bледяным чудищам&r, рассекая их стужу, плавя лёд."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragonbone_sword_fire"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "61E01FFC4C5C3B71"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3BAAE4F6843A5D0A"
+					table_id: 493850093826375995L
+					type: "random"
+				}
+				{
+					id: "17711062CBF26D7B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			tasks: [
+				{
+					id: "317A50ED975A7EEA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonbone_sword_fire"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fСоздать &l&cОгненный меч из кости дракона"
+					type: "item"
+				}
+				{
+					id: "3B449271126E9593"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:summoning_crystal_fire"
+					}
+					title: "&fСоздать &l&cКристалл призыва Огненного дракона"
+					type: "item"
+				}
+			]
+			title: "Клинок &l&cОгня"
+			x: -1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: [
+				"2D7D0DC8B5423898"
+				"08E2BC513DBEAC64"
+			]
+			description: [
+				"Этот древний ледяной меч выкован из застывшей крови &l&bдракона стужи&r. "
+				""
+				"Холод его лезвия пробуждает бурю в груди &c&lогненных созданий&r, замораживая их в смертельном оцепенении."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragonbone_sword_ice"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "3CAE73FE160EF049"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0D83AE5C0555AB97"
+					table_id: 493850093826375995L
+					type: "random"
+				}
+				{
+					id: "3AB766FCB69CBD0E"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "44E4A0D45137B5C8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonbone_sword_ice"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fСоздать &b&lЛедяной меч из кости дракона"
+					type: "item"
+				}
+				{
+					id: "10C002F0F5A8C58A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:summoning_crystal_ice"
+					}
+					title: "&fСоздать &l&bКристалл призыва Ледяного дракона"
+					type: "item"
+				}
+			]
+			title: "Клинок &b&lХолода"
+			x: 0.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"442A8AF9A3BA4DCB"
+				"08E2BC513DBEAC64"
+			]
+			description: [
+				"Легендарный штормовой клинок, выкованный из энергии разбежавшихся бурь и &l&9крови грозового дракона&r. "
+				""
+				"Его вихревой удар разрывает как &l&cогненных,&r так и &l&bледяных&r &lтварей,&r оставляя за собой только шепот &l&9шторма.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragonbone_sword_lightning"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "0E99A4DC8E0746D6"
+			progression_mode: "flexible"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7040FF50C93CCE1D"
+					table_id: 493850093826375995L
+					type: "random"
+				}
+				{
+					id: "01B7348417FF77B9"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "6BF919F313D9E71D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonbone_sword_lightning"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fСоздать &9&lГрозовой меч из кости дракона"
+					type: "item"
+				}
+				{
+					id: "0A7DE5B11579E096"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:summoning_crystal_lightning"
+					}
+					title: "&fСоздать &l&9Кристалл призыва Грозового дракона"
+					type: "item"
+				}
+			]
+			title: "Клинок &9&lГрозы"
+			x: 1.5d
+			y: 6.0d
+		}
+		{
+			dependencies: ["14611FC6A1F8B255"]
+			description: ["Открой жерло кузницы &6&lогненным дыханием&r повелителя огня — и &l&cинферносталь&r родится в пламени, алчущем силы."]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragonforge_fire_input"
+			}
+			id: "18AF5481786B232B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5643C19BAB50418D"
+					table_id: 189631953988819234L
+					type: "random"
+				}
+				{
+					id: "1B7DD05382DCFA07"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "square"
+			size: 1.1d
+			tasks: [
+				{
+					count: 17L
+					id: "4CFAB74CB19A7A9A"
+					item: {
+						Count: 17
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonforge_fire_brick"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "72CB7C9315645566"
+					item: {
+						Count: 8
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragon_bone_block"
+					}
+					type: "item"
+				}
+				{
+					id: "37BE46633CA94072"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonforge_fire_input"
+					}
+					type: "item"
+				}
+				{
+					id: "63BFA5C699C24B39"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonforge_fire_core_disabled"
+					}
+					type: "item"
+				}
+			]
+			title: "Кузница &l&cпламени"
+			x: 3.75d
+			y: 1.875d
+		}
+		{
+			dependencies: ["14611FC6A1F8B255"]
+			description: [
+				"Изрезанная рунами &l&bвечной мерзлоты&r глыба хранит стужу миров. "
+				""
+				"Подключи к ней дыхание подчинённого &l&bледяного дракона&r — и металл застынет в истинный сплав &lдраконостали.&r"
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragonforge_ice_input"
+			}
+			id: "01CC686C8F3E40A8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3F6FF6E823F921A4"
+					table_id: 189631953988819234L
+					type: "random"
+				}
+				{
+					id: "16ABFBD3A97AF2EB"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "square"
+			size: 1.1d
+			tasks: [
+				{
+					count: 17L
+					id: "1474AA044A72D01D"
+					item: {
+						Count: 17
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonforge_ice_brick"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "3A5129114EAF5FE2"
+					item: {
+						Count: 8
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragon_bone_block"
+					}
+					type: "item"
+				}
+				{
+					id: "2E1CC90E692A4603"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonforge_ice_input"
+					}
+					type: "item"
+				}
+				{
+					id: "77CF47CCDB4AEBA3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonforge_ice_core_disabled"
+					}
+					type: "item"
+				}
+			]
+			title: "Кузница &b&lЛьда"
+			x: 5.25d
+			y: 1.25d
+		}
+		{
+			dependencies: ["14611FC6A1F8B255"]
+			description: [
+				"Витиеватыми каналами из молниевого обсидиана питается &l&9небесный шторм.&r "
+				""
+				"Направь в печь дыхание подчинённого &9&lгрозового дракона&r — и энергия бури выкует &lдраконосталь.&r"
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragonforge_lightning_input"
+			}
+			id: "2B697214F7C0A042"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5FEEA78F65CA181C"
+					table_id: 189631953988819234L
+					type: "random"
+				}
+				{
+					id: "15FD6911D1C9C8B9"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "square"
+			size: 1.1d
+			tasks: [
+				{
+					count: 17L
+					id: "7F69598928C9C6DE"
+					item: {
+						Count: 17
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonforge_lightning_brick"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "40F599748C5D3320"
+					item: {
+						Count: 8
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragon_bone_block"
+					}
+					type: "item"
+				}
+				{
+					id: "2613CBFEFF3A63AB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonforge_lightning_input"
+					}
+					type: "item"
+				}
+				{
+					id: "3AB5E933B912E979"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonforge_lightning_core_disabled"
+					}
+					type: "item"
+				}
+			]
+			title: "Кузница &9&lБури"
+			x: 6.875d
+			y: 1.875d
+		}
+		{
+			dependencies: [
+				"030715707B11D4FA"
+				"1243A79CDA86BF7A"
+				"72E3A4706F29FD04"
+			]
+			description: [
+				"Под землёй, в безмолвных пещерах, дремлют &lдревние особи &6драконов&r, что сохранили большую часть былой силы. Они делятся на два вида - &lсамцов и самок&r. Ориентируйся на их рога - &lизогнутые&r выдают женских особей, что несут &lяйца &6драконов&r."
+				""
+				"Только после падения этих могучих самок в твоих руках окажется последнее чудо: &lяйцо&r, способное возродить кровную линию и породить &lнового &6дракона&r, что послушно следует приказам хозяина."
+			]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragonegg_amythest"
+			}
+			id: "14611FC6A1F8B255"
+			invisible: true
+			rewards: [
+				{
+					id: "1D0A4BCCFDFFB66C"
+					table_id: 1302191256673277665L
+					type: "random"
+				}
+				{
+					id: "7FF18897EABC178C"
+					type: "xp"
+					xp: 1000
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "2CA73AF2D6A4B66F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						display: {
+							Name: "{\"text\":\"Dragon Egg\"}"
+						}
+						"ftbfiltersystem:filter": "or(item(iceandfire:dragonegg_red)item(iceandfire:dragonegg_green)item(iceandfire:dragonegg_bronze)item(iceandfire:dragonegg_gray)item(iceandfire:dragonegg_blue)item(iceandfire:dragonegg_white)item(iceandfire:dragonegg_sapphire)item(iceandfire:dragonegg_silver)item(iceandfire:dragonegg_electric)item(iceandfire:dragonegg_amythest)item(iceandfire:dragonegg_copper)item(iceandfire:dragonegg_black))"
+					}
+				}
+				title: "&fЗаполучить &l&6Яйцо Дракона"
+				type: "item"
+			}]
+			title: "&6&lЯйценко Дракона"
+			x: 5.25d
+			y: 3.75d
+		}
+		{
+			dependencies: ["14611FC6A1F8B255"]
+			description: [
+				"В пепельных недрах Кузницы Пламени расплавленный металл томится в ожидании &lдыхания&r подчинённого &l&cогненного дракона&r. "
+				""
+				"Когда жар утихнет, в твоих руках окажется сталь, что содержит силу &l&cЭмбергарда."
+			]
+			id: "54A64E2E0E881FE7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3C359201C733C316"
+					table_id: 189631953988819234L
+					type: "random"
+				}
+				{
+					id: "595111013294B928"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "square"
+			size: 1.1d
+			tasks: [{
+				count: 20L
+				id: "0163B773DAFC0439"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:dragonsteel_fire_ingot"
+				}
+				title: "&fСделать &l&c20 слитков огненной драконостали"
+				type: "item"
+			}]
+			title: "Драконосталь &c&lПламени"
+			x: 3.75d
+			y: 5.625d
+		}
+		{
+			dependencies: ["14611FC6A1F8B255"]
+			description: [
+				"В кристаллической Кузнице Стужи металл застыл во&b&l льду вечности. &r"
+				""
+				"Направь в неё дыхание подчинённого &l&bледяного дракона&r — и обретёшь сталь, холодную как забвение, несущую силу &l&bТальдрира."
+			]
+			id: "03C384F8B4066D33"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "447C7FFB88E78A5B"
+					table_id: 189631953988819234L
+					type: "random"
+				}
+				{
+					id: "24233C4A6C06F492"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "square"
+			size: 1.1d
+			tasks: [{
+				count: 20L
+				id: "7607818075D7F7C6"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:dragonsteel_ice_ingot"
+				}
+				title: "&fСделать &l&b20 слитков ледяной драконостали"
+				type: "item"
+			}]
+			title: "Драконосталь &b&lЛьда"
+			x: 5.25d
+			y: 6.125d
+		}
+		{
+			dependencies: ["14611FC6A1F8B255"]
+			description: [
+				"В витиевых каналах Кузницы Бури дремлет энергия &l&9грозового дракона&r. "
+				""
+				"Когда буря стихнет, из молниевого обсидиана выйдет сталь, разрывающая небо и дарующая силу &9&lТуйрона."
+			]
+			id: "347361D8C9A96A9F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2DE007DAAF064B30"
+					table_id: 189631953988819234L
+					type: "random"
+				}
+				{
+					id: "46BC80618E686CAE"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "square"
+			size: 1.1d
+			tasks: [{
+				count: 20L
+				id: "546C96F4C90A3BB1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:dragonsteel_lightning_ingot"
+				}
+				title: "&fСделать &l&920 слитков грозовой драконостали"
+				type: "item"
+			}]
+			title: "Драконосталь &l&9Бури"
+			x: 6.75d
+			y: 5.625d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Кузнечное ремесло из стали и воли. На неё сажают тех, кто пытается &7&lсбежать&r."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:chain"
+			}
+			id: "4BF0E9ABD0D924B2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7832E8444BD813DB"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "34A18FA1F9D1F4B7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "02B7B66AC409B698"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:chain"
+					}
+					title: "&fСоздать &l&7Железную Цепь"
+					type: "item"
+				}
+				{
+					id: "220C3779AB84CD62"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:chain_sticky"
+					}
+					title: "&fСоздать &l&2Липкую Железную цепь"
+					type: "item"
+				}
+			]
+			title: "Цепь Подчинения"
+			x: -6.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Слёзы древних, запечатанные в скале. Найдены в логовах &l&6драконов&r — редкие, как выжившие после их гнева."]
+			hide_dependency_lines: true
+			id: "023F4ED1950E0F59"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "438E897D270C509E"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "0D8D94C513F1C328"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				count: 64L
+				id: "06C99F2A07696E1B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:sapphire_gem"
+				}
+				title: "&fДобыть &l&#1E90FF64 Сапфира"
+				type: "item"
+			}]
+			title: "Сапфиры Глубин"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Собери фрагменты древнего знания. Тот, кто читает их — слышит &6&lголос прошлого&r."]
+			hide_dependency_lines: true
+			id: "6D946C8BE80175F2"
+			rewards: [
+				{
+					id: "2BFEDB5644949E43"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "26B01A4ACF5CCBE7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				count: 32L
+				id: "73D93FF91819D171"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:manuscript"
+				}
+				title: "&fНайти &6&l32 Манускрипта"
+				type: "item"
+			}]
+			title: "Манускрипты Забытых"
+			x: -5.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Маленький свет, пойманный в стекло. Просто украшение… или что-то большее?"]
+			hide_dependency_lines: true
+			id: "70B611384AE03CB4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7F219EB5ED55D8A8"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "67F4EF8DA66D5435"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				id: "20A33D096D9543C0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(iceandfire:pixie_jar_0)item(iceandfire:pixie_jar_1)item(iceandfire:pixie_jar_2)item(iceandfire:pixie_jar_3)item(iceandfire:pixie_jar_4))"
+					}
+				}
+				title: "Поймать пикси в банку"
+				type: "item"
+			}]
+			title: "Пикси в Банке"
+			x: -6.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Идеальное оружие в борьбе с &l&2Горгоной&r и &l&3Сиренами.&r"]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:blindfold"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "64D164D83690CC9B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "05162C2126548462"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "2E61811CE93BD07F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "1E513F8AE5B6E132"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:blindfold"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fСоздать &lГлазную Повязку"
+					type: "item"
+				}
+				{
+					id: "0245FB71592E1311"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:earplugs"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "&fСоздать &lБеруши"
+					type: "item"
+				}
+			]
+			title: "Повязка и Бируши"
+			x: -4.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Старая традиция борьбы с &l&7нечистым.&r Не столь крепка, как сталь, но куда смертоноснее для &7&lпроклятых&r."]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:armor_silver_metal_chestplate"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "11470A53587D0501"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4B3732701A764B22"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "278516417A318027"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "5DE7F509C5C4EF64"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:silver_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2E95D531278F5696"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:armor_silver_metal_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "584611ED04D74E5E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:silver_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "1DCF7DBBB3DD96CA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:armor_silver_metal_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "130AE1C472F6B1DC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:armor_silver_metal_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Серебряная База"
+			x: -5.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Редкий настой, позволяющий драконам разных кровей найти общий &6&lзов.&r "]
+			hide_dependency_lines: true
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:fire_stew"
+			}
+			id: "79AF9A58AE069C59"
+			rewards: [
+				{
+					id: "4623ADC405748608"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "4A607B82AEC69C56"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [
+				{
+					id: "0BA5CE4B2334A90C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:fire_stew"
+					}
+					title: "&lСделать &l&cМикстуру из огненной лилии"
+					type: "item"
+				}
+				{
+					id: "28C9087AD88D14DB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:frost_stew"
+					}
+					title: "&fСделать &l&bМикстуру из ледяной лилии"
+					type: "item"
+				}
+				{
+					id: "00E482D42F8CAA7C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:lightning_stew"
+					}
+					title: "&fСделать &l&9Микстуру из грозовой лилии"
+					type: "item"
+				}
+			]
+			title: "Микстура Слияния"
+			x: -4.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Легенда в &o&lзмеином храме&r. &l&2Горгона&r способна обратить в камень одним взглядом — но и её можно остановить, если не моргнёшь первым."]
+			id: "696FDB949FB2E1EF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0187A842F931A411"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:gorgon"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:gorgon_head"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "26F3185505CB1711"
+				title: "&fУбить &#008000&lГоргону"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&l&2Каменный Вздох"
+			x: 1.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["696FDB949FB2E1EF"]
+			description: [
+				"Она была королевой — гордой, жестокой, красивой. Слухи о крови дракона, дарующей силу, привели её к запретному ритуалу. Она выпила, и обрела власть: взгляд её обращал даже драконов в камень. "
+				""
+				"Но кровь разъела её разум. Она утратила речь, имя, облик. Осталась лишь горгона — змееголовая тень, охотящаяся на всё живое. Убить одну — подвиг. Убить тридцать — попытка искупить её ошибку."
+			]
+			id: "0AAD87BDD377868F"
+			rewards: [
+				{
+					id: "4E77E02ED979F39C"
+					table_id: 3540968001609863564L
+					type: "random"
+				}
+				{
+					id: "4D2350E121A5FD8A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:gorgon_head"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			shape: "goldtier"
+			tasks: [{
+				entity: "iceandfire:gorgon"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:stone_statue"
+				}
+				id: "0C42B3C432CF5D50"
+				title: "&fУбить &l&230 Горгон"
+				type: "kill"
+				value: 30L
+			}]
+			title: "Падение Змеи"
+			x: 2.5d
+			y: -5.5d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["&l&7Гиппогрифы&r горды и свирепы. Выслеживай его в &o&lгорах,&r сбей с неба — и докажи, что ты хищник."]
+			id: "4577D3587F28C028"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A106E21C3C469D7"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:hippogryph"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:hippogryph_talon"
+				}
+				id: "34D1B01381D34111"
+				title: "&fУбить &l&7Гиппогрифа&r"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&l&7Последний Клюв"
+			x: 0.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Потомок самого &lХранителя Пустоты&r - &5&lЛевиафана,&r скрыт в морских глубинах. Быстрый, свирепый — его смерть станет эхом на волнах."]
+			id: "444748D6A9CAF9CB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "281A2E4AB03E346D"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:sea_serpent"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:sea_serpent_fang"
+				}
+				id: "6C9B9DA0D44257D2"
+				title: "&fУбить &l&3Морского Змея"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&l&3Кровь Океана"
+			x: -0.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["&#D2691E&lСтимфалийские птицы&r — живое лезвие. Найди троих в &l&oзимних лесах или болотах&r и увернись от шквала перьев, пока не утихнет их рой."]
+			id: "54F2DA2B1061F0EA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17BD2F5B31996E16"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:stymphalian_bird"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:stymphalian_bird_feather"
+				}
+				id: "6D54F64BC4D25D4F"
+				title: "&fУбить &l&#D2691E3 Стимфалийские птицы"
+				type: "kill"
+				value: 3L
+			}]
+			title: "&#D2691E&lЖелезные Крылья"
+			x: -1.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["&#00FFFF&lСирены&r поют смертью. Услышав их песню — уже поздно. Убей троих, прежде чем кто-то утонет в голосе."]
+			id: "43E0D2D64D3667BD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2CF97A10057735F9"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:siren"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:siren_tear"
+				}
+				id: "08339D8EE62524E6"
+				title: "&fУбить &l&#00FFFF3 Сирены"
+				type: "kill"
+				value: 3L
+			}]
+			title: "&#00FFFF&lТонущий Голос"
+			x: -2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Один глаз, одна цель. &#FF7F50&lЦиклоп&r крушит скалы и глотает живьём. Победи его в его &l&oпещере&r — и тебя не забудет земля."]
+			id: "73DB558DA437DD4B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "24001BA657B1573A"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:cyclops"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:cyclops_eye"
+					tag: {
+						Damage: 0
+					}
+				}
+				id: "6CCCFE73707F93CC"
+				title: "&fУбить &#FF7F50&lЦиклопа"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&#FF7F50&lЦиклопий Аппетит"
+			x: -2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["&7&lВасилиск&r наблюдает из саванны. Его взгляд убивает, но если выдержишь — убьёшь первым."]
+			id: "19466803F9791B18"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4AB610CAE74313B3"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:cockatrice"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:cockatrice_eye"
+				}
+				id: "0D06E156DF8C13FF"
+				title: "&fУбить &7&lВасилиска"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&7&lГлаз Смерти"
+			x: -3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["&#FFB6C1&lПикси&r смеются в &l&oлесах,&r крадут без страха. Убей пятерых — и, возможно, они начнут уважать границы."]
+			id: "75902AA3DB4C627C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "19ECF33317D1CF8A"
+				table_id: 1450475951561549147L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:pixie"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:pixie_wings"
+				}
+				id: "13CE4768C68E59F4"
+				title: "&fУбить &#FFB6C1&l5 Пикси"
+				type: "kill"
+				value: 5L
+			}]
+			title: "&#FFB6C1&lТихая Месть"
+			x: 2.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["&#7FFFD4&lАмфитеры&r парят над &l&oтропиками,&r змеятся в небесах. Сбей их с воздуха — иначе охотник станет добычей."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:amphithere_feather"
+			}
+			id: "1388480FCEBF98CB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3732EB0DD935046B"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:amphithere"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:amphithere_feather"
+				}
+				id: "3110D66DFD59025E"
+				title: "&fУбить &l&#7FFFD4Амфитеру"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&#7FFFD4&lРазорванные Крылья"
+			x: 2.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1388480FCEBF98CB"]
+			description: [
+				"Амфитеры — одни из немногих драконов, не стремящихся к разрушению. Они парят в тропических ветрах, не касаясь земли, не тревожа слабых. Люди редко верят в их мирную природу — и зря. "
+				""
+				"Они сражаются только в ответ, и каждый их выпад — точен и быстр, как удар молнии. Если решишь напасть — будь готов ответить. Лишь великий воин заслуживает право носить их клык и череп как знак силы, а не насилия."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:amphithere_skull"
+			}
+			id: "0E5F2832F4AC7B26"
+			rewards: [{
+				id: "5401A7DDB115F711"
+				table_id: 3540968001609863564L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					id: "5CA7B0FB44077B81"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:amphithere_macuahuitl"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Макуавитль Амфитеры"
+					type: "item"
+				}
+				{
+					id: "155203FB562AEBF5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:amphithere_skull"
+					}
+					title: "Получить Череп амфитеры"
+					type: "item"
+				}
+			]
+			title: "Макуавитль"
+			x: 4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["75902AA3DB4C627C"]
+			description: [
+				"Пикси — не волшебные существа, рожденные лесом, как думают многие. Это проклятые. Когда древние города падали под напором драконов, один маг — слуга самих чудовищ — предложил отчаявшимся спасение. "
+				""
+				"Он уменьшил их тела, наделил крыльями и спрятал в лесах. Они уцелели, но потеряли память, облик и разум. Теперь они смеются, крадут и играют. Иногда — плачут по ночам. Из их силы можно создать волшебство — если принять цену."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:pixie_wand"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "1A5FD9663C8949B0"
+			rewards: [{
+				id: "3AF50113AA1336A7"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					id: "03D29B4EBCB86B1D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:pixie_wand"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Волшеную палочку пикси"
+					type: "item"
+				}
+				{
+					count: 9L
+					id: "6D81D846257D68CF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:ambrosia"
+					}
+					title: "Создать 9 Амброзий"
+					type: "item"
+				}
+			]
+			title: "Амброзивный"
+			x: 4.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["4577D3587F28C028"]
+			description: [
+				"Гиппогрифы были созданы в древние времена как символ союза небес и земли. Их выводили для странствий между горами, где драконы не пролетают. "
+				""
+				"Но когда люди исчезли, гиппогрифы одичали. Теперь они стражи высот, ревниво охраняющие каждую вершину. Сразить одного — значит вторгнуться в небо. Их череп — не просто трофей, а печать, что ты выжил там, где падали лучшие."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:hippogryph_skull"
+			}
+			id: "05397999C2F84ADC"
+			rewards: [{
+				id: "49500C2BFE9913CF"
+				table_id: 3540968001609863564L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					id: "72498864EB871F3A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:hippogryph_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Меч из когтей гиппогрифа"
+					type: "item"
+				}
+				{
+					id: "038C5B535A1D4A77"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:hippogryph_skull"
+					}
+					title: "Получить Получить Череп гиппогрифа"
+					type: "item"
+				}
+			]
+			title: "Перья и Гнев"
+			x: 1.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["444748D6A9CAF9CB"]
+			description: [
+				"Морские змеи — прямая кровь Левиафана, повелителя морей и Хранителя Пустоты. Их чешуя темна и холодна, а стройные тела скользят по бездне, словно ожившие тени древнего владыки."
+				""
+				"Каждый, кто ступает с суши в воду, становится их добычей: они не просто хищники, а неумолимые стражи, не пропускающие ни одно живое существо к своему предку."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:seaserpent_skull"
+			}
+			id: "6FC0141A7B45930B"
+			rewards: [{
+				id: "0DA8E953452ECADD"
+				table_id: 3540968001609863564L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					id: "1FD2D7189DD57145"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:tide_trident"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Трезубец Волны"
+					type: "item"
+				}
+				{
+					id: "72590EE0F0C63FC8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:seaserpent_skull"
+					}
+					title: "Получить Череп Морского Змея"
+					type: "item"
+				}
+			]
+			title: "Пульс Воды"
+			x: -1.0d
+			y: -7.5d
+		}
+		{
+			dependencies: ["54F2DA2B1061F0EA"]
+			description: [
+				"Стимфалийские птицы не родились в гнёздах. Их вывели люди. Из стали, перьев и магии, чтобы сражаться с драконами. Они должны были быть спасением, но стали лишь новой угрозой. "
+				""
+				"Их интеллект угас, остался лишь инстинкт — стрелять, уничтожать, защищать. Они не знают, что война давно окончена. Но их материалы всё ещё ценны. Если найдёшь среди обломков череп — ты не просто победил, ты пережил искусственный шторм."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:stymphalian_skull"
+			}
+			id: "77DF4686E1424084"
+			rewards: [{
+				id: "7FD670A2116CF0D4"
+				table_id: 3540968001609863564L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					id: "1FA8E7986E71BB8A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:stymphalian_bird_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Кинжал Стимфалийской птицы"
+					type: "item"
+				}
+				{
+					id: "3AB7DBD58E898991"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:stymphalian_feather_bundle"
+					}
+					title: "Создать Связку перьев Стимфалийской птицы"
+					type: "item"
+				}
+				{
+					id: "501BC58A6CA9006E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:stymphalian_skull"
+					}
+					title: "Получить Получить Череп Стимфалийской птицы"
+					type: "item"
+				}
+			]
+			title: "Бердаменище"
+			x: -2.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["43E0D2D64D3667BD"]
+			description: [
+				"Сирены были женщинами. Девами при берегах, рыбаками, влюблёнными. Пока не испили кровь Левиафанов — ради силы, ради мести. "
+				""
+				"Они обрели голос, способный затягивать в смерть, и стали частью океана, но не частью мира. Теперь их зов — ловушка, их песня — оковы. Сражайся с ними в тишине. Их смерть — не избавление, а напоминание о том, как легко потерять человечность."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:siren_flute"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "7D9A49D7E95285D4"
+			rewards: [{
+				id: "5476AC9253394FA5"
+				table_id: 3540968001609863564L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					id: "7B7AD878B44D15C1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:siren_flute"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Флейту сирены"
+					type: "item"
+				}
+				{
+					id: "56D19BDC280C110D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:hippocampus_slapper"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Шлёп-шлёп гиппокампа"
+					type: "item"
+				}
+			]
+			title: "Песнь Без Эха"
+			x: -4.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["73DB558DA437DD4B"]
+			description: [
+				"Циклопы древнее самих драконов. Когда люди ещё жили в пещерах, циклопы уже строили свои. Они ели тех, кто попадался под руку, воевали с драконами из зависти и страха. "
+				""
+				"Но время сделало их медлительными, а их гнев — тупыми. Они по-прежнему опасны, особенно вблизи. Их глаз видит многое, но не всегда вовремя. Их череп — тяжёлый, редкий, и глядит сквозь века."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:cyclops_skull"
+			}
+			id: "071CD1F4A950E03D"
+			rewards: [{
+				id: "32E7DB102845AD0B"
+				table_id: 3540968001609863564L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					id: "140214F8C749586C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:cyclops_eye"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Выбить Глаз циклопа"
+					type: "item"
+				}
+				{
+					id: "29F61C60BF4242AE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:cyclops_skull"
+					}
+					title: "Получить Череп циклопа"
+					type: "item"
+				}
+			]
+			title: "Слепой Вход"
+			x: -4.0d
+			y: -4.0d
+		}
+		{
+			dependencies: ["19466803F9791B18"]
+			description: [
+				"Василиски — результат войны людей против людей. Их вывели из кур, насытив магией, ядом и злобой. Они стали оружием массового поражения — одним взглядом уничтожая вражеские армии. "
+				""
+				"Но они не знали различий между своими и чужими. После войны их оставили. Теперь они скитаются по саваннам, живые легенды. Лишь сильнейшие могут встретиться с их взглядом — и получить их череп как трофей."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:cockatrice_skull"
+			}
+			id: "2CB37366DA7EB20C"
+			rewards: [{
+				id: "58CB22235FDFE053"
+				table_id: 3540968001609863564L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					id: "04EFD880B5A16B59"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:cockatrice_scepter"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Скипетр Василиска"
+					type: "item"
+				}
+				{
+					id: "71D52EE35119B645"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:cockatrice_skull"
+					}
+					title: "Получить Череп василиска"
+					type: "item"
+				}
+			]
+			title: "Безмолвие Саванны"
+			x: -6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Многоголовое чудовище с &o&lболот.&r Сильна, но пламя — её вечный кошмар. Сожги корни, и головы &a&lпадут.&r"]
+			id: "0758C61F604AE706"
+			rewards: [{
+				id: "0E08FE485C4912C1"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:hydra"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:hydra_fang"
+				}
+				id: "4D5D47E0477BBF50"
+				title: "&fУбить &l&#00FF00Гидру"
+				type: "kill"
+				value: 1L
+			}]
+			title: "&a&lПадение Гидры"
+			x: 3.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Три &#5F9EA0&lтролля,&r три булавы, и ни капли разума. Спустись в глубины — и оставь там только эхо их падения."]
+			id: "10E5FBDB4AE2F2BD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6785510D39CC74C0"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:troll"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:troll_leather_forest"
+				}
+				id: "24158A3E12BBDA61"
+				title: "&fУбить &l&#5F9EA03 Лесных Тролля"
+				type: "kill"
+				value: 3L
+			}]
+			title: "&#5F9EA0&lГоу крейзи"
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["0758C61F604AE706"]
+			description: [
+				"Гидры — уродливое сплетение двух величайших стихий: льда и пламени. Когда огненный и ледяной драконы впервые соединили кровь, природа отвернулась. Их потомки стали нестабильными, безумными, слабыми по меркам родителей. "
+				""
+				"За это их изгнали в болота — влажные гниющие трясины, ставшие их убежищем. Но даже в изгнании их тела носят в себе силу стихий. Победи их и добудь сердце — трофей, достойный легенд."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:hydra_skull"
+			}
+			id: "74C53C6A829B5357"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3FD53D6CDE7BABBB"
+				table_id: 3540968001609863564L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					id: "49246A50091191CB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:hydra_heart"
+					}
+					title: "Получить Сердце Гидры"
+					type: "item"
+				}
+				{
+					id: "5CF6D8AC37525553"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:hydra_skull"
+					}
+					title: "Получить Получить Череп Гидры"
+					type: "item"
+				}
+			]
+			title: "Сердце Чудища"
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["10E5FBDB4AE2F2BD"]
+			description: [
+				"Они спустились в шахты за золотом, железом, драгоценностями. Не вернулись. Никто не знает, что случилось в тех глубинах. "
+				""
+				"Вернулись не люди, а тролли — покрытые камнем, с глазами, забывшими свет. Они больше не помнят, кто они. Только боль, гул и удары булав. Их кожа — крепче кожи зверей, их череп — наполнен эхо, что слышно даже после их смерти."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:troll_skull"
+			}
+			id: "50A9598DA820B528"
+			rewards: [{
+				id: "51F5D5394BDD54E9"
+				table_id: 3540968001609863564L
+				type: "random"
+			}]
+			shape: "goldtier"
+			tasks: [
+				{
+					count: 24L
+					id: "6F406FA8FE491C63"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:troll_leather_forest"
+					}
+					title: "Получить 24 Кожи лесного тролля"
+					type: "item"
+				}
+				{
+					id: "33866C3780E91926"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:troll_skull"
+					}
+					title: "Получить череп тролля"
+					type: "item"
+				}
+			]
+			title: "Камень и Кость"
+			x: -4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4986F93212E7FD89"]
+			description: ["Убей трёх &#00FA9A&lпризраков&r, что пронзают стены и покой мёртвых, живя на кладбищах."]
+			id: "7137FB4077635D3E"
+			rewards: [{
+				id: "1B3589679A34FEBF"
+				table_id: 1333742502619940578L
+				type: "random"
+			}]
+			shape: "hexagon"
+			tasks: [{
+				entity: "iceandfire:ghost"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:ectoplasm"
+				}
+				id: "3998A00E30BD4005"
+				title: "&fУбить &#00FA9A&l3 Призрака"
+				type: "kill"
+				value: 3L
+			}]
+			title: "&#00FA9A&lПризрачная Тройка"
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7137FB4077635D3E"]
+			description: [
+				"Когда драконы впервые обрушились на великие города, в руинах остались тысячи тел. Погребения откладывались, молитвы глохли под грохотом крыльев. "
+				""
+				"Там, где смерть не получила отпущения, остались фантомы — живые обрывки боли и страха. Они не живы, но и не ушли. Их меч не из стали, а из памяти. Отомсти за тех, кто не успел умерет"
+			]
+			id: "511F7CFA97379F4C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "23B28A5CB11628CF"
+					table_id: 1302191256673277665L
+					type: "random"
+				}
+				{
+					id: "7C48C77A83D08CE2"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "goldtier"
+			tasks: [{
+				id: "0748E4312DF8BD75"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:ghost_sword"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать легендарный Фантомный клинок"
+				type: "item"
+			}]
+			title: "Фантомный Клинок"
+			x: 4.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["08E2BC513DBEAC64"]
+			description: ["Взгляд против взгляда. Удержи взгляд &l&7василиска&r — и приручишь того, кто сам несёт ужас одним лишь взглядом."]
+			hide_dependency_lines: true
+			id: "535B669AD7D75BFE"
+			rewards: [
+				{
+					id: "32DEFA6EB324AB75"
+					table_id: 6275287031534852507L
+					type: "random"
+				}
+				{
+					id: "26E134D447A9701B"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				advancement: "iceandfire:iceandfire/tame_cockatrice"
+				criterion: ""
+				id: "4A36D58A3D625505"
+				title: "Приручить Василиска"
+				type: "advancement"
+			}]
+			title: "&l&7Уйди с глаз моих"
+			x: -5.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["08E2BC513DBEAC64"]
+			description: ["Морское сердце нельзя подчинить — но можно заслужить. Приручи &l&2гиппокампуса,&r предложив ламинарии с открытой ладони."]
+			hide_dependency_lines: true
+			id: "20B4488D86C6D3F7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3F7EEE005D510A79"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "10F01ABFFE15BFAC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				advancement: "iceandfire:iceandfire/tame_hippocampus"
+				criterion: ""
+				id: "59F3C847A24B5428"
+				title: "Приручить гиппокампуса"
+				type: "advancement"
+			}]
+			title: "&l&2Освободите Вилли"
+			x: -6.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["08E2BC513DBEAC64"]
+			description: ["Варево для великанов. Приготовь пищу, что ускоряет рост &l&6драконов&r — и смотри, как небо становится тесным."]
+			hide_dependency_lines: true
+			id: "74B23DC59314B252"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3D5D214BB851B953"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "2665E37B9C99CADC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				advancement: "iceandfire:iceandfire/dragon_meal"
+				criterion: ""
+				id: "499015AF28ABBF46"
+				title: "Создать драконью еду"
+				type: "advancement"
+			}]
+			title: "&e&lГормон роста ящеров"
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["08E2BC513DBEAC64"]
+			description: ["&l&dПикси&r не ловят — с ними &lдружат.&r Подари торт, и, может, одна из них останется рядом."]
+			hide_dependency_lines: true
+			id: "30FE31AFBA319139"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5748B16DF642027D"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "18E42936B420FF42"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				advancement: "iceandfire:iceandfire/tame_pixie"
+				criterion: ""
+				id: "509D20002D2FA109"
+				title: "Приручить Пикси"
+				type: "advancement"
+			}]
+			title: "&l&dВыпиксен"
+			x: -4.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["08E2BC513DBEAC64"]
+			description: ["Редкий дар от обычной курицы. Найди тухлое яйцо — зловонный ключ к росту своего &l&7василиска.&r"]
+			hide_dependency_lines: true
+			id: "7746095F003B174E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4617F93813578F4E"
+					table_id: 1450475951561549147L
+					type: "random"
+				}
+				{
+					id: "7B77472D8C1EC414"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				advancement: "iceandfire:iceandfire/rotten_egg"
+				criterion: ""
+				id: "6CD45AC2D5C4B266"
+				title: "Получить прогнившее яйцо"
+				type: "advancement"
+			}]
+			title: "&lПрогнившее насквозь"
+			x: -6.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["08E2BC513DBEAC64"]
+			description: ["Сбей &l&aамфитеру&r с небес, но не убей — оседлай, и станете единым потоком в воздухе."]
+			hide_dependency_lines: true
+			id: "26347F1A7F681C0C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2AE0FCC9958211B4"
+					table_id: 6275287031534852507L
+					type: "random"
+				}
+				{
+					id: "7F278ECF49AE9980"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				advancement: "iceandfire:iceandfire/tame_amphithere"
+				criterion: ""
+				id: "22918036E9F40CC1"
+				title: "Приручить Амфитеру"
+				type: "advancement"
+			}]
+			title: "&l&aДрузья ветра"
+			x: -5.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["08E2BC513DBEAC64"]
+			description: ["С ветром за спиной и &l&oлапкой кролика&r в кармане. Приручи &l&7гиппогрифа,&r и пусть небо станет дорогой."]
+			hide_dependency_lines: true
+			id: "717D57C53D34B4DE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3EFFBF5A48053ABE"
+					table_id: 6275287031534852507L
+					type: "random"
+				}
+				{
+					id: "7FB96EABF472C5E1"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "circle"
+			tasks: [{
+				advancement: "iceandfire:iceandfire/tame_hippogryph"
+				criterion: ""
+				id: "0A0BD8C7C09FC840"
+				title: "Приручить Гиппогрифа"
+				type: "advancement"
+			}]
+			title: "&l&7Клювокрыл"
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["14611FC6A1F8B255"]
+			description: [
+				"Собери полный комплект брони из драконостали для своих подчиненных каждого вида — &l&cогненный,&r &l&bледяной&r и &l&9грозовой,&r чтобы защитить тех, кого вырастил."
+				""
+				"Эти доспехи созданы для тех, кто не просто выжил в схватке со &l&cсти&r&b&lхи&r&9&lями&r, а &lподчинил&r их себе."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "iceandfire:dragonarmor_dragonsteel_ice_head"
+			}
+			id: "0D10C851F36408B1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "73F145D37EA0ED47"
+					table_id: 1302191256673277665L
+					type: "random"
+				}
+				{
+					id: "389F6279ACA9573C"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			size: 1.1d
+			tasks: [
+				{
+					id: "6F65158221151F29"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_fire_head"
+					}
+					type: "item"
+				}
+				{
+					id: "18B859ED9A0BF296"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_fire_neck"
+					}
+					type: "item"
+				}
+				{
+					id: "560C865CB36FD6E1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_fire_body"
+					}
+					type: "item"
+				}
+				{
+					id: "6743CBAA2E027782"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_fire_tail"
+					}
+					type: "item"
+				}
+				{
+					id: "3207773F658EB8D3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_ice_head"
+					}
+					type: "item"
+				}
+				{
+					id: "6C0F2E84DD7E84D4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_ice_neck"
+					}
+					type: "item"
+				}
+				{
+					id: "6DCDBC1169A08C16"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_ice_body"
+					}
+					type: "item"
+				}
+				{
+					id: "3E72280061E14488"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_ice_tail"
+					}
+					type: "item"
+				}
+				{
+					id: "7BF815ECBD8C2DA6"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_lightning_head"
+					}
+					type: "item"
+				}
+				{
+					id: "4AEBADB5E0A25B05"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_lightning_neck"
+					}
+					type: "item"
+				}
+				{
+					id: "7E11378E590CBF88"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_lightning_tail"
+					}
+					type: "item"
+				}
+				{
+					id: "09AFEA7B05E5A62F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "iceandfire:dragonarmor_dragonsteel_lightning_body"
+					}
+					type: "item"
+				}
+			]
+			title: "&lВеликая Защита"
+			x: 7.5d
+			y: 3.75d
+		}
+	]
+	title: "Эхо великой эпохи"
 }

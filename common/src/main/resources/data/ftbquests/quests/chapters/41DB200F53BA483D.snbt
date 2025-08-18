@@ -1,25 +1,2874 @@
 {
 	default_hide_dependency_lines: false
 	default_quest_shape: ""
-	filename: "41DB200F53BA483D"
-	group: ""
-	id: "41DB200F53BA483D"
-	order_index: 0
-	quest_links: [ ]
-	quests: [{
-		id: "45628735F45D540C"
-		tasks: [{
-			count: 5L
-			id: "02DBB9A0FD7756E1"
-			item: {
-				Count: 5
-				id: "minecraft:stripped_oak_wood"
-				tag: { }
+	filename: "2"
+	group: "783F66CF7A4F7B72"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
 			}
-			type: "item"
-		}]
-		x: -2.5d
-		y: -3.0d
-	}]
-	title: "ыуаыуа"
+		}
+		id: "tfmg:steel_ingot"
+	}
+	id: "059A19D23678DF0B"
+	order_index: 1
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7AA2B84822E7BFEE"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:industrial_iron_block"
+			}
+			id: "50AF428CD11B6C45"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0545D4D3F47C8BBF"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "002B7930EEE37FF0"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 2.0d
+			tasks: [
+				{
+					id: "4442DC33758190CA"
+					item: {
+						Count: 10
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:cast_iron_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "657E3752E154E785"
+					item: {
+						Count: 6
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:industrial_iron_block"
+					}
+					type: "item"
+				}
+			]
+			title: "Начало Завода"
+			x: -7.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["50AF428CD11B6C45"]
+			description: [
+				"Ставьте блоки коксовой печи, чтобы они смотрели в одну сторону."
+				"Вот примерная схема строительства 5 коксовых печей:"
+				"{image:quest_images:textures/koks_pech1.png width:200 height:100 align:center}"
+				""
+				"{image:quest_images:textures/koks_pech2.png width:200 height:100 align:center}"
+				""
+				"Сзади выводится креозот, сверху выводятся ненужные газы"
+			]
+			id: "46DA3835053ECFCB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "71EF69A4AF50FAED"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "0B4ADDA8A1BBB0C3"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 45L
+				id: "12275EFB20C94E6A"
+				item: {
+					Count: 45
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:coke_oven"
+				}
+				type: "item"
+			}]
+			title: "Кокс"
+			x: -4.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["46DA3835053ECFCB"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:flarestack"
+			}
+			id: "7706B2664F268286"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "50EDC37DE2F1DFF5"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "224AC80097A4E0D8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "3E175DD8D057BAF9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:exhaust"
+					}
+					type: "item"
+				}
+				{
+					id: "097CABB0D8EAA120"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:flarestack"
+					}
+					type: "item"
+				}
+			]
+			title: "Трубист"
+			x: -4.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["46DA3835053ECFCB"]
+			id: "5A4C544DF7435544"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "071AE7B7A1F8FDE4"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "70FECCE0358BE4C8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 10L
+				id: "77A63BB57CD4C2FB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:coal_coke"
+				}
+				type: "item"
+			}]
+			title: "Кока кола"
+			x: -3.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["0DD47F057DEFB276"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "create:crushed_raw_iron"
+			}
+			id: "1C82BE9F837F83D8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "72BF7A0227C81D50"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "6D496863650B466D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 10L
+					id: "714F6BA705D0B9BA"
+					item: {
+						Count: 15
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:coal_coke_dust"
+					}
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "785D513D5F80E271"
+					item: {
+						Count: 10
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:crushed_raw_iron"
+					}
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "1669FE93E9BDF292"
+					item: {
+						Count: 10
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:limesand"
+					}
+					type: "item"
+				}
+			]
+			title: "Измельчение"
+			x: 1.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1C82BE9F837F83D8"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:steel_ingot"
+			}
+			id: "1C30FDAD572EAC73"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7BCAEA6B81554718"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "44331685A74E443D"
+					type: "xp"
+					xp: 125
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 3L
+					id: "046E2A2D5E53BC50"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:steel_ingot"
+					}
+					type: "item"
+				}
+				{
+					id: "4A17E07118D45B4A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:casting_basin"
+					}
+					type: "item"
+				}
+			]
+			title: "Настоящий металл"
+			x: 1.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["4A0884AF9DC3FF5B"]
+			id: "13528162796BBCB0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E7B929E728A16ED"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "593B90FAE1E33E09"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "686273E694E3A36B"
+				item: {
+					Count: 16
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:hardened_planks"
+				}
+				type: "item"
+			}]
+			x: -1.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"1C30FDAD572EAC73"
+				"13528162796BBCB0"
+			]
+			id: "2296955B9E813419"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "341907128DA70A71"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "0BC340412C11C4CF"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "3AC0B0BC30B29DD7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:steel_casing"
+				}
+				type: "item"
+			}]
+			title: "Металлический Корпус"
+			x: -0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["2296955B9E813419"]
+			id: "13FE416CE44B8FEC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "73602C56ED0AFA76"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "1EC615683663852A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "48ED920CE83FA0DC"
+				item: {
+					Count: 3
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:heavy_machinery_casing"
+				}
+				type: "item"
+			}]
+			title: "Тяжелая механизация"
+			x: -0.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["13FE416CE44B8FEC"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:screwdriver"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "170B85776014A8C5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4CA4434078D5EAD7"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "039BF6E02D6C755A"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "3C29FD3B771267D9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:screw"
+					}
+					type: "item"
+				}
+				{
+					id: "3DBAF917EC48C855"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:screwdriver"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "6271A3E5F4D967C1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:rebar"
+					}
+					type: "item"
+				}
+			]
+			title: "Инструменты"
+			x: -2.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["13FE416CE44B8FEC"]
+			description: [
+				"Для того, чтобы найти месторождение нефти, необходимо поставить машинный ввод, подать на него 64 оборота/сек и поставить на него сканер поверхности. Теперь на сканере загорятся лампочки (нужно немного подождать) - это чанки, в которых находится месторождения нефти. На сканере вы находись в центральном чанке"
+				""
+				"Для включения сетки чанков нажмите F3 + G"
+				""
+				""
+				""
+				"{image:quest_images:textures/surface_scanner.png width:200 height:150 align:center}"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:surface_scanner"
+			}
+			id: "4C1F3E64E003BCDF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4E7C4AAF8D80428C"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "1F3281707DB3042A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "22D1EB5C90E5C3D3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:surface_scanner"
+					}
+					type: "item"
+				}
+				{
+					id: "17DF014CA3AA2C22"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:machine_input"
+					}
+					type: "item"
+				}
+			]
+			title: "Сканнер"
+			x: -0.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4C1F3E64E003BCDF"]
+			description: [
+				"После того, как вы нашли месторождение, необходимо провести промышленную трубу от него до поверхности. На конец трубы нужно поставить основу нефтеного насоса. Чтобы откачивать нефть нужно построить нефтяной насос"
+				""
+				"Вот примерная схема построки насоса:"
+				""
+				"{image:quest_images:textures/neft_pump.png width:170 height:100 align:center}"
+				""
+				"Его можно сделать и больше, но на скорость добычи это не влияет (влияет только скорость подачи оборотов в машинный ввод)"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:pumpjack_crank"
+			}
+			id: "3AD963D620B6940A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "061C5B14259BEDA3"
+					table_id: 6508668684814885568L
+					type: "random"
+				}
+				{
+					id: "3E1B0733BF645E5F"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "5BF3792B4F3F2560"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:steel_truss"
+					}
+					type: "item"
+				}
+				{
+					id: "156F97923DA7723E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:pumpjack_hammer"
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "34608052E64D6398"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:pumpjack_hammer_part"
+					}
+					type: "item"
+				}
+				{
+					id: "1AA0704DB6F662CB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:pumpjack_hammer_head"
+					}
+					type: "item"
+				}
+				{
+					id: "0A11E74CE5A0FC14"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:pumpjack_hammer_connector"
+					}
+					type: "item"
+				}
+				{
+					id: "21E2DC744094361A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:pumpjack_crank"
+					}
+					type: "item"
+				}
+				{
+					id: "072870B6D3D35382"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:machine_input"
+					}
+					type: "item"
+				}
+				{
+					count: 10L
+					id: "75C76F3F46EAFF39"
+					item: {
+						Count: 10
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:industrial_pipe"
+					}
+					type: "item"
+				}
+				{
+					id: "36784076901B49BF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:pumpjack_base"
+					}
+					type: "item"
+				}
+			]
+			title: "Промышленная качка"
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3AD963D620B6940A"]
+			description: [
+				"Дистиляционная башня используется для преобразования жидкостей и газов в другие жидкости и газы. Башню можно сделать разной высоты (соответственно разное количество выходов, можно посмотреть в JEI). Для работы башни она должна разогреваться. Для этого можно использовать горелки всполоха, либо печку (из мода Create: Factory must grow), в которую можно закачивать горючее топливо, которое делается из дистилляционной башни (то есть башня будет питать саму себя)"
+				""
+				"Схема постройки башни на 6 выходов для нефти (сырая нефть входит в блок контроллера дистилляционной башни):"
+				""
+				"{image:quest_images:textures/distil_tower.png width:150 height:200 align:center}"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:steel_fluid_tank"
+			}
+			id: "63FEF45D498880CA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "343506C710B15322"
+					table_id: 6508668684814885568L
+					type: "random"
+				}
+				{
+					id: "53F206756D786328"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 48L
+					id: "6D795270ACD58736"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:steel_fluid_tank"
+					}
+					type: "item"
+				}
+				{
+					id: "739C43F3CE4BDE3E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:steel_distillation_controller"
+					}
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "2B36710EEB07E4DD"
+					item: {
+						Count: 6
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:steel_distillation_output"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "7D2E3E791CBB8AC6"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:blaze_burner"
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "09B48BF3209083BD"
+					item: {
+						Count: 5
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:industrial_pipe"
+					}
+					type: "item"
+				}
+			]
+			title: "Дистиляционная башня"
+			x: -0.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["170B85776014A8C5"]
+			id: "6966054E4ED978CE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "794FCC38E691A120"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "0F5619956922F95B"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [{
+				id: "5C6FF8D989340929"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:quad_potato_cannon"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			x: -3.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["63FEF45D498880CA"]
+			id: "4EDF5AA0F291B197"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6B7A5F6F9DE0ABCE"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "173E70377CE23706"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "347F534CB7C99FFA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:heavy_oil_bucket"
+				}
+				type: "item"
+			}]
+			title: "Масло"
+			x: -3.5d
+			y: 8.0d
+		}
+		{
+			dependencies: ["63FEF45D498880CA"]
+			id: "74176709ABB70EDF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D912D6339A572AA"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "30130DB697B7AF24"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "487CE26E9E96EA1A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:diesel_bucket"
+				}
+				type: "item"
+			}]
+			title: "Дизель"
+			x: -0.5d
+			y: 10.0d
+		}
+		{
+			dependencies: ["63FEF45D498880CA"]
+			id: "466F3D72B1C6DF95"
+			rewards: [
+				{
+					id: "45F0E3C6E0A575CC"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "49FA80A22C64D4F3"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "65113EEFEE2E65DF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:kerosene_bucket"
+				}
+				type: "item"
+			}]
+			title: "Керосин"
+			x: 0.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["63FEF45D498880CA"]
+			id: "64CC67488A5C81D8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "62FB1E8CEEFA453D"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "518ABD6BA158A4AC"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "5578712FAF65E9FA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:gasoline_bucket"
+				}
+				type: "item"
+			}]
+			title: "Газолин"
+			x: -2.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["63FEF45D498880CA"]
+			id: "6D5369E0B3F9521A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "25722B38D56C20BE"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "7459E0EBD9D76D97"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "71A9958E2D7CE4B0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:lpg_bucket"
+				}
+				type: "item"
+			}]
+			title: "ЛПГ"
+			x: -1.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["64CC67488A5C81D8"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:napalm_bucket"
+			}
+			id: "4E4A8E2BC6CA0DF5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1D08ED9552ECFDBF"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "7F41376078A1A6B3"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "2F4D6E3C111F3F54"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:napalm_bucket"
+					}
+					type: "item"
+				}
+				{
+					id: "18FBDF7650FCE3A4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:napalm_potato"
+					}
+					type: "item"
+				}
+			]
+			title: "Напалм"
+			x: -4.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["63FEF45D498880CA"]
+			id: "0A97D0795FBAC884"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "04263604FA52C0B5"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "157D53D27EEC2F6F"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "7E0ECFFE20EB4FEA"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:firebox"
+				}
+				type: "item"
+			}]
+			title: "Фаербокс"
+			x: 1.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4EDF5AA0F291B197"]
+			id: "22E88CB51583D01B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "014ECCA264C8D55C"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "31AEFD4778662DF0"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "1F45681900543EE9"
+				item: {
+					Count: 5
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:bitumen"
+				}
+				type: "item"
+			}]
+			title: "Битумен"
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["22E88CB51583D01B"]
+			description: ["Ведро асфальта можно вылить, и через некоторое время асфальт застынет"]
+			id: "556302713F285478"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "378CC8CE0040BEC2"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "5E0069BCECAC1B77"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "403B0F8AABFFA302"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:liquid_asphalt_bucket"
+				}
+				type: "item"
+			}]
+			title: "Асфальт"
+			x: -2.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["4EDF5AA0F291B197"]
+			id: "04F6B08497C0A187"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7911BD6B83B3CD76"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "044946D1F83EFE6C"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "3259E36386DC8FB4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:lubrication_oil_bucket"
+				}
+				type: "item"
+			}]
+			title: "Лубрик"
+			x: -3.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4EDF5AA0F291B197"]
+			description: [
+				"Химическая цистерна нужна для преобразования предметов и жидкостей. Для того, чтобы посмотреть схему постройки, зажмите w у Steel Chemical Vat"
+				""
+				"Предметы подаются через шлюзы или желоба. Для того, чтобы предметы или жидкости сразу не выбрасывались (чтобы забирать из структуры только готовый продукт), используйте умные шлюзы и умные трубы"
+				""
+				"Если залить лигроин, то он не будет преобразовываться в пропилен и этилен, а сразу станет расплавленным пластиком"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:steel_chemical_vat"
+			}
+			id: "4909569A48A90030"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "74BF7CEC936E76BD"
+					table_id: 6508668684814885568L
+					type: "random"
+				}
+				{
+					id: "05D293E6C6B49528"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					count: 18L
+					id: "12EC4DEB62DDA888"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:steel_chemical_vat"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "21EC6E206216B5BE"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:steel_truss"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "10D882354E8A8297"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "create:blaze_burner"
+					}
+					type: "item"
+				}
+				{
+					id: "2C69825269DE96BD"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:industrial_mixer"
+					}
+					type: "item"
+				}
+				{
+					id: "15629E744D11F3EA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:mixer_blade"
+					}
+					type: "item"
+				}
+			]
+			title: "Уолтер убери от меня руки"
+			x: -6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4909569A48A90030"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:plastic_sheet"
+			}
+			id: "5FFC531D69F54E38"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "122D6F64999AAF1A"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "76EE4DA64828C6E8"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 5L
+					id: "201825C1E76615B6"
+					item: {
+						Count: 5
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:plastic_sheet"
+					}
+					type: "item"
+				}
+				{
+					id: "5DE3457AA3C7834E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:naphtha_bucket"
+					}
+					type: "item"
+				}
+			]
+			title: "Пластик"
+			x: -6.0d
+			y: 8.0d
+		}
+		{
+			dependencies: [
+				"5FFC531D69F54E38"
+				"4E4A8E2BC6CA0DF5"
+			]
+			id: "22180BFF2343064C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0B129D8D9E3570C8"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "4E881C92DC4BD63F"
+					type: "xp"
+					xp: 175
+				}
+			]
+			tasks: [{
+				id: "1E2683EBB6298ACF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:napalm_bomb"
+				}
+				type: "item"
+			}]
+			title: "Бомба"
+			x: -5.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["6830FFA7983D5CCF"]
+			description: [
+				"Схема для постройки появится при зажатии w у блока выхода доменной печи"
+				""
+				"Подавайте в блок Blast Furnace Hatch горячий воздух с Blast Stove"
+				""
+				"Вот примерная схема для постройки доменной печи высотой 5 блоков"
+				""
+				"Для разделения расплавленных шлака и стали используйте умные жидкостные трубы"
+				"{image:quest_images:textures/domennaya_pech.png width:200 height:150 align:center}"
+				""
+				"Из литейной чаши можно забирать готовую сталь при помощи шлюза или желобом"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:blast_furnace_output"
+			}
+			id: "0DD47F057DEFB276"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6A057BD39E9DEDCB"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "139347A46F5C123E"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "504902B0E998156C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:blast_furnace_output"
+					}
+					type: "item"
+				}
+				{
+					count: 19L
+					id: "7882A1AF520E217B"
+					item: {
+						Count: 19
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:fireproof_bricks"
+					}
+					type: "item"
+				}
+				{
+					count: 20L
+					id: "738EC0CCA76AF916"
+					item: {
+						Count: 20
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:fireproof_brick_reinforcement"
+					}
+					type: "item"
+				}
+				{
+					id: "7DE927D16863C747"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:blast_furnace_hatch"
+					}
+					type: "item"
+				}
+			]
+			title: "Доменное печево"
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["4A0884AF9DC3FF5B"]
+			description: [
+				"Снизу должен поступать креозот (с коксовой печи)"
+				""
+				"Слева должен поступать воздух с воздухозаборников"
+				""
+				"Справа выходит углекислый газ"
+				""
+				"Сверху выходит горячий воздух, необходимый для доменной печи"
+				""
+				""
+				"{image:quest_images:textures/hot_air_farm.png width:200 height:100 align:center}"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:blast_stove"
+			}
+			id: "6830FFA7983D5CCF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "678D1C22BC8FCD4C"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "31B02C7B2F9D995A"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [
+				{
+					count: 4L
+					id: "6A173E187E81FFA9"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:air_intake"
+					}
+					type: "item"
+				}
+				{
+					id: "288C15B439970D71"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:blast_stove"
+					}
+					type: "item"
+				}
+			]
+			title: "Плита Богов"
+			x: -1.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["5A4C544DF7435544"]
+			id: "4A0884AF9DC3FF5B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7D5995A0DA29AF80"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "3A19F74141958C7F"
+					type: "xp"
+					xp: 110
+				}
+			]
+			tasks: [{
+				id: "3F076855F7E12358"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:creosote_bucket"
+				}
+				type: "item"
+			}]
+			title: "Креозот"
+			x: -2.5d
+			y: 0.0d
+		}
+		{
+			dependencies: ["4909569A48A90030"]
+			id: "51AC7C6870EFF77D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7CD8F9F1B0B7CB49"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "54835352A9970C47"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				count: 10L
+				id: "3AAF8BB2A4531566"
+				item: {
+					Count: 10
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:rubber_sheet"
+				}
+				type: "item"
+			}]
+			title: "Резина"
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["51AC7C6870EFF77D"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:synthetic_string"
+			}
+			id: "6E4ABFB0E82BBCA4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "414865534859947B"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "030975DA5952E88F"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 5L
+					id: "55EBEE2DC3C7A77C"
+					item: {
+						Count: 5
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:synthetic_leather"
+					}
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "61441719309DFF8D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:synthetic_string"
+					}
+					type: "item"
+				}
+			]
+			title: "Синтетика"
+			x: -5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"0DD47F057DEFB276"
+				"1C30FDAD572EAC73"
+			]
+			description: [
+				"Эти блоки используются для ускорения работы доменной печи"
+				""
+				"Схема их построения есть при зажатии w у выхода доменной печи. По сути надо сломать огнеупорные кирпичные укрепления (заборчики по углам) и вместо них поставить эти блоки. Также надо нажать ПКМ этими блоками на огнеупорные кирпичи, чтобы преобразовать их в укрепленный вариант"
+			]
+			id: "228455AE561C3677"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3607994FEB527088"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "7D2C1D8356DB439D"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 40L
+				id: "33566E350AA2E80E"
+				item: {
+					Count: 40
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:blast_furnace_reinforcement"
+				}
+				type: "item"
+			}]
+			title: "Ускорение работы"
+			x: -0.5d
+			y: 0.5d
+		}
+		{
+			dependencies: ["74176709ABB70EDF"]
+			description: [
+				"В двгитаель должен поступать дизель и горячий воздух с воздухозаборников. Также из двигателя должны выкачиваться ненужные газы (например в выхлопную трубу)"
+				""
+				"{image:quest_images:textures/diesel_engine_guide.png width:200 height:150 align:center}"
+			]
+			id: "7AE70869F44F7B85"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "139126F2AEDC536D"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "6E83F0F961D921AD"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "5AF684B251DB0E61"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:large_engine"
+				}
+				type: "item"
+			}]
+			title: "Двигатель Гигант"
+			x: -1.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["74176709ABB70EDF"]
+			description: ["Схема постройки такая же, как у Large engine"]
+			id: "2F0BA761171B3B4A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "661AE3151C926555"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "5D59DF28276FE7BE"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "6A2D65CABD4AE0A7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:simple_large_engine"
+				}
+				type: "item"
+			}]
+			title: "Простой гигант"
+			x: 0.0d
+			y: 11.5d
+		}
+		{
+			dependencies: ["63FEF45D498880CA"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:turbine_engine"
+			}
+			id: "5B894C74C45F4271"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3DF15CEB745E3FD3"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "7BB7DD4F3F85FDD7"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "1C5C0ADBC77B64EE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:turbine_engine"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "69C327A3EB63F04F"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:turbine_blade"
+						tag: {
+							FuelNames: {
+								kerosene: "Kerosene"
+							}
+							Fuels: {
+								kerosene: "forge:kerosene"
+							}
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Разгон"
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			dependencies: ["63FEF45D498880CA"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:regular_engine"
+			}
+			id: "369876E38923EDCE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "08D066339968702E"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "598B035F5D3B69A9"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "3C084A3642A60FC8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:regular_engine"
+					}
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5FA3A14011A025F1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfmg:engine_cylinder)item(tfmg:diesel_engine_cylinder)item(tfmg:simple_engine_cylinder))"
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Базовый движок"
+			x: 2.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["63FEF45D498880CA"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:radial_engine"
+			}
+			id: "5CB853E6586A1283"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1A199669B02450BA"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "1BBC9AB9515DC909"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "4A82149742E7C356"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:radial_engine"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "07A9C2A00B598F42"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(tfmg:engine_cylinder)item(tfmg:diesel_engine_cylinder)item(tfmg:simple_engine_cylinder))"
+						}
+					}
+					title: "Cylinder"
+					type: "item"
+				}
+			]
+			title: "Круговой движок"
+			x: 1.5d
+			y: 9.0d
+		}
+		{
+			dependencies: ["4909569A48A90030"]
+			id: "55391C7D65AC79F5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "79828BE86DEF0358"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "0E90412E9C0D2EC8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "1F8B2026B540EE3B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:sulfuric_acid_bucket"
+				}
+				type: "item"
+			}]
+			title: "Кислота"
+			x: -8.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["5F896F1E90099E46"]
+			id: "72A81BCCD5FC6BEC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "53C391284321C414"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "177E2489D21A2800"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "554D9D9C93D06F3C"
+				item: {
+					Count: 5
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:silicon_ingot"
+				}
+				type: "item"
+			}]
+			title: "Силикон"
+			x: -10.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["67603F9C31192283"]
+			description: ["Поставьте 2 Electrode holder в химическую цистерну. В один holder при помощи ПКМ поставьте Copper Electrode, в другой Zinc Electrode"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:copper_electrode"
+			}
+			id: "5F896F1E90099E46"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6AD602860936EA3A"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "4C661659404980A0"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					count: 5L
+					id: "5342687466BA823A"
+					item: {
+						Count: 5
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:aluminum_ingot"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "0B54FCF1809A093E"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:electrode_holder"
+					}
+					type: "item"
+				}
+				{
+					id: "5F0EAA409F794D8E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:copper_electrode"
+					}
+					type: "item"
+				}
+				{
+					id: "03807886FD15E8CB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:zinc_electrode"
+					}
+					type: "item"
+				}
+			]
+			title: "Алюминий"
+			x: -9.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["72A81BCCD5FC6BEC"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:n_semiconductor"
+			}
+			id: "3969E716F6B31679"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2877F7106B573169"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "76C869E3D00FACB2"
+					type: "xp"
+					xp: 175
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "02CEF0EAED27B1D3"
+					item: {
+						Count: 4
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:p_semiconductor"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "1F6822450F1241EF"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:n_semiconductor"
+					}
+					type: "item"
+				}
+			]
+			title: "Полупроводники"
+			x: -11.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3969E716F6B31679"]
+			id: "7C333A386AE60808"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "214F9538698CCB32"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "11A2D5BF78C837B4"
+					type: "xp"
+					xp: 175
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "4F72B4C17A271A3A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:transistor_item"
+				}
+				type: "item"
+			}]
+			title: "Транзисторы"
+			x: -13.0d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7C333A386AE60808"]
+			id: "2A58FA6006D4B425"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1EEB57896900F6E6"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "15538E74EACE313C"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "5AB3908E9E35A128"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:circuit_board"
+				}
+				type: "item"
+			}]
+			title: "Печатная плата"
+			x: -13.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["40DF75E381E21A43"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "createaddition:copper_wire"
+			}
+			id: "5DDE9215265DA3B7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3DBD6CC771672EB2"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "29FBB2FCF9C6AC1D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "0B96E73ABCFDEF22"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "createaddition:rolling_mill"
+					}
+					type: "item"
+				}
+				{
+					count: 6L
+					id: "4B5C1577E2324E2A"
+					item: {
+						Count: 6
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "createaddition:copper_wire"
+					}
+					type: "item"
+				}
+				{
+					id: "6CBDADFAE48B9AA2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:copper_spool"
+						tag: {
+							Amount: 1000
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Провод"
+			x: -5.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["2A58FA6006D4B425"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:lithium_blade"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "71E680FA873F5CAA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "670C558CDA41B44D"
+					table_id: 6508668684814885568L
+					type: "random"
+				}
+				{
+					id: "67C34C25F36DFA48"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2836E4905ECC2B4B"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:lithium_blade"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "567D246F27F7F6AB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:advanced_potato_cannon"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "5230759A2B027BF5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:flamethrower"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Бетонный завод здравствуйте"
+			x: -12.0d
+			y: -0.75d
+		}
+		{
+			dependencies: ["2296955B9E813419"]
+			description: [
+				"Брось magnetic alloy ingot рядом с громоотводом во время грозы, тогда они превратятся в magnet"
+				""
+				"Дальше можно будет делать магниты при помощи поляризатора"
+			]
+			id: "40DF75E381E21A43"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0E32E386F1085A12"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "7209429E7A82465D"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 5L
+				id: "15F0FED877C68AFF"
+				item: {
+					Count: 5
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:magnet"
+				}
+				type: "item"
+			}]
+			title: "Магнит"
+			x: -3.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["40DF75E381E21A43"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:polarizer"
+			}
+			id: "4F2D48FB8F14489F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3269379403A6BFC2"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "7891B05744133787"
+					type: "xp"
+					xp: 175
+				}
+			]
+			tasks: [
+				{
+					id: "61ABDDFA0E8A5C45"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:voltmeter"
+					}
+					type: "item"
+				}
+				{
+					id: "6A8E178CD60157C9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:polarizer"
+					}
+					type: "item"
+				}
+			]
+			title: "Наэлектризованность"
+			x: -5.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["5DDE9215265DA3B7"]
+			id: "304C4C3D54D1F669"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "59178E2EC5023927"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "40D0EB81B9C57A59"
+					type: "xp"
+					xp: 175
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "7C93D41E8A7F5124"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:generator"
+				}
+				type: "item"
+			}]
+			title: "Генератор"
+			x: -6.75d
+			y: 3.0d
+		}
+		{
+			dependencies: ["304C4C3D54D1F669"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:copper_cable_hub"
+			}
+			id: "67603F9C31192283"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5C6F99DAE53438E3"
+					table_id: 8801930343825953236L
+					type: "random"
+				}
+				{
+					id: "01EE0BB869C364C7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "0419D9939995DACE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:copper_cable_hub"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "15AEBCFA54830591"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:cable_connector"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "43765E9CAD982D57"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:cable_tube"
+					}
+					type: "item"
+				}
+			]
+			title: "Концентратор"
+			x: -8.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["5F896F1E90099E46"]
+			description: ["Электричество забирается со статоров (при помощи вплотную поставленного аккумулятора или при помощи соеденителя кабелей)"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:rotor"
+			}
+			id: "3C0799BEB6F1B438"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7F55C5FEAB8722C9"
+					table_id: 6508668684814885568L
+					type: "random"
+				}
+				{
+					id: "7913C0545899713E"
+					type: "xp"
+					xp: 175
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "7FC98D8B232ADD5A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:rotor"
+					}
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "0543CA22256383FF"
+					item: {
+						Count: 8
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:stator"
+					}
+					type: "item"
+				}
+			]
+			title: "Ротор"
+			x: -7.5d
+			y: 1.5d
+		}
+		{
+			dependencies: ["67603F9C31192283"]
+			id: "4F8D16FA6D8B1DA4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2B6239A3FF5810D2"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "69AC438F61A8C45C"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "6CFAE64DF506BF59"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:electric_motor"
+				}
+				type: "item"
+			}]
+			title: "Бррр"
+			x: -9.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["5F896F1E90099E46"]
+			id: "702129DD71370ED7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4F098B69193A1EF1"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "665B2C9A5B509527"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "00033D4175EBE516"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "tfmg:accumulator"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Аккумулятор"
+			x: -9.0d
+			y: 0.5d
+		}
+		{
+			dependencies: ["67603F9C31192283"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "tfmg:winding_machine"
+			}
+			id: "27350765E12AD9A6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2F64E52504ED42FC"
+					table_id: 4263438600266323417L
+					type: "random"
+				}
+				{
+					id: "5F78DEF2170C9D82"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [
+				{
+					id: "6A4413F1659E837F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:winding_machine"
+					}
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "00447D1E5A654EDB"
+					item: {
+						Count: 2
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "tfmg:resistor"
+						tag: { }
+					}
+					type: "item"
+				}
+			]
+			title: "Заводило"
+			x: -10.0d
+			y: 3.5d
+		}
+	]
+	title: "Тяжёлая промышленность"
 }
