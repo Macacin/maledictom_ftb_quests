@@ -27,6 +27,10 @@ public class MyCustomScreen extends Screen {
     private static final ResourceLocation BUTTON_ICON = new ResourceLocation("ftbquests", "textures/gui/button_execute.png");
     private static final ResourceLocation BUTTON_LOCKED = new ResourceLocation("ftbquests", "textures/gui/button_locked.png");
 
+    private static final ResourceLocation ANIM1_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation1.png");
+    private static final ResourceLocation ANIM2_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation2.png");
+    private static final ResourceLocation ANIM3_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation3.png");
+
     private static final String[] GROUP_NAMES = {
             "&lСкитания",   // Измените на ваше название 1
             "&k&lПроклятый",    // Название 2
@@ -38,9 +42,6 @@ public class MyCustomScreen extends Screen {
     private enum Phase { ANIM1, ANIM2, ANIM3, MAIN }
     private Phase phase = Phase.ANIM1;
     private long animStartTime;
-    private static final ResourceLocation ANIM1_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation1.png"); // 512x24576, 24 кадра
-    private static final ResourceLocation ANIM2_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation2.png"); // 512x13312, 13 кадров
-    private static final ResourceLocation ANIM3_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation3.png"); // 512x12288, 24 кадра по 512x512
     private static final int ANIM1_FRAMES = 24;
     private static final int ANIM1_DURATION_MS = 1000; // 1 секунда
     private static final int ANIM1_FRAME_HEIGHT = 1024; // 24576 / 24
@@ -198,7 +199,7 @@ public class MyCustomScreen extends Screen {
         int texWidth = 512;
         int texHeight = 512;
         int baseX = (this.width - texWidth) / 2 + 40;
-        int baseY = (this.height - texHeight) / 2;
+        int baseY = (this.height - texHeight) / 2 - 50;
         graphics.blit(BACKGROUND_TEXTURE, baseX, baseY, 0, 0, texWidth, texHeight, texWidth, texHeight); // отрисовка фона
 
         updatePinnedQuestProgress(); // обновляем прогресс квестов
@@ -382,7 +383,7 @@ public class MyCustomScreen extends Screen {
         int texWidth = 512;
         int texHeight = frameHeight * frames;
         int posX = Math.floorDiv(this.width - texWidth, 2) + 40;
-        int posY = Math.floorDiv(this.height - frameHeight, 2);
+        int posY = Math.floorDiv(this.height - frameHeight, 2) - 50;
 
         RenderSystem.setShaderTexture(0, texture);
         graphics.blit(texture, posX, posY, 0, frame * frameHeight, texWidth, frameHeight, texWidth, texHeight);
