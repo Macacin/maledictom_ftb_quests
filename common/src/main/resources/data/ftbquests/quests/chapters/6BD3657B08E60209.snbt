@@ -1,0 +1,3206 @@
+{
+	autofocus_id: "30DF76F55F6BD5F7"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "22C3F8FB473D5169"
+	group: "09EAD6D0307AE68F"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "enigmaticlegacy:cursed_ring"
+	}
+	id: "22C3F8FB473D5169"
+	order_index: 0
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Разрушенный мир встречает голодной тьмой: обломки каменных арок под ногами шепчут о былой славе, но в их трещинах живёт лишь &l&9пустота.&r&l &cПроклятое кольцо&r впилось в палец, вызывая болезненный пульс и напоминая о твоей обречённости — каждый вдох становится сделкой с пустотой, а собственное отражение в тусклых лужах кажется раздробленным на &l&bосколки.&r Пустота настолько бездонна, что проклятые стали использовать ее как свое личное хранилище, обращаясь к нему в любой удобный момент."
+				""
+				"Вглубь развалин проникают тени тех, кто когда-то не выстоял: их голоса доносятся эхом, словно отдалённый зов смерти. В редких отблесках ты замечаешь мерцающие точки — &l&bосколки души,&r утерянные при прошлых падениях. Лишь вернувшись и схватив их, можно вернуть утраченную целостность… "
+				""
+				"Однако впереди действительно ждет лишь тьма. Холоднее самой гибели и глубже &l&9пустоты.&r"
+			]
+			id: "30DF76F55F6BD5F7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "33164F4BFCB93CFD"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "259459B85049FA39"
+					type: "xp"
+					xp: 10
+				}
+			]
+			shape: "diamond"
+			size: 2.5d
+			tasks: [{
+				advancement: "enigmaticlegacy:main/cursed_ring"
+				criterion: ""
+				id: "4CAF914BD0A69B90"
+				title: "Проснуться проклятым"
+				type: "advancement"
+			}]
+			title: "&l&cВпереди ждёт тьма"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46B9DA32908F381A"]
+			description: [
+				"Он не несёт силы и не даёт защиты. Лишь пустая оболочка, забытая среди пыльных страниц."
+				""
+				"Но именно с такого свитка начинается великое &l&6знание.&r Ведь каждая истина когда-то была лишь молчанием."
+			]
+			id: "54CB140B431B9437"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E4507C53CE17A66"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "0104FD5672EDD16B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "1911163D451031EC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:thicc_scroll"
+				}
+				title: "Создать Пустой свиток"
+				type: "item"
+			}]
+			title: "&#CD853F&lЧистый пергамент"
+			x: 2.5d
+			y: 1.875d
+		}
+		{
+			dependencies: ["30DF76F55F6BD5F7"]
+			description: [
+				"Говорят, это писание принадлежало &l&cпервому, кто когда-либо был отмечен проклятием.&r Он скрыл своё имя и запер истину в страницах, пропитанных древней тоской."
+				""
+				"В этих строках — не молитвы и не проклятия, а &l&6знание,&r собранное в муках. Книга раскрывает тайны печати, что пульсирует в чужой душе, и намекает, как сделать её своей силой."
+			]
+			id: "46B9DA32908F381A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "78C167E513DF7726"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "53B6B69EF508A8A9"
+					type: "xp"
+					xp: 50
+				}
+			]
+			size: 1.25d
+			tasks: [{
+				id: "0F933C9ED4820B1F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:the_acknowledgment"
+				}
+				title: "Создать откровение"
+				type: "item"
+			}]
+			title: "Откровение"
+			x: 3.125d
+			y: 0.0d
+		}
+		{
+			dependencies: ["54CB140B431B9437"]
+			description: [
+				"Среди&l &cпроклятых&r ходит молва о свитке, написанном пером &lмертворождённой звезды.&r Его сила пробуждается лишь рядом с древней структурой, из котороый исходит пульсирующий свет."
+				""
+				"Когда строки на нём загораются — воздух становится менее враждебным. И тогда земля впервые &lотпускает.&r"
+			]
+			id: "64F4C290AA6EDA69"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1FF236EEC84AB9AD"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "6679BEB9C79CD43B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "7BA6C0E8E03AEE86"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:heaven_scroll"
+				}
+				title: "Создать Дар Небес"
+				type: "item"
+			}]
+			title: "Дар высоты"
+			x: 0.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["54CB140B431B9437"]
+			description: [
+				"Его не создают — он появляется там, где грани между мирами трескаются. Найденный в пепле&c&l Незера,&r он пульсирует слабым эхом чего-то древнего."
+				""
+				"Этот свиток — не знание, а ключ. Он открывает путь к свиткам, питающимся&l &9Пустотой&r и дарующим силу, за которую платят собой."
+			]
+			id: "4CA34AEF52CC90EF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1248FAF040F84832"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "273A93CE48CAFF42"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "0268339A2CB65912"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:darkest_scroll"
+				}
+				title: "Найти Темнейший свиток"
+				type: "item"
+			}]
+			title: "&7&lПорог тьмы"
+			x: 1.5d
+			y: 3.75d
+		}
+		{
+			dependencies: ["4CA34AEF52CC90EF"]
+			description: [
+				"Считается, что этот свиток заключает древний союз между&l &cпервым, кто был проклят,&r и самой ночью. Он не прогоняет тьму — он делает её союзником."
+				""
+				"Носитель чувствует себя сильнее под покровом звёзд, а фантомы, будто признавая его власть, держатся в стороне. В этой тьме больше нет страха — только &l&cсила.&r"
+			]
+			id: "4269F23EF9DD2C5A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "66AC7427046A215E"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "355680A1D9EC289C"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "3B04925ED1D766F8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:night_scroll"
+				}
+				type: "item"
+			}]
+			title: "Тень договора"
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["4CA34AEF52CC90EF"]
+			description: [
+				"Этот свиток наполнен яростью&l &3древней стихии,&r чьё имя забыто, но голос всё ещё гремит в небесах. Его сила не вспыхивает сразу — она накапливается, выжидает, а затем бьёт без пощады."
+				""
+				"Проклятые, осмелившиеся взять его, чувствуют дрожь в руках при каждом ударе. И лишь те, чья душа давно треснула от &l&3бурь,&r смогут сдержать этот гнев."
+			]
+			id: "565524632825676A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1146E9E69AA41C38"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "37A4D576B26FD066"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "586F6B90DBE31D5D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:thunder_scroll"
+				}
+				type: "item"
+			}]
+			title: "Объятие грома"
+			x: 0.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["4CA34AEF52CC90EF"]
+			description: [
+				"Этот свиток не терпит чистых душ. Его сила растёт с каждой &c&lметкой,&r с каждым уродством, запечатлённым на броне и теле."
+				""
+				"Он не даёт силы просто так — он требует быть &l&cпроклятым&r настолько, чтобы сила стала не выбором, а последствием. И тогда реликвия отзовётся."
+			]
+			id: "3917C098AAEB720C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3E8EA96DB1A71AAE"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "0F5B865FB6A96FF4"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "057F16E993D2417F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:cursed_scroll"
+				}
+				type: "item"
+			}]
+			title: "Тысяча шрамов"
+			x: 1.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["54CB140B431B9437"]
+			description: [
+				"Этот свиток не учит и не говорит — он&l &2впитывает.&r В него уходит всё, что накоплено через боль, сражения и время."
+				""
+				"Грани его не видны, дно — недостижимо. Даже сама &l&9Пустота&r не знает, сколько опыта можно в нём упрятать."
+			]
+			id: "0FEED108F6008FF8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "173217862D396FD2"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "0900AD05658622F1"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "34E1BBAB9743E366"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:xp_scroll"
+					tag: { }
+				}
+				title: "Создать Свиток Вечной мудрости"
+				type: "item"
+			}]
+			title: "Бездна знаний"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["4CA34AEF52CC90EF"]
+			description: [
+				"Этот свиток — не просто артефакт, а печать &l&6древнего пакта. &rГоворят, его заключил&l &cпервый, кто был проклят,&r вместе с пиглинами в момент, когда золото стало важнее чести."
+				""
+				"Он шепчет о выгоде, об удаче, о власти, что приходит не мечом, а звоном &l&6монет.&r Но чем больше оно течёт — тем глубже трещины в душе."
+			]
+			id: "0617B5BAA4314BA0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4652CB17AA65B59E"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "1751CAA4B90C802B"
+					type: "xp"
+					xp: 120
+				}
+			]
+			tasks: [{
+				id: "118AC7442DFF7F78"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:avarice_scroll"
+				}
+				type: "item"
+			}]
+			title: "Златокровный договор"
+			x: 0.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0FEED108F6008FF8"]
+			description: [
+				"Он обманывает форму, но не суть. Наполненный тем же светом, что и свиток мудрости, он вместо знания несёт утрату."
+				""
+				"Свиток притягивает опыт, но превращает его в&l&c иллюзию силы&r. Всё, что он даёт, исчезает в один миг — когда становится нужнее всего."
+			]
+			id: "7EEAE1B7BB96956B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "30B1EB2F46DAE316"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "5FC444795597F5A2"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "13739F325692FB4E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:cursed_xp_scroll"
+					tag: { }
+				}
+				title: "Создать Свиток Проклятия Невежества"
+				type: "item"
+			}]
+			title: "Печать незнания"
+			x: 5.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["46B9DA32908F381A"]
+			description: [
+				"Сердце земли -&a&l ядро, &rчто было вырвано из самого понятия мира. Оно пульсирует глухо, будто в нём спит что-то древнее."
+				""
+				"&l&cПроклятые&r ценят его выше золота: он не просто материал, а осколок первородной мощи. "
+			]
+			id: "1D21F39D9FAA6F2C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0E02B0B2AE56F21D"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "030B71B8ED127E01"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "6C5AE17CD2285C98"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:earth_heart"
+					tag: { }
+				}
+				title: "Заполучить Сердце Земли"
+				type: "item"
+			}]
+			title: "&#98FB98&lСуть Земли"
+			x: 5.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["46B9DA32908F381A"]
+			description: [
+				"Обычные &l&6кольца,&r созданные без замысла, без печати и без ритуала. И всё же именно они странным образом укрепляли волю носителя."
+				""
+				"Некоторые верили, что металл помнит касание &l&cпроклятия.&r Другие — что проклятые меняют суть вещей, просто прикасаясь к ним"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enigmaticlegacy:golden_ring"
+			}
+			id: "7789B1528438C9A3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5DA5FB1809CB0987"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "562DB466226B5450"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1618A85701DB005C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:iron_ring"
+					}
+					title: "Создать Железное кольцо"
+					type: "item"
+				}
+				{
+					id: "4EEF011993507C90"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:golden_ring"
+					}
+					title: "Создать Изысканное кольцо"
+					type: "item"
+				}
+			]
+			title: "&l&6Колько Пид&k&lоров"
+			x: 2.375d
+			y: -1.875d
+		}
+		{
+			dependencies: ["64F4C290AA6EDA69"]
+			description: [
+				"Этот свиток создан не руками, а волей — как будто сама реальность позволила его существование. Он дарует &l&bполёт,&r но питается памятью и опытом, сгорающими в его свете."
+				""
+				"В зоне великой силы маяка его голод &l&6утихает,&r позволяя вкусить свободу без расплаты. Но за пределами — небо становится дорогой, за которую платят каждым вздохом."
+			]
+			id: "547634B6EA3A71BD"
+			tasks: [{
+				id: "5949AEF108746C28"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:fabulous_scroll"
+				}
+				type: "item"
+			}]
+			title: "Касание высшего"
+			x: -1.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7789B1528438C9A3"]
+			description: [
+				"Когда-то его называли кольцом &o&7потерянного.&r Оно будто тянется к обрывкам прошлого, к вещам, что ещё помнят тепло рук."
+				""
+				"Говорят, такие артефакты рождались не в кузне, а в момент утраты. И каждый из них — не просто металл, а напоминание о том, что ещё не всё исчезло."
+			]
+			id: "1D0126EE05A6D279"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4D2B22570957ABD1"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "42BDC3F95ECC7DD7"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [{
+				id: "5EF13AF8B078DCD0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:magnet_ring"
+				}
+				title: "Отыскать Магнитное кольцо"
+				type: "item"
+			}]
+			title: "След притяжения"
+			x: 1.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["7789B1528438C9A3"]
+			description: [
+				"Это кольцо не защищает от стали и металла — его цель иная. Оно рождено, чтобы гасить дыхание древних &l&6чудовищ&r и ломать волны колдовства."
+				""
+				"Легенды гласят, что его выковали в те времена, когда люди ещё дрожали перед &l&6драконами.&r"
+			]
+			id: "3DF8BFFB501B50AA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "21D1C66F07572642"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "649DCA5194B8CF8D"
+					type: "xp"
+					xp: 90
+				}
+			]
+			tasks: [{
+				id: "0A3F49EB50742B2C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:quartz_ring"
+				}
+				title: "Создать Магическое Кварцевое Кольцо"
+				type: "item"
+			}]
+			title: "Защита из Кварца"
+			x: 1.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["7789B1528438C9A3"]
+			description: [
+				"Оно похоже на другие кольца, но ведёт себя иначе — словно что-то внутри него наблюдает. Иногда на его поверхности проступает &l&2глаз,&r неспешно скользящий по округе."
+				""
+				"Говорят, кольцо само выбирало, что считать &l&6ценным.&r Просто в какой-то момент оно стало слишком жадным."
+			]
+			id: "77E0213136DCEFEE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "01B52891C21D2614"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "4F4B56A44D3DA81E"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "0A239FEB39623640"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:super_magnet_ring"
+				}
+				title: "Создать кольцо Дислокации"
+				type: "item"
+			}]
+			title: "Око Жадности"
+			x: 2.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["1D21F39D9FAA6F2C"]
+			description: [
+				"Говорят, однажды &l&cтот, кто был проклят первым&r добрался до самого ядра мироздания. Его проклятие проникло в&l &2сердце земли, &rи то, что было основой жизни, исказилось до неузнаваемости."
+				""
+				"Так появилось &l&dИскажённое Сердце &r— не пульсирующее, а дрожащее, не питающее, а вытягивающее. Оно больше не принадлежало земле, но и &l&9Пустоте&r полностью не подчинилось."
+				""
+				"Никто не знает, что движет этим осколком теперь. Лишь одно ясно: с ним в руках даже воздух кажется менее настоящим."
+			]
+			id: "1A3207163C68773D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7BC29206136A4F78"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "1447BB80FBE2C1DA"
+					type: "xp"
+					xp: 75
+				}
+			]
+			shape: "diamond"
+			size: 1.75d
+			tasks: [{
+				id: "7AB084169E174EEE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:twisted_heart"
+				}
+				title: "Создать Искажённое сердце"
+				type: "item"
+			}]
+			title: "&#FF00FF&lИскажение сути"
+			x: 8.25d
+			y: -0.75d
+		}
+		{
+			dependencies: ["1D21F39D9FAA6F2C"]
+			description: [
+				"Среди подземных залов и древних жил один артефакт пользовался &l&6особым почётом.&r Его создавали из обломков заброшенных машин, светящихся грибов и древнего стекла, чтобы помочь проклятым пробиться сквозь толщу мира."
+				""
+				"Он стал символом &l&6труда и жадности,&r усиливая хватку на кирке и открывая глаза в вечной тьме. Лишь те, кто жаждет не только руды, но и знания в глубинах, по-настоящему поймут, зачем он был выкован."
+			]
+			id: "54003DAE2DB078A6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4F55C3FD4177B3C7"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "26FAE15EEC14808F"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [{
+				id: "3C48DD3341E8ECCF"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:mining_charm"
+					tag: { }
+				}
+				title: "Создать Мечту шахтёра"
+				type: "item"
+			}]
+			title: "Мечта Шахтёра"
+			x: 6.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["1A3207163C68773D"]
+			description: [
+				"Этот компас не знает сторон света — он знает только &l&bутрату.&r Его стрелка дрожит, будто чует присутствие того, что было вырвано из живого."
+				""
+				"Он ведёт к &l&bосколкам душ,&r оставленных в забвении. И каждый найденный — напоминание, что кто-то уже прошёл этот путь… и не вернулся."
+			]
+			id: "01049C5C707FC191"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2B64CFD9DDD52C73"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "45487A0F1CD18225"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "75EA67ECD36EB9FD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:soul_compass"
+				}
+				title: "Создать Компас душ"
+				type: "item"
+			}]
+			title: "Иголка отчаяния"
+			x: 9.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1A3207163C68773D"]
+			description: [
+				"Эмблема не защищает и не лечит — она ярится в тот миг, когда всё рушится. Чем ближе &l&cгибель,&r тем сильнее её пульс, будто сердце идёт вразрез с судьбой."
+				""
+				"Считается, что её впервые выковал проклятый, что отказал самой&9&l смерти.&r Он не выжил — но забрал с собой целую армию."
+			]
+			id: "540DC5A346A110DF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4B4FDF650F8DF36E"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "1045F113511DE719"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "742405088DCED665"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:berserk_charm"
+				}
+				title: "Создать Эмблему Окровавленной доблести"
+				type: "item"
+			}]
+			title: "Последний удар"
+			x: 9.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1A3207163C68773D"]
+			description: [
+				"Это зеркало не показывает лицо — лишь след. Оно помнит место, где носитель чувствовал себя живым, и в тишине хранит путь к нему."
+				""
+				"Созданное тем, кто был проклят первым, оно вобрало в себя суть зелья возврата. Но вместо вкуса забвения — здесь стекло, холод и чужая воля."
+			]
+			id: "4F73D7FDDF36BFC3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "692480962E590C25"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "2C4E228127C36085"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "6653EC553FA324D2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:twisted_mirror"
+				}
+				title: "Создать Искажённое зеркало"
+				type: "item"
+			}]
+			title: "Отражение тропы"
+			x: 8.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["1A3207163C68773D"]
+			description: [
+				"Щит этот не гасит огонь — он становится его &l&cчастью.&r Его носитель не спасается от врагов, он встречает удары лицом, позволяя ярости копиться за каждой блокировкой."
+				""
+				"Когда-то им владел воин, что считал боль источником силы, а удары — шагами к власти. Его пылающая гордость не сломалась даже тогда, когда пламя сожгло&c &lвсё вокруг.&r"
+			]
+			id: "1EA8EC65851CCAEF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5AA80995A7533F59"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "474E0BC123A127FB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "66D638E0CB1F184F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:infernal_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Бастион Пылающей Гордости"
+				type: "item"
+			}]
+			title: "Бастион Пламени"
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1A3207163C68773D"]
+			description: [
+				"Когда-то&l&5 нечестивая сущность&r была рассеяна по миру, как остаточный яд от древних войн. Она не имела формы — лишь влияние, искажённое дыхание тьмы, проникающее в трещины реальности."
+				""
+				"Но с приходом &l&9Хранителей Пустоты&r всё изменилось. Они собрали этот яд, вылепили ему оболочку, и вложили в неё волю — так появился &l&7Визер,&r по крайней мере это была одна из идей Предвестника, по созданию проводника и сосуда, порождённого не жизнью, а намерением."
+				""
+				"Теперь сущность заключена в нём, пульсирует в сердцевине и ждёт того, кто осмелится вырвать её обратно. Но тот, кто дотронется до неё, уже никогда &l&5не будет прежним.&r"
+			]
+			id: "405AC8A8A7E00804"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "37668D42CA26E422"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "13238716647B32D2"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "29123F965F39EC47"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:evil_essence"
+				}
+				title: "Выбить 4х Нечестивых сущности"
+				type: "item"
+			}]
+			title: "&l&#9932CCНечестивое соединение"
+			x: 11.25d
+			y: 2.25d
+		}
+		{
+			dependencies: ["1A3207163C68773D"]
+			description: ["Он не знал милости — лишь шаг вперёд, после которого всё становилось тишиной. Проклятый, что истреблял без счёта, не ради чести, не во имя справедливости, а потому что иначе не мог. Эта эмблема — его след: кусок металла, впитавший крик чудовищ, треск костей и странную, мёртвую тишину после. Она жаждет новых шагов… туда, где ещё что-то дышит."]
+			id: "312BAE3B3806237B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E47B9277B50BC3B"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "02EF7A576B10F72B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "2A0F1FE1CEFCF54E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:monster_charm"
+				}
+				title: "Создать Эмблему истребителя чудовищ"
+				type: "item"
+			}]
+			title: "Клеймо"
+			x: 7.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["1A3207163C68773D"]
+			description: [
+				"Этот топор некогда принадлежал известному палачу королевства &l&6Таал&r — безымянному, как и его жертвы. Он был точен, немногословен и, как позже выяснилось, проклят."
+				""
+				"Говорят, его проклятие не мешало работе — наоборот, делало удары чище. Лезвие запоминало каждый выдох, каждый взгляд вверх, и теперь само выбирает, кого &l&cоставить без головы.&r"
+			]
+			id: "380D1AD5CECAF9A5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0C25315500C3BDF6"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "0E0085421B0A86A2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "0137ED7712F5A329"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:forbidden_axe"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Топор Палача"
+				type: "item"
+			}]
+			title: "Последний приговор"
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1A3207163C68773D"]
+			description: [
+				"&l&cАмулет&r этот нашли в оплавленных руинах, где стены были разрублены, а доспехи — пусты. Его сила проста: забудь о защите — и режь первым."
+				""
+				"Считается, что он принадлежал проклятому воину, &l&cпрезиравшему&r броню как признак страха. Лишь те, кто принимает смерть как равного, смогут воспользоваться его даром."
+			]
+			id: "6A059BB0462E656E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3DF716AD3523B110"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "518220820789DF84"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "302F70A2D240B348"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:hell_blade_charm"
+				}
+				title: "Найти Амулет Адского Лезвия"
+				type: "item"
+			}]
+			title: "Клинок без защиты"
+			x: 10.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["1D21F39D9FAA6F2C"]
+			description: ["Этот том появился не ради учёных и не по воле магов — его создали проклятые, для кого зачарование стало не роскошью, а оружием выживания. Каждый символ в нём тянется к силе, будто книга сама хочет стать артефактом."]
+			id: "2E465C3D8C8D35FC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4C5195F2146C1776"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "4D524419E490EA4D"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [{
+				id: "0C3306D9DFE2EF98"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:enchantment_transposer"
+				}
+				title: "Создать Том Жажды Знаний"
+				type: "item"
+			}]
+			title: "Жажда знака"
+			x: 7.0d
+			y: 2.5d
+		}
+		{
+			dependencies: [
+				"405AC8A8A7E00804"
+				"2E465C3D8C8D35FC"
+			]
+			description: [
+				"Том этот не хранит мудрость — он копит &l&cненависть.&r Его страницы исписаны не чернилами, а отголосками проклятий, что впились в металл и плоть."
+				""
+				"Созданный &l&cпроклятыми,&r он служит тем, кто научился обращаться с тьмой как с инструментом. Переносит зло, но не очищает — лишь меняет его носителя."
+			]
+			id: "11DF1B459875AAB1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "79DC6AF96109B822"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "2FD55EF46A23F41B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.15d
+			tasks: [{
+				id: "3767BD9C26972C32"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:curse_transposer"
+				}
+				title: "Создать Том поглощенной злобы"
+				type: "item"
+			}]
+			title: "&c&lТом зла"
+			x: 8.625d
+			y: 2.8749999999999996d
+		}
+		{
+			dependencies: ["405AC8A8A7E00804"]
+			description: [
+				"Откровение принесло знание, но &#DC143C&lРазлом&r — силу. Когда один из проклятых попытался скопировать книгу истины, он вложил в свой труд не поиски смысла, а безмолвный крик отчаяния. Заклиная сущность &l&cчетвёртого проклятия,&r он создал артефакт, что не взывает к разуму, а крушит его."
+				""
+				"Разлом стал оружием, разрушающим причинно-следственные связи. Удар им — не просто физическая боль, а выброшенный из реальности момент. Никто не помнит,&c&l кто &rвпервые активировал его мощь, но с того дня ход сражений менялся, как по щелчку."
+				""
+				"Артефакт был слишком опасен для&l &9Хранителей,&r но он был настолько мощным, чтобы они не смогли его уничтожить. Его не прятали — его использовали, обрекая носителя на искажение воли. Только тот, чья душа уже надломлена семью проклятиями, способен удержать &#DC143C&lРазлом&r и не исчезнуть в нём навсегда."
+			]
+			id: "4DD56ABB3C00B701"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4F5E7D871DBA25A4"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "080171751FD06FCC"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [{
+				id: "0A216C6297F474DD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:the_twist"
+				}
+				title: "Создать Разлом"
+				type: "item"
+			}]
+			title: "&#DC143C&lРазгром"
+			x: 11.700000000000001d
+			y: 6.500000000000001d
+		}
+		{
+			dependencies: ["1D21F39D9FAA6F2C"]
+			description: [
+				"Изодранные тома — всё, что осталось от слов, написанных рукой того, кто был&l &cпроклят&r первым. Время стерло чернила, но не смысл."
+				""
+				"Их страницы разбросаны по забытым глубинам верхнего мира, будто сам автор хотел, чтобы истина дошла не до всех. В тех символах — шёпот, что пережил смерть, безумие и &l&9Пустоту.&r"
+			]
+			id: "62EF37D7737DBC62"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "613E25D21E4AE180"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "0E52DA769EFA9B1B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			size: 1.25d
+			tasks: [{
+				id: "313D8D964B4EA33E"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:tattered_tome"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "&l&7Пыль памяти"
+			x: 6.25d
+			y: -4.375d
+		}
+		{
+			dependencies: ["62EF37D7737DBC62"]
+			description: [
+				"Говорят, эти тома появились не из знания, а из &l&cболи.&r Проклятые, уставшие видеть в глазах каждого зверя страх и ярость, вложили в страницы всё, что осталось от их человечности."
+				""
+				"Они не просят любви — лишь молчаливого согласия на &l&6жизнь&r рядом. Это не заклинания, а тихая мольба: \"не бойся меня\"."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enigmaticlegacy:animal_guidebook"
+			}
+			id: "709C9B4D75525CD8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "37C3B27355D88136"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "1E397F237621FF7B"
+					type: "xp"
+					xp: 90
+				}
+			]
+			tasks: [
+				{
+					id: "40221A666F847973"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:animal_guidebook"
+					}
+					type: "item"
+				}
+				{
+					id: "46D8CAB37D14CF31"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticaddons:ode_to_living"
+					}
+					type: "item"
+				}
+			]
+			title: "Письмо прощения"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["62EF37D7737DBC62"]
+			description: [
+				"Он не был слабым, но всегда вставал между зверем и копьём. Этот том — всё, что осталось от &l&cпроклятого,&r который выбирал боль ради тех, кто не мог говорить."
+				""
+				"Каждая строчка в нём — &l&6обет:&r принять удар вместо спутника. И даже в проклятии он не перестал защищать."
+			]
+			id: "4310BF7CAA717CC7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0D306F9F692FDBE7"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "10C4892968534D31"
+					type: "xp"
+					xp: 50
+				}
+			]
+			tasks: [{
+				id: "0BEC02B7836D29CD"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:hunter_guidebook"
+				}
+				type: "item"
+			}]
+			title: "Слово охотника"
+			x: 6.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["62EF37D7737DBC62"]
+			description: [
+				"Иссушенные тома пахнут гарью и древностью. Их страницы хрупки, как прах, но каждый символ на них — пережитый жаром след чьей-то памяти."
+				""
+				"Говорят, тот, кто был проклят первым, унес их в Незер, желая скрыть опаснейшие откровения. И теперь лишь проклятые, готовые ступить в пламя, смогут прочесть истину, пережившую огонь."
+			]
+			id: "50A64E3DDEC9602F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7C1F6BB89118682D"
+					table_id: 4564181509939853592L
+					type: "random"
+				}
+				{
+					id: "449013949FBB0B6E"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [{
+				id: "502C9FDD2C6DB9A1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:withered_tome"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Пепельное знание"
+			x: 7.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["62EF37D7737DBC62"]
+			description: [
+				"Эти тома не горят, не ветшают, не трескаются — словно сам Энд бережёт их. Их строки холодны и точны, будто высечены в реальности самой &l&9Пустотой.&r"
+				""
+				"Говорят, тот, кто был проклят первым, оставил их лишь там, где нет жизни. Внутри — тайны, которые нельзя забыть… и нельзя понять, оставаясь прежним."
+			]
+			id: "531E95FE69EC4714"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "446A83816B96A885"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "7CD6A27F408DC158"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "5A7FA962B1EDDE42"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:corrupted_tome"
+					tag: { }
+				}
+				type: "item"
+			}]
+			title: "Письмена за гранью"
+			x: 7.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["62EF37D7737DBC62"]
+			description: [
+				"Том Пустоты — не писание и не откровение, а след. Он возник в тот самый миг, когда разлом &l&9Пустоты&r пронзил ткань мира, оставив зияющую рану и шёпот, ставший страницами."
+				""
+				"Лишь в забытых местах, где грань с &l&cреальностью&r истончилась, можно найти такие книги. Их не читают — к ним прислушиваются, пока Пустота шепчет: «ещё есть место»."
+			]
+			id: "2B4BB413B8919359"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4D4A1167621C189F"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "74505EC553F1C8CB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "662629A3973EB00B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:void_tome"
+				}
+				type: "item"
+			}]
+			title: "Присутствие пустоты"
+			x: 7.5d
+			y: -4.0d
+		}
+		{
+			dependencies: ["405AC8A8A7E00804"]
+			description: [
+				"Его не ковали — его сдерживали. В каждом таком слитке заключено больше &l&dнечестивой сущности,&r чем способен выдержать даже проклятый разум."
+				""
+				"Говорят, когда первый такой слиток подняли из глубин, даже свет померк. Люди начинали &l&cбредить,&r слышать шёпоты, сражаться с тенями, которых не было — и вскоре &l&cпогибали.&r"
+				""
+				"Лишь &l&cпроклятые,&r чья душа уже тронута &l&9пустотой,&r могли удержать его без потери рассудка. И с этого началась новая эпоха, где даже зло стало материалом."
+			]
+			id: "748F3AD4579AFAD3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "308CD0D712E6F3D0"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "0568E0BE8F80DF96"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "14F82A20038CE77F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:evil_ingot"
+				}
+				title: "Создать Нечестивый слиток"
+				type: "item"
+			}]
+			title: "Слиток запретного"
+			x: 12.75d
+			y: -0.75d
+		}
+		{
+			dependencies: ["405AC8A8A7E00804"]
+			description: [
+				"Когда&b&l сопротивление&r Пустоте было почти сломлено, &l&7Предвестник&r сотворил этот тотем. Его сила была направлена на последних бойцов — чтобы ослабить их дух, стравить с теми, кем они когда-то были."
+				""
+				"Тотем впитывает ярость &l&bИлладжеров&r — падших воинов, что забыли свои идеалы. Он извращает их ненависть, обращая её против них же… в руках &l&cпроклятого,&r что теперь сам стал частью той войны."
+			]
+			id: "45BAD74FB5753EB6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B5D475520AE4406"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "1DD7A5F63E6954D7"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "0BFE09CE5D137236"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:totem_of_malice"
+				}
+				title: "Создать Totem of Malice"
+				type: "item"
+			}]
+			title: "Тотем ненависти"
+			x: 13.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["405AC8A8A7E00804"]
+			description: [
+				"Существует древний закон, по которому каждый нанесённый удар должен быть оплачен болью, а каждая рана — отдана обратно с равной силой. Те, кто пытался изобрести справедливость, не осознавали, что творят."
+				""
+				"Этот том был создан одним из них — фанатиком равновесия, что забыл разницу между добром и злом. Теперь книга судит без пристрастия, превращая каждое прикосновение в акт мести."
+			]
+			id: "424DB7B87579B717"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "50A5CE0D404FE736"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "2836C2AA6D7A02C5"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [{
+				id: "4937E6E5730CA191"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:false_justice"
+				}
+				title: "Создать Обманное Правосудие"
+				type: "item"
+			}]
+			title: "Обманное Правосудие"
+			x: 13.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["748F3AD4579AFAD3"]
+			description: [
+				"Одержимый желанием овладеть запретными чарами, один из величайших магов &l&6Таала&r создал реликвию, что могла искривлять саму суть волшебства. Этот жемчуг давал власть над чарами, позволяя касаться магии напрямую, без ритуалов и ограничений."
+				""
+				"Но за такое вмешательство его изгнали из Королевства. Ведь жемчуг не просто усиливал — он открывал путь к &l&cпроклятым заклинаниям,&r забытым и запрещённым. Только проклятые решились бы использовать такую силу, зная, к чему она ведёт."
+			]
+			id: "066A7EFD8D8D3F81"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "76BB8A4DDEF79D70"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "55414C0CC363C2F6"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "35C88B5A0C2C5E59"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:enchanter_pearl"
+				}
+				title: "Создать Жемчуг Заклинателя"
+				type: "item"
+			}]
+			title: "Падение Заклинателя"
+			x: 13.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["748F3AD4579AFAD3"]
+			description: [
+				"Этот клинок не был выкован — его вырвали.&c &lГруппа проклятых,&r заброшенных в самую глубину Энда, не смогла одолеть дракона… но смогла оставить след."
+				""
+				"Им удалось достать один-единственный клык — обломок, пропитанный яростью существа, закованного в бесконечный полёт над миром, которого он не выбирал. Из этого клыка родилось лезвие, наполненное не силой, а ненавистью."
+				""
+				"Оно не слушает команд и не служит целям — лишь тянется к тем, кто связан с &l&9Пустотой.&r И каждый удар — не бой, а попытка освободиться."
+			]
+			id: "7790303A370C6984"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "07BC117146FF9B43"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "054BF58D0FB1037F"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "0C3ACDE5846D4773"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:ender_slayer"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Погибель края"
+				type: "item"
+			}]
+			title: "Погибель Края"
+			x: 12.5d
+			y: -2.0d
+		}
+		{
+			dependencies: ["748F3AD4579AFAD3"]
+			description: ["Тот, в кого вонзается этот клинок, ощущает, как изнутри начинает что-то ползти — медленно, мучительно. Это не яд и не болезнь. Это живая &l&9ненависть,&r застрявшая в металле, ищет, что бы сожрать в теле и душе."]
+			id: "40235F4A4DD357AA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4736DDC02057418D"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "455BFE49503FD645"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "235DF280CF1784E1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:evil_dagger"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Клинок Нечести"
+				type: "item"
+			}]
+			title: "Укус Тьмы"
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["1D21F39D9FAA6F2C"]
+			description: [
+				"Эти зелья не лечат и не укрепляют — они &l&bпомнят.&r В каждой капле заключена привязка к месту, где душа касалась грани."
+				""
+				"Магия возврата вплетается в &l&cкровь,&r открывая тропу туда, где ты отдыхал в последний раз."
+			]
+			id: "5F78A6449304463D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6B11C6A0074FC329"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "03D7ECA96FF84895"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "1323AB36F35BBA69"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:recall_potion"
+				}
+				title: "Сварить 3х Зелий возврата"
+				type: "item"
+			}]
+			title: "Вкус забвения"
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			dependencies: [
+				"1A3207163C68773D"
+				"5F78A6449304463D"
+			]
+			description: [
+				"Эти зелья родились из желания вернуться, даже когда само возвращение стало &l&dпыткой.&r Их варят на основе милосердия, но лишь в насмешку над этим словом."
+				""
+				"&l&dИскажённый настой&r возвращает туда, где всё закончилось — но не даёт шанса начать заново. Тело следует за памятью, но душа остаётся позади."
+			]
+			id: "32F0FA2D2742FD36"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2D83020B7D9D380B"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "103656CEAC3AB41F"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "4360B6CCBE8A5281"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:twisted_potion"
+				}
+				title: "Сварить 3х Зелий Искаженного Милосердия"
+				type: "item"
+			}]
+			title: "Гниющий путь"
+			x: 7.0d
+			y: -2.5d
+		}
+		{
+			dependencies: ["4DD56ABB3C00B701"]
+			description: [
+				"Оно не дышит, не бьётся, не растёт — но живёт. &l&#6A5ACDСердце Бездны&r — артефакт, что признавал силу лишь сильнейшего из проклятых. В нём заключена подлинная искра Пустоты. Не часть силы, не отблеск, а именно её суть — неразбавленная, нечеловеческая."
+				""
+				"Хранители вставили этот осколок в сердце &l&5Эндер-Дракона,&r когда создавали стража, что будет стоять на грани. Но сам артефакт существовал задолго до них. "
+				""
+				"Этот артефакт не был найден &l&9Хранителями&r — он был подарен. Кто-то, стоящий выше даже них самих, вложил в них этот инструмент — каплю истинной Пустоты. Сердце не бьется, но живёт. Иногда, на долю секунды, оно открывает свой &l&9глаз&r — и ты чувствуешь, как за твоей спиной сгущается взор чуждого разума. Это не просто артефакт. Это узел между реальностью и тем, что вне её."
+				""
+				"Некоторые уверены: именно Сердце дало дракону силу противостоять даже &l&4богам.&r Другие — что оно поглотило его разум, подчинив зверя воле Тьмы. И всё же, несмотря на опасность, каждый Проклятый в глубине души жаждет его. Ведь в нём — источник. Начало. Ответ."
+				""
+				"Тот, кто коснётся Сердца, соприкоснётся с &l&9Пустотой&r напрямую. Но сможет ли он выдержать её взгляд?"
+			]
+			id: "5721FD2FCA72A971"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "691E051165571CD1"
+					table_id: 4379309028631333048L
+					type: "random"
+				}
+				{
+					id: "0766CF5710FC5378"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "diamond"
+			size: 2.0d
+			tasks: [{
+				id: "09B45FB2C9C7EE61"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:abyssal_heart"
+				}
+				title: "Заполучить Сердце Бездны"
+				type: "item"
+			}]
+			title: "&l&#6A5ACD             Сердце Бездны            "
+			x: 10.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["06B65AF6E3377F4E"]
+			description: [
+				"Глубоко под слоистыми пластами мира, в месте, где сама материя выдыхалась от усталости, появился разлом — не трещина в камне, а рана в реальности. Он существовал и раньше, без формы, без смысла, пока &l&cПервый Проклятый&r не вложил в него то, что сдерживало само &l&9Сердце Бездны.&r"
+				""
+				"С этого момента он перестал быть безымянным. Разлом начал дышать — не воздухом, а мыслями, эхо которых до сих пор слышно в снах &l&cпроклятых.&r"
+				""
+				"Он принял имя &l&7Бесконечность,&r и в его недрах больше нет &l&9пустоты&r — только бесконечные знания. Безумные, древние, невозможные знания, что продолжают копиться, даже когда весь остальной мир забывает."
+			]
+			id: "6B46A05DAABA655F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "687532AE7639D0E6"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "13C9FCC66CDAB67E"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "72E261B1433D752C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:the_infinitum"
+				}
+				title: "Создать Бесконечность"
+				type: "item"
+			}]
+			title: "Разлом Бесконечности"
+			x: 4.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["06B65AF6E3377F4E"]
+			description: [
+				"Когда-то в безымянной трещине &l&9Пустоты&r взыграло отвращение, столь острое, что само &l&9Небытие&r отвернулось. Там, среди рвотных волн и полузабытых криков, явился сосуд — не оружие и не утварь, а чрево, что &l&4жаждет&r всего, что движется. &l&cПервый проклятый&r смог совладать с этой силой и поместить ее в странную форму."
+				""
+				"Сковорода была выкована не руками, а жертвами. Каждая капля страдания, принесённая &l&4Семью Проклятиями,&r впиталась в её тёмный металл, сделав её алчной даже к пеплу. Она не питается — она заменяет собой голод, и никогда не бывает &l&9сыта.&r"
+			]
+			id: "45898F5E6B3AE2DF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "67FDD83D8109C3F1"
+					table_id: 6807902208232234271L
+					type: "random"
+				}
+				{
+					id: "50058DA832F06763"
+					type: "xp_levels"
+					xp_levels: 15
+				}
+			]
+			tasks: [{
+				id: "6375627E436ECE64"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:eldritch_pan"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Поглощающую Сковороду"
+				type: "item"
+			}]
+			title: "Сковорода Изглоданных"
+			x: 6.0d
+			y: 10.0d
+		}
+		{
+			dependencies: ["06B65AF6E3377F4E"]
+			description: [
+				"Когда&c&l Первый Проклятый &rвзглянул в бездну, он не отпрянул — он взял частицу её сердца и вложил в пару изломанных крыльев. Так родился артефакт, что не покоряется ветру, но подчиняет его."
+				""
+				"Эти элитры не заменяют броню — они &l&9срастаются с нею,&r становясь частью носителя."
+			]
+			id: "186D416656B49466"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1646C98E02B76B59"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "3AF1C5AEE355A7C6"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "66A4A46BCF817EE9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:chaos_elytra"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать The Arrogance of Chaos"
+				type: "item"
+			}]
+			title: "Высокомерие Хаоса"
+			x: 4.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["06B65AF6E3377F4E"]
+			description: [
+				"Когда-то эти создания были навязчивой преградой на пути &l&cпроклятых.&r Они сновали, охотились, бросались в бой, словно в их существовании была хоть капля значения."
+				""
+				"&l&cПервый Проклятый&r не сокрушил их, не изгнал и не проклял. Он просто устал. Из этого равнодушия и родилось кольцо — знак не страха, а презрения."
+				""
+				"С тех пор даже &l&9эндермены,&r некогда безумно злобные к проклятым, опускают взгляд и исчезают в молчании. Они чувствуют присутствие кольца… и отходят в сторону, будто забыв, зачем были призваны в этот мир."
+			]
+			id: "12B9F1F0669349FF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "19BCE9C23076217D"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "6F700C5C4F8E5FFE"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "487386D37F1D1C11"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:desolation_ring"
+				}
+				title: "Создать Бремя Опустошения"
+				type: "item"
+			}]
+			title: "Бремя Опустошения"
+			x: 5.5d
+			y: 7.0d
+		}
+		{
+			dependencies: ["5721FD2FCA72A971"]
+			description: [
+				"&l&dАстральная пыль&r — остаток чуждой материи, что просачивается в наш мир сквозь изломанные швы Энда. Её частицы не живут и не тлеют — они существуют вопреки, несущие на себе след той силы, которую &l&9Пустота&r пыталась навсегда скрыть."
+				""
+				"Хранители веками стерегли эти искры, зная, к чему может привести их соединение. &l&5Сердце Космоса&r — не реликт прошлого и не инструмент настоящего, а сосуд для силы, не имеющей имени. Оно не подчинено ни закону, ни нарушению — и потому страшит даже тех, кто сам был порождён из &l&9Тьмы.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enigmaticlegacy:cosmic_heart"
+				tag: { }
+			}
+			id: "06B65AF6E3377F4E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "76340AE0707806B9"
+					table_id: 4379309028631333048L
+					type: "random"
+				}
+				{
+					id: "7F97CB90CF1DF2A3"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [
+				{
+					count: 9L
+					id: "13DC209646665981"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:astral_dust"
+					}
+					title: "Найти 9х Астральной пыли"
+					type: "item"
+				}
+				{
+					id: "1A83B1214A7C7EB3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:cosmic_heart"
+						tag: { }
+					}
+					title: "Создать Сердце Космоса"
+					type: "item"
+				}
+			]
+			title: "&l&dЗапретное Слияние"
+			x: 6.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["5721FD2FCA72A971"]
+			description: [
+				"Эфириум не отражает свет — он сам становится им. Его кристаллы настолько &lчисты,&r что исчезают в воздухе, оставляя лишь послевкусие сияния."
+				""
+				"Говорят, этот минерал впитал в себя отблески самих врат между мирами. Тот, кто носит доспехи из эфириума, исчезает не в тенях, а в &lслепящем свете.&r"
+				""
+				"Но за этой яркостью скрыта иная суть — эфириум не состоит из света, он состоит из &lчистой Пустоты,&r вывернутой наизнанку. Его сияние — не отражение жизни, а отблеск того, что лежит по ту сторону реальности."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enigmaticlegacy:etherium_ingot"
+			}
+			id: "7C7FD5A991146E15"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4C8E6688B87EAF43"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "55C8B35D8C9C0B5A"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [
+				{
+					count: 3L
+					id: "3259BD2BDDD069FE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_ore"
+					}
+					title: "Найти 3х Эфириумной руды"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "7B75D73361A68D0C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_ingot"
+					}
+					title: "Сделать 3х Эфириумных Слитков"
+					type: "item"
+				}
+			]
+			title: "&l&#F0FFF0Слепящее Сердце"
+			x: 8.450000000000001d
+			y: 10.4d
+		}
+		{
+			dependencies: ["4DD56ABB3C00B701"]
+			description: [
+				"С виду — символ надежды и света, созданный будто из &l&6благословения&r забытого мира. Он укрепляет тело, очищает разум, наполняет душу храбростью."
+				""
+				"Но артефакт был выкован проклятыми, и за его сиянием скрыта ложь. В нём сокрыта мерзкая правда. Он меняет волю, подчиняет память, оставляя лишь &l&eиллюзию чистоты.&r"
+			]
+			id: "7A7D7C12F2178635"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "78629E91CB488E48"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "477E92CFC42CF7FE"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "484C7D96795A1EE2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:pure_heart"
+				}
+				title: "Создать Чистое сердце"
+				type: "item"
+			}]
+			title: "Сердце Иллюзии"
+			x: 9.5d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"54003DAE2DB078A6"
+				"7A7D7C12F2178635"
+				"06B65AF6E3377F4E"
+			]
+			description: [
+				"&l&cПервый из проклятых&r был не сломлен яростью, не убит клинком. Но плоть его начала гнить — от времени и проклятия, что пожирали его изнутри. Когда кожа слезала с рук, а кости проступали сквозь разлагающееся тело, он не стал молить о пощаде. Он вложил остаток сил в создание &l&6кольца,&r которое удерживало плоть от окончательного распада."
+				""
+				"Обет Земли стал якорем между жизнью и гниением. Он блокирует удары, которые должны убивать, и сдерживает первую волну проклятия, отравляющего тело. Эта реликвия не спасает — она просто не даёт умереть &l&6слишком быстро.&r"
+				""
+				"Считается, что именно с неё началась воля проклятого к выживанию. Не великое колдовство, не запретные знания — а простое упрямство жить, даже когда всё против этого."
+				""
+				"С тех пор кольцо создается теми, кто выбрал &l&cболь&r ради силы. Оно не прощает слабости. Оно принадлежит лишь тем, кто уже умер — но всё ещё идёт вперёд."
+			]
+			id: "407D0FC07BB89608"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0566CD980A82E836"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "135DA4DAB9F390AB"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "6AC5B9A81DFDD025"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:earth_promise"
+				}
+				title: "Создать Обет Земли"
+				type: "item"
+			}]
+			title: "&6&lОбет Земли"
+			x: 7.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["7A7D7C12F2178635"]
+			description: ["Эта реликвия выглядит как &l&6дар света,&r но внутри неё пульсирует холодное сердце &l&9Пустоты.&r Она не лечит — она выжигает всё лишнее, оставляя лишь суть."]
+			id: "1DB34BDB579E46F4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "48C2606171D31502"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "37150E2203EB4FD4"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "4D27C5218BB0C7A5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:the_bless"
+				}
+				title: "Создать Благословение"
+				type: "item"
+			}]
+			title: "Благословение"
+			x: 8.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["1DB34BDB579E46F4"]
+			description: [
+				"Этот том стал венцом обречённой одержимости. Когда &c&lПервый Проклятый&r познал пределы магии — он отверг их. Сняв все ограничения, он создал книгу, способную нарушить саму природу чар."
+				""
+				"В её страницах нет слов — лишь формулы, что шепчут на языке &l&9Пустоты.&r В руках достойного она возвышает любые зачарования до невозможного, развязывая силу, которую не сдержит ни один уровень."
+			]
+			id: "0FE12BB5FDEA1384"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3D9A2E82B4ED4008"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "67BD6D0BFBCBB752"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.25d
+			tasks: [{
+				id: "75F007C18DB407D5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:bless_amplifier"
+				}
+				title: "Создать Том Прорицания"
+				type: "item"
+			}]
+			title: "&l&#FFE4B5Предел Силы"
+			x: 7.5d
+			y: 6.875d
+		}
+		{
+			dependencies: ["7A7D7C12F2178635"]
+			description: [
+				"Когда тело &l&cпервого проклятого&r перестало гореть, а кожа больше не трескалась от огня, он понял: боль — лишь маска власти. Он вошёл в лаву, как в омут, и не исчез. Он остался там — дышал раскалённым камнем, пил пепел, говорил с жаром."
+				""
+				"Этот амулет — не защита, а ключ. Он не гасит пламя, а принимает его, сливаясь с ним, как плоть с проклятием. Пока он пылает на груди, носитель чувствует дыхание &l&cпреисподней,&r но уже не как враг, а как часть её."
+			]
+			id: "2ABE5ADF0FBF7C99"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "28F8AF50E5DF30E5"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "26AA26021B3C49F0"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [{
+				id: "617575F356E6F817"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:scorched_charm"
+				}
+				title: "Создать Charm of Scorched Sun"
+				type: "item"
+			}]
+			title: "Пламенное Сердце"
+			x: 10.0d
+			y: 4.0d
+		}
+		{
+			dependencies: [
+				"06B65AF6E3377F4E"
+				"7C7FD5A991146E15"
+			]
+			description: [
+				"Сотни амулетов были созданы &l&cпроклятыми&r в разные эпохи — каждый нес в себе отблеск боли, силы или надежды. Но только один вобрал их все, став не украшением, а рубежом между тем, кем ты был, и тем, кем больше не сможешь не быть."
+				""
+				"Амулет Вознесения не просто усиливает. Он ломает &l&6пределы,&r очерченные даже &l&cПервым Проклятым,&r и открывает путь, на котором уже нельзя свернуть. С этого момента ты не наследуешь силу — ты начинаешь создавать свою."
+			]
+			id: "0249B9D246D0DA59"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5DA5C9CFF4669CDE"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "137B13EEA61BB993"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.2d
+			tasks: [{
+				id: "627332E8D494C44A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:ascension_amulet"
+					tag: { }
+				}
+				title: "Создать Амулет Вознесения"
+				type: "item"
+			}]
+			title: "&l&#DDA0DDПредел Восхождения"
+			x: 4.2d
+			y: 12.0d
+		}
+		{
+			dependencies: ["0249B9D246D0DA59"]
+			description: [
+				"Он не создаётся — он формируется. Из отголосков&4&l боли, &rиз памяти падших, из шепота кольца, что однажды наложило метку на душу."
+				""
+				"Это не амулет силы. Это амулет &#BA55D3&lотречения.&r От надежды. От покоя. От прошлого мира, где ты ещё мог быть спасён."
+				""
+				"Те, кто попадёт в поле его взгляда, замедлятся не из страха. А потому что реальность в его присутствии начинает &l&4гнить.&r"
+				""
+				"Он — квинтэссенция &l&cпроклятия.&r Точка, после которой всё сущее становится лишним. Даже &l&cпервый проклятый&r не был способен на создание чего-то подобного."
+			]
+			id: "0E91325CE425E2C7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0CFBE9C2AEA895C6"
+					table_id: 6807902208232234271L
+					type: "random"
+				}
+				{
+					id: "625CDBC21CAECE51"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			shape: "hexagon"
+			size: 1.8d
+			tasks: [{
+				id: "2C8509C6AC9A1A4C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:eldritch_amulet"
+					tag: { }
+				}
+				title: "Создать Амулет Презрения"
+				type: "item"
+			}]
+			title: "&#BA55D3&lАмулет Презрения, Абсолютная Сила Проклятия"
+			x: 0.8999999999999999d
+			y: 10.799999999999999d
+		}
+		{
+			dependencies: ["7C7FD5A991146E15"]
+			description: [
+				"Эта броня не гремит и не блестит — она исчезает, теряя форму в &l&#F0FFF0сиянии,&r что ослепляет даже без глаза. Эфириум не защищает тело — он уводит его за грань восприятия."
+				""
+				"Облачённый в такой доспех, становится не воином, а &l&#F0FFF0отражением&r меча. Его нельзя ранить, потому что его уже нельзя увидеть."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enigmaticlegacy:etherium_helmet"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "71D5AF9DDE939E5B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6C1A49FD7C28067E"
+					table_id: 4379309028631333048L
+					type: "random"
+				}
+				{
+					id: "375C1C1CE9C0687B"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [
+				{
+					id: "62B4B8AB8413ED0A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "56DA38E7466E6125"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "6638A5DB985B12DF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "0E43A0A8874D6225"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Облачённый в Свет"
+			x: 7.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["71D5AF9DDE939E5B"]
+			description: [
+				"Внутри &l&#F0FFF0эфириумного ядра&r нет вещества — лишь молчание, растянутое в форме света. Оно не пульсирует и не сияет, но пространство дрожит рядом, словно пытаясь отвернуться."
+				""
+				"Это сердце из чистой пустоты поглощает урон и страх, преобразуя боль в &l&#F0FFF0силу.&r Тот, кто носит его, не прячется — он исчезает, став пробелом в самом тексте мира."
+			]
+			id: "3F6EB7E0CE745A2C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "750354961D8DE23A"
+					table_id: 4379309028631333048L
+					type: "random"
+				}
+				{
+					id: "481AE292BEA1EA75"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "22DA93C14301A68D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:etherium_core"
+				}
+				type: "item"
+			}]
+			title: "&l&#F0FFF0Ядро Светопрестола"
+			x: 6.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["06B65AF6E3377F4E"]
+			description: [
+				"До того, как Хранители опустили Дракона на край миров, проклятые уже вкушали плоды иного порядка. Из пыли звёзд и отблесков невозможного они сотворили торт, что насытил бы даже самого &l&dмиротворца.&r"
+				""
+				"Он не ведает меры и не знает насыщения — кусок, который не кончается, и голод, что исчезает без следа. Его вкус — отголосок эпохи, когда реальность ещё не успела договориться с&9 &lПустотой.&r"
+			]
+			id: "2A0845CCC208AD8D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6538E2F4B7C22048"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "5904C41BC6740C68"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "2ED39C2C52BF029F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:cosmic_cake"
+				}
+				title: "Создать Торт Бесконечности"
+				type: "item"
+			}]
+			title: "Вкус Забытой Вечности"
+			x: 7.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["7C7FD5A991146E15"]
+			description: [
+				"Инструменты, выкованные из &l&#F0FFF0эфириума,&r не оставляет тени. Они пронзают мир насквозь,  рассекая реальность с ослепительной точностью."
+				""
+				"Орудия, созданные из этого материала, не тускнеют и не греются в руках. Их &l&#F0FFF0сияние&r скрывает замысел носителя, оставляя врагов в догадках до самого удара."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "enigmaticlegacy:etherium_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "20DCCCBAFD3A0DD8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "00B1280D529870E2"
+					table_id: 4379309028631333048L
+					type: "random"
+				}
+				{
+					id: "4B93A82B178A4B43"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.0d
+			tasks: [
+				{
+					id: "29D394BE51E39817"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_sword"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "2149A6AA005A05ED"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_pickaxe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "07B21D73DC89F54D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "477833B98A1B31E7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "enigmaticlegacy:etherium_shovel"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Инструменты Света"
+			x: 9.5d
+			y: 12.0d
+		}
+		{
+			dependencies: ["20DCCCBAFD3A0DD8"]
+			description: [
+				"Звёздный крушитель не кует землю — он разрывает её, будто открывая раны былых катастроф. Его тяжесть не в массе, а в следах, что он оставляет в ткани мира."
+				""
+				"Каждый удар отзывается в небесах, будто шрам на лице вселенной. В руках достойного он становится не инструментом, а карой."
+			]
+			id: "6BA907A74F9720D5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "40780AFCC1DE67F8"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "0C8F7CC0655A048F"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "15D626A95A73EE5B"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:astral_breaker"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Падение Звезды"
+			x: 9.5d
+			y: 13.0d
+		}
+		{
+			dependencies: ["20DCCCBAFD3A0DD8"]
+			description: [
+				"Когда эфириум проникает в пустоту, он перестаёт быть металлом — он становится проводником. Астральное копьё рождено не кузницей, а пересечением миров, где свет пронзает бездну."
+				""
+				"Его удар — это не выпад руки, а вспышка между мгновениями. Лишь тот, кто слышит эхо звёзд, способен направить его истинную силу."
+			]
+			id: "42F3DF9CB12680E6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "75EE19CE4CEBEEAB"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "04B8E3CC81900FB5"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "65C19F05927ABDC1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:astral_spear"
+					tag: {
+						Damage: 0
+					}
+				}
+				type: "item"
+			}]
+			title: "Астральный Зов"
+			x: 10.5d
+			y: 12.5d
+		}
+		{
+			dependencies: ["5721FD2FCA72A971"]
+			description: [
+				"В тени мира покоится сосуд, вобравший в себя силу&l &6всех стихий, &rоставаясь &l&9пустым.&r Его безмолвие скрывает в себе нераскрытую мощь, что сияет лишь в отблесках забытых грёз."
+				""
+				"Среди мрака и эха забвения мерцает зов далёкого предназначения, не открывая путей. Этот фрагмент готов стать началом нечто куда более &l&cграндиозного.&r"
+			]
+			id: "120ACBE1B997DA08"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5AC52B92C7D4FC6F"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "197222FAA29DF9A6"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.15d
+			tasks: [{
+				id: "22E99CA44EFDA609"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticaddons:primeval_cube"
+				}
+				title: "Создать Древний Куб"
+				type: "item"
+			}]
+			title: "Слияние Стихий"
+			x: 12.0d
+			y: 9.5d
+		}
+		{
+			dependencies: ["120ACBE1B997DA08"]
+			description: [
+				"Его рождение не связано с древними пророками и уж тем более не отмечено рукой &l&cПервого Проклятого.&r В беззвучном смещении осей мироздания однажды вспыхнуло искажение, вобравшее в себя силу всех&l &6стихийных камней&r и обратившее их в шестигранную &l&5сингулярность.&r"
+				""
+				"В самом сердце сингулярности дремлет &l&6древний куб&r — усталый свидетель погибших эпох, готовый принять новую оболочку. Лишь тот, кто низвёл &l&9Хранителей Пустоты&r и оставил их силу пылать в руинах, способен запечатать её в искусной форме, названной &6&lНеевкл&r&l&#EE82EEидовым&r&l&b Кубом."
+				""
+				"Куб живёт на границе абсурда и мощи. Он не подчиняется законам — он высмеивает их. Внутри — не энергия, а возможность, не порядок, а воля. И лишь тот, кто дошёл до конца, пройдя сквозь пламя, лёд, грозу и безмолвие &l&9Пустоты,&r достоин заглянуть в его искажённую суть."
+			]
+			id: "0FBDF2F38C05BA03"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1EFD90266B2887EB"
+					table_id: 6807902208232234271L
+					type: "random"
+				}
+				{
+					id: "621CE82AFC94F3C7"
+					type: "xp_levels"
+					xp_levels: 30
+				}
+			]
+			shape: "diamond"
+			size: 1.75d
+			tasks: [{
+				id: "64605A5CF379145A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:the_cube"
+				}
+				title: "Создать Неевклидов Куб"
+				type: "item"
+			}]
+			title: "&6&lНеевк&r&l&#EE82EEлидово&r&l&b Ядро"
+			x: 14.0d
+			y: 11.375d
+		}
+		{
+			dependencies: ["424DB7B87579B717"]
+			description: [
+				"Этот артефакт сотворён на грани реальности. В нём заключено одновременно стремление к балансу и безумная глубина&l &9Бездны.&r"
+				""
+				"Когда владелец получает сильный удар, ядро сокращает его силу, словно глухая стена, не выдерживающая натиска. Оно не защищает — оно принимает удары, переваривает их в молчаливом отместке, сохраняя &l&6жизнь&r ценой своего дыхания."
+				""
+				"Лишь тот, кто принял собственные тени и понял, что правосудие можно ковать из боли, сможет использовать эту бездну как союзника, а не как обузу."
+			]
+			id: "5D449AB21E07603D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3630BDD630D219D1"
+					table_id: 4379309028631333048L
+					type: "random"
+				}
+				{
+					id: "372FCF27801AA9C3"
+					type: "xp"
+					xp: 350
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "5B26F031C73BE5F2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:abyss_core"
+				}
+				title: "Создать Ядро Бездны"
+				type: "item"
+			}]
+			title: "&l&#00CED1Ядро Бездны"
+			x: 15.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["066A7EFD8D8D3F81"]
+			description: [
+				"Когда-то это ожерелье украшало шею пророка, что пытался говорить с самой &l&9Пустотой.&r Он не закончил ни одно пророчество — слова застревали в горле, как мрак застревает в мире."
+				""
+				"&l&bЗамок Бездны&r не просто медлит — он отмеряет время жертвы, как песочные часы без конца. Стоит врагу потерять подвижность, как ожерелье пробуждает кару — удар бездны, неотвратимый и жестокий."
+			]
+			id: "6DC1D7B26E6D0D72"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "09189E56FBBF9AC5"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "64203CAE7A8CCE51"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [{
+				id: "55EC5F62CEA89504"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:lock_of_abyss"
+				}
+				title: "Создать Замок Бездны"
+				type: "item"
+			}]
+			title: "Печать Бездны"
+			x: 14.25d
+			y: -3.0d
+		}
+		{
+			dependencies: ["540DC5A346A110DF"]
+			description: [
+				"Этот знак не выкован — он родился в пламени&l &cгибели.&r Легенда гласит, что когда последняя армия королевства Таала пала под натиском &l&9Пустоты,&r один проклятый встал среди мёртвых и сделал шаг вперёд."
+				""
+				"В тот миг он не молил о спасении и не взывал к богам — он принял свою &l&cкатастрофу,&r позволив ей впитаться в кость и кровь. Так на его груди вспыхнул знак, испачканный прахом и славой, что давно утратила смысл."
+				""
+				"Теперь &l&cэмблема&r отзывается лишь на тех, кто знает, каково это — стоять, истекая жизнью, с пустыми глазами, но сжатым кулаком. И каждый её импульс — это эхо той&l &9войны,&r которую никто не выиграл."
+			]
+			id: "52A195A341685890"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "22818AA713B6C600"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "379CB6F1040637F8"
+					type: "xp"
+					xp: 500
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			tasks: [{
+				id: "57C2AC86E8B24B54"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestial_artifacts:war_dead_badge"
+				}
+				title: "Создать Знак Погибшей войны"
+				type: "item"
+			}]
+			title: "&c&lПрах триумфа"
+			x: 9.799999999999999d
+			y: -4.2d
+		}
+		{
+			dependencies: ["4CA34AEF52CC90EF"]
+			description: [
+				"Среди всех свитков, этот считается самым дорогим, как по цене — так и по замыслу. Его создают из памяти о каждом &l&bпадении,&r чтобы однажды позволить не потерять всё."
+				""
+				"Он не спасает от смерти, но нарушает её замысел. С его помощью&l &bостанки проклятого всегда находят путь назад.&r"
+			]
+			id: "389279FA8805C68D"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5AE24EDC8D0F25C2"
+					table_id: 7921899196233481396L
+					type: "random"
+				}
+				{
+					id: "0C8D4E5B632E2A70"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "3B1FC7EB2B05B12C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:escape_scroll"
+				}
+				title: "Создать Свиток Посмертного возврата"
+				type: "item"
+			}]
+			title: "Печать последнего пути"
+			x: 3.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["1A3207163C68773D"]
+			description: [
+				"Голод исчезает. Вместе с ним — и право на исцеление."
+				""
+				"Плод дарует покой телу, но оставляет рану на душе. От него не сытишься — ты становишься сытостью."
+			]
+			id: "4848E5D2BCBA711A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1E9EA30C4827321F"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "36D6329702ACF721"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				advancement: "enigmaticlegacy:main/forbidden_fruit"
+				criterion: ""
+				id: "7D4DC69606F68430"
+				title: "Съесть Запретный Плод"
+				type: "advancement"
+			}]
+			title: "Первородный Грех"
+			x: 10.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["06B65AF6E3377F4E"]
+			description: [
+				"Он не растёт и не падает — его находят, когда приходит время. Внутри него не мякоть, а искра, способная навсегда изменить сосуд, что решится вкусить."
+				""
+				"Говорят, этот плод не был создан, а выделен из самой Бесконечности. Один укус — и кольца начинают искать тебя сами."
+			]
+			id: "701F2578DF9EB0F2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2212F98894E9FDAF"
+					table_id: 3960547098340210847L
+					type: "random"
+				}
+				{
+					id: "20F93611F1963AEE"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				advancement: "enigmaticlegacy:main/astral_fruit"
+				criterion: ""
+				id: "724E82E4F017774B"
+				title: "Съесть Божественный Плод"
+				type: "advancement"
+			}]
+			title: "Плод Возвышения"
+			x: 4.5d
+			y: 9.5d
+		}
+		{
+			dependencies: ["4848E5D2BCBA711A"]
+			description: [
+				"Он пахнет пеплом и чем-то давно забытым. Это не лекарство, а прощение."
+				""
+				"И пусть грех уже стал частью тебя — капля этого зелья даёт шанс повернуть взгляд прочь. Лишь раз."
+			]
+			id: "7CC66735FBD7ABD9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "307FD03F690DD389"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "1582506DC7649087"
+					type: "xp"
+					xp: 150
+				}
+			]
+			shape: "hexagon"
+			size: 1.15d
+			tasks: [{
+				id: "2722330E75D82973"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:redemption_potion"
+				}
+				title: "Найти Зелье Искупления"
+				type: "item"
+			}]
+			title: "&6&lГлоток Искупления"
+			x: 11.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["405AC8A8A7E00804"]
+			description: [
+				"Редкий артефакт, выпадающий лишь с Древних Стражей, охраняющих морские храмы — существ, чья воля давно связана с глубинами. Их сердца хранят силу, способную подчинять разум других тварей."
+				""
+				"Этот амулет обращает монстров друг против друга: твой взгляд сеет ярость, и ближайшие существа бросаются на бывших союзников. Иногда, чтобы выжить, достаточно просто стоять и смотреть, как враги уничтожают сами себя."
+			]
+			id: "4B3D14B73FA486F8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4E4D68012BD73AF3"
+					table_id: 3046187399616079061L
+					type: "random"
+				}
+				{
+					id: "20F6C8CE1505931B"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "58D5BC7AF8EF24D2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "enigmaticlegacy:guardian_heart"
+				}
+				type: "item"
+			}]
+			title: "Сердце Стража"
+			x: 14.5d
+			y: 2.5d
+		}
+	]
+	title: "Проклятый"
+}

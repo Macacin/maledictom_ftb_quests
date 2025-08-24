@@ -1,0 +1,4580 @@
+{
+	autofocus_id: "3C29796979BFEDD7"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "6853F143D2DDC495"
+	group: "18231DA5423D37EC"
+	hide_quest_until_deps_complete: true
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "alexscaves:tough_hide"
+	}
+	id: "6853F143D2DDC495"
+	order_index: 2
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			description: [
+				"Глубоко под землёй, среди каменных тел и залежей ископаемых, можно найти &lзаброшенные хижины&r — забытые станции древних исследователей."
+				"Раздобудь в одной из них стол спелеолога, чтобы открыть путь к подлинным глубинам."
+				""
+				"Слишком долго человечество боялось спуститься глубже."
+				"Теперь — твой черёд."
+				""
+				"&7&oЕсли самостоятельно наткнуться на хижину сложно, попробуйте обыскать сундуки в заброшенных шахтах – иногда в них попадается карта с указанием хижины."
+				""
+				"&7&oКроме того, картографы изредка продают карты-локаторы.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:cave_book"
+			}
+			id: "3C29796979BFEDD7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "481EFD0BAC693BF8"
+					table_id: 745423481109247929L
+					type: "random"
+				}
+				{
+					id: "0AD7C8BEF1ED1578"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "diamond"
+			size: 2.5d
+			tasks: [
+				{
+					id: "2196D3F9EE1B3314"
+					structure: "alexscaves:underground_cabin"
+					title: "&fНайти &lПодземную Хижину"
+					type: "structure"
+				}
+				{
+					id: "49A3A765C92802DF"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:spelunkery_table"
+					}
+					title: "&fДобыть &lСтол Спелеолога"
+					type: "item"
+				}
+				{
+					id: "4A11F0E8AD80B7D4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_book"
+					}
+					title: "&fСоздать &lПещерный путеводитель"
+					type: "item"
+				}
+			]
+			title: "&lНачало великой экспедиции"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["3C29796979BFEDD7"]
+			description: [
+				"Также в хижине лежит табличка &l&#DCDCDCМагнитных пещер."
+				"Расшифруй соответствующий манускрипт — получишь данные о магнитных аномалиях глубин."
+				""
+				"&7&oЧтобы разгадать слово на столе, надо положить табличку и бумажку. Дальше надо пройти мини игру - нажимаешь на рандомное слово, наводишь на него лупой, таким образом ты понимаешь какая буква как выглядит на языке, и ты можешь искать буквы из нужного слова.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:cave_tablet"
+				tag: {
+					CaveBiome: "alexscaves:magnetic_caves"
+				}
+			}
+			id: "3F5667DAB9BA8491"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1DC85C481824651A"
+					table_id: 2714005940446590167L
+					type: "random"
+				}
+				{
+					id: "722DACA83F77630B"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "606941E38EAB62D4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_tablet"
+						tag: {
+							CaveBiome: "alexscaves:magnetic_caves"
+						}
+					}
+					title: "&fНайти Пещерную табличку &l&#DCDCDCМагнитных Пещер"
+					type: "item"
+				}
+				{
+					id: "797B19FD74E05EE0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_codex"
+						tag: {
+							CaveBiome: "alexscaves:magnetic_caves"
+						}
+					}
+					title: "&fРасшифровать Пещерный манускрипт &l&#DCDCDCМагнитных пещер"
+					type: "item"
+				}
+			]
+			title: "&l&#DCDCDCМагнитные пещеры"
+			x: 3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C29796979BFEDD7"]
+			description: [
+				"В сундуке хижины найдёшь табличку &#F4A460&lПервобытных Пещер."
+				"Добавь старинную информацию в путеводитель после расшифровки на столе археолога."
+				""
+				"&7&oЧтобы разгадать слово на столе, надо положить табличку и бумажку. Дальше надо пройти мини игру - нажимаешь на рандомное слово, наводишь на него лупой, таким образом ты понимаешь какая буква как выглядит на языке, и ты можешь искать буквы из нужного слова.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:cave_tablet"
+				tag: {
+					CaveBiome: "alexscaves:primordial_caves"
+				}
+			}
+			id: "4898CE4BFDC18328"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "203BB45E598B9861"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "72DB19E588F8C16D"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "7690C2EE11FF5344"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_tablet"
+						tag: {
+							CaveBiome: "alexscaves:primordial_caves"
+						}
+					}
+					title: "&fНайти Пещерную табличку &#F4A460&lПервобытных Пещер"
+					type: "item"
+				}
+				{
+					id: "6055AAEA1D0179B9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_codex"
+						tag: {
+							CaveBiome: "alexscaves:primordial_caves"
+						}
+					}
+					title: "&fРасшифровать Пещерный манускрипт &#F4A460&lПервобытных Пещер"
+					type: "item"
+				}
+			]
+			title: "&#F4A460&lПервобытные пещеры"
+			x: 3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C29796979BFEDD7"]
+			description: [
+				"Также найдётся табличка &l&#00FF7FТоксичных Пещер."
+				"Расшифруй манускрипт и получи информацию о ядовитых зонах подземелий."
+				""
+				"&7&oЧтобы разгадать слово на столе, надо положить табличку и бумажку. Дальше надо пройти мини игру - нажимаешь на рандомное слово, наводишь на него лупой, таким образом ты понимаешь какая буква как выглядит на языке, и ты можешь искать буквы из нужного слова.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:cave_tablet"
+				tag: {
+					CaveBiome: "alexscaves:toxic_caves"
+				}
+			}
+			id: "56B590EB7EF5D5F4"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1501BAB3F0ABE621"
+					table_id: 2571609009649569247L
+					type: "random"
+				}
+				{
+					id: "385EEB5B3B888A82"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "58A6867DF8837800"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_tablet"
+						tag: {
+							CaveBiome: "alexscaves:toxic_caves"
+						}
+					}
+					title: "&fНайти Пещерную табличку &l&#00FF7FТоксичных Пещер"
+					type: "item"
+				}
+				{
+					id: "43F8811CFE8033E3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_codex"
+						tag: {
+							CaveBiome: "alexscaves:toxic_caves"
+						}
+					}
+					title: "&fРасшифровать Пещерный манускрипт &l&#00FF7FТоксичных Пещер"
+					type: "item"
+				}
+			]
+			title: "&l&#00FF7FТоксичные пещеры"
+			x: -3.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["3C29796979BFEDD7"]
+			description: [
+				"Внутри хижины — табличка &l&#4169E1Подводной Бездны"
+				"Расшифруй её, чтобы включить сведения о водных глубинах в путеводитель."
+				""
+				"&7&oЧтобы разгадать слово на столе, надо положить табличку и бумажку. Дальше надо пройти мини игру - нажимаешь на рандомное слово, наводишь на него лупой, таким образом ты понимаешь какая буква как выглядит на языке, и ты можешь искать буквы из нужного слова.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:cave_tablet"
+				tag: {
+					CaveBiome: "alexscaves:abyssal_chasm"
+				}
+			}
+			id: "3D8B389C9540CF17"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5444F86FD97451A5"
+					table_id: 8816127579773310060L
+					type: "random"
+				}
+				{
+					id: "30B5893356E63CF4"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "2B3693A35A84005D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_tablet"
+						tag: {
+							CaveBiome: "alexscaves:abyssal_chasm"
+						}
+					}
+					title: "&fНайти Пещерную табличку &l&#4169E1Подводной Бездны"
+					type: "item"
+				}
+				{
+					id: "76671C955AC8F0FE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_codex"
+						tag: {
+							CaveBiome: "alexscaves:abyssal_chasm"
+						}
+					}
+					title: "&fРасшифровать Пещерный манускрипт &l&#4169E1Подводной Бездны"
+					type: "item"
+				}
+			]
+			title: "&l&#4169E1Подводная бездна"
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["3C29796979BFEDD7"]
+			description: [
+				"В сундуке хижины — табличка &l&#BDB76BЗабвенных Пустот."
+				"После расшифровки добавь раздел о самых мрачных глубинах путеводителя."
+				""
+				"&7&oЧтобы разгадать слово на столе, надо положить табличку и бумажку. Дальше надо пройти мини игру - нажимаешь на рандомное слово, наводишь на него лупой, таким образом ты понимаешь какая буква как выглядит на языке, и ты можешь искать буквы из нужного слова.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:cave_tablet"
+				tag: {
+					CaveBiome: "alexscaves:forlorn_hollows"
+				}
+			}
+			id: "7384FB1BF457E0EB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "37A717C8F0667D9B"
+					table_id: 8379721998862099085L
+					type: "random"
+				}
+				{
+					id: "4E52811FED2560C5"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "7CC6D50CAB93C494"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_tablet"
+						tag: {
+							CaveBiome: "alexscaves:forlorn_hollows"
+						}
+					}
+					title: "&fНайти Пещерную табличку &l&#BDB76BЗабвенных Пустот"
+					type: "item"
+				}
+				{
+					id: "3FB241659ACB5F22"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_codex"
+						tag: {
+							CaveBiome: "alexscaves:forlorn_hollows"
+						}
+					}
+					title: "&fРасшифровать Пещерный манускрипт &l&#BDB76BЗабвенных Пустот"
+					type: "item"
+				}
+			]
+			title: "&l&#BDB76BЗабвенные пустоты"
+			x: -3.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["3C29796979BFEDD7"]
+			description: [
+				"В хижине ты найдёшь сундук с табличкой &l&dКонфетного котлована.&r"
+				"Расшифруй её манускрипт на столе археолога и добавь информацию о \"сладких\" биомах в путеводитель."
+				""
+				"&7&oЧтобы разгадать слово на столе, надо положить табличку и бумажку. Дальше надо пройти мини игру - нажимаешь на рандомное слово, наводишь на него лупой, таким образом ты понимаешь какая буква как выглядит на языке, и ты можешь искать буквы из нужного слова.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:cave_tablet"
+				tag: {
+					CaveBiome: "alexscaves:candy_cavity"
+				}
+			}
+			id: "7C4E5DA9DB84AC05"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3959A84DFE8B8325"
+					type: "random"
+				}
+				{
+					id: "4D6AA6802A5C681A"
+					type: "xp"
+					xp: 50
+				}
+			]
+			shape: "square"
+			tasks: [
+				{
+					id: "1F9964CB969C992A"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_tablet"
+						tag: {
+							CaveBiome: "alexscaves:candy_cavity"
+						}
+					}
+					title: "&fНайти Пещерную табличку &l&dКонфетного котлавана"
+					type: "item"
+				}
+				{
+					id: "4ED8E7255FA8A88C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_codex"
+						tag: {
+							CaveBiome: "alexscaves:candy_cavity"
+						}
+					}
+					title: "&fРасшифровать Пещерный манускрипт &l&dКонфетного Котлована"
+					type: "item"
+				}
+			]
+			title: "&l&#EE82EEКонфетный котлован"
+			x: -2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["7C4E5DA9DB84AC05"]
+			description: [
+				"Ты попадёшь в Конфетный Котлован — подземелье, уставленное столбами и сталактитами из кристаллов, напоминающих леденцы, и озёрами сверкающего сиропа."
+				""
+				"&7&oСовет: не теряй бдительность. Хоть на первый взгляд это и максимально дружелюбная пещера, на самом деле все так и наравят убить тебя и сделать из тебя очередную сладость.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:chiseled_candy_cane_block"
+			}
+			id: "7606FC1F049EEDBE"
+			rewards: [{
+				id: "4ADD180105CE82D3"
+				table_id: 581181588047869091L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "1C127B8899FEA263"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_map"
+						tag: {
+							BiomeTargetResourceKey: "alexscaves:candy_cavity"
+						}
+					}
+					title: "Сделать Карту Конфетного Катлована"
+					type: "item"
+				}
+				{
+					biome: "alexscaves:candy_cavity"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:candy_cane_block"
+					}
+					id: "3442124CD0AEE203"
+					title: "Посетить Конфетный Катлован"
+					type: "biome"
+				}
+			]
+			title: "Сахарное забвение"
+			x: -1.5d
+			y: 4.75d
+		}
+		{
+			dependencies: ["3F5667DAB9BA8491"]
+			description: [
+				"Магнитные пещеры усеяны Neodymium-кристаллами и галенитовыми жилами; здесь из стен выступают металлические наросты, а компасы сходят с ума."
+				""
+				"&7&oСовет: чтобы не испытывать неудобств, возьмите с собой неметаллическую броню (например, кожаную или золотую) – тогда вы будете менее подвержены магнитным силам&r&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:block_of_scarlet_neodymium"
+			}
+			id: "20BDB4ACC414EA82"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6BE480C0CA70B5A5"
+				table_id: 2714005940446590167L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "2EEBB15EF1FD75C3"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_map"
+						tag: {
+							BiomeTargetResourceKey: "alexscaves:magnetic_caves"
+						}
+					}
+					title: "Сделать Карту Магнитных Пещер"
+					type: "item"
+				}
+				{
+					biome: "alexscaves:magnetic_caves"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:block_of_scarlet_neodymium"
+					}
+					id: "6DBF83AEA67B02A8"
+					title: "Посетить Магнитные Пещеры"
+					type: "biome"
+				}
+			]
+			title: "Резонанс металла"
+			x: 5.25d
+			y: 2.25d
+		}
+		{
+			dependencies: ["4898CE4BFDC18328"]
+			description: [
+				"Первобытные пещеры — словно подземный лес: закопчённые стволы грибообразных сталактитов, яркое сияние Ambersol-кристаллов и эхо шороха огромных существ."
+				""
+				"&7&oСовет: исследуй эти земли с особой осторожностью. По странным причинам древние обитатели этих пещер ненавидят проклятых и чуют их за версту.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:amber_monolith"
+			}
+			id: "3E6EFE12A5D22254"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5070F718FE9D70F9"
+				table_id: 717053739862496116L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6245DC5C0640C072"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_map"
+						tag: {
+							BiomeTargetResourceKey: "alexscaves:primordial_caves"
+						}
+					}
+					title: "Сделать Карту Первобытных Пещер"
+					type: "item"
+				}
+				{
+					biome: "alexscaves:primordial_caves"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:amber"
+					}
+					id: "5E370D2541846F02"
+					title: "Посетить Первобытные Пещеры"
+					type: "biome"
+				}
+			]
+			title: "Пульс древности"
+			x: 5.0d
+			y: -2.0d
+		}
+		{
+			dependencies: ["7384FB1BF457E0EB"]
+			description: [
+				"Эта карта укажет путь в Забвенные Пустоты — сеть глубоких воронок и разломов, где воздух тяжелеет от древней пыли, а темнота поглощает даже звук шагов."
+				""
+				"&7&oСовет: используй факела и иные источники света с крайней осторожностью. На них могут слететься мотыльки, на которых охотятся кровожадные кровопийцы.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:thornwood_wood"
+			}
+			id: "1C8CCE53D9924311"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "72FEFD4080615BFD"
+				table_id: 8379721998862099085L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6DE36DB73E148DCA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_map"
+						tag: {
+							BiomeTargetResourceKey: "alexscaves:forlorn_hollows"
+						}
+					}
+					title: "Сделать Карту Забвенных Пустот"
+					type: "item"
+				}
+				{
+					biome: "alexscaves:forlorn_hollows"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:thornwood_wood"
+					}
+					id: "31A3F0DE8D70EF19"
+					title: "Посетить Забвенные Пустоты"
+					type: "biome"
+				}
+			]
+			title: "Эхо забвения"
+			x: -5.75d
+			y: 1.25d
+		}
+		{
+			dependencies: ["56B590EB7EF5D5F4"]
+			description: [
+				"Токсичные пещеры пропитаны кислотными испарениями; из пород выступают странные биолюминесцентные грибы, а воздух едко щиплет горло."
+				""
+				"&7&oСовет: держи уровень радиации под контролем и не стань облученным. Иначе тебя ждут очень страшные последствия.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:block_of_uranium"
+			}
+			id: "4C266BC9838F47A9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "54EF76C9F2FA2C9E"
+				table_id: 2571609009649569247L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "796C271BD4469C9E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_map"
+						tag: {
+							BiomeTargetResourceKey: "alexscaves:toxic_caves"
+						}
+					}
+					title: "Сделать карту Токсичных Пещер"
+					type: "item"
+				}
+				{
+					biome: "alexscaves:toxic_caves"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:block_of_uranium"
+					}
+					id: "42FFF4C2C1F9502D"
+					title: "Посетить Токсичные пещеры"
+					type: "biome"
+				}
+			]
+			title: "Дыхание яда"
+			x: -5.25d
+			y: -2.25d
+		}
+		{
+			dependencies: ["3D8B389C9540CF17"]
+			description: [
+				"Подводная бездна — сеть залитых водой коридоров, где стены обрастают водорослями, а в мутной воде мерцают раковины и неожиданные тени."
+				""
+				"&7&oСовет: запасись зельями водного дыхания и хорошими артефактами для битвы под водой. Иначе тебя утянут на дно.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:block_of_pearl"
+			}
+			id: "17668F73ACBA515A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0E9D6A5ED81194AE"
+				table_id: 8816127579773310060L
+				type: "random"
+			}]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "5B4B6D2B06418EC1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:cave_map"
+						tag: {
+							BiomeTargetResourceKey: "alexscaves:abyssal_chasm"
+						}
+					}
+					title: "Сделать Карту Подводной Бездны"
+					type: "item"
+				}
+				{
+					biome: "alexscaves:abyssal_chasm"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:block_of_pearl"
+					}
+					id: "321567A98D130D14"
+					title: "Посетить Подводную Бездну"
+					type: "biome"
+				}
+			]
+			title: "Тишина глубин"
+			x: 1.0d
+			y: -4.25d
+		}
+		{
+			dependencies: ["20BDB4ACC414EA82"]
+			description: [
+				"&l&cАлый неодим&r — редкий металл с выраженными магнитными свойствами. "
+				""
+				"Используется при создании продвинутых устройств и энергетических компонентов."
+			]
+			id: "0E3AFE524E3973C7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "425E03177EFD716F"
+					table_id: 2714005940446590167L
+					type: "random"
+				}
+				{
+					id: "1A6F60F291A51707"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "7FA9C92E77BCB991"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:scarlet_neodymium_ingot"
+				}
+				title: "&fСоздать &c&l8х слитков алого неодима"
+				type: "item"
+			}]
+			title: "Искры алой тяги"
+			x: 6.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["20BDB4ACC414EA82"]
+			description: [
+				"&l&#0000FFЛазурный неодим&r — чистейший сплав кристаллизованной энергии. "
+				""
+				"Необходим для производства высокотехнологичных конструкций и реакторов."
+			]
+			id: "5968284CE2774113"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5FF81474B5F6E702"
+					table_id: 2714005940446590167L
+					type: "random"
+				}
+				{
+					id: "2F27D520C5B9E113"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "72A3BD5798F642ED"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:azure_neodymium_ingot"
+				}
+				title: "&fСоздать &#0000FF&l8х слитков лазурного неодима"
+				type: "item"
+			}]
+			title: "Лазурное напряжение"
+			x: 5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["0E3AFE524E3973C7"]
+			description: ["&c&lАлый магнит&r способен притягивать магнитные блоки и предметы на значительные расстояния."]
+			id: "696C1837B79A0312"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1CBDCB872DB79588"
+					table_id: 2714005940446590167L
+					type: "random"
+				}
+				{
+					id: "1B790A35F16071C7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "6F01662354BFACDB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:scarlet_magnet"
+				}
+				title: "&fСоздать &c&lАлый магнит"
+				type: "item"
+			}]
+			title: "&c&lАлое Притяжение"
+			x: 7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["5968284CE2774113"]
+			description: ["&#0000FF&lЛазурный магнит&r отталкивает магнитные объекты, создавая зоны недоступности и динамического перемещения."]
+			id: "0E08201035DA31A8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0ADA95D2A82075AB"
+					table_id: 2714005940446590167L
+					type: "random"
+				}
+				{
+					id: "5107EB7B37D9F1D7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "1373419E40882A11"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:azure_magnet"
+				}
+				title: "&fСоздать &#0000FF&lЛазурный магнит"
+				type: "item"
+			}]
+			title: "&l&#0000FFЛазурное отталкивание"
+			x: 6.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["20BDB4ACC414EA82"]
+			description: ["Когда ты разбиваешь оболочку телетора, остаётся ядро, будто созданное для перемещений сквозь пространство."]
+			id: "7A3A2F6D316E28A7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "20BEADE8C7CAD28E"
+					table_id: 2714005940446590167L
+					type: "random"
+				}
+				{
+					id: "1E5AD947ACB237B6"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "4BBE5F5F90E44375"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:telecore"
+				}
+				title: "Выбить Телеядро"
+				type: "item"
+			}]
+			title: "Сердце телетора"
+			x: 6.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["7A3A2F6D316E28A7"]
+			description: [
+				"&l&7Галенитовая перчатка&r — инструмент, позволяющий телепатически метать оружие и инструменты, управляя ими на расстоянии. Она позволяет атаковать, копать и возвращать предметы, будто ты сам — магнитный манипулятор. "
+				""
+				"Особенно эффективна с &lжелезными&r и &l&8незеритовыми&r предметами."
+				""
+				"Потрясающий пример забытых технологий глубин."
+			]
+			id: "424B21B74F3820D2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6C4880D8C8F0532F"
+					table_id: 2396643006976080309L
+					type: "random"
+				}
+				{
+					id: "79BE7F037F5F0C18"
+					type: "xp"
+					xp: 120
+				}
+			]
+			size: 1.2d
+			tasks: [{
+				id: "3D486FC8AFBA30CE"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:galena_gauntlet"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "&fСоздать &7&lГаленитовую перчатку"
+				type: "item"
+			}]
+			title: "&7&lГравитационная хватка"
+			x: 8.0d
+			y: 2.0d
+		}
+		{
+			dependencies: [
+				"7A3A2F6D316E28A7"
+				"17C3B8163F480719"
+			]
+			description: ["Изучив маячок и телетора, ты собираешь голокодер — странное устройство, способное сохранять образы существ и проецировать их в виде голограмм. Технология, далёкая от привычного, но открывающая любопытные возможности."]
+			id: "57CB8445427858E7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5B959385607B1CC4"
+					table_id: 2396643006976080309L
+					type: "random"
+				}
+				{
+					id: "4C40735A600EBCB5"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [{
+				id: "5295143DCAEF01F9"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:holocoder"
+				}
+				title: "&fСоздать &#0000FF&lГолокодер"
+				type: "item"
+			}]
+			title: "&#0000FF&lСигналы из глубин"
+			x: 7.199999999999999d
+			y: 0.6d
+		}
+		{
+			dependencies: ["20BDB4ACC414EA82"]
+			description: ["Среди обломков ты обнаруживаешь нечто необычное — маленький маячок. Он всё ещё слабо мигает, словно зовёт тебя глубже в неизвестность."]
+			id: "17C3B8163F480719"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1937308A94D80C6C"
+					table_id: 2714005940446590167L
+					type: "random"
+				}
+				{
+					id: "2BE677A4E37478CC"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "641BD8207097F290"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:notor_gizmo"
+				}
+				title: "Выбить Маленький Маячок"
+				type: "item"
+			}]
+			title: "Навигация в темноте"
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			dependencies: ["03C4A27CDC69A308"]
+			description: ["Магнитная защита выходит на новый уровень. Щит сопротивления не просто защищает, он поражает: отбрасывает и наносит ударную волну, а затем создаёт область электрического поля вокруг тебя, отталкивающую или притягивающую врагов — в зависимости от полярности."]
+			id: "38CA08902E11996F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "42786763626C2D27"
+					table_id: 2396643006976080309L
+					type: "random"
+				}
+				{
+					id: "4D2F1846A1800E8A"
+					type: "xp"
+					xp: 125
+				}
+			]
+			size: 1.2d
+			tasks: [{
+				id: "66A9DD306FE719F8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:resistor_shield"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Создать Щит Сопротивления"
+				type: "item"
+			}]
+			title: "&c&lИмпульс &bсопротивления"
+			x: 4.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["03C4A27CDC69A308"]
+			description: [
+				"Для запуска полноценной автоматической системы добычи в Магнитных пещерах тебе нужно собрать три компонента:"
+				""
+				"- &l&bМагнитный карьер&r — выбрасывает добытые ресурсы в сторону"
+				""
+				"- &l&cДробитель Магнитного Карьера&r — дробитель пород, создаётся из обоих видов неодима, цепей и тяжёлого груза "
+				""
+				"- &l&4Магнитный Активатор&r — активатор системы, запускающий механизм"
+				""
+				"Собери все три модуля — только тогда твой карьер станет настоящей машиной для добычи в глубинах."
+			]
+			hide_dependency_lines: false
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:quarry_smasher"
+			}
+			id: "1C65EBE51C2B97D1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "67D8436FB9A33BED"
+					table_id: 2396643006976080309L
+					type: "random"
+				}
+				{
+					id: "66549C16814E898F"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "440D871B1667B8EE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:quarry"
+					}
+					title: "Создать Магнитный карьер"
+					type: "item"
+				}
+				{
+					id: "0675AFF8115A6F52"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:quarry_smasher"
+					}
+					type: "item"
+				}
+				{
+					id: "2ECC9FB53597D92F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:magnetic_activator"
+					}
+					type: "item"
+				}
+			]
+			title: "&b&lМагнитный &cкарьер"
+			x: 2.5d
+			y: 3.5d
+		}
+		{
+			dependencies: ["20BDB4ACC414EA82"]
+			description: ["Глубоко в магнитных пещерах, среди звенящих всполохов энергии, обитает Магнитрон — один из самых опасных механических монстров. Победив его, можно заполучить редчайший трофей — &lЖелезное сердце,&r выпадающее в виде блока. Этот артефакт заключает в себе силу самого существа."]
+			id: "03C4A27CDC69A308"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2C94909B364167F1"
+					table_id: 2714005940446590167L
+					type: "random"
+				}
+				{
+					id: "01834CAFC54705DF"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "40D2FFEA060806A7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:heart_of_iron"
+				}
+				title: "Раздобыть Железное сердце"
+				type: "item"
+			}]
+			title: "Железное сердце"
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			dependencies: ["3E6EFE12A5D22254"]
+			description: ["Истребите гротоцератопсов в Примордиальных пещерах и соберите 4 толстых шкуры, выпадающих при их смерти."]
+			id: "7FB904F364AB6502"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "31001E5B91ADB5F9"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "5C7CF83F6B5E0BAF"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "5C2701D87073FFD8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:tough_hide"
+				}
+				title: "Выбить 4х Толстой кожи"
+				type: "item"
+			}]
+			title: "Кожа исполинов"
+			x: 4.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3E6EFE12A5D22254"]
+			description: ["Убейте атлатитанов, реликвейрусов или сотрясозавров в пещерах, чтобы добыть 8 тяжёлых костей. Любые из перечисленных тварей подойдут."]
+			id: "0B2123EAF7FE64DA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5F3174AE4CA6AE52"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "416451BDED1636D7"
+					type: "xp"
+					xp: 75
+				}
+			]
+			tasks: [{
+				count: 8L
+				id: "0C37AC55964F4C53"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:heavy_bone"
+				}
+				title: "Выбить 8х Тяжелых Кости"
+				type: "item"
+			}]
+			title: "Кости гигантов"
+			x: 6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["3E6EFE12A5D22254"]
+			description: [
+				"Исследуя первобытные пещеры, вы могли заметить на потолках светящиеся кластеры янтаря. Раскопайте их киркой, чтобы добыть янтарную диковинку."
+				""
+				"&o&7Зачарование «Удача» значительно повышает шанс добычи — чем выше уровень, тем чаще в руках окажется именно трёхгранный самородок."
+			]
+			id: "0B88DF66B9E729EC"
+			rewards: [
+				{
+					id: "693493849F1BF19F"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "250780162D769FF0"
+					type: "xp"
+					xp: 75
+				}
+			]
+			shape: "circle"
+			size: 1.3d
+			tasks: [{
+				id: "71B7F84D04F92A4C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:amber_curiosity"
+				}
+				type: "item"
+			}]
+			title: "Ключ пробуждения"
+			x: 7.800000000000001d
+			y: -1.9500000000000002d
+		}
+		{
+			dependencies: ["0B88DF66B9E729EC"]
+			description: [
+				"Редкий артефакт, без которого невозможно разбудить древнего владыку пещер. Этот элемент нужен для активации ритуала призыва Люкстрактозавра. "
+				""
+				"Бросьте его в вулканический очаг у ядра биома, и стены пещер вздрогнут от могущества пробуждённого Колосса."
+			]
+			id: "0B08FD425CCB8297"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0E24211210DC7E9C"
+					table_id: 8038886550374770128L
+					type: "random"
+				}
+				{
+					id: "144A1108D80CEBEB"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "2A941E60AA47D06F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:ominous_catalyst"
+				}
+				title: "Создать Зловещий Катализатор"
+				type: "item"
+			}]
+			title: "Ключ пробуждения"
+			x: 9.5d
+			y: -2.5d
+		}
+		{
+			dependencies: ["3E6EFE12A5D22254"]
+			description: [
+				"Чтобы заполучить яйцо подтерранодона, приручите двух Подтераддона в Примордиальных пещерах и покормите их сырой или приготовленной треской. Один из них выроет грязь, отложит 1–4 яйца на папоротниковой соломе и заменит блок под ними. "
+				""
+				"Соберите яйца киркой с «Шёлковое касание», иначе они разобьются и разгневают диких подтерранодонов."
+				""
+				"&o&7Чтобы приручить подтераддона, накормите его несколькими «Хвостами трилокариса» — каждый имеет шанс 1/3 на приручение. После укрощения он последует за вами и может быть посажен на землю командой «Остаться» или «Следовать»"
+			]
+			id: "3AD7EAA854DC8FCB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "52EFBA12C16C72A1"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "57527DF25279491B"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "13C6D8538CAF79BC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:subterranodon_egg"
+				}
+				title: "Получить Яйцо Подтерранодона"
+				type: "item"
+			}]
+			title: "Гнездо древности"
+			x: 5.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["3E6EFE12A5D22254"]
+			description: [
+				"Для яйца велоцараптора приручите двух Велоцераптора и скрестите их, подкармливая «Кусочками динозавра». "
+				""
+				"Один из них выкопает грязь, отложит 1–4 яйца на папоротниковой соломе. Используйте кирку с «Шёлковым касанием» для аккуратного сбора каждого яйца."
+				""
+				"&o&7Чтобы приручить велоцераптора, сначала соблазните его «Мясом Динозавра»: после поедания он впадёт в расслабленное состояние, и в этот момент его можно окончательно укротить, покормив «Салатом спокойствия»"
+			]
+			id: "6F5F4945982CCAE3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6CC9BAE817EBDD3A"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "6389C7D8EA755116"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "7372ED8794482E76"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:vallumraptor_egg"
+				}
+				title: "Получить Яйцо Велоцараптора"
+				type: "item"
+			}]
+			title: "Наследие хищника"
+			x: 6.5d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7FB904F364AB6502"]
+			description: [
+				"Скрестите двух Гротоцератопса в Примордиальных пещерах, покормите их пятиконечной листов. "
+				""
+				"Один из них выроет грязевой блок, откопает его и отложит яйцо, заменив опору папоротниковой соломой. "
+				""
+				"Аккуратно соберите яйцо киркой с «Шёлковое касание», иначе оно разобьётся и разгневает Гротоцератопсов."
+				""
+				"&o&7Гротоцератопсы — нейтральные существа, и приручить их нельзя: они не укрощаемые. Тем не менее, для добычи яйца потребуется скрестить двух."
+			]
+			id: "6AB0C2B6D7AE5073"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2391B48089C5415E"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "7AF113A49A822AD4"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "79051AF8006C2170"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:grottoceratops_egg"
+				}
+				title: "Получить Яйцо Гротоцератопса"
+				type: "item"
+			}]
+			title: "Песнь гнездовья"
+			x: 5.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0B2123EAF7FE64DA"]
+			description: [
+				"Приручите двух Сотрясозавров и накормите их сырым или жареным мясом динозавра. "
+				""
+				"Один из них выроет землю, отложит яйцо и заменит блок под ним папоротниковой соломой. Соберите яйцо киркой с «Шёлковым касанием», иначе оно разобьётся и разгневает близжайших Сотрясозавров."
+				""
+				"&o&7Чтобы приручить сотрясозавра, оглушите его дубиной и покормите «Салатом спокойствия» 3–8 раз до повиновения."
+			]
+			id: "54EE155782659944"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2C888AB9DDE48B4B"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "55D025B741B1C9D8"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "2F9B7D944D6F7221"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:tremorsaurus_egg"
+				}
+				title: "Получить Яйцо Сотрясозавра"
+				type: "item"
+			}]
+			title: "Зов недр"
+			x: 6.5d
+			y: -5.0d
+		}
+		{
+			dependencies: ["0B2123EAF7FE64DA"]
+			description: [
+				"Скрестите двух реликвейрусов, дав им пятиконечные листья: один выроет землю, отложит яйцо и заменит блок под ним папоротниковой соломой. "
+				""
+				"Соберите яйцо киркой с «Шёлковое касание», иначе оно разобьётся и разозлит реликвейрусов."
+				""
+				"&o&7Чтобы приручить реликвейруса, оглушите его дубиной и покормите «Салатом спокойствия» до послушания."
+			]
+			id: "4DDE89D42F51FF95"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "26FD2C2AB2CB2098"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "5BAF16D15ADD7C57"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "607145BC44EC7912"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:relicheirus_egg"
+				}
+				title: "Получить Яйцо Реликвейруса"
+				type: "item"
+			}]
+			title: "Тайны реликта"
+			x: 7.5d
+			y: -3.5d
+		}
+		{
+			dependencies: ["0B2123EAF7FE64DA"]
+			description: [
+				"Скрестите двух атлатитанов и покормите их пятиконечными листьями — один выкопает грязь, отложит яйцо на папоротниковой соломе."
+				""
+				"Используйте кирку с «Шёлковое касание» для аккуратного сбора яйца, иначе оно разобьётся и звери разгневаются."
+				""
+				"&o&7Чтобы приручить атлатитана, оглушите его дубиной и покормите «Салатом спокойствия» до покорности, после чего сразу садитесь на него."
+			]
+			id: "2EE052FFB707E969"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "43AD52F4523C0CD2"
+					table_id: 717053739862496116L
+					type: "random"
+				}
+				{
+					id: "4970F8B9C5176446"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "798D5A7E0256A43D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:atlatitan_egg"
+				}
+				title: "Получить Яйцо Атлатитана"
+				type: "item"
+			}]
+			title: "Пробуждение титана"
+			x: 7.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["0B08FD425CCB8297"]
+			description: [
+				"В поисках совершенного оружия против &l&9Хранителей Пустоты,&r один из темных колдунов бросил живое существо в жерло древнего вулкана. Земля содрогнулась, магма взревела, и из пылающего сердца родился он — &l&4огненный колосс,&r неподвластный ни плоти, ни магии."
+				""
+				"Внутри него кипела ненависть к людям, и он сразу же убил колдуна, что сделал это с ним."
+				""
+				"После, &l&cИгнис,&r владыка преисподней, предложил ему бессмертие, господство и власть — всё, что могло бы соблазнить любое создание. &4&lЛюкстрактозавр&r был готов согласиться, но что-то щелкнуло внутри него, и он отказался. Это была древняя команда, которую в него вложили люди. "
+				""
+				"Тогда &l&cИгнис&r обрушил на него свою ярость. Он не смог победить, но заточил титана вместе с вулканом в недрах мира, создав &#F4A460&lПервобытные пещеры.&r С тех пор колосс спит, но его дыхание всё ещё раскалывает камень."
+			]
+			id: "5CD2B1317036A955"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6F607146CB8BBDD0"
+					table_id: 8101965382256608849L
+					type: "random"
+				}
+				{
+					id: "6E310B54C47B1213"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				count: 9L
+				id: "05F10EC2BEFAEC40"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:tectonic_shard"
+				}
+				title: "Выбить 9х Тектонических осколков"
+				type: "item"
+			}]
+			title: "&l&4Отклики земли"
+			x: 11.25d
+			y: -4.5d
+		}
+		{
+			dependencies: ["5CD2B1317036A955"]
+			description: [
+				"Создайте первые тектонические слитки — плотные сплавы магмы, праха титанов и силы земли. "
+				""
+				"Их создание потребует редких ресурсов, но именно эти слитки открывают путь к древнему могуществу."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "traveloptics:tectonic_ingot"
+			}
+			id: "1C2D45990ED5F074"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "293C9A90AFB6F1F7"
+					table_id: 8101965382256608849L
+					type: "random"
+				}
+				{
+					id: "14B69D79790D675A"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					count: 2L
+					id: "3E0313BF9101F482"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:tectonic_ingot"
+					}
+					title: "Создать 4х Тектонических Слитков"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "699E0924D321E4DB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:tectonic_upgrade_smithing_template"
+					}
+					title: "Создать 4х Кузнечных тектонических шаблонов"
+					type: "item"
+				}
+			]
+			title: "Ядро глубин"
+			x: 11.5d
+			y: -2.5d
+		}
+		{
+			dependencies: [
+				"1C2D45990ED5F074"
+				"2FE4A67CE108CC01"
+			]
+			description: [
+				"Эта броня воплощает силу земной плоти и вулканического гнева: каждый удар по вам вызывает ударную волну, испепеляющую врагов в радиусе. "
+				""
+				"Только завершив весь набор, вы обретёте полную защиту и доступ к её разрушительным эффектам."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "traveloptics:tectonic_crest_armor_chestplate"
+				tag: {
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "504264F20440B1CD"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "38BCB84656DF535D"
+					table_id: 8101965382256608849L
+					type: "random"
+				}
+				{
+					id: "1E81EC1D22580E45"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "30AC784E5F215E47"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:tectonic_crest_armor_helmet"
+					}
+					type: "item"
+				}
+				{
+					id: "37BC8737C7281520"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:tectonic_crest_armor_chestplate"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 1
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3B3E94B14604EEC5"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:tectonic_crest_armor_leggings"
+					}
+					type: "item"
+				}
+				{
+					id: "75FFCFD9CD15BDA0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:tectonic_crest_armor_boots"
+					}
+					type: "item"
+				}
+			]
+			title: "&#8B0000&lПечать земной ярости"
+			x: 10.5d
+			y: -0.75d
+		}
+		{
+			dependencies: ["1C2D45990ED5F074"]
+			description: ["Создайте &l&cGauntlet of Extinction,&r оружие, содержащее частицу силы Колосса, что мог сравниться по силе с &l&9Пустотой.&r "]
+			id: "7F89A5F5D7CB4FD8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "014F05A3894F6BE1"
+					table_id: 8038886550374770128L
+					type: "random"
+				}
+				{
+					id: "1682B80E8C3D6D4A"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "206D50E3EEC9E4D3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "traveloptics:gauntlet_of_extinction"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "traveloptics:extinction"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "Перчатка вымирания"
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7F89A5F5D7CB4FD8"]
+			description: [
+				"Улучши Gauntlet of Extinction до финальной стадии. На последнем уровне она пробуждает полную силу духа своего потомка - шанс активации увеличивается, укус срабатывает даже вне руки, а урон зависит от вашей собственной мощи. "
+				""
+				"Только полностью пробуждённая перчатка способна стереть с лица земли всё, что движется."
+			]
+			id: "07D340D791DBD0F9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2658C838A1487298"
+					table_id: 8101965382256608849L
+					type: "random"
+				}
+				{
+					id: "54EE964F668AC9A4"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "0F9FFACFD52C05A3"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "traveloptics:gauntlet_of_extinction_level_three"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "traveloptics:extinction"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 1b
+						}
+					}
+				}
+				type: "item"
+			}]
+			title: "&c&lЖажда вымирания"
+			x: 11.25d
+			y: 0.625d
+		}
+		{
+			dependencies: ["4C266BC9838F47A9"]
+			description: [
+				"Стены здесь светятся предательским светом — не от магии, а от урана, сочащегося из трещин породы. Его много, но каждый кусок — риск. "
+				""
+				"Облучение незаметно, но неумолимо. Добывай с умом, иначе пещеры заберут тебя раньше, чем ты дойдёшь до выхода."
+			]
+			id: "118B798E8958DC25"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4D5AE08FB0D7F138"
+					table_id: 2571609009649569247L
+					type: "random"
+				}
+				{
+					id: "76CCB3199AACFC55"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				count: 12L
+				id: "59FB40603B4D1635"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:uranium"
+				}
+				title: "Раздобыть 12х Урана"
+				type: "item"
+			}]
+			title: "Ура н"
+			x: -6.0d
+			y: -3.5d
+		}
+		{
+			dependencies: [
+				"1C0F2737B08125C0"
+				"320DCA5C80A0D88E"
+			]
+			description: [
+				"Создай устройство, способное стереть с лица земли целую область мира — ядерную бомбу. Её сила абсолютна, и даже пещеры не выдерживают её гнева. Используй её с умом… если вообще осмелишься."
+				""
+				"&o&7Теперь я стал смертью, разрушителем миров."
+			]
+			id: "7497005DE9B5471E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "65C5EF43BF9897D8"
+					table_id: 5998742776556951316L
+					type: "random"
+				}
+				{
+					id: "6A2C82D43181475C"
+					type: "xp"
+					xp: 150
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "4B84F69739F71F49"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:nuclear_bomb"
+				}
+				title: "Создать Ядерную Бомбу"
+				type: "item"
+			}]
+			title: "&#FFD700&lЯ стал смертью"
+			x: -7.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["118B798E8958DC25"]
+			description: [
+				"Создай топливо для ядерной печи — урановые стержни. Без них печь мертва, но с ними она жаждет работы, плавит металл быстрее самой лавы. "
+				""
+				"Только помни: это не просто ресурс, это источник нестабильности. Храни их с уважением — или сожалением."
+			]
+			id: "1C0F2737B08125C0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "08FA1EC76FBDFCB9"
+					table_id: 2571609009649569247L
+					type: "random"
+				}
+				{
+					id: "6729AC1349AF546C"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "12E6D919F76B8C98"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:uranium_rod"
+				}
+				title: "Создать 3х Урановых стержня"
+				type: "item"
+			}]
+			title: "Горючее безумия"
+			x: -7.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["118B798E8958DC25"]
+			description: ["Ядриперы — ходячие катастрофы. Их взрыв не просто убивает — он выжигает землю до костей. Победи их до того, как они взорвутся, и ты сможешь вырвать из их тела активное ядро — источник всей их разрушительной мощи."]
+			id: "320DCA5C80A0D88E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "397EC92435CEA74F"
+					table_id: 2571609009649569247L
+					type: "random"
+				}
+				{
+					id: "316C9901801904BC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "527F9C73F4C8F7C5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:fissile_core"
+				}
+				title: "Выбить 3х Активных ядер"
+				type: "item"
+			}]
+			title: "Искры ядра"
+			x: -6.0d
+			y: -5.0d
+		}
+		{
+			dependencies: ["4C266BC9838F47A9"]
+			description: [
+				"Мозгоньяки — не просто твари, они охотятся умом. Их язык хватает жертву быстрее, чем ты успеешь моргнуть, и тащат в клубящееся пекло. "
+				""
+				"Победи одного из них — и, если выживешь, забери то, что пылает в их черепах: обугленные рудименты, остатки их искажённой плоти."
+			]
+			id: "56EEA090D61607BC"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4A8B3ABCA7FD3A80"
+					table_id: 2571609009649569247L
+					type: "random"
+				}
+				{
+					id: "2FD0C61CBAD62AE6"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "71BC5C8BD5673C84"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:charred_remnant"
+				}
+				title: "Выбить 4х Обугленных Рудимента"
+				type: "item"
+			}]
+			title: "Обугленный разум"
+			x: -7.0d
+			y: -2.0d
+		}
+		{
+			dependencies: [
+				"56EEA090D61607BC"
+				"118B798E8958DC25"
+			]
+			description: [
+				"Собери ядерную печь — конструкцию, способную расплавить всё, что угодно, за считанные секунды. Но сила, что скрыта внутри, нестабильна. Без урановых стержней она мертва, а без бочек для отходов — смертельно опасна. Одна ошибка, и от тебя останется только след в воронке."
+				""
+				"&o&7Чтобы печь заработала, нужно поставить 8 частей ядерной печи в форме куба."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:nuclear_furnace_component"
+			}
+			id: "07017D0D289974D5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "63B537920DD53F81"
+					table_id: 5998742776556951316L
+					type: "random"
+				}
+				{
+					id: "4800C1BFD03B67E5"
+					type: "xp"
+					xp: 125
+				}
+			]
+			shape: "hexagon"
+			size: 1.3d
+			tasks: [
+				{
+					count: 8L
+					id: "70965F688A821B94"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:nuclear_furnace_component"
+					}
+					title: "Создать 8х Части Ядерной печи"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "361C114B6EF5FCDD"
+					item: {
+						Count: 8
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:metal_barrel"
+					}
+					title: "Создать 8х Металлических бочек для выхлопов"
+					type: "item"
+				}
+			]
+			title: "&#C0C0C0&lСердце реакции"
+			x: -8.0d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4C266BC9838F47A9"]
+			description: [
+				"В токсичных пещерах воздух сам по себе — враг. Здесь даже дыхание может стать последним. "
+				""
+				"Создай то, что отделит тебя от гниющего тумана и невидимого излучения. Без надёжной защиты каждый шаг будет шагом к распаду."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:hazmat_mask"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "2ABB278568673399"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1D594FD87FF096A9"
+					table_id: 2571609009649569247L
+					type: "random"
+				}
+				{
+					id: "4687CB0A8734B91A"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					id: "27F8E6FC5682C223"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:hazmat_mask"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "36AF4906DE63948D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:hazmat_chestplate"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "024CFDEB82115D54"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:hazmat_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7E8F43A929B83778"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:hazmat_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Запечатанный страх"
+			x: -3.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["4C266BC9838F47A9"]
+			description: ["Соберите радоновый газ в три запечатанных бутылки. Он невиден, но смертельно опасен. Когда-то им дышали боги пепла, теперь — твой черёд держать его в руках."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:radon_bottle"
+			}
+			id: "59C29D220E70A1D1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "68C1861845419705"
+					table_id: 2571609009649569247L
+					type: "random"
+				}
+				{
+					id: "6ECD0E03EDC8A10B"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					count: 3L
+					id: "31C8E46722E3EB5C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:radon_bottle"
+					}
+					title: "Наполнить 3х Бытылочки Радонового газа"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "1ED8E581CBB4FD7B"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:sulfur_dust"
+					}
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "0ADA7FE2406FC0FC"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:toxic_paste"
+					}
+					type: "item"
+				}
+			]
+			title: "Воздух смерти"
+			x: -4.5d
+			y: -4.5d
+		}
+		{
+			dependencies: ["7497005DE9B5471E"]
+			description: ["Создай устройство, что позволяет не подходить близко к тому, что не должно быть рядом с живыми. Дистанционный детонатор даёт контроль над разрушением — вопрос лишь в том, когда ты нажмёшь. И зачем."]
+			id: "0DB763F58B5D88D9"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "62EABB88CA1279F0"
+					table_id: 2571609009649569247L
+					type: "random"
+				}
+				{
+					id: "0414D720E018DC8F"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "6DBFDA9C6E9BF2E5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:remote_detonator"
+				}
+				title: "Создать Дистанционный детонатор"
+				type: "item"
+			}]
+			title: "Ключ к апокалипсису"
+			x: -9.5d
+			y: -6.5d
+		}
+		{
+			dependencies: [
+				"320DCA5C80A0D88E"
+				"59C29D220E70A1D1"
+			]
+			description: ["Создайте излучатель — орудие, не оставляющее ран, только внутреннюю тишину. Оно не шумит, не взрывает, не кричит. Оно просто начинает — и враг умирает. Медленно, неотвратимо, словно сама &l&9Пустота&r смотрит на него."]
+			id: "751F6E9BCB174304"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "35F926062EFC34B2"
+					table_id: 2571609009649569247L
+					type: "random"
+				}
+				{
+					id: "52F595D5317503C2"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "7D7A81BEF5362A29"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:raygun"
+				}
+				title: "Создать Излучатель"
+				type: "item"
+			}]
+			title: "Треск в ушах"
+			x: -5.0d
+			y: -6.5d
+		}
+		{
+			dependencies: ["59C29D220E70A1D1"]
+			description: [
+				"Когда &l&9Хранители Пустоты&r начали создание существ, несущих пустоту, они столкнулись с тем, что нельзя было подчинить."
+				""
+				"Сотни лет назад один из первых экспериментов &l&#00FA9AСигнуса&r и &7&lПредвестника&r — попытка соединить плоть треморзавра с нестабильным ядром облучения — провалился. Существо не умерло, но его пришлось замуровать в оболочку, напоминающее яйцо."
+				""
+				"&l&aСотрясозилла&r дремала до тех пор, пока кто-то не догадался взорвать рядом ядерную бомбу. Теперь она пробуждается — не ради власти, не ради голода, а чтобы отомстить за то, что была создана. Её удары трескают породу, а рёв ломает перепонки."
+				""
+				"Победи её — и забери ядро сотрясения, последний из артефактов, питаемый истинным гневом земли."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "traveloptics:tremor_core"
+			}
+			id: "6F27A87E0D702A58"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "781D2E87F5208659"
+					table_id: 5998742776556951316L
+					type: "random"
+				}
+				{
+					id: "51857099A0FD0E3A"
+					type: "xp"
+					xp: 250
+				}
+			]
+			shape: "hexagon"
+			size: 1.5d
+			tasks: [
+				{
+					id: "6B5D6A3FDD54AA38"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:tremor_core"
+					}
+					title: "Раздобыть Ядро сотрясения"
+					type: "item"
+				}
+				{
+					entity: "alexscaves:tremorzilla"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:spawn_egg_tremorzilla"
+					}
+					id: "21E03172AB6F7303"
+					title: "Убить &l&2Сотрясозиллу"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Смерть Катаклизма"
+			x: -3.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["17668F73ACBA515A"]
+			description: [
+				"Говорят, раньше он был капитаном. Пиратом, корсаром, героем — неважно. Его имя звучало во всех портах, а на флагах его корабля был изображён глаз, смотрящий сквозь шторм. Он не боялся ни шторма, ни чудовища, ни самого океана… пока однажды не пересёкся с &l&9Носителем Пустоты.&r"
+				""
+				"Где-то в сердце бурь он увидел его — &l&5Левиафана.&r И сделал выбор. В обмен на власть над морями он отдал своё имя, свою плоть… и свою душу. Теперь его зовут &#00FFFF&lКораблекрушитель,&r и он больше не человек."
+				""
+				"Каждое судно, что он топит, становится частью его логова. Каждый погибший — данью &l&5Левиафану.&r Но кое-что в нём осталось. Не сердце — оно давно сгнило. А нечто древнее, что не может умереть."
+				""
+				"Ты пришёл за этим. За&l&#00FFFF бессмертным эмбрионом.&r Артефактом, что живёт в его теле и пульсирует силой, подвластной лишь глубинам. Но будь осторожен — те, кто осмелились бросить ему вызов, больше не возвращались на сушу."
+			]
+			id: "396B8A1244121C22"
+			rewards: [
+				{
+					id: "01E3935D21928921"
+					table_id: 2976001885812026536L
+					type: "random"
+				}
+				{
+					id: "627F2922A53A1755"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "diamond"
+			size: 1.5d
+			tasks: [{
+				id: "4B6EEBDDAC822325"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:immortal_embryo"
+				}
+				title: "Выбить Бессмертный Эмбрион"
+				type: "item"
+			}]
+			title: "&l&#00FFFFБессмертная бездна"
+			x: 3.25d
+			y: -5.75d
+		}
+		{
+			dependencies: [
+				"396B8A1244121C22"
+				"5CD2B1317036A955"
+				"54EE155782659944"
+			]
+			description: [
+				"Создайте яйцо сотрясозиллы — древнего монстра, пробуждаемого не магией, а чистейшей разрушительной энергией. Чтобы оно вылупилось, подорвите ядерную бомбу, Nucleeper’а или активируйте ядерную печь в радиусе 72 блоков от яйца. Только настоящая катастрофа способна вдохнуть жизнь в это создание."
+				""
+				"&o&7Чтобы приручить вылупившуюся сотрясозиллу, накормите её минимум четырьмя бочками с отходами. Каждая следующая после четвёртой имеет шанс в 33% приручить существо. После успешного приручения вы сможете отдавать команды: «следовать», «стоять» или «бродить»."
+			]
+			hide_dependency_lines: true
+			id: "37B8606869DE479F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2149486E91F3A9A5"
+					table_id: 8101965382256608849L
+					type: "random"
+				}
+				{
+					id: "5B843715118073E0"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "742BE9A474B73EB7"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:tremorzilla_egg"
+				}
+				title: "Создать Яйцо сотрясозиллы"
+				type: "item"
+			}]
+			title: "&#00FF7F&lРождение катаклизма"
+			x: 7.5d
+			y: -6.75d
+		}
+		{
+			dependencies: ["17668F73ACBA515A"]
+			description: [
+				"В пучинах подводных бездн лежат забытые субмарины — проржавевшая, когда-то служившая исследователям этого места. Найдите её и восстановите. После ремонта субмарина станет вашим укрытием от давления, чудовищ и глубинной темноты. С этого начинается путь в черноту."
+				""
+				"&o&7Для починки субмарины надо кликнуть ПКМ по сломанной субмарине медными слитками, а потом топором."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:submarine"
+			}
+			id: "3F48FAE4A5F90E7E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "41F9B1F00E54584B"
+					table_id: 8816127579773310060L
+					type: "random"
+				}
+				{
+					id: "4E9B64804EF367B6"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					count: 10L
+					id: "04C4564A9118052D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:copper_ingot"
+					}
+					title: "Использовать Медные Слитки 14х на сломанной Субмарине"
+					type: "item"
+				}
+				{
+					id: "54A9655C5F3BCED7"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "minecraft:iron_axe"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Использовать Железный топор на сломанной Субмарине"
+					type: "item"
+				}
+				{
+					advancement: "alexscaves:alexscaves/ride_submarine"
+					criterion: ""
+					id: "372829F09C102428"
+					title: "Прокатиться на субмарине"
+					type: "advancement"
+				}
+			]
+			title: "Трюм мёртвой глубины"
+			x: -0.5d
+			y: -3.0d
+		}
+		{
+			dependencies: ["17668F73ACBA515A"]
+			description: [
+				"Добыть глубинные заряды можно с минных стражей — смертоносных существ, плавающих среди обломков. Подплыв слишком близко, вы рискуете быть разорваны взрывом. "
+				""
+				"&o&7Нападайте издалека, уничтожайте быстро и забирайте то, ради чего стоило нырнуть в эту западню."
+			]
+			id: "317819AC60D84EB5"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5ED2D2EBE9501B11"
+					table_id: 8816127579773310060L
+					type: "random"
+				}
+				{
+					id: "314EF7066506D647"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "29A5AB44FF930C08"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:depth_charge"
+				}
+				title: "Выбить 3х Глубинных Заряда"
+				type: "item"
+			}]
+			title: "Порох бездны"
+			x: 1.5d
+			y: -6.0d
+		}
+		{
+			dependencies: ["17668F73ACBA515A"]
+			description: [
+				"На большой глубине не выживают те, кто полагается только на зрение и лёгкие. Освети путь сквозь мрак — и подготовься к экстренному подъёму на поверхность, когда давление или чудовища загонят тебя в угол. "
+				""
+				"Без этих вещей вернуться на поверхность ты можешь не успеть."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:floater"
+			}
+			id: "22706931CACBA015"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "07685134484F36EE"
+					table_id: 8816127579773310060L
+					type: "random"
+				}
+				{
+					id: "0C1C25FC4134D2C2"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					id: "37E2F3F157919BB0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:floater"
+					}
+					title: "Создать Поплавок"
+					type: "item"
+				}
+				{
+					count: 8L
+					id: "1A1010E9C7E66EFC"
+					item: {
+						Count: 8
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:bioluminescent_torch"
+					}
+					title: "Создать 8х Биолюминесцентных Факелов"
+					type: "item"
+				}
+			]
+			x: -1.0d
+			y: -4.5d
+		}
+		{
+			dependencies: ["17668F73ACBA515A"]
+			description: [
+				"Создайте древний алтарь, оставшийся от затонувшей цивилизации. Когда он будет установлен, подводные обитатели перестанут видеть в тебе врага. С этого момента они начнут признавать твоё присутствие — и даже обменяют твой жемчуг на ценные артефакты… если сочтут тебя достойным."
+				""
+				"&o&7Жемчуг иногда можно получить с устриц и ила, просеянных морской свиньей."
+			]
+			id: "45F537C125685A1E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "66377BAF2F4FA724"
+					table_id: 8816127579773310060L
+					type: "random"
+				}
+				{
+					id: "7D17ECD9231B483D"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "2F7F09DC1753C35C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:abyssal_altar"
+				}
+				title: "Создать Алтарь Бездны"
+				type: "item"
+			}]
+			title: "Алтарь примирения"
+			x: 0.0d
+			y: -5.5d
+		}
+		{
+			dependencies: ["45F537C125685A1E"]
+			description: [
+				"Заполучи жемчужину взгляда — редкий дар глубинников, который можно получить лишь через обмен. "
+				""
+				"&o&7Цвет жемчужины меняется в зависимости от того, как к тебе относится древняя подводная раса. "
+			]
+			id: "22D658843B7C5B75"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4D4DD35FC0584C0E"
+					table_id: 8816127579773310060L
+					type: "random"
+				}
+				{
+					id: "6977E713FE549AAE"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "44CF5816884B8854"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:gazing_pearl"
+				}
+				title: "Выторговать Жемчуг Взгляда"
+				type: "item"
+			}]
+			title: "Отблеск доверия"
+			x: -1.0d
+			y: -6.0d
+		}
+		{
+			dependencies: ["45F537C125685A1E"]
+			description: ["Выторгуй у Глубинных Магов древнее магическое оружие, которое в правильных руках позволит управлять силой морей."]
+			id: "0C076B4A838A9FB2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "397A4167EB8B2111"
+					table_id: 8816127579773310060L
+					type: "random"
+				}
+				{
+					id: "3E9515CF9D1D091D"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [{
+				id: "051D9710ED30F125"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:sea_staff"
+					tag: {
+						Damage: 0
+					}
+				}
+				title: "Выторговать Посох Моря"
+				type: "item"
+			}]
+			title: "Магия моря"
+			x: -0.5d
+			y: -7.0d
+		}
+		{
+			dependencies: ["45F537C125685A1E"]
+			description: ["Всё это - наследие глубинных рыцарей. Попробуй выторговать себе эти артефакты, чтобы получить силу глубины."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:magic_conch"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5A2F042E378D7496"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1171CFA26004B1CA"
+					table_id: 8816127579773310060L
+					type: "random"
+				}
+				{
+					id: "7BB2CCBFE85B192A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "198A9E38DAB843C8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:ortholance"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Выторговать Ортопикальность"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "608A3CC3253E145B"
+					item: {
+						Count: 3
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:ink_bomb"
+					}
+					title: "Выторговать 3х Чернильных Бомб"
+					type: "item"
+				}
+				{
+					id: "52D3DEF65DA4125C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:magic_conch"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "Защита Глубин"
+			x: 0.5d
+			y: -6.5d
+		}
+		{
+			dependencies: ["396B8A1244121C22"]
+			description: [
+				"Это не просто металл — в каждой капле заключена память о погибших кораблях, о сделке с Пустотой, о ненависти, затонувшей вместе с телами. Из этой стали создают оружие, способное пронзать даже тех, кто пришёл из других измерений. "
+				""
+				"И если ты держишь её в руках — ты стал частью той ярости."
+			]
+			id: "4F728D17EEE2B5DE"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "23B92D580024EA78"
+					table_id: 2976001885812026536L
+					type: "random"
+				}
+				{
+					id: "46245B9CFA2A629A"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "0763E969CB096EB0"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "traveloptics:hullbreaker_steel"
+				}
+				title: "Создать 4х Стали Кораблекрушителя"
+				type: "item"
+			}]
+			title: "Кровь глубинны"
+			x: 3.0d
+			y: -7.0d
+		}
+		{
+			dependencies: ["4F728D17EEE2B5DE"]
+			description: [
+				"Создайте оружие, рожденное бурей — трезубец, в чьих зубцах звучит грохот глубин. О"
+				""
+				"н призывает водоворот, поражает молнией и отравляет разум страхом прилива. Лишь избранные способны удержать его в руках, не утратив себя."
+			]
+			id: "374A3A678E0E03A2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "1635E76E5D7A0497"
+					table_id: 2976001885812026536L
+					type: "random"
+				}
+				{
+					id: "1A032444EA9652AC"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.0d
+			tasks: [{
+				id: "7DDCD8F7A60DFF66"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "traveloptics:trident_of_the_eternal_maelstrom"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "traveloptics:tidal_slash"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 1b
+						}
+					}
+				}
+				title: "Создать Трезубец бесконечного лшторма"
+				type: "item"
+			}]
+			title: "Трезубец вечной пучины"
+			x: 2.5d
+			y: -8.5d
+		}
+		{
+			dependencies: ["4F728D17EEE2B5DE"]
+			description: [
+				"Эта броня создана по образу и подобию глубинников — тех, кто отказался покидать затонувшие города. "
+				""
+				"Она не даёт абсолютной защиты, но позволяет дышать под водой, будто у тебя лёгкие из водорослей, и сдерживает ярость Кораблекрушителя лучше любой другой. "
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "traveloptics:deepling_mage_armor_robe"
+				tag: {
+					Damage: 0
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "18EC8C7B8514650B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6ACE5B2746F3E33A"
+					table_id: 7309736173965453246L
+					type: "random"
+				}
+				{
+					id: "41DFAD57C551E96D"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			tasks: [
+				{
+					id: "0F72601A8C9528EB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:deepling_mage_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3528BDD72E75CCBA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:deepling_mage_armor_robe"
+						tag: {
+							Damage: 0
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 1
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "3A4C21FB3C69813D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:deepling_mage_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "631D9E8F5E5A8486"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:deepling_mage_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			title: "&#00CED1&lКожа оставшихся"
+			x: 1.4d
+			y: -7.9d
+		}
+		{
+			dependencies: ["374A3A678E0E03A2"]
+			description: [
+				"Пробуди полную силу трезубца бесконечного шторма. Когда буря внутри него раскроется до конца, каждое движение будет нести за собой волну разрушения. "
+				""
+				"Только тот, кто владеет стихией, способен удержать этот гнев в узде."
+			]
+			id: "17A52CCCDFC9177B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4C0067AD0DC5FD83"
+					table_id: 7309736173965453246L
+					type: "random"
+				}
+				{
+					id: "31776853BCA422A5"
+					type: "xp"
+					xp: 250
+				}
+			]
+			shape: "hexagon"
+			size: 1.25d
+			tasks: [{
+				id: "3173B066B49A4AB4"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "traveloptics:trident_of_the_eternal_maelstrom_level_three"
+					tag: {
+						ISB_Spells: {
+							data: [{
+								id: "traveloptics:tidal_slash"
+								index: 0
+								level: 1
+								locked: 1b
+							}]
+							maxSpells: 1
+							mustEquip: 0b
+							spellWheel: 1b
+						}
+					}
+				}
+				title: "Прокачать трезубец на максимум"
+				type: "item"
+			}]
+			title: "&#7FFFD4&lВоля водоворота"
+			x: 1.25d
+			y: -9.5d
+		}
+		{
+			dependencies: ["1C8CCE53D9924311"]
+			description: ["Весперы — хищники тьмы, летающие на осколках страха. Победи их, и собери их крылья и комки гуано. "]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:vesper_wing"
+			}
+			id: "4A33099737FF7971"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7B0D5BB3BD8AA621"
+					table_id: 8379721998862099085L
+					type: "random"
+				}
+				{
+					id: "612AE24273FB1C84"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "7C6AFD177F8133BE"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:vesper_wing"
+					}
+					title: "Выбить 6х крыльев веспера"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "4E8E5C9029B209AC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:guano"
+					}
+					title: "Выбить 3х Комков Гуано"
+					type: "item"
+				}
+			]
+			title: "Носители смрада"
+			x: -7.5d
+			y: 2.0d
+		}
+		{
+			dependencies: ["1C8CCE53D9924311"]
+			description: ["Злотыльки не нападают. Они просто летают — тускло светясь, прячась в трещинах и избегая взгляда. Но за ними охотятся весперы, и ты не единственный, кто хочет их пыль. Добудь её — быстро, бесшумно, прежде чем охота обернётся охотником."]
+			id: "4A77CA2DF811EB40"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "516A4FD108941EBB"
+					table_id: 8379721998862099085L
+					type: "random"
+				}
+				{
+					id: "3CAB1993CDED141F"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				count: 9L
+				id: "391B3183A7A4D571"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:moth_dust"
+				}
+				title: "Выбить 9х Мотыльковой Пыли"
+				type: "item"
+			}]
+			title: "Пыль затмения"
+			x: -7.5d
+			y: 1.0d
+		}
+		{
+			dependencies: [
+				"4A33099737FF7971"
+				"4A77CA2DF811EB40"
+			]
+			description: ["Создайте средство защиты от злотыльков — комки, что отпугивают их даже в полной темноте. Чем больше ты поставишь в одном месте, тем шире будет зона, куда они не сунутся. Не нужно света — нужен запах. Иначе тебе придётся делить пещеру с теми, кто ненавидит свет."]
+			id: "63153D3E775E1C4A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "4067D0F29F83BB0E"
+					table_id: 628971895164022245L
+					type: "random"
+				}
+				{
+					id: "174B966C67CF2C5A"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 1.2d
+			tasks: [{
+				id: "169B42630194D746"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:moth_ball"
+				}
+				title: "Создать Мотыльковый Комок"
+				type: "item"
+			}]
+			title: "&lСвет без света"
+			x: -9.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["1C8CCE53D9924311"]
+			description: ["Слепые фанатики не знают, кому молятся. Для них &l&8Забытый&r — бог, древний и всевидящий. Они не видят, что он лишь обломок заброшенного пса, искавшего тепло. Они приносят жертвы, шепчут мантры, разрывают плоть — ради божества, которое не помнит даже самого себя. Убей их и забери трофеи их веры."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:dark_tatters"
+			}
+			id: "03CD9B05FB88B1E1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "49D3D3940090D0F9"
+					table_id: 8379721998862099085L
+					type: "random"
+				}
+				{
+					id: "4310828DCE81CEE7"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 8L
+					id: "0AC374712B503F7E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:dark_tatters"
+					}
+					title: "Выбить 8х Темных лохмотьев"
+					type: "item"
+				}
+				{
+					id: "45AC60A7E749F740"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:desolate_dagger"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Выбить Безотрадный Клинок"
+					type: "item"
+				}
+			]
+			title: "Идущие за пустым"
+			x: -5.5d
+			y: 3.0d
+		}
+		{
+			dependencies: ["1C8CCE53D9924311"]
+			description: [
+				"Разкрысатель не охотится — он ждёт. Притаившийся под землёй, он выныривает лишь тогда, когда ты уже допустил ошибку. Победи его прежде, чем он уйдёт обратно в породу, и вырви у него то, чем он крушит плоть — зазубренные зубы, обломки чего-то куда древнее, чем сам зверь."
+				""
+				"&o&7Выстрелив рытвенной стрелой можно копать тонелли"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:corrodent_teeth"
+			}
+			id: "350A38727439B54B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "75E11C547FC41FF2"
+					table_id: 628971895164022245L
+					type: "random"
+				}
+				{
+					id: "7DF271E6623F7015"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					count: 6L
+					id: "6C0EA357738DBDF0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:corrodent_teeth"
+					}
+					title: "Выбить 6х Зубов Разкрысателя"
+					type: "item"
+				}
+				{
+					count: 3L
+					id: "5D177B5CE28EBBCC"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:burrowing_arrow"
+					}
+					title: "Создать 3х Рытвенные Стрелы"
+					type: "item"
+				}
+			]
+			title: "Копатель победил хватателя"
+			x: -7.5d
+			y: -0.5d
+		}
+		{
+			dependencies: ["03CD9B05FB88B1E1"]
+			description: [
+				"Фанатики верят, что Забытый говорит с ними через символы — и они создают их из самоцветов, насыщенных тьмой. Тотем одержимости позволяет подчинить себе существ, делая их марионетками в чужой войне. А Созерцатель — это око, что остаётся открытым даже тогда, когда ты далеко. Через него они «видят» волю своего божества... или то, что они считают божеством."
+				""
+				"Создай оба этих артефакта — и взгляни на мир с той же искажённой точки, с которой смотрят они."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:beholder"
+			}
+			id: "05B7A57907AB373E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6EB3877C7D075899"
+					table_id: 628971895164022245L
+					type: "random"
+				}
+				{
+					id: "17AD503182D56B7C"
+					type: "xp"
+					xp: 120
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "28AE5FD6F5C6B9B1"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:occult_gem"
+					}
+					title: "Выбить Оккультный Самоцвет"
+					type: "item"
+				}
+				{
+					id: "55BB9307CE408C9D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:totem_of_possession"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Тотем Одержимости"
+					type: "item"
+				}
+				{
+					id: "014ED3819CAE99C8"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:beholder"
+					}
+					title: "Создать Созерцатель"
+					type: "item"
+				}
+			]
+			title: "&#DC143C&lОко и воля"
+			x: -4.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["1C8CCE53D9924311"]
+			description: [
+				"Он был не чудовищем, а &l&8псом.&r Радостным, преданным, жадным до похвалы. Когда &l&9Хранители Пустоты&r только начинали восхождение, он следовал за ними, оставляя за собой только обрывки плоти и кровь тех, кто осмелился встать на пути."
+				""
+				"Но однажды — его просто &l&8забыли.&r В спешке, в шуме похода на Верхний мир, он остался один в сырой пещере. И никто не вернулся за ним."
+				""
+				"Он ждал. Годы, десятилетия, вечность. От одиночества его тело исказилось, а разум растворился. Пустота, оставленная хозяевами, впиталась в него. Он стал тем, кто теперь зовётся &l&8Забытым.&r Не из презрения. А потому что это — всё, что от него осталось."
+				""
+				"Он появляется лишь тогда, когда &l&cслепые фанатики&r воссоздают обрывки ритуала, что некогда сопровождал его появление. Победи его, и забери первородную тьму — пульсирующий сгусток боли и предательства, который всё ещё зовёт тех, кто однажды бросил."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:pure_darkness"
+			}
+			id: "3429807853A5A465"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0140D0B5A68BBC2C"
+					table_id: 628971895164022245L
+					type: "random"
+				}
+				{
+					id: "144B05B3C5284081"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [
+				{
+					count: 10L
+					id: "4A9F71236EE8EF68"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:pure_darkness"
+					}
+					title: "Выбить 10х Первородной тьмы"
+					type: "item"
+				}
+				{
+					entity: "alexscaves:forsaken"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:spawn_egg_forsaken"
+					}
+					id: "1BE1CF59235E8AE3"
+					title: "Убить &8&lЗабытого"
+					type: "kill"
+					value: 1L
+				}
+			]
+			title: "Забытый"
+			x: -6.5d
+			y: 2.5d
+		}
+		{
+			dependencies: ["03CD9B05FB88B1E1"]
+			description: ["Создай четыре кузнечных шаблона тьмы — заготовки, в которые заливается не металл, а намерение. Именно с их помощью куется броня, чьё происхождение никто не осмеливается точно называть. Эти шаблоны — не чертёж, а ключ к облику того, кто должен был остаться во тьме."]
+			id: "77B14ED198FEA6F3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2364E0AA6B5F248A"
+					table_id: 628971895164022245L
+					type: "random"
+				}
+				{
+					id: "295E32F0FD901970"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "1086D269AC3F8158"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "traveloptics:darkness_upgrade_smithing_template"
+				}
+				title: "Создать 4х Кузнечных шаблонов тьмы"
+				type: "item"
+			}]
+			title: "Форма неназванного"
+			x: -6.0d
+			y: 4.0d
+		}
+		{
+			dependencies: ["3429807853A5A465"]
+			description: [
+				"Ткань темноты не ткут — её вырывают из самой сути Забвенных пещер. Она гасит свет, звук и надежду. Но чтобы по-настоящему коснуться Тьмы, одной её недостаточно. Тебе потребуется тёмный камень живой Пустоты — сгусток абсолютной тьмы, воплощённой в материю. "
+				""
+				"Его создание требует сил, что ломают рассудок, но лишь он завершает путь к силе, о которой забыли &l&9Хранители.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "traveloptics:dark_gem_of_the_living_void"
+			}
+			id: "730076FB81EA1D89"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7F53470A959FAFCC"
+					table_id: 1073538619924878004L
+					type: "random"
+				}
+				{
+					id: "2117FC76140E2F41"
+					type: "xp"
+					xp: 250
+				}
+			]
+			tasks: [
+				{
+					id: "7E8C1875FAA5CDCB"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:dark_gem_of_the_living_void"
+					}
+					title: "Создать Dark Gem of the Living Void"
+					type: "item"
+				}
+				{
+					count: 4L
+					id: "5446DF46EEF6FB2F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:darkness_cloth"
+					}
+					title: "Создать 4х Darkness Cloth"
+					type: "item"
+				}
+			]
+			title: "Материя без света"
+			x: -7.0d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"730076FB81EA1D89"
+				"77B14ED198FEA6F3"
+			]
+			description: [
+				"Создай доспехи, в которых когда-то ходили те, кто шептал с самой &l&9Пустотой.&r Комплект предвестника тьмы — это не броня, это слияние с тем, что не должно существовать. Он не защищает — он изменяет. Позволяет летать, поглощать удары, видеть сквозь ночь и рушить всё, что осмелилось окружить тебя светом."
+				""
+				"Если ты носишь это — ты уже не просто странник. Ты предвестник. И за тобой &l&8тьма.&r"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "traveloptics:forlorn_harbinger_robe"
+				tag: {
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "4D2BB386CFE177C2"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6E030CD98895987F"
+					table_id: 1073538619924878004L
+					type: "random"
+				}
+				{
+					id: "1127665C34CB0242"
+					type: "xp"
+					xp: 300
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			tasks: [
+				{
+					id: "240D1BD5DE640773"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:forlorn_harbinger_hood"
+					}
+					type: "item"
+				}
+				{
+					id: "5FFD5964EEE55F7C"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:forlorn_harbinger_robe"
+						tag: {
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 1
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "7BE9276CC314E07F"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:forlorn_harbinger_leggings"
+					}
+					type: "item"
+				}
+				{
+					id: "729BDF1EBBD9271E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:forlorn_harbinger_boots"
+					}
+					type: "item"
+				}
+			]
+			title: "&#8B0000&lШаг в сторону Тьмы"
+			x: -7.5d
+			y: 5.3d
+		}
+		{
+			dependencies: ["0B88DF66B9E729EC"]
+			description: ["Первобытная броня - древняя могущественная броня, когда-то скованная магами Варен'Таала для создания своей могущественной пехотиницы. Ходят слухи, что воины, носившие эту броню, буквально давили своих противников на поле боя."]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "traveloptics:primordial_crest_armor_chestplate"
+				tag: {
+					Damage: 0
+					ISB_Spells: {
+						data: [ ]
+						maxSpells: 1
+						mustEquip: 1b
+						spellWheel: 1b
+					}
+				}
+			}
+			id: "2FE4A67CE108CC01"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "577B7B3BC4024BD7"
+					table_id: 8038886550374770128L
+					type: "random"
+				}
+				{
+					id: "59F653009110BEDA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "2A15123C560F5D30"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:primordial_crest_armor_helmet"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "42C110485902A25D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:primordial_crest_armor_chestplate"
+						tag: {
+							Damage: 0
+							ISB_Spells: {
+								data: [ ]
+								maxSpells: 1
+								mustEquip: 1b
+								spellWheel: 1b
+							}
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "34982492BD605490"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:primordial_crest_armor_leggings"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+				{
+					id: "58F84C5D749CF5CA"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "traveloptics:primordial_crest_armor_boots"
+						tag: {
+							Damage: 0
+						}
+					}
+					type: "item"
+				}
+			]
+			x: 9.0d
+			y: -1.0d
+		}
+		{
+			dependencies: ["7606FC1F049EEDBE"]
+			description: [
+				"Среди всех обитателей Конфетных земель особенно выделяется &l&cма&6рм&eел&2адн&bый &3че&5рвь&r — вязкий гигант, чья плоть состоит из плотного желе. "
+				""
+				"Если тебе удастся добыть с него &lсладкие зубы,&r ты получишь редкий ресурс."
+			]
+			id: "64878A02A40BDE00"
+			rewards: [
+				{
+					id: "22D5500685675B07"
+					table_id: 164375892886641175L
+					type: "random"
+				}
+				{
+					id: "551074B131FC9B5B"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "6157CC5679BF3E0D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:sweet_tooth"
+				}
+				title: "&fВыбить &l3х Сладких зуба"
+				type: "item"
+			}]
+			title: "Зубы чудовища"
+			x: 0.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7606FC1F049EEDBE"]
+			description: [
+				"Глубоко в Конфетном котловане обитают существа, из тел которых извлекается особое лакомство. "
+				""
+				"&l&cКрасные сладкие рыбки&r и &l&cкрасное желе&r — лёгкая, но весьма питательная закуска, способная поддержать силы в трудный час. Узри сладкий вкус!"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:gelatin_red"
+			}
+			id: "741A6966638C8201"
+			rewards: [
+				{
+					id: "1C10DCE469CD1ED2"
+					table_id: 581181588047869091L
+					type: "random"
+				}
+				{
+					id: "58EDD78AF5B669F8"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					count: 5L
+					id: "316BE3F0BFCD5D0E"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:sweetish_fish_red"
+					}
+					title: "Выбить 5х Красных сладких рыбок"
+					type: "item"
+				}
+				{
+					count: 5L
+					id: "79D8462D9838A805"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:gelatin_red"
+					}
+					title: "Выбить 5х красных желе"
+					type: "item"
+				}
+			]
+			title: "Сладкая вылазка"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: [
+				"741A6966638C8201"
+				"64878A02A40BDE00"
+			]
+			description: [
+				"Говорят, истинная роскошь — не пир, а возможность не думать о еде вовсе."
+				"&l&dМешок насыщения&r — редкий артефакт, что способен самостоятельно кормить владельца, медленно, но надёжно. Его нужно «накормить» вручную (положить в него еду через ПКМ), заполняя едой, которую ты готов потратить ради комфорта."
+				""
+				"Мешок &l&dвосстанавливает голод&r каждые несколько секунд, причём делает это идеально — он всегда даёт столько, сколько положено, &d&lвне зависимости&r от того, насколько ты сыт. Он игнорирует стандартную механику насыщения, и в этом&l его сила.&r"
+			]
+			id: "0ECFF4ECE0E1AFDF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "377B57AC9B6F741E"
+					table_id: 164375892886641175L
+					type: "random"
+				}
+				{
+					id: "48FA724153BE41EA"
+					type: "xp"
+					xp: 200
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			tasks: [{
+				id: "10F3B580E0984695"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:sack_of_sating"
+				}
+				title: "&fСоздать &d&lМешок насыщения"
+				type: "item"
+			}]
+			title: "&d&lЖелудок в мешке"
+			x: 2.1d
+			y: 4.8999999999999995d
+		}
+		{
+			dependencies: ["7606FC1F049EEDBE"]
+			id: "7180E085BB4C4213"
+			rewards: [
+				{
+					id: "02F774BBFB7A1EC8"
+					table_id: 581181588047869091L
+					type: "random"
+				}
+				{
+					id: "7E08A6B7BD68AF6B"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				id: "65F4397395E76E45"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:radiant_essence"
+				}
+				title: "Выбить Сияющую Эссенцию"
+				type: "item"
+			}]
+			title: "Сияние сладости"
+			x: -3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["7606FC1F049EEDBE"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:sharpened_candy_cane"
+			}
+			id: "15021C73D74831F7"
+			rewards: [
+				{
+					id: "61D783F19E696583"
+					table_id: 581181588047869091L
+					type: "random"
+				}
+				{
+					id: "1A5D539434F0BA10"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [
+				{
+					id: "0DF079E44111EF59"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:sharpened_candy_cane"
+					}
+					title: "Выбить Заострённую леденцовую трость"
+					type: "item"
+				}
+				{
+					count: 2L
+					id: "5CE68F23409A4116"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:candy_cane"
+					}
+					title: "Выбить 2х Леденцовых трости"
+					type: "item"
+				}
+			]
+			title: "Тросточка лошади"
+			x: -3.0d
+			y: 5.0d
+		}
+		{
+			dependencies: [
+				"7180E085BB4C4213"
+				"15021C73D74831F7"
+			]
+			description: [
+				"&l&5Би&bом&2ное &eлак&6омс&cтво&r дарит максимальную сытость без пресыщения. "
+				""
+				"&l&#D2691EКондитерская печь&r позволяет бесконечно призывать пряничных помощников при активации красным камнем. "
+				""
+				"А леденцовый крюк открывает новую мобильность — цепляйся, подтягивайся и добирайся до самых недоступных мест."
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "alexscaves:confection_oven"
+			}
+			id: "1250515E4B624553"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "325F32B36468BC86"
+					table_id: 164375892886641175L
+					type: "random"
+				}
+				{
+					id: "75C72DDD48AE572E"
+					type: "xp"
+					xp: 125
+				}
+			]
+			shape: "hexagon"
+			size: 1.2d
+			tasks: [
+				{
+					id: "58C2030F17CBAA35"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:biome_treat"
+					}
+					title: "&fСоздать &l&5Би&bом&2ное &eлак&6омс&cтво&r"
+					type: "item"
+				}
+				{
+					id: "5BF6FB9311EFB8C9"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:confection_oven"
+					}
+					title: "&fСоздать &l&#D2691EКондитерскую печь"
+					type: "item"
+				}
+				{
+					id: "5C5638874C80B359"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "alexscaves:candy_cane_hook"
+						tag: {
+							Damage: 0
+						}
+					}
+					title: "Создать Леденцовый крюк"
+					type: "item"
+				}
+			]
+			title: "&l&5Сла&bдк&2ая &eкон&6дите&9рская&r"
+			x: -4.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["7606FC1F049EEDBE"]
+			description: ["Жвачкриперы не из приятных соперников, но с них выпадает полезный ресурс — горсть жвачки. "]
+			id: "4100D1EF5795FA85"
+			rewards: [
+				{
+					id: "526E7A59C7E45D50"
+					table_id: 581181588047869091L
+					type: "random"
+				}
+				{
+					id: "4003DB01763AE48C"
+					type: "xp"
+					xp: 70
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "0B3932862383BFBB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:gumball_pile"
+				}
+				title: "Выбить 3х Горсти жвачки"
+				type: "item"
+			}]
+			title: "Жвачная добыча"
+			x: -0.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["4100D1EF5795FA85"]
+			description: ["Из горсти жвачки можно собрать весьма необычное оружие — жвачкострел. Он стреляет жвачками и способен неплохо выручить в бою."]
+			id: "676235A5CC8ED6D0"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7770C9202A29F772"
+					table_id: 164375892886641175L
+					type: "random"
+				}
+				{
+					id: "22CC65E4B09212EA"
+					type: "xp"
+					xp: 100
+				}
+			]
+			shape: "hexagon"
+			size: 1.4d
+			tasks: [{
+				id: "6F8E7E6E0EB77B57"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:shot_gum"
+				}
+				title: "Создать Жвачкострел"
+				type: "item"
+			}]
+			title: "&c&lСладкий выстрел"
+			x: -1.4d
+			y: 7.7d
+		}
+	]
+	title: "Погребённые цивилизации"
+}

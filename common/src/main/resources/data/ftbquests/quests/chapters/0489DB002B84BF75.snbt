@@ -1,0 +1,1265 @@
+{
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "3"
+	group: "783F66CF7A4F7B72"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "createchromaticreturn:chromatic_compound"
+	}
+	id: "71562B7039E98CE5"
+	order_index: 2
+	progression_mode: "flexible"
+	quest_links: [ ]
+	quests: [
+		{
+			dependencies: ["7AA2B84822E7BFEE"]
+			id: "0F519329F2E4C3FA"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "5B16AB2F84490EC4"
+					table_id: 5488254604462342634L
+					type: "random"
+				}
+				{
+					id: "68054A6F69E1735C"
+					type: "xp"
+					xp: 100
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				count: 4L
+				id: "004D5FE3BDE4CCC0"
+				item: {
+					Count: 4
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:glowing_ingot"
+				}
+				type: "item"
+			}]
+			title: "Святящийся сплав"
+			x: 0.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["0F519329F2E4C3FA"]
+			id: "6F4F946DC9B56C2F"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "650D16B0CDC70DDB"
+					table_id: 5488254604462342634L
+					type: "random"
+				}
+				{
+					id: "098CE1A5ECA9CB5D"
+					type: "xp"
+					xp: 125
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 8L
+				id: "0390A401F6A4513F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:chromatic_compound"
+				}
+				type: "item"
+			}]
+			title: "Соединение хрома"
+			x: 0.0d
+			y: 2.5d
+		}
+		{
+			dependencies: ["7AA2B84822E7BFEE"]
+			id: "7CC275A1F25514C3"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0D7892D852599F51"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "221535E4C9A17E07"
+					type: "xp"
+					xp: 200
+				}
+			]
+			size: 2.0d
+			tasks: [{
+				id: "66C02D088868E185"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_unbreakable:irromolding"
+				}
+				type: "item"
+			}]
+			x: 0.0d
+			y: -3.5d
+		}
+		{
+			dependencies: ["6F4F946DC9B56C2F"]
+			id: "55C93A129AAF9CC8"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2771BED5925EEE40"
+					table_id: 606690926608427042L
+					type: "random"
+				}
+				{
+					id: "2B3CE2E9906F09DC"
+					type: "xp"
+					xp: 250
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				count: 4L
+				id: "27F7E242A52D47DB"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:shadow_steel"
+				}
+				type: "item"
+			}]
+			title: "Сконцентрированная Тень"
+			x: 0.0d
+			y: 4.5d
+		}
+		{
+			dependencies: ["55C93A129AAF9CC8"]
+			id: "53B04E93931ED0FC"
+			rewards: [
+				{
+					id: "3751D9B095A620B1"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "213BAE7E545C38C5"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "082DCB0526EBD12A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:durasteel_ingot"
+				}
+				type: "item"
+			}]
+			title: "&4&lДюрасталь"
+			x: 2.5d
+			y: 5.0d
+		}
+		{
+			dependencies: ["55C93A129AAF9CC8"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "createchromaticreturn:magmatic_mechanism"
+			}
+			id: "7005A89B695382F5"
+			rewards: [
+				{
+					id: "28718BCA5D5D4180"
+					table_id: 606690926608427042L
+					type: "random"
+				}
+				{
+					id: "21A502C3E458FA4F"
+					type: "xp"
+					xp: 175
+				}
+			]
+			tasks: [
+				{
+					id: "12C676360F10B86D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "createchromaticreturn:shadow_mechanism"
+					}
+					type: "item"
+				}
+				{
+					id: "42214DD0C2707920"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "createchromaticreturn:magmatic_mechanism"
+					}
+					type: "item"
+				}
+				{
+					id: "573D283CDD43938D"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "createchromaticreturn:annealed_mechanism"
+					}
+					type: "item"
+				}
+			]
+			title: "Механизмы Мастера"
+			x: -2.5d
+			y: 4.5d
+		}
+		{
+			dependencies: ["3A6325E838B2A13A"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "createchromaticreturn:refined_shadow_steel_sword"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "5118F94AEEEE0AA8"
+			rewards: [
+				{
+					id: "2A2253DCEFC36487"
+					table_id: 5579322744361039140L
+					type: "random"
+				}
+				{
+					id: "7CC5430D978FA7A0"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "2373CA4423391010"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "createchromaticreturn:blade_cast"
+					}
+					type: "item"
+				}
+				{
+					id: "7C80F4E1E36427E2"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(createchromaticreturn:refined_shadow_steel_sword)item(createchromaticreturn:multiplite_shadow_steel_sword)item(createchromaticreturn:industrium_shadow_steel_sword)item(createchromaticreturn:shadow_steel_sword)item(createchromaticreturn:blazing_shadow_steel_sword)item(createchromaticreturn:bamboo_shadow_steel_sword)item(createchromaticreturn:bone_shadow_steel_sword)item(createchromaticreturn:durasteel_shadow_steel_sword)item(createchromaticreturn:silkstrum_shadow_steel_sword))"
+						}
+					}
+					title: "Меч из теневой стали"
+					type: "item"
+				}
+			]
+			title: "&l&7Клинок Мастеров"
+			x: -1.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3A6325E838B2A13A"]
+			id: "40A1F398610D8031"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0DBEFAA69A6473C2"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "35D77CA417F725A9"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "04D1D66FA17DD17A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:pickaxe_cast"
+				}
+				type: "item"
+			}]
+			title: "Кирка Великих Умов"
+			x: 1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["55C93A129AAF9CC8"]
+			id: "3A6325E838B2A13A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0DFD849773DFB573"
+					table_id: 606690926608427042L
+					type: "random"
+				}
+				{
+					id: "255496886D59FED7"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "1F8C1AB8883D27E0"
+				item: {
+					Count: 2
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:handle_cast"
+				}
+				type: "item"
+			}]
+			title: "Рукоять"
+			x: 0.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["3A6325E838B2A13A"]
+			id: "2B1DE8D5493A84EF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "48837BD6FEBA5E54"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "658891466A610511"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "328AF718C2AA0D38"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:shovel_cast"
+				}
+				type: "item"
+			}]
+			title: "Лопата Великих Умов"
+			x: -3.0d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3A6325E838B2A13A"]
+			id: "1D4A0ED610FE4E97"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "283BAB6AE8C77B21"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "50F07BBCBC73FD5D"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "581035A1DA6CAF34"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:axe_cast"
+				}
+				type: "item"
+			}]
+			title: "Топор Великих Умов"
+			x: -1.5d
+			y: 8.5d
+		}
+		{
+			dependencies: ["3A6325E838B2A13A"]
+			id: "5D7CCF35A2B0B42C"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "783B950B4FC68BA2"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "4CE9CF7ABA08C21F"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "16CE0872DA52DE9C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:hoe_cast"
+				}
+				type: "item"
+			}]
+			title: "Мотыга Великих Умов"
+			x: 0.0d
+			y: 8.5d
+		}
+		{
+			dependencies: [
+				"1D4A0ED610FE4E97"
+				"5D7CCF35A2B0B42C"
+				"40A1F398610D8031"
+				"2B1DE8D5493A84EF"
+			]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "createchromaticreturn:industrium_shadow_steel_paxel"
+				tag: {
+					Damage: 0
+				}
+			}
+			id: "580C950BFDB39922"
+			rewards: [
+				{
+					id: "1569C339BE88BE8C"
+					table_id: 5579322744361039140L
+					type: "random"
+				}
+				{
+					id: "2349772490A29EBA"
+					type: "xp"
+					xp: 500
+				}
+			]
+			size: 1.5d
+			tasks: [
+				{
+					id: "40494BD102E195A4"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "createchromaticreturn:paxel_cast"
+					}
+					type: "item"
+				}
+				{
+					id: "3BC21718F5E81607"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "ftbfiltersystem:smart_filter"
+						tag: {
+							"ftbfiltersystem:filter": "or(item(createchromaticreturn:refined_shadow_steel_paxel)item(createchromaticreturn:multiplite_shadow_steel_paxel)item(createchromaticreturn:industrium_shadow_steel_paxel)item(createchromaticreturn:shadow_steel_paxel)item(createchromaticreturn:blazing_shadow_steel_paxel)item(createchromaticreturn:bamboo_shadow_steel_paxel)item(createchromaticreturn:bone_shadow_steel_paxel)item(createchromaticreturn:durasteel_shadow_steel_paxel)item(createchromaticreturn:silkstrum_shadow_steel_paxel))"
+						}
+					}
+					title: "Паксель из теневой стали"
+					type: "item"
+				}
+			]
+			title: "&lПаксель Лучших Мастеров"
+			x: -1.0d
+			y: 10.0d
+		}
+		{
+			dependencies: [
+				"7005A89B695382F5"
+				"52B04381DDC64BBB"
+			]
+			id: "37506C2DE8621A40"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6708D3273F4FEE2D"
+					table_id: 606690926608427042L
+					type: "random"
+				}
+				{
+					id: "10A450C68E6F8C43"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				id: "151D2FFA5D339423"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:refined_mechanism"
+				}
+				type: "item"
+			}]
+			title: "Чистейший Механизм"
+			x: -5.0d
+			y: 5.5d
+		}
+		{
+			dependencies: ["6F4F946DC9B56C2F"]
+			id: "52B04381DDC64BBB"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2B1013EA2EFE3C59"
+					table_id: 5488254604462342634L
+					type: "random"
+				}
+				{
+					id: "37AD9E7E9862EA25"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "4088A9D889D24B99"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:refined_radiance"
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["52B04381DDC64BBB"]
+			id: "2A8C23797F22E07E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "6F3DC0ECA8E2D4FD"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "4F437C422A0F46ED"
+					type: "xp"
+					xp: 275
+				}
+			]
+			tasks: [{
+				count: 2L
+				id: "0A8EB3129A06FB07"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:multiplite_ingot"
+				}
+				type: "item"
+			}]
+			title: "Мультиплит"
+			x: -5.5d
+			y: 3.5d
+		}
+		{
+			dependencies: [
+				"37506C2DE8621A40"
+				"2A8C23797F22E07E"
+			]
+			id: "7F3921AA0D5FCA52"
+			rewards: [
+				{
+					id: "28150A183C3953CF"
+					table_id: 2232346052836018186L
+					type: "random"
+				}
+				{
+					id: "57310056C71F94AB"
+					type: "xp"
+					xp: 400
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "6BE838EB941C37C2"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:creative_motor"
+				}
+				type: "item"
+			}]
+			title: "&d&lДвигатель Нарушения"
+			x: -7.0d
+			y: 5.5d
+		}
+		{
+			dependencies: [
+				"2A8C23797F22E07E"
+				"37506C2DE8621A40"
+			]
+			id: "3CB082FE35DD5A80"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "2CF44BC249812D29"
+					table_id: 5579322744361039140L
+					type: "random"
+				}
+				{
+					id: "72B6464723D62409"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "6E78BDC3D933031A"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create_sa:creative_filling_tank"
+				}
+				type: "item"
+			}]
+			title: "&d&lБездонный Бак"
+			x: -7.5d
+			y: 4.0d
+		}
+		{
+			dependencies: ["6F4F946DC9B56C2F"]
+			id: "2246FDAE415E28E7"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "64C704B1E2F59142"
+					table_id: 5488254604462342634L
+					type: "random"
+				}
+				{
+					id: "66D7A44EE033AD7B"
+					type: "xp"
+					xp: 125
+				}
+			]
+			tasks: [{
+				count: 6L
+				id: "0F757EA6D45AD6C5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:industrium_ingot"
+				}
+				type: "item"
+			}]
+			title: "Индустриум"
+			x: -3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["2246FDAE415E28E7"]
+			id: "6B004C50AA551C56"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "76304C081252DB55"
+					table_id: 606690926608427042L
+					type: "random"
+				}
+				{
+					id: "3BB5179F58BF6DBF"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				id: "5F0451220253DA61"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:industrium_book"
+				}
+				type: "item"
+			}]
+			x: -3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["2246FDAE415E28E7"]
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "createchromaticreturn:andesite_component"
+			}
+			id: "4607EC65B42D095B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "10422C1E01864A23"
+					table_id: 5488254604462342634L
+					type: "random"
+				}
+				{
+					id: "5CE278B8716B1266"
+					type: "xp"
+					xp: 100
+				}
+			]
+			tasks: [
+				{
+					id: "410B3771D0CC7EE0"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "createchromaticreturn:andesite_component"
+					}
+					type: "item"
+				}
+				{
+					id: "1DE4161AC24BB842"
+					item: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "createchromaticreturn:brass_component"
+					}
+					type: "item"
+				}
+			]
+			title: "Усиленные компоненты"
+			x: -4.5d
+			y: 1.0d
+		}
+		{
+			dependencies: ["6F4F946DC9B56C2F"]
+			id: "13EF6AEF6DB53091"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "34555AB9EA02CAC5"
+					table_id: 5488254604462342634L
+					type: "random"
+				}
+				{
+					id: "25CFD42F0AF0C911"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 4L
+				id: "5F4C0C355AAFBBF5"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:silkstrum"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 1.5d
+		}
+		{
+			dependencies: ["6F4F946DC9B56C2F"]
+			id: "0198B168D41D1D3B"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0B2DBAD70EC3C1B8"
+					table_id: 5488254604462342634L
+					type: "random"
+				}
+				{
+					id: "25291FB16E7657DB"
+					type: "xp"
+					xp: 200
+				}
+			]
+			tasks: [{
+				count: 16L
+				id: "21632E868137159F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:fortunite_bar"
+				}
+				type: "item"
+			}]
+			title: "Фортуна благоволит тебе"
+			x: 3.0d
+			y: 3.5d
+		}
+		{
+			dependencies: ["13EF6AEF6DB53091"]
+			description: ["Можно получить ТОЛЬКО путем покупки за монеты рейда."]
+			id: "03E98F3D7D42471E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "28809E8475114853"
+					table_id: 5579322744361039140L
+					type: "random"
+				}
+				{
+					id: "21396BFF8C8243B1"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "6994840B38849427"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:silkstrum_book"
+				}
+				type: "item"
+			}]
+			x: 3.0d
+			y: 0.0d
+		}
+		{
+			dependencies: ["53B04E93931ED0FC"]
+			id: "7290B52D8AB66131"
+			rewards: [
+				{
+					id: "372DCD95D49E6D1A"
+					table_id: 5579322744361039140L
+					type: "random"
+				}
+				{
+					id: "24F119C7AD678591"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				id: "6DFF84E2222F0F8F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:durasteel_book"
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			dependencies: ["55C93A129AAF9CC8"]
+			id: "13EAA20FF42F7B0A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "30DCAEE4455439D5"
+					table_id: 606690926608427042L
+					type: "random"
+				}
+				{
+					id: "5C156A5AFC41696D"
+					type: "xp"
+					xp: 150
+				}
+			]
+			tasks: [{
+				count: 3L
+				id: "08BE9C3C77F7668D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:shadow_steel_powder"
+				}
+				type: "item"
+			}]
+			title: "Порошок Тени"
+			x: -2.5d
+			y: 5.5d
+		}
+		{
+			dependencies: ["13EAA20FF42F7B0A"]
+			id: "4084D266739A4ECF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "325DDAF378BFDAF9"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "1A2712114C664C07"
+					type: "xp"
+					xp: 300
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "58348EFA26A3F94C"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "create:creative_blaze_cake"
+				}
+				type: "item"
+			}]
+			title: "&l&dСладость Богов Смерти!"
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			dependencies: [
+				"53B04E93931ED0FC"
+				"187F253F94F7A1FF"
+			]
+			id: "3026834A9674C725"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "7AAF2732F8B68DA9"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "5CC0E1D7A7CB0364"
+					type: "xp"
+					xp: 400
+				}
+			]
+			tasks: [{
+				id: "2B7B03780DB53757"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:durasteel_charm_cast"
+				}
+				type: "item"
+			}]
+			title: "Запрещенная Отливка"
+			x: 3.0d
+			y: 6.0d
+		}
+		{
+			dependencies: ["3026834A9674C725"]
+			id: "642DBC39DA0DA15A"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "79B449D02F2F3E8D"
+					table_id: 5579322744361039140L
+					type: "random"
+				}
+				{
+					id: "1AC5634C68897212"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "74AACA4C116795BC"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:bedrock_charm_base"
+				}
+				type: "item"
+			}]
+			title: "Основа силы"
+			x: 4.5d
+			y: 6.5d
+		}
+		{
+			dependencies: ["642DBC39DA0DA15A"]
+			id: "1FFB8970AB8C283E"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "269C41F186168E6B"
+					table_id: 2232346052836018186L
+					type: "random"
+				}
+				{
+					id: "57E8C5A04582B2B2"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "2EDED3B958D7CC5D"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:antiplite_charm"
+				}
+				type: "item"
+			}]
+			title: "&l&4Антиплит, Соединение Величайших Инженеров"
+			x: 6.0d
+			y: 6.5d
+		}
+		{
+			dependencies: ["187F253F94F7A1FF"]
+			id: "1472B5D6943BFDC6"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "0746C074717A5D7C"
+					table_id: 5579322744361039140L
+					type: "random"
+				}
+				{
+					id: "55BABA1D9C4437D2"
+					type: "xp"
+					xp: 500
+				}
+			]
+			tasks: [{
+				id: "7184D7B55747E8F1"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:charm_base"
+				}
+				type: "item"
+			}]
+			x: 4.0d
+			y: 8.0d
+		}
+		{
+			dependencies: ["3A6325E838B2A13A"]
+			id: "187F253F94F7A1FF"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "3890C34435CCC6D6"
+					table_id: 3732265328605293973L
+					type: "random"
+				}
+				{
+					id: "4414907F9775485A"
+					type: "xp"
+					xp: 300
+				}
+			]
+			tasks: [{
+				id: "154D0891DB6267E8"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "createchromaticreturn:charm_cast"
+				}
+				type: "item"
+			}]
+			title: "Отливай"
+			x: 2.5d
+			y: 7.5d
+		}
+		{
+			dependencies: ["1472B5D6943BFDC6"]
+			id: "3BBDF111A1C00AC1"
+			rewards: [
+				{
+					exclude_from_claim_all: true
+					id: "79891FA2D94968CE"
+					table_id: 2232346052836018186L
+					type: "random"
+				}
+				{
+					id: "2F7379225F40A66A"
+					type: "xp_levels"
+					xp_levels: 20
+				}
+			]
+			size: 1.5d
+			tasks: [{
+				id: "7E213426440A350F"
+				item: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "ftbfiltersystem:smart_filter"
+					tag: {
+						"ftbfiltersystem:filter": "or(item(createchromaticreturn:refined_charm)item(createchromaticreturn:shadow_charm)item(createchromaticreturn:industrium_charm)item(createchromaticreturn:multiplite_charm)item(createchromaticreturn:silkstrum_charm))"
+					}
+				}
+				title: "Талисман"
+				type: "item"
+			}]
+			title: "&l&6Талисманы Ума"
+			x: 5.5d
+			y: 8.5d
+		}
+	]
+	title: "Вершина науки"
+}

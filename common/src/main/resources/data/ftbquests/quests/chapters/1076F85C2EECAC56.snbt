@@ -1,0 +1,2249 @@
+{
+	autofocus_id: "0758D21FB3A4F152"
+	default_hide_dependency_lines: false
+	default_quest_shape: ""
+	filename: "524996993510265E"
+	group: "126B69BB96B6B7D2"
+	icon: {
+		Count: 1
+		ForgeCaps: {
+			"celestisynth:celestisynthitemstackcapabilities": {
+				cs.aquaSkin: 0
+			}
+		}
+		id: "born_in_chaos_v1:death_totem"
+	}
+	id: "524996993510265E"
+	order_index: 0
+	quest_links: [ ]
+	quests: [
+		{
+			description: [""]
+			id: "160C79565CF7393A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1B9211901D2B4B0B"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:zombie"
+				id: "31DA50F267EF7543"
+				type: "kill"
+				value: 100L
+			}]
+			x: -4.0d
+			y: -3.0d
+		}
+		{
+			id: "2AF124E56C33456E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "49D119A0680CCD37"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:skeleton"
+				id: "317FB9EA9C7A4258"
+				type: "kill"
+				value: 100L
+			}]
+			x: -2.0d
+			y: -3.0d
+		}
+		{
+			id: "33033EED89554B74"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "28D52EB14B5942B7"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:creeper"
+				id: "1FC8D593DD1E8E1E"
+				type: "kill"
+				value: 50L
+			}]
+			x: 0.0d
+			y: -3.0d
+		}
+		{
+			id: "7F1D0EBE8F0CE652"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7CE09A74340B71C5"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:enderman"
+				id: "6474D16C1BB544F3"
+				type: "kill"
+				value: 50L
+			}]
+			x: 2.0d
+			y: -3.0d
+		}
+		{
+			id: "4FACCC24508D1EFA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3DD624C9E48C495E"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:spider"
+				id: "615663D65EE7666B"
+				type: "kill"
+				value: 100L
+			}]
+			x: 4.0d
+			y: -3.0d
+		}
+		{
+			id: "6E635B10955AEBCF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0BCDC82D4E065DD3"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:cave_spider"
+				id: "4D54D9FF74D52CCF"
+				type: "kill"
+				value: 100L
+			}]
+			x: 6.0d
+			y: -3.0d
+		}
+		{
+			id: "121A7B2040D00DAE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "08FBDD5C570407A7"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:drowned"
+				id: "01E9D8A359CA3959"
+				type: "kill"
+				value: 100L
+			}]
+			x: 8.0d
+			y: -3.0d
+		}
+		{
+			id: "65946B75D346955F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5C130838F5AF37F3"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:evoker"
+				id: "40C02005FDA2C60E"
+				type: "kill"
+				value: 50L
+			}]
+			x: 14.0d
+			y: -3.0d
+		}
+		{
+			id: "48250EAA064BC562"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "304C4F6B719A24F8"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:husk"
+				id: "3BB52C7B9F2F025E"
+				type: "kill"
+				value: 100L
+			}]
+			x: 10.0d
+			y: -3.0d
+		}
+		{
+			id: "79CDF8C0CDF6AA35"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "45A39828126B4953"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:iron_golem"
+				id: "1EF8616BE37D6723"
+				type: "kill"
+				value: 30L
+			}]
+			x: 12.0d
+			y: -3.0d
+		}
+		{
+			id: "577300FBD999AF5E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4ABEDE32BD869370"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:pillager"
+				id: "33E6CB39BD448998"
+				type: "kill"
+				value: 100L
+			}]
+			x: 20.0d
+			y: -3.0d
+		}
+		{
+			id: "6DE5FF3A1F7FE4DA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5938C91F4A921452"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:ravager"
+				id: "1A574D9BED0EB901"
+				type: "kill"
+				value: 25L
+			}]
+			x: 12.0d
+			y: 1.0d
+		}
+		{
+			id: "3AC367A826B5110B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "75C2E073636A7213"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:guardian"
+				id: "6C7EDA4AA061A845"
+				type: "kill"
+				value: 50L
+			}]
+			x: 18.0d
+			y: -3.0d
+		}
+		{
+			id: "1389157750E26571"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "343D02BE31E557BF"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:elder_guardian"
+				id: "1B68C546EBC8EE76"
+				type: "kill"
+				value: 6L
+			}]
+			x: 2.0d
+			y: 5.0d
+		}
+		{
+			id: "653722E9C83A05F0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "11B53F48491E1D25"
+				table_id: 1796735103491411842L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:vex"
+				id: "3162AC9A19F28C4F"
+				type: "kill"
+				value: 100L
+			}]
+			x: 16.0d
+			y: -3.0d
+		}
+		{
+			id: "4D4FAAFA9A97AAD1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "71F02CA43377F9DB"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:ignis"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:ignis_spawn_egg"
+				}
+				id: "2044017D49E8C0C2"
+				type: "kill"
+				value: 6L
+			}]
+			x: 4.0d
+			y: 9.0d
+		}
+		{
+			id: "2A0A9ED260110B19"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F984F21835D6F4E"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:wither"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:wither_skeleton_spawn_egg"
+				}
+				id: "30F4A9CFB13FDD96"
+				type: "kill"
+				value: 6L
+			}]
+			x: -2.0d
+			y: 5.0d
+		}
+		{
+			id: "08571C0532B25BB1"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7340932CA6D146FB"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:lifestealer"
+				icon: "born_in_chaos_v1:lifestealer_spawn_egg"
+				id: "42CD059F68661440"
+				type: "kill"
+				value: 25L
+			}]
+			x: 12.0d
+			y: -1.0d
+		}
+		{
+			id: "4EEC4F8F97D99DEF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "50801E03C7998403"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:dire_hound_leader"
+				icon: "born_in_chaos_v1:dire_hound_leader_spawn_egg"
+				id: "53B9A7E7133B1527"
+				type: "kill"
+				value: 25L
+			}]
+			x: 4.0d
+			y: -1.0d
+		}
+		{
+			id: "69915407DC38439D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "624DC97C6172FFD7"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "minecraft:warden"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:warden_spawn_egg"
+				}
+				id: "372610F7CC4B4749"
+				type: "kill"
+				value: 6L
+			}]
+			x: 0.0d
+			y: 5.0d
+		}
+		{
+			id: "4258948BD6EF963A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4A43C3BE92B23DFB"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:mother_spider"
+				icon: {
+					Count: 1
+					id: "born_in_chaos_v1:mother_spider_spawn_egg"
+					tag: { }
+				}
+				id: "1D6879B3DAEDEE2D"
+				type: "kill"
+				value: 25L
+			}]
+			x: 14.0d
+			y: -1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				id: "born_in_chaos_v1:supreme_bonescaller_spawn_egg"
+				tag: { }
+			}
+			id: "0E7199066097FAFA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2DD0F24733BF2953"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:supreme_bonescaller"
+				icon: {
+					Count: 1
+					id: "born_in_chaos_v1:supreme_bonescaller_spawn_egg"
+					tag: { }
+				}
+				id: "37F1B2BF9609DA77"
+				type: "kill"
+				value: 25L
+			}]
+			x: 18.0d
+			y: -1.0d
+		}
+		{
+			id: "53815B8F28D8F91B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "17FD32336DB2D3A1"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:lord_pumpkinhead"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "born_in_chaos_v1:lord_pumpkinhead_spawn_egg"
+				}
+				id: "630DFBD97C2BC9AC"
+				type: "kill"
+				value: 6L
+			}]
+			x: 4.0d
+			y: 5.0d
+		}
+		{
+			id: "30B191DB34082C00"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09E6ED2CBACBBADF"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:sir_pumpkinhead"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "born_in_chaos_v1:sir_pumpkinhead_spawn_egg"
+				}
+				id: "208C9BAE3F6FE1F4"
+				type: "kill"
+				value: 15L
+			}]
+			x: -4.0d
+			y: 1.0d
+		}
+		{
+			id: "72550E6F44E7E56F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "59D31C4BAD694351"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:krampus"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "born_in_chaos_v1:krampus_spawn_egg"
+				}
+				id: "20464BA0D8330815"
+				type: "kill"
+				value: 25L
+			}]
+			x: 2.0d
+			y: 1.0d
+		}
+		{
+			id: "49BAB585ABCAA5BC"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D173C1462DE91B7"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:missioner"
+				icon: "born_in_chaos_v1:missioner_spawn_egg"
+				id: "0A0B997D43D243C7"
+				type: "kill"
+				value: 25L
+			}]
+			x: 16.0d
+			y: 1.0d
+		}
+		{
+			id: "50AFBC4080B2006A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5248A178B27E3A44"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "mowziesmobs:umvuthi"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mowziesmobs:umvuthi_spawn_egg"
+				}
+				id: "4356ED52368088FA"
+				type: "kill"
+				value: 6L
+			}]
+			x: 6.0d
+			y: 5.0d
+		}
+		{
+			id: "440E32CC931A4F22"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2D38A59F2475A216"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "quark:toretoise"
+				icon: {
+					Count: 1
+					id: "quark:toretoise_spawn_egg"
+					tag: { }
+				}
+				id: "6A568324F982B9C4"
+				type: "kill"
+				value: 25L
+			}]
+			x: 10.0d
+			y: -1.0d
+		}
+		{
+			id: "287E64DD3DB09FD3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "20651C1A76E15029"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:nightmare_stalker"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "born_in_chaos_v1:nightmare_stalker_spawn_egg"
+				}
+				id: "7E55EB61E0471D07"
+				type: "kill"
+				value: 25L
+			}]
+			x: 0.0d
+			y: -1.0d
+		}
+		{
+			id: "00D7DA7FA8C6D069"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "008CAB7A865F3798"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "born_in_chaos_v1:phantom_creeper_copy"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "born_in_chaos_v1:phantom_creeper_spawn_egg"
+				}
+				id: "4229465014D0D1B4"
+				type: "kill"
+				value: 30L
+			}]
+			x: 16.0d
+			y: -1.0d
+		}
+		{
+			id: "6E8B35C8A4002F22"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4DF977B5F95AA6D0"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "royalvariations:royal_zombie"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "royalvariations:royal_zombie_spawn_egg"
+				}
+				id: "7137289E56894E43"
+				type: "kill"
+				value: 30L
+			}]
+			x: -4.0d
+			y: -1.0d
+		}
+		{
+			id: "765AF0BD073FCBDD"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "702464A9C2FD37CE"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "royalvariations:royal_skeleton"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "royalvariations:royal_skeleton_spawn_egg"
+				}
+				id: "29EED9B5A53A3E8C"
+				type: "kill"
+				value: 30L
+			}]
+			x: -2.0d
+			y: -1.0d
+		}
+		{
+			id: "6CE18621BE3AB5F9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "011697157CFDFA96"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "royalvariations:royal_creeper"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "royalvariations:royal_creeper_spawn_egg"
+				}
+				id: "1A59F7C882ABA574"
+				type: "kill"
+				value: 30L
+			}]
+			x: 2.0d
+			y: -1.0d
+		}
+		{
+			id: "2CD5C6466FB912DF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1D4650AE46F44CE3"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexsmobs:void_worm"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:spawn_egg_void_worm"
+				}
+				id: "10101F940EF2DE21"
+				type: "kill"
+				value: 3L
+			}]
+			x: -4.0d
+			y: 7.0d
+		}
+		{
+			id: "0758D21FB3A4F152"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5462B5F88F0C30F4"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "samurai_dynasty:oni"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "samurai_dynasty:oni_spawn_egg"
+				}
+				id: "59DAB0B5CC2F9EEE"
+				type: "kill"
+				value: 50L
+			}]
+			x: 6.0d
+			y: 1.0d
+		}
+		{
+			id: "0E47116974EBC436"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3D6D73381AE89FC5"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "mowziesmobs:sculptor"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mowziesmobs:sculptor_spawn_egg"
+				}
+				id: "0B84989274D84AC1"
+				type: "kill"
+				value: 3L
+			}]
+			x: 8.0d
+			y: 5.0d
+		}
+		{
+			id: "720131174CE98EF0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "65F6DC973B01AD15"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "samurai_dynasty:kitsune"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "samurai_dynasty:kitsune_spawn_egg"
+				}
+				id: "63BA81000824DD6A"
+				type: "kill"
+				value: 50L
+			}]
+			x: 8.0d
+			y: 1.0d
+		}
+		{
+			id: "4581BA62640ACE80"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "302282ECD3B030E9"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "samurai_dynasty:jorogumo"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "samurai_dynasty:jorogumo_spawn_egg"
+				}
+				id: "56AA251840D58EF0"
+				type: "kill"
+				value: 50L
+			}]
+			x: 10.0d
+			y: 1.0d
+		}
+		{
+			id: "56233E434BFDEC6B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "3BD8AE182BE86E55"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "mowziesmobs:naga"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mowziesmobs:naga_spawn_egg"
+				}
+				id: "28B07A462FCF53F1"
+				type: "kill"
+				value: 50L
+			}]
+			x: -2.0d
+			y: 1.0d
+		}
+		{
+			id: "2531C8BB864D9E6E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "10960224FC4F3A47"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:fire_dragon"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:spawn_egg_fire_dragon"
+				}
+				id: "4385E4EA8D23E59E"
+				type: "kill"
+				value: 30L
+			}]
+			x: 14.0d
+			y: 9.0d
+		}
+		{
+			id: "3417DE8E557146B3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "04D951938069703E"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:ice_dragon"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:spawn_egg_ice_dragon"
+				}
+				id: "125F6C1218326E4A"
+				type: "kill"
+				value: 30L
+			}]
+			x: 16.0d
+			y: 9.0d
+		}
+		{
+			id: "2FCA9A672C42B81F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "034708EF8A4759D7"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "iceandfire:lightning_dragon"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "iceandfire:spawn_egg_lightning_dragon"
+				}
+				id: "3B5A379369BEB411"
+				type: "kill"
+				value: 30L
+			}]
+			x: 18.0d
+			y: 9.0d
+		}
+		{
+			id: "5FCCBA0254AC70C3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4E7C185E67BA0F27"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:netherite_monstrosity"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:netherite_monstrosity_spawn_egg"
+				}
+				id: "3CE07000BABE40E7"
+				type: "kill"
+				value: 6L
+			}]
+			x: -4.0d
+			y: 9.0d
+		}
+		{
+			id: "12D3E8F31C27ADED"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "58E4D8BBAAF090AE"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:signus"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:signus_spawn_egg"
+				}
+				id: "29D9A6A67655F387"
+				type: "kill"
+				value: 6L
+			}]
+			x: -2.0d
+			y: 9.0d
+		}
+		{
+			id: "2D77969D7673BA34"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1CAC847008574BBB"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:scylla"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:scylla_spawn_egg"
+				}
+				id: "34C569812609A003"
+				type: "kill"
+				value: 6L
+			}]
+			x: 0.0d
+			y: 9.0d
+		}
+		{
+			id: "1ABC65B25732629E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "55A4E68CFAEEF778"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:the_harbinger"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:the_harbinger_spawn_egg"
+				}
+				id: "1D63DC03E531B689"
+				type: "kill"
+				value: 6L
+			}]
+			x: 12.0d
+			y: 9.0d
+		}
+		{
+			id: "49C153A9A2047C0E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5D46188B04920EA6"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:the_leviathan"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:the_leviathan_spawn_egg"
+				}
+				id: "22CEB8E895A2FF3E"
+				type: "kill"
+				value: 6L
+			}]
+			x: 10.0d
+			y: 9.0d
+		}
+		{
+			id: "501C704358D6E8B2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2136D4CE7647C179"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:ancient_remnant"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:ancient_remnant_spawn_egg"
+				}
+				id: "0AE493E6E762A498"
+				type: "kill"
+				value: 6L
+			}]
+			x: 6.0d
+			y: 9.0d
+		}
+		{
+			id: "0AC94D588196A71E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "1F5B0C50FB2C60A2"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:ender_guardian"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:ender_guardian_spawn_egg"
+				}
+				id: "3566E5B8B1552E3B"
+				type: "kill"
+				value: 6L
+			}]
+			x: 2.0d
+			y: 9.0d
+		}
+		{
+			id: "54DD18FEDC1EBA9E"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5413AB4F6C3BC13B"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "legendary_monsters:dune_sentinel"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "legendary_monsters:dune_sentinel_spawn_egg"
+				}
+				id: "355DCAD430F857EC"
+				type: "kill"
+				value: 6L
+			}]
+			x: 12.0d
+			y: 3.0d
+		}
+		{
+			id: "70DC85CE41E5BAFA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "28BE4483C090B808"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "legendary_monsters:lava_eater"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "legendary_monsters:lava_eater_spawn_egg"
+				}
+				id: "1827279FA803663B"
+				type: "kill"
+				value: 6L
+			}]
+			x: -4.0d
+			y: 5.0d
+		}
+		{
+			id: "239F8CEDB4401019"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6E460BCFC98F0853"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "legendary_monsters:withered_abomination"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "legendary_monsters:withered_abomination_spawn_egg"
+				}
+				id: "79C8BB3429387C16"
+				type: "kill"
+				value: 6L
+			}]
+			x: 16.0d
+			y: 5.0d
+		}
+		{
+			id: "7699B6E0FF63CAC9"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "6DB5A1098CAC2158"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "legendary_monsters:warped_fungussus"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "legendary_monsters:warped_fungussus_spawn_egg"
+				}
+				id: "3955DD052FDA5A46"
+				type: "kill"
+				value: 6L
+			}]
+			x: 6.0d
+			y: 3.0d
+		}
+		{
+			id: "44C75F35A5D05BBB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A3CE84B793F2E05"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:aptrgangr"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:aptrgangr_spawn_egg"
+				}
+				id: "656149B65F040F92"
+				type: "kill"
+				value: 8L
+			}]
+			x: 2.0d
+			y: 3.0d
+		}
+		{
+			id: "2FD5D6DB8B507A66"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0AC9DD25B4268C17"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:wadjet"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:wadjet_spawn_egg"
+				}
+				id: "1045FD8547994629"
+				type: "kill"
+				value: 8L
+			}]
+			x: -2.0d
+			y: 3.0d
+		}
+		{
+			id: "26DEF106EAECB7A2"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4984313353242B0E"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:kobolediator"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:kobolediator_spawn_egg"
+				}
+				id: "4D172474F8996507"
+				type: "kill"
+				value: 8L
+			}]
+			x: 0.0d
+			y: 3.0d
+		}
+		{
+			id: "4F8B6271C466DABB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "2B17241B047CF32A"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:ignited_revenant"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:ignited_revenant_spawn_egg"
+				}
+				id: "3A2E721AD0657437"
+				type: "kill"
+				value: 8L
+			}]
+			x: -4.0d
+			y: 3.0d
+		}
+		{
+			id: "2594CB8E23FB68E8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5CD1EA0D1D9963F0"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:ignited_berserker"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:ignited_berserker_spawn_egg"
+				}
+				id: "0C62302753121AC5"
+				type: "kill"
+				value: 8L
+			}]
+			x: 4.0d
+			y: 3.0d
+		}
+		{
+			id: "0602B026EFD5EB46"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "46BBCADE3C6DF325"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:clawdian"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:clawdian_spawn_egg"
+				}
+				id: "447B7AA093F494C1"
+				type: "kill"
+				value: 8L
+			}]
+			x: 14.0d
+			y: 3.0d
+		}
+		{
+			id: "57C7C64A77579FC3"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "45C5CC82E2FDE21A"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:amethyst_crab"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:amethyst_crab_spawn_egg"
+				}
+				id: "6B901A8C416F5D6F"
+				type: "kill"
+				value: 8L
+			}]
+			x: 8.0d
+			y: 3.0d
+		}
+		{
+			id: "68205BA6F83CA1E8"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4BC6669950B69197"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:ender_golem"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:ender_golem_spawn_egg"
+				}
+				id: "2F9382F66D8A3B51"
+				type: "kill"
+				value: 6L
+			}]
+			x: 10.0d
+			y: 3.0d
+		}
+		{
+			id: "750386D7A19DEACF"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "201D32EFEBCEF6FB"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "soulsweapons:accursed_lord_boss"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:accursed_lord_boss_spawn_egg"
+				}
+				id: "6D1ECDE139B5649C"
+				type: "kill"
+				value: 6L
+			}]
+			x: 14.0d
+			y: 5.0d
+		}
+		{
+			id: "4F800EA64D45B520"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "30AF6D571FCD4A95"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "soulsweapons:draugr_boss"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:draugr_boss_spawn_egg"
+				}
+				id: "2336A5F6A5C6D452"
+				type: "kill"
+				value: 6L
+			}]
+			x: 12.0d
+			y: 5.0d
+		}
+		{
+			id: "787268BA7BD4623C"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5A4043156BC2D8D9"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "legendary_monsters:endersent"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "legendary_monsters:endersent_spawn_egg"
+				}
+				id: "00F05A731A2CC47F"
+				type: "kill"
+				value: 6L
+			}]
+			x: 18.0d
+			y: 5.0d
+		}
+		{
+			id: "0C585C2E1C9C8A32"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "390976AA2FCB57AC"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:forsaken"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_forsaken"
+				}
+				id: "3AAE09C5459BED4D"
+				type: "kill"
+				value: 8L
+			}]
+			x: 16.0d
+			y: 3.0d
+		}
+		{
+			id: "0FA68D65D39D70E4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "78C816C1616DA677"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:tremorzilla"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_tremorzilla"
+				}
+				id: "7BF88F50D364E3A4"
+				type: "kill"
+				value: 6L
+			}]
+			x: 10.0d
+			y: 5.0d
+		}
+		{
+			id: "7DECCA2EBF8C3B0B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "64F2878194BAA243"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:atlatitan"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_atlatitan"
+				}
+				id: "11AC1DDB3F9A9D5A"
+				type: "kill"
+				value: 8L
+			}]
+			x: 18.0d
+			y: 3.0d
+		}
+		{
+			id: "6D5B926DCC8B2F4D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "62E801495429C08C"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:tremorsaurus"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_tremorsaurus"
+				}
+				id: "6ACAADA5291CC5FA"
+				type: "kill"
+				value: 30L
+			}]
+			x: 4.0d
+			y: 1.0d
+		}
+		{
+			id: "7018CD7E78C1FAD7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "15A86993F30EBEC0"
+				table_id: 4414244014588952196L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:gum_worm"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_gum_worm"
+				}
+				id: "6843C4FFD038684F"
+				type: "kill"
+				value: 6L
+			}]
+			x: 20.0d
+			y: 3.0d
+		}
+		{
+			id: "677CB817E270C672"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "303DA7D08B89DB28"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexsmobs:dropbear"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexsmobs:spawn_egg_dropbear"
+				}
+				id: "084A4A77FC1AFECE"
+				type: "kill"
+				value: 75L
+			}]
+			x: 20.0d
+			y: -1.0d
+		}
+		{
+			id: "6F0BEA112A1893AA"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "580655E3D2AF37EC"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:boundroid"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_boundroid"
+				}
+				id: "7D45BB6E639D1967"
+				type: "kill"
+				value: 30L
+			}]
+			x: 8.0d
+			y: -1.0d
+		}
+		{
+			id: "0B0C157CAC54A976"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4650F60F61296A7F"
+				table_id: 2546774107985984710L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:brainiac"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_brainiac"
+				}
+				id: "56412853CC67A999"
+				type: "kill"
+				value: 50L
+			}]
+			x: 6.0d
+			y: -1.0d
+		}
+		{
+			id: "65C6058A10DC27F7"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "09B9EF580A02B2EA"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:relicheirus"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_relicheirus"
+				}
+				id: "35C65B6128DCB342"
+				type: "kill"
+				value: 30L
+			}]
+			x: 20.0d
+			y: 1.0d
+		}
+		{
+			icon: {
+				Count: 1
+				ForgeCaps: {
+					"celestisynth:celestisynthitemstackcapabilities": {
+						cs.aquaSkin: 0
+					}
+				}
+				id: "soulsweapons:night_prowler_spawn_egg"
+			}
+			id: "5C06128FD5E7A9FB"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7D5E34ECE511AF39"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [
+				{
+					entity: "soulsweapons:night_prowler"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:night_prowler_spawn_egg"
+					}
+					id: "08506522A31EF308"
+					type: "kill"
+					value: 6L
+				}
+				{
+					entity: "soulsweapons:day_stalker"
+					icon: {
+						Count: 1
+						ForgeCaps: {
+							"celestisynth:celestisynthitemstackcapabilities": {
+								cs.aquaSkin: 0
+							}
+						}
+						id: "soulsweapons:day_stalker_spawn_egg"
+					}
+					id: "18C318A573D73B9F"
+					type: "kill"
+					value: 6L
+				}
+			]
+			x: 20.0d
+			y: 9.0d
+		}
+		{
+			id: "17ED0A63F78573C4"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0642FCFAD81E89A7"
+				table_id: 8169228496696292560L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "aquamirae:maze_mother"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aquamirae:maze_mother_spawn_egg"
+				}
+				id: "2180FB7ACF960516"
+				type: "kill"
+				value: 6L
+			}]
+			x: 20.0d
+			y: 5.0d
+		}
+		{
+			id: "3F26C9944EBD777A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "170B58C629C30D2A"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "celestisynth:traverser"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "celestisynth:traverser_spawn_egg"
+				}
+				id: "3AD01EDE7ADD086C"
+				type: "kill"
+				value: 50L
+			}]
+			x: 14.0d
+			y: 1.0d
+		}
+		{
+			id: "1574E735E6FC8A49"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "679AE31C34F35403"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "celestisynth:star_monolith"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "minecraft:ghast_spawn_egg"
+				}
+				id: "5E65A64659175AE1"
+				type: "kill"
+				value: 100L
+			}]
+			x: 0.0d
+			y: 1.0d
+		}
+		{
+			id: "6A72FEB01B0A7AF0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5FF4B1281FE2A1B2"
+				table_id: 4882868283796278649L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "cataclysm:deepling_brute"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "cataclysm:deepling_brute_spawn_egg"
+				}
+				id: "193274C3DC5925D2"
+				type: "kill"
+				value: 30L
+			}]
+			x: 18.0d
+			y: 1.0d
+		}
+		{
+			id: "5100ED794A72C21B"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "13F6CBCDD774968D"
+				table_id: 15694599713583691L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "traveloptics:the_nightwarden"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "traveloptics:the_nightwarden_spawn_egg"
+				}
+				id: "6B3A0A5E7069BC07"
+				type: "kill"
+				value: 6L
+			}]
+			x: 8.0d
+			y: 9.0d
+		}
+		{
+			id: "6DA553E55BE1F7F0"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "31027DA5F1E583CF"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "soulsweapons:moonknight"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:moonknight_spawn_egg"
+				}
+				id: "212B967F960847D6"
+				type: "kill"
+				value: 6L
+			}]
+			x: -2.0d
+			y: 7.0d
+		}
+		{
+			id: "7B5FE9FD3A929C42"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "094C2B6899322DCB"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "soulsweapons:chaos_monarch"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:chaos_monarch_spawn_egg"
+				}
+				id: "5F5F1E77FE8402CD"
+				type: "kill"
+				value: 6L
+			}]
+			x: 20.0d
+			y: 7.0d
+		}
+		{
+			id: "35FDFB486FD0B635"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7226C5A35FD222BF"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "soulsweapons:draugr_boss"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:draugr_boss_spawn_egg"
+				}
+				id: "496F3D51CCDA730C"
+				type: "kill"
+				value: 6L
+			}]
+			x: 6.0d
+			y: 7.0d
+		}
+		{
+			id: "11288F46ACCEE20D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "5560F3B99C6797C3"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:hullbreaker"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_hullbreaker"
+				}
+				id: "4B59F5223E8058D4"
+				type: "kill"
+				value: 6L
+			}]
+			x: 4.0d
+			y: 7.0d
+		}
+		{
+			id: "1F95690B2E815557"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "36D16C0E38F6781B"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "mowziesmobs:ferrous_wroughtnaut"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mowziesmobs:wroughtnaut_spawn_egg"
+				}
+				id: "4AD320C1379104E5"
+				type: "kill"
+				value: 6L
+			}]
+			x: 2.0d
+			y: 7.0d
+		}
+		{
+			id: "2053C7987D27B175"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "00CF7A86FD0BC2FA"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "mokels_bossfight_saphyra:nameless"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mokels_bossfight_saphyra:nameless_spawn_egg"
+				}
+				id: "3F8558BA6F10BA57"
+				type: "kill"
+				value: 6L
+			}]
+			x: 8.0d
+			y: 7.0d
+		}
+		{
+			id: "49F7CF28A2B8FBCE"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "43CF81859EE85561"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "mokels_bossfight_saphyra:mothboss"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mokels_bossfight_saphyra:mothboss_spawn_egg"
+				}
+				id: "3620EE08B1AC6295"
+				type: "kill"
+				value: 6L
+			}]
+			x: 10.0d
+			y: 7.0d
+		}
+		{
+			id: "7F8CE0E748ADC77D"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "4366E01313C2452D"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "mowziesmobs:frostmaw"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "mowziesmobs:frostmaw_spawn_egg"
+				}
+				id: "2BD1D101E6669F0D"
+				type: "kill"
+				value: 6L
+			}]
+			x: 12.0d
+			y: 7.0d
+		}
+		{
+			id: "29CA6A62EBB3269F"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0164348054C1CD12"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "irons_spellbooks:dead_king"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "irons_spellbooks:dead_king_corpse_spawn_egg"
+				}
+				id: "02727281852EC2EA"
+				type: "kill"
+				value: 6L
+			}]
+			x: 0.0d
+			y: 7.0d
+		}
+		{
+			id: "4E9303DE55236587"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "41B99A1938A3DF22"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "alexscaves:luxtructosaurus"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "alexscaves:spawn_egg_luxtructosaurus"
+				}
+				id: "75319E4C0F9FE5FE"
+				type: "kill"
+				value: 6L
+			}]
+			x: 16.0d
+			y: 7.0d
+		}
+		{
+			id: "06C88145AFDD670A"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "0BA880CCDBA829AA"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "aquamirae:captain_cornelia"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "aquamirae:captain_cornelia_spawn_egg"
+				}
+				id: "43E58ECCE02266E4"
+				type: "kill"
+				value: 6L
+			}]
+			x: 18.0d
+			y: 7.0d
+		}
+		{
+			id: "67B7DA199356CD37"
+			rewards: [{
+				exclude_from_claim_all: true
+				id: "7EA1C71FDD4A62A1"
+				table_id: 3696026655157823979L
+				type: "random"
+			}]
+			tasks: [{
+				entity: "soulsweapons:accursed_lord_boss"
+				icon: {
+					Count: 1
+					ForgeCaps: {
+						"celestisynth:celestisynthitemstackcapabilities": {
+							cs.aquaSkin: 0
+						}
+					}
+					id: "soulsweapons:accursed_lord_boss_spawn_egg"
+				}
+				id: "10E07386B3D2BA05"
+				type: "kill"
+				value: 6L
+			}]
+			x: 14.0d
+			y: 7.0d
+		}
+	]
+	title: "Мёртвые души"
+}
