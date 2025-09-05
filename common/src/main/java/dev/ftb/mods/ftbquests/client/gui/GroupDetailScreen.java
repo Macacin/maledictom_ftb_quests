@@ -5,6 +5,7 @@ import dev.ftb.mods.ftbquests.client.ClientQuestFile;
 import dev.ftb.mods.ftbquests.quest.Chapter;
 import dev.ftb.mods.ftbquests.quest.Quest;
 import dev.ftb.mods.ftbquests.quest.TeamData;
+import net.minecraft.ChatFormatting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphics;
 import net.minecraft.client.gui.components.Button;
@@ -18,14 +19,31 @@ import java.util.List;
 public class GroupDetailScreen extends Screen {
 
     // === Текстуры интерфейса ===
-    private static final ResourceLocation BUTTON_CLOSED = new ResourceLocation("ftbquests", "textures/gui/button_closed.png");
+    private static final ResourceLocation[] BUTTON_TEXTURES = new ResourceLocation[]{
+            new ResourceLocation("ftbquests", "textures/gui/button_1.png"),
+            new ResourceLocation("ftbquests", "textures/gui/button_2.png"),
+            new ResourceLocation("ftbquests", "textures/gui/button_3.png"),
+            new ResourceLocation("ftbquests", "textures/gui/button_4.png"),
+            new ResourceLocation("ftbquests", "textures/gui/button_5.png")
+    };
     private static final ResourceLocation BUTTON_OPEN = new ResourceLocation("ftbquests", "textures/gui/button_open.png");
-    private static final ResourceLocation BUTTON_LOCKED = new ResourceLocation("ftbquests", "textures/gui/button_locked.png");
+
+    private static final ResourceLocation[] BUTTON_LOCKED = new ResourceLocation[]{
+            new ResourceLocation("ftbquests", "textures/gui/button_locked_1.png"),
+            new ResourceLocation("ftbquests", "textures/gui/button_locked_2.png"),
+            new ResourceLocation("ftbquests", "textures/gui/button_locked_3.png"),
+            new ResourceLocation("ftbquests", "textures/gui/button_locked_4.png"),
+            new ResourceLocation("ftbquests", "textures/gui/button_locked_5.png")
+    };
+
+    private static final ResourceLocation LOCK_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/lock.png");
 
     private static final ResourceLocation GROUP_PROGRESS_FRAME = new ResourceLocation("ftbquests", "textures/gui/group_pr.png");
     private static final ResourceLocation CHAPTER_PROGRESS_FRAME = new ResourceLocation("ftbquests", "textures/gui/glav_pr.png");
-    private static final ResourceLocation PROGRESS_FILL = new ResourceLocation("ftbquests", "textures/gui/zapoln.png");
-    private static final ResourceLocation PROGRESS_FILL_FULL = new ResourceLocation("ftbquests", "textures/gui/zapoln_full.png");
+    private static final ResourceLocation PROGRESS_GROUP = new ResourceLocation("ftbquests", "textures/gui/zapoln.png");
+    private static final ResourceLocation PROGRESS_CHAPTERS = new ResourceLocation("ftbquests", "textures/gui/chapters_bar.png");
+    private static final ResourceLocation PROGRESS_FILL_FULL = new ResourceLocation("ftbquests", "textures/gui/chapter_full.png");
+    private static final ResourceLocation PROGRESS_GROUP_FULL = new ResourceLocation("ftbquests", "textures/gui/group_full.png");
 
     // === Фоны для разных групп ===
     private static final ResourceLocation[] BACKGROUNDS = new ResourceLocation[]{
@@ -97,20 +115,20 @@ public class GroupDetailScreen extends Screen {
         chapterProgressValues.clear();
         groupButtons.clear();
 
-        backgroundX = (this.width - backgroundWidth) / 2;
-        backgroundY = (this.height - backgroundHeight) / 2;
+        backgroundX = (this.width - backgroundWidth) / 2 + 20;
+        backgroundY = (this.height - backgroundHeight) / 2 - 25;
 
         int topOffset = 20;
-        int startY = backgroundY + 89;
+        int startY = backgroundY + 95;
         int spacing = 30;
-        int startX = this.width / 2 - 75;
+        int startX = this.width / 2 - 53;
 
         int totalProgress = 0;
         int totalChapters = 0;
 
         // === Кнопки глав ===
         for (int i = 0; i < limit && (chapterStartIndex + i) < allChapters.size(); i++) {
-            Chapter chapter = allChapters.get(chapterStartIndex + i);
+            final Chapter chapter = allChapters.get(chapterStartIndex + i);
             int chapterProgress = getChapterProgress(chapter, data);
             chapterProgressValues.add(chapterProgress);
 
@@ -120,24 +138,24 @@ public class GroupDetailScreen extends Screen {
             boolean locked = false;
 
             // --- Логика блокировок ---
-            if (groupIndex == 4 && i == 1) {
-                Chapter g1c1 = getChapter(0, 0, allChapters);
-                if (g1c1 != null && !isQuestCompleted(g1c1, 0, data)) locked = true;
+            if (groupIndex == 3 && i == 1) {
+                Chapter g1c1 = getChapter(3, 0, allChapters);
+                if (g1c1 != null && !isQuestCompleted(g1c1, 27, data)) locked = true;
             }
-            if (groupIndex == 4 && i == 0) {
-                Chapter g1c2 = getChapter(0, 1, allChapters);
-                if (g1c2 != null && !isQuestCompleted(g1c2, 1, data)) locked = true;
+            if (groupIndex == 3 && i == 2) {
+                Chapter g1c2 = getChapter(3, 0, allChapters);
+                if (g1c2 != null && !isQuestCompleted(g1c2, 27, data)) locked = true;
             }
-            if (groupIndex == 2 && i == 0) {
-                Chapter g1c3 = getChapter(0, 2, allChapters);
-                if (g1c3 != null && !isQuestCompleted(g1c3, 2, data)) locked = true;
+            if (groupIndex == 0 && i == 4) {
+                Chapter g1c3 = getChapter(0, 3, allChapters);
+                if (g1c3 != null && !isQuestCompleted(g1c3, 21, data)) locked = true;
             }
 
             TexturedButton btn = new TexturedButton(
-                    startX, startY + i * spacing, 75, 10,
+                    startX, startY + i * spacing, 95, 15,
                     Component.literal(chapter.getTitle().getString()),
-                    b -> ClientQuestFile.openGui(),
-                    BUTTON_CLOSED, BUTTON_OPEN, BUTTON_LOCKED,
+                    b -> ClientQuestFile.openBookToQuestObject(chapter.getId()),
+                    BUTTON_TEXTURES[groupIndex], BUTTON_OPEN, BUTTON_LOCKED[groupIndex],
                     locked
             );
             chapterButtons.add(btn);
@@ -148,9 +166,9 @@ public class GroupDetailScreen extends Screen {
 
         // === Кнопка Назад ===
         InvisibleButton backBtn = new InvisibleButton(
-                backgroundX + 5, backgroundY + 148,
+                backgroundX + 5, backgroundY + 150,
                 15, 15,
-                b -> Minecraft.getInstance().setScreen(new MyCustomScreen(Component.literal("Квесты")))
+                b -> Minecraft.getInstance().setScreen(new MyCustomScreen(Component.literal("Квесты"), false))
         );
         this.addRenderableWidget(backBtn);
 
@@ -159,7 +177,7 @@ public class GroupDetailScreen extends Screen {
             if (i == groupIndex) continue;
             int idx = i;
 
-            int btnX = backgroundX + GROUP_BUTTON_POSITIONS[groupIndex][idx][0];
+            int btnX = backgroundX + GROUP_BUTTON_POSITIONS[groupIndex][idx][0] + 10 + idx/2;
             int btnY = backgroundY + GROUP_BUTTON_POSITIONS[groupIndex][idx][1];
 
             ImageButton gBtn = new ImageButton(btnX, btnY, 8, 12,
@@ -208,16 +226,25 @@ public class GroupDetailScreen extends Screen {
         graphics.blit(bg, backgroundX, backgroundY, 0, 0, backgroundWidth, backgroundHeight, backgroundWidth, backgroundHeight);
 
         int topOffset = 20;
-        graphics.drawString(this.font, groupTitle, this.width / 2 - this.font.width(groupTitle) / 2, 10 + topOffset, 0xFFFFFF);
 
-        drawProgressBar(graphics, (this.width - 41) / 2, 20 + topOffset, 46, 5, groupProgress, true);
+        float titleScale = 0.8f;
+        float targetX = backgroundX + 101;
+        float targetY = backgroundY + 20 + topOffset + 41;
 
-        int barWidth = 46;
-        int barHeight = 5;
+        graphics.pose().pushPose();
+        graphics.pose().translate(targetX, targetY, 0);
+        graphics.pose().scale(titleScale, titleScale, 1f);
+        graphics.drawString(this.font, groupTitle, -this.font.width(groupTitle) / 2, -4, 0xFFFFFF);
+        graphics.pose().popPose();
+
+        drawProgressBar(graphics, backgroundX + 98 - 60, backgroundY + 20 + topOffset + 70, 14, 97, groupProgress, true);
+
+        int barWidth = 75;
+        int barHeight = 7;
         for (int i = 0; i < chapterButtons.size(); i++) {
             TexturedButton btn = chapterButtons.get(i);
             int progress = chapterProgressValues.get(i);
-            int barX = btn.getX() + 13;
+            int barX = btn.getX() + 9;
             int barY = btn.getY() + btn.getHeight() + 3;
             drawProgressBar(graphics, barX, barY, barWidth, barHeight, progress, false);
         }
@@ -227,35 +254,54 @@ public class GroupDetailScreen extends Screen {
 
     private void drawProgressBar(GuiGraphics graphics, int x, int y, int width, int height, int progress, boolean isGroup) {
         ResourceLocation frameTex = isGroup ? GROUP_PROGRESS_FRAME : CHAPTER_PROGRESS_FRAME;
-        int frameWidth = 48;
-        int frameHeight = 5;
-        int frameX = x + width / 2 - frameWidth / 2;
-        int frameY = y + height / 2 - frameHeight / 2;
+        int frameWidth = isGroup ? 14 : 75;
+        int frameHeight = isGroup ? 97 : 8;
+        int frameX = x;
+        int frameY = isGroup ? y : (y + height / 2 - frameHeight / 2);  // y = верх для группы
 
         RenderSystem.setShaderTexture(0, frameTex);
         graphics.blit(frameTex, frameX, frameY, 0, 0, frameWidth, frameHeight, frameWidth, frameHeight);
 
-        int barMaxWidth = 42;
-        int barHeight = 2;
+        int barMaxWidth = isGroup ? 5 : 69;
+        int barHeight = isGroup ? 86 : 5;
+
+        int leftOffset = isGroup ? 2 : 3;
+        int bottomOffset = isGroup ? 3 : 2;
+        int fixedBottomY = frameY + frameHeight - bottomOffset;
 
         if (progress > 0) {
-            int barX = frameX + 3;
-            int barY = frameY + 2;
-            if (isGroup) barY -= 1;
+            int filledWidth;
+            int filledHeight;
 
             ResourceLocation fillTex;
-            int filledWidth;
 
-            if (progress >= 100) {
+            if ((progress >= 100) && (isGroup)) {
+                fillTex = PROGRESS_GROUP_FULL;
+                filledWidth = barMaxWidth;
+                filledHeight = barHeight;
+            } else if (progress >= 100) {
                 fillTex = PROGRESS_FILL_FULL;
                 filledWidth = barMaxWidth;
+                filledHeight = barHeight;
+            } else if (isGroup) {
+                fillTex = PROGRESS_GROUP;
+                filledWidth = barMaxWidth;
+                filledHeight = progress * barHeight / 100;
             } else {
-                fillTex = PROGRESS_FILL;
+                fillTex = PROGRESS_CHAPTERS;
                 filledWidth = progress * barMaxWidth / 100;
+                filledHeight = barHeight;
             }
 
+            int barX = frameX + leftOffset;
+            int barY = isGroup ? (fixedBottomY - filledHeight) : (frameY + 2);
+
             RenderSystem.setShaderTexture(0, fillTex);
-            graphics.blit(fillTex, barX, barY, 0, 0, filledWidth, barHeight, barMaxWidth, barHeight);
+            if (isGroup) {
+                graphics.blit(fillTex, barX+4, barY-2, 0, barHeight - filledHeight, filledWidth, filledHeight, barMaxWidth, barHeight);
+            } else {
+                graphics.blit(fillTex, barX, barY - 1, 0, 0, filledWidth, filledHeight, barMaxWidth, barHeight);
+            }
         }
     }
 
@@ -304,13 +350,23 @@ public class GroupDetailScreen extends Screen {
             // ==== Рисуем текст отдельно ====
             g.pose().pushPose();
             g.pose().translate(this.getX() + this.width / 2f, this.getY() + this.height / 2f, 0);
-            g.pose().scale(0.7f, 0.7f, 1f); // <-- делаем текст в 2 раза меньше
+            g.pose().scale(0.50f, 0.50f, 1f); // <-- делаем текст в 2 раза меньше
             g.pose().translate(-this.width / 2f, -this.height / 2f, 0);
 
             int color = this.active ? 0xFFFFFF : 0xA0A0A0;
-            int tx = (this.width - Minecraft.getInstance().font.width(this.getMessage())) / 2;
+            Component boldMessage = this.getMessage().copy().withStyle(ChatFormatting.BOLD);
+            int tx = (this.width - Minecraft.getInstance().font.width(boldMessage)) / 2;
             int ty = (this.height - 8) / 2;
-            g.drawString(Minecraft.getInstance().font, this.getMessage(), tx, ty, color);
+            g.drawString(Minecraft.getInstance().font, boldMessage, tx, ty, color);
+
+            if (locked) {
+                RenderSystem.setShaderTexture(0, LOCK_TEXTURE);
+                int lockWidth = 16;
+                int lockHeight = 23;
+                int lockX = (this.width - lockWidth) / 2;
+                int lockY = (this.height - lockHeight) / 2;
+                g.blit(LOCK_TEXTURE, lockX, lockY, 0, 0, lockWidth, lockHeight, lockWidth, lockHeight);
+            }
 
             g.pose().popPose();
         }
@@ -338,7 +394,7 @@ public class GroupDetailScreen extends Screen {
         }
     }
 
-    private class InvisibleButton extends Button {
+    private static class InvisibleButton extends Button {
         private float scale = 1f;
         private final int hoverColor = 0x80FFFFFF;
 

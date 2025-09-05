@@ -20,7 +20,7 @@ public class SpriteSheetGenerator {
         // Путь к директории с изображениями относительно корня проекта
         String directoryPath = projectRoot + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "assets" + File.separator + "ftbquests" + File.separator + "frames";
         // Путь для сохранения спрайт-шита относительно корня проекта
-        String outputPath = projectRoot + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "assets" + File.separator + "ftbquests" + File.separator + "frames" + File.separator + "animation2.png";
+        String outputPath = projectRoot + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "assets" + File.separator + "ftbquests" + File.separator + "frames" + File.separator + "animation4.png";
 
         try {
             // Добавляем дебаг вывод для диагностики корня проекта
@@ -44,7 +44,7 @@ public class SpriteSheetGenerator {
             if (commonDir.exists() && commonDir.isDirectory()) {
                 System.out.println("Обнаружена директория 'common'. Изменяем путь к ресурсам.");
                 directoryPath = projectRoot + File.separator + "common" + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "assets" + File.separator + "ftbquests" + File.separator + "frames";
-                outputPath = projectRoot + File.separator + "common" + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "assets" + File.separator + "ftbquests" + File.separator + "textures" + File.separator + "animation2.png";
+                outputPath = projectRoot + File.separator + "common" + File.separator + "src" + File.separator + "main" + File.separator + "resources" + File.separator + "assets" + File.separator + "ftbquests" + File.separator + "textures" + File.separator + "animation4.png";
             }
 
             // Получаем список файлов изображений (предполагаем PNG)

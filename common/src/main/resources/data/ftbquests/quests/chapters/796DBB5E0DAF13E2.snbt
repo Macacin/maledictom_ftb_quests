@@ -1222,7 +1222,6 @@
 			}]
 			shape: "diamond"
 			size: 2.0d
-			subtitle: "Последний день всей оставшейся жизни"
 			tasks: [{
 				dimension: "minecraft:the_end"
 				icon: {
@@ -1238,7 +1237,7 @@
 				title: "Попасть в Энд"
 				type: "dimension"
 			}]
-			title: "&lКонец Начала"
+			title: "&lПервый день всей оставшейся жизни"
 			x: -3.5d
 			y: -2.0d
 		}

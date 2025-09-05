@@ -21,7 +21,13 @@ import java.util.function.BooleanSupplier;
 public class MyCustomScreen extends Screen {
 
     private static final ResourceLocation BACKGROUND_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/my_background.png");
-    private static final ResourceLocation BUTTON_CLOSED = new ResourceLocation("ftbquests", "textures/gui/button_closed.png");
+    private static final ResourceLocation[] BUTTON_CLOSED = {
+            new ResourceLocation("ftbquests", "textures/gui/main_button_0.png"),
+            new ResourceLocation("ftbquests", "textures/gui/main_button_1.png"),
+            new ResourceLocation("ftbquests", "textures/gui/main_button_2.png"),
+            new ResourceLocation("ftbquests", "textures/gui/main_button_3.png"),
+            new ResourceLocation("ftbquests", "textures/gui/main_button_4.png")
+    };
     private static final ResourceLocation BUTTON_OPEN = new ResourceLocation("ftbquests", "textures/gui/button_open.png");
     private static final ResourceLocation BUTTON_ICON = new ResourceLocation("ftbquests", "textures/gui/button_execute.png");
     private static final ResourceLocation BUTTON_LOCKED = new ResourceLocation("ftbquests", "textures/gui/button_locked.png");
@@ -29,6 +35,7 @@ public class MyCustomScreen extends Screen {
     private static final ResourceLocation ANIM1_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation1.png");
     private static final ResourceLocation ANIM2_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation2.png");
     private static final ResourceLocation ANIM3_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation3.png");
+    private static final ResourceLocation ANIM4_TEXTURE = new ResourceLocation("ftbquests", "textures/gui/animation4.png");
 
     public static final String[] GROUP_NAMES = {
             "&lСкитания",
@@ -38,26 +45,29 @@ public class MyCustomScreen extends Screen {
             "&lИспытание на прочность"
     };
 
-    private enum Phase { ANIM1, ANIM2, ANIM3, MAIN }
+    private enum Phase { ANIM1, ANIM2, ANIM3, ANIM4, MAIN }
     private Phase phase = Phase.ANIM1;
     private long animStartTime;
     private static final int ANIM1_FRAMES = 24;
-    private static final int ANIM1_DURATION_MS = 500;
+    private static final int ANIM1_DURATION_MS = 700;
     private static final int ANIM1_FRAME_HEIGHT = 512;
     private static final int ANIM2_FRAMES = 24;
-    private static final int ANIM2_DURATION_MS = 500;
+    private static final int ANIM2_DURATION_MS = 700;
     private static final int ANIM2_FRAME_HEIGHT = 512;
     private static final int ANIM3_FRAMES = 24;
-    private static final int ANIM3_DURATION_MS = 500;
-    private static final int ANIM3_FRAME_HEIGHT = 256;
+    private static final int ANIM3_DURATION_MS = 700;
+    private static final int ANIM3_FRAME_HEIGHT = 512;
+    private static final int ANIM4_FRAMES = 8;
+    private static final int ANIM4_DURATION_MS = 222;
+    private static final int ANIM4_FRAME_HEIGHT = 512;
 
     public static final int[] GROUP_LIMITS = {5, 2, 1, 3, 2};
     private static final int START_X = 190;
     private static final int START_Y = 180;
-    private static final int BUTTON_WIDTH = 100;
-    private static final int BUTTON_HEIGHT = 20;
-    private static final int SUBBUTTON_VERTICAL_SPACING = 19;
-    private static final int GROUP_VERTICAL_SPACING = 5;
+    private static final int BUTTON_WIDTH = 95;
+    private static final int BUTTON_HEIGHT = 15;
+    private static final int SUBBUTTON_VERTICAL_SPACING = 32;
+    private static final int GROUP_VERTICAL_SPACING = 16;
 
     public final Component title;
     private final List<ButtonGroup> groups = new ArrayList<>();
@@ -65,10 +75,15 @@ public class MyCustomScreen extends Screen {
     private final List<Integer> progressPercentPerGroup = new ArrayList<>();
     private final List<Boolean> groupOpenStates = new ArrayList<>();
 
-    public MyCustomScreen(Component title) {
+    public MyCustomScreen(Component title, boolean playAnimation) {
         super(title);
         this.title = title;
         this.animStartTime = System.currentTimeMillis();
+        this.phase = playAnimation ? Phase.ANIM1 : Phase.MAIN;
+    }
+
+    public MyCustomScreen(Component title) {
+        this(title, true);  // По умолчанию — с анимацией
     }
 
     @Override
@@ -76,6 +91,10 @@ public class MyCustomScreen extends Screen {
         groups.clear();
         progressPercentPerButton.clear();
         progressPercentPerGroup.clear();
+        if (phase == Phase.MAIN) {
+            initMainContent();
+            return;
+        }
         phase = Phase.ANIM1;
         animStartTime = System.currentTimeMillis();
     }
@@ -96,7 +115,7 @@ public class MyCustomScreen extends Screen {
             int remainingChapters = allChapters.size() - chapterIndex;
             int subCount = Math.min(limit, remainingChapters);
 
-            int startX = backgroundX + 50; // отступ слева внутри фона
+            int startX = backgroundX + 55; // отступ слева внутри фона
             createGroup(startX, currentY, subCount, groupNum);
             ButtonGroup group = groups.get(groups.size() - 1);
 
@@ -119,8 +138,8 @@ public class MyCustomScreen extends Screen {
 
 
         InvisibleButton backBtn = new InvisibleButton(
-                backgroundX + 6,
-                backgroundY + 148,
+                backgroundX + 5,
+                backgroundY + 150,
                 15,
                 15,
                 b -> {
@@ -132,8 +151,8 @@ public class MyCustomScreen extends Screen {
         );
         this.addRenderableWidget(backBtn);
 
-        int baseX = backgroundX + 167; // уже правильно
-        int[] yOffsets = {69, 94, 119, 144, 169};
+        int baseX = backgroundX + 167 + 5; // уже правильно
+        int[] yOffsets = {70, 106, 137, 164, 190};
 
         ResourceLocation[] buttonTexturesNormal = new ResourceLocation[]{
                 new ResourceLocation("ftbquests", "textures/gui/zaplatka_1_1.png"),
@@ -154,9 +173,16 @@ public class MyCustomScreen extends Screen {
         for (int i = 0; i < 5; i++) {
             int idx = i;
             if (idx >= groups.size()) continue;
+            int extraX = 0;
+            if (i == 3) {
+                extraX = 3;
+            }
+            if (i == 4) {
+                extraX = 5;
+            }
 
             PatchButton groupBtn = new PatchButton(
-                    baseX,
+                    baseX + i / 2 + extraX,
                     backgroundY + yOffsets[i] + 21,
                     10, 12,
                     Component.empty(),
@@ -184,7 +210,7 @@ public class MyCustomScreen extends Screen {
 
     private void recalcPositions() {
         int backgroundY = (this.height - 256) / 2 - 25;
-        int y = backgroundY + 85;
+        int y = backgroundY + 86;
         for (ButtonGroup g : groups) {
             g.setPositionY(y);
             int totalHeight = g.mainButton.getHeight();
@@ -208,10 +234,16 @@ public class MyCustomScreen extends Screen {
             renderAnimation(graphics, ANIM2_TEXTURE, ANIM2_FRAMES, ANIM2_DURATION_MS, ANIM2_FRAME_HEIGHT);
             if (elapsed >= ANIM2_DURATION_MS) { phase = Phase.ANIM3; animStartTime = currentTime; }
             return;
+
         } else if (phase == Phase.ANIM3) {
             this.renderBackground(graphics);
             renderAnimation(graphics, ANIM3_TEXTURE, ANIM3_FRAMES, ANIM3_DURATION_MS, ANIM3_FRAME_HEIGHT);
-            if (elapsed >= ANIM3_DURATION_MS) { phase = Phase.MAIN; initMainContent(); animStartTime = currentTime; }
+            if (elapsed >= ANIM3_DURATION_MS) { phase = Phase.ANIM4; animStartTime = currentTime; }
+            return;
+        } else if (phase == Phase.ANIM4) {
+            this.renderBackground(graphics);
+            renderAnimation(graphics, ANIM4_TEXTURE, ANIM4_FRAMES, ANIM4_DURATION_MS, ANIM4_FRAME_HEIGHT);
+            if (elapsed >= ANIM4_DURATION_MS) { phase = Phase.MAIN; initMainContent(); animStartTime = currentTime; }
             return;
         }
 
@@ -294,7 +326,7 @@ public class MyCustomScreen extends Screen {
                     b -> Minecraft.getInstance().setScreen(new GroupDetailScreen(
                             parseLegacyFormatting(GROUP_NAMES[groupIndex]), groupIndex
                     )),
-                    BUTTON_CLOSED,
+                    BUTTON_CLOSED[groupIndex],
                     BUTTON_OPEN,
                     BUTTON_LOCKED,
                     false
@@ -428,7 +460,7 @@ public class MyCustomScreen extends Screen {
             // ==== ТЕКСТ ====
             guiGraphics.pose().pushPose();
             guiGraphics.pose().translate(this.getX() + this.width / 2f, this.getY() + this.height / 2f, 0);
-            guiGraphics.pose().scale(0.7f, 0.7f, 1f); // текст в 2 раза меньше
+            guiGraphics.pose().scale(0.60f, 0.60f, 1f); // текст в 2 раза меньше
             guiGraphics.pose().translate(-this.width / 2f, -this.height / 2f, 0);
 
             int textColor = this.active ? 0xFFFFFF : 0xA0A0A0;
@@ -476,7 +508,7 @@ public class MyCustomScreen extends Screen {
         int texWidth = 256;
         int texHeight = frameHeight * frames;
         int posX = Math.floorDiv(this.width - texWidth, 2) + 20;
-        int posY = Math.floorDiv(this.height - frameHeight, 2) - 25;
+        int posY = Math.floorDiv(this.height - frameHeight, 2) + 100;
 
         RenderSystem.setShaderTexture(0, texture);
         graphics.blit(texture, posX, posY, 0, frame * frameHeight, texWidth, frameHeight, texWidth, texHeight);

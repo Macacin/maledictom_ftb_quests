@@ -109,7 +109,7 @@ public class ServerQuestFile extends BaseQuestFile {
 		Path a1 = chaptersFolder.resolve("1EB570174CB7CA6D.snbt");
 		Path a2 = chaptersFolder.resolve("1ECD5960277CF13D.snbt");
 		Path a3 = chaptersFolder.resolve("2E237036B2AE62A0.snbt");
-		Path a4 = chaptersFolder.resolve("4E019C588A7FFFBB.snbt");
+		Path a4 = chaptersFolder.resolve("796DBB5E0DAF13E2.snbt");
 		Path a5 = chaptersFolder.resolve("05B5305DDDE03163.snbt");
 		Path a6 = chaptersFolder.resolve("6BD3657B08E60209.snbt");
 		Path a7 = chaptersFolder.resolve("6F54CED2221D09F0.snbt");
@@ -154,7 +154,7 @@ public class ServerQuestFile extends BaseQuestFile {
 				FTBQuests.LOGGER.error("Failed to create directories for chapters folder", e);
 				return;
 			}
-			copyResourceToFile("/data/ftbquests/quests/chapters/4E019C588A7FFFBB.snbt", a4);
+			copyResourceToFile("/data/ftbquests/quests/chapters/796DBB5E0DAF13E2.snbt", a4);
 		}
 		if (Files.notExists(a5)) {
 			try {
