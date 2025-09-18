@@ -65,6 +65,10 @@ allprojects {
 				includeGroup "dev.ftb.mods"
 			}
 		}
+
+		flatDir {
+			dirs 'libs'
+		}
 	}
 
 	java {

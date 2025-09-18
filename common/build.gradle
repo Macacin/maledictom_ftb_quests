@@ -5,6 +5,7 @@ dependencies {
 
 	modApi("dev.ftb.mods:ftb-library:${rootProject.ftb_library_version}") { transitive false }
 	modApi "dev.ftb.mods:ftb-teams:${rootProject.ftb_teams_version}"
+	implementation(name: 'PassiveSkillTree-1.20.1-BETA-0.6.14a-dev-shadow', ext: 'jar')
 }
 
 architectury {
@@ -39,6 +40,13 @@ publishing {
 					password = ftbPublishing.sapsToken
 				}
 			}
+		}
+	}
+}
+sourceSets {
+	main {
+		java {
+			srcDir 'src/main/java'
 		}
 	}
 }

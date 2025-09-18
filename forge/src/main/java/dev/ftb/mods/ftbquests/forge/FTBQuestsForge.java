@@ -1,7 +1,9 @@
 package dev.ftb.mods.ftbquests.forge;
 
+import dev.architectury.platform.Platform;
 import dev.architectury.platform.forge.EventBuses;
 import dev.ftb.mods.ftblibrary.icon.Icon;
+import dev.ftb.mods.ftblibrary.icon.ItemIcon;
 import dev.ftb.mods.ftbquests.FTBQuests;
 import dev.ftb.mods.ftbquests.api.FTBQuestsAPI;
 import dev.ftb.mods.ftbquests.api.FTBQuestsTags;
@@ -9,6 +11,9 @@ import dev.ftb.mods.ftbquests.command.ChangeProgressArgument;
 import dev.ftb.mods.ftbquests.command.QuestObjectArgument;
 import dev.ftb.mods.ftbquests.item.FTBQuestsItems;
 import dev.ftb.mods.ftbquests.quest.ServerQuestFile;
+import dev.ftb.mods.ftbquests.quest.reward.RewardType;
+import dev.ftb.mods.ftbquests.quest.reward.RewardTypes;
+import dev.ftb.mods.ftbquests.quest.reward.SkillXPRewardForge;
 import dev.ftb.mods.ftbquests.quest.task.TaskTypes;
 import dev.ftb.mods.ftbquests.quest.task.forge.ForgeEnergyTask;
 import dev.ftb.mods.ftbteams.api.FTBTeamsAPI;
@@ -34,11 +39,14 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import java.util.Iterator;
 
 @Mod(FTBQuestsAPI.MOD_ID)
 public class FTBQuestsForge {
+	public static final Logger LOGGER = LogManager.getLogger(FTBQuestsAPI.MOD_NAME);
 	private static final DeferredRegister<ArgumentTypeInfo<?, ?>> COMMAND_ARGUMENT_TYPES = DeferredRegister.create(Registries.COMMAND_ARGUMENT_TYPE, FTBTeamsAPI.MOD_ID);
 	private static final RegistryObject<SingletonArgumentInfo<ChangeProgressArgument>> CHANGE_PROGRESS = COMMAND_ARGUMENT_TYPES.register("change_progress", () -> ArgumentTypeInfos.registerByClass(ChangeProgressArgument.class, SingletonArgumentInfo.contextFree(ChangeProgressArgument::changeProgress)));
 	private static final RegistryObject<SingletonArgumentInfo<QuestObjectArgument>> QUEST_OBJECT = COMMAND_ARGUMENT_TYPES.register("quest_object", () -> ArgumentTypeInfos.registerByClass(QuestObjectArgument.class, SingletonArgumentInfo.contextFree(QuestObjectArgument::new)));
@@ -53,11 +61,34 @@ public class FTBQuestsForge {
 				() -> Icon.getIcon(ForgeEnergyTask.EMPTY_TEXTURE.toString()).combineWith(Icon.getIcon(ForgeEnergyTask.FULL_TEXTURE.toString())));
 
 		FMLJavaModLoadingContext.get().getModEventBus().<FMLCommonSetupEvent>addListener(event -> quests.setup());
+		FMLJavaModLoadingContext.get().getModEventBus().addListener(this::setup);
 
 		DistExecutor.safeRunWhenOn(Dist.CLIENT, () -> ClientSetup::init);
 
 		MinecraftForge.EVENT_BUS.addListener(FTBQuestsForge::livingDrops);
 		MinecraftForge.EVENT_BUS.addListener(EventPriority.HIGH, FTBQuestsForge::dropsEvent);
+	}
+
+	private void setup(final FMLCommonSetupEvent event) {
+		LOGGER.info("[FTBQuestsForge] Starting setup — overriding SKILL_XP");
+		ResourceLocation skillXpId = new ResourceLocation("skilltree", "skill_xp");
+
+		// Проверь current
+		RewardType oldType = RewardTypes.TYPES.get(skillXpId);
+		LOGGER.info("[FTBQuestsForge] Old factory class: {}", oldType.getGuiProvider().getClass().getName());  // Должно быть common SkillXPReward
+
+		RewardTypes.TYPES.remove(skillXpId);
+		RewardTypes.TYPES.put(skillXpId, new RewardType(skillXpId,
+					SkillXPRewardForge::new,
+					() -> {
+					LOGGER.info("[FTBQuestsForge] Creating NEW Forge Reward instance");
+					return ItemIcon.getIcon("ftbquests:item/skill_xp_icon");
+					}
+		));
+
+		RewardType newType = RewardTypes.TYPES.get(skillXpId);
+		LOGGER.info("[FTBQuestsForge] New factory class: {}", newType.getGuiProvider().getClass().getName());  // Должно быть lambda с Forge
+		LOGGER.info("[FTBQuestsForge] Override complete");
 	}
 
 	private static void livingDrops(LivingDropsEvent event) {

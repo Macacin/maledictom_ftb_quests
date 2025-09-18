@@ -37,6 +37,8 @@ public class FTBQuestsItems {
 
 	public static final RegistrySupplier<Item> MISSING_ITEM = ITEMS.register("missing_item", MissingItem::new);
 	public static final RegistrySupplier<Item> CUSTOM_ICON = ITEMS.register("custom_icon", CustomIconItem::new);
+	public static final RegistrySupplier<Item> SKILL_XP_ICON = ITEMS.register("skill_xp_icon",
+			() -> new DummySkillXPIconItem(defaultProps()));  // Используй defaultProps() из твоего класса
 
 	public static final RegistrySupplier<Item> BARRIER = blockItemFor("barrier", QuestBarrierBlockItem::new);
 	public static final RegistrySupplier<Item> STAGE_BARRIER = blockItemFor("stage_barrier", StageBarrierBlockItem::new);

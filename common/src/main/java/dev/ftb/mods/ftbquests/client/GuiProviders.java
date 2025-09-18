@@ -192,6 +192,19 @@ public class GuiProviders {
             panel.getGui().pushModalPanel(overlay);
         });
 
+        RewardTypes.SKILL_XP.setGuiProvider((panel, quest, callback) -> {
+            IntConfig c = new IntConfig(1, Integer.MAX_VALUE);
+            c.setValue(10);
+
+            EditStringConfigOverlay<Integer> overlay = new EditStringConfigOverlay<>(panel.getGui(), c, accepted -> {
+                if (accepted) {
+                    callback.accept(new SkillXPReward(0L, quest, c.getValue()));
+                }
+                panel.run();
+            }, RewardTypes.SKILL_XP.getDisplayName()).atMousePosition();
+            panel.getGui().pushModalPanel(overlay);
+        });
+
         RewardTypes.XP_LEVELS.setGuiProvider((panel, quest, callback) -> {
             IntConfig c = new IntConfig(1, Integer.MAX_VALUE);
             c.setValue(5);

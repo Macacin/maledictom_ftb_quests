@@ -2,12 +2,17 @@ package dev.ftb.mods.ftbquests.quest.reward;
 
 import dev.ftb.mods.ftblibrary.icon.Icon;
 import dev.ftb.mods.ftblibrary.icon.Icons;
+import dev.ftb.mods.ftblibrary.icon.ItemIcon;
 import dev.ftb.mods.ftbquests.api.FTBQuestsAPI;
+import dev.ftb.mods.ftbquests.item.DummySkillXPIconItem;
+import dev.ftb.mods.ftbquests.item.FTBQuestsItems;
 import net.minecraft.resources.ResourceLocation;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.function.Supplier;
+
+import static dev.ftb.mods.ftbquests.item.FTBQuestsItems.SKILL_XP_ICON;
 
 public interface RewardTypes {
 	Map<ResourceLocation, RewardType> TYPES = new LinkedHashMap<>();
@@ -40,6 +45,9 @@ public interface RewardTypes {
 			() -> Icon.getIcon("minecraft:item/oak_sign"));
 	RewardType STAGE = RewardTypes.register(new ResourceLocation(FTBQuestsAPI.MOD_ID, "gamestage"), StageReward::new,
 			() -> Icons.CONTROLLER);
+	RewardType SKILL_XP = register(new ResourceLocation("skilltree", "skill_xp"),
+			SkillXPReward::new,
+			() -> ItemIcon.getIcon("ftbquests:item/skill_xp_icon"));
 
 	static void init() {
 	}
