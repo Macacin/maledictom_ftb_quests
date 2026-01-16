@@ -146,7 +146,7 @@ public class ChapterPanel extends Panel {
 	}
 
 	boolean isPinned() {
-		return ClientQuestFile.INSTANCE.selfTeamData.isChapterPinned(Minecraft.getInstance().player);
+		return true;
 	}
 
 
@@ -180,10 +180,7 @@ public class ChapterPanel extends Panel {
 
 		@Override
 		public void onClicked(MouseButton button) {
-			if (getMouseX() > getX() + width - 18) {
-				playClickSound();
-				new ToggleChapterPinnedMessage().sendToServer();
-			} else if (chapterPanel.questScreen.file.canEdit() && getMouseX() > getX() + width - 34) {
+			if (chapterPanel.questScreen.file.canEdit() && getMouseX() > getX() + width - 34) {
 				playClickSound();
 
 				List<ContextMenuItem> contextMenu = new ArrayList<>();
@@ -244,8 +241,6 @@ public class ChapterPanel extends Panel {
 
 			boolean canEdit = chapterPanel.questScreen.file.canEdit();
 
-			(chapterPanel.isPinned() ? ThemeProperties.PIN_ICON_ON : ThemeProperties.PIN_ICON_OFF).get().draw(graphics, x + w - 16, y + 3, 12, 12);
-
 			if (canEdit) {
 				ThemeProperties.ADD_ICON.get().draw(graphics, x + w - 31, y + 3, 12, 12);
 			}
@@ -261,9 +256,7 @@ public class ChapterPanel extends Panel {
 		public void addMouseOverText(TooltipList list) {
 			chapterPanel.questScreen.addInfoTooltip(list, chapterPanel.questScreen.file);
 
-			if (getMouseX() > getX() + width - 18) {
-				list.string(chapterPanel.isPinned() ? "Stays open" : "Doesn't stay open");
-			} else if (chapterPanel.questScreen.file.canEdit() && getMouseX() > getX() + width - 34) {
+			if (chapterPanel.questScreen.file.canEdit() && getMouseX() > getX() + width - 34) {
 				list.translate("gui.add");
 			}
 		}
